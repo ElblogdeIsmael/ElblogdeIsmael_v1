@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asignaturas Tercer Año</title>
+  <style>
+    :root {
+      --bg-gradient-onyx: linear-gradient(to bottom right, hsl(240, 1%, 25%) 3%, hsl(0, 0%, 19%) 97%);
+      --bg-gradient-jet: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+      --jet: hsl(0, 0%, 22%);
+      --onyx: hsl(240, 1%, 17%);
+      --eerie-black-1: hsl(240, 2%, 13%);
+      --eerie-black-2: hsl(240, 2%, 12%);
+      --smoky-black: hsl(0, 0%, 7%);
+      --white-1: hsl(0, 0%, 100%);
+      --white-2: hsl(0, 0%, 98%);
+      --orange-yellow-crayola: hsl(45, 100%, 72%);
+      --light-gray: hsl(0, 0%, 84%);
+      --ff-poppins: 'Roboto', sans-serif;
+      --fs-1: 24px;
+      --fs-2: 18px;
+      --fs-3: 17px;
+      --fs-4: 16px;
+      --fs-5: 15px;
+      --fs-6: 14px;
+      --fs-7: 13px;
+      --fs-8: 11px;
+      --fw-300: 300;
+      --fw-400: 400;
+      --fw-500: 500;
+      --fw-600: 600;
+      --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+      --transition-1: 0.25s ease;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a { text-decoration: none; }
+
+    li { list-style: none; }
+
+    body {
+      font-family: var(--ff-poppins);
+      background: var(--smoky-black);
+      color: var(--white-2);
+      margin: 0;
+      padding: 20px;
+    }
+
+    #content {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--eerie-black-2);
+      box-shadow: var(--shadow-1);
+      border-radius: 10px;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1, h2 {
+      color: var(--orange-yellow-crayola);
+      font-size: var(--fs-1);
+      margin-bottom: 20px;
+      animation: slideIn 0.5s ease-in-out;
+    }
+
+    ul#subjects {
+      list-style-type: none;
+      padding: 0;
+      font-size: var(--fs-2);
+    }
+
+    ul#subjects li {
+      margin-bottom: 15px;
+    }
+
+    ul#subjects li a {
+      text-decoration: none;
+      color: var(--orange-yellow-crayola);
+      font-weight: var(--fw-500);
+      transition: color var(--transition-1), text-decoration var(--transition-1);
+      display: flex;
+      align-items: center;
+      background: var(--eerie-black-1);
+      padding: 10px;
+      border-radius: 5px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    ul#subjects li a:hover {
+      text-decoration: underline;
+      color: var(--light-gray);
+      background: var(--onyx);
+    }
+
+    ul#subjects li a i {
+      margin-right: 8px;
+      color: var(--orange-yellow-crayola);
+    }
+
+    ul#subjects_2 {
+      list-style-type: none;
+      padding: 0;
+      font-size: var(--fs-2);
+    }
+
+    ul#subjects_2 li {
+      margin-bottom: 15px;
+    }
+
+    ul#subjects_2 li a {
+      text-decoration: none;
+      color: var(--orange-yellow-crayola);
+      font-weight: var(--fw-500);
+      transition: color var(--transition-1), text-decoration var(--transition-1);
+      display: flex;
+      align-items: center;
+      background: var(--eerie-black-1);
+      padding: 10px;
+      border-radius: 5px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    ul#subjects_2 li a:hover {
+      text-decoration: underline;
+      color: var(--light-gray);
+      background: var(--onyx);
+    }
+
+    ul#subjects_2 li a i {
+      margin-right: 8px;
+      color: var(--orange-yellow-crayola);
+    }
+
+    ul ul {
+      margin-left: 20px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      #content {
+        padding: 15px;
+      }
+
+      h1, h2 {
+        font-size: var(--fs-2);
+      }
+
+      ul#subjects {
+        font-size: var(--fs-3);
+      }
+
+      ul#subjects_2 {
+        font-size: var(--fs-3);
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-20px); }
+      to { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>3º curso del doble grado de Ingeniería Informática y ADE - <span id="year"></span></h1>
+    <h2>1º Semestre</h2>
+    <ul id="subjects"></ul>
+    <h2>2º Semestre</h2>
+    <ul id="subjects_2"></ul>
+  </div>
+
+  <script>
+    var currentYear = new Date().getFullYear();
+    document.getElementById('year').textContent = currentYear;
+
+    var subjects = [
+      {
+        name: 'Dirección y Administración de Empresas',
+        subfolders: [
+          { name: 'Prácticas', files: [{name: 'Apuntes Prácticas', path: "/Asignaturas/Tercer Año/DAE/PracticasDAE/FCCEE/build/Practicas.pdf"}] },
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/DAE/TeoriaDAE/FCCEE/build/Teoria.pdf' }, {name: 'Diapositivas de clase', path: 'https://github.com/ElblogdeIsmael/ElblogdeIsmael.github.io/tree/main/Asignaturas/Tercer%20A%C3%B1o/DAE/Direccio%CC%81n%20y%20administracio%CC%81n%20de%20empresas/Direcci%C3%B3n%20y%20administraci%C3%B3n%20de%20empresas'}, {name: 'Mapa Conceptual Teoría', path:'/Asignaturas/Tercer Año/DAE/mapa_conceptual.pdf'}] }
+        ]
+      },
+      {
+        name: 'Sistemas Concurrentes y Distribuidos',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Apuntes Completos Practicas', path: '/Asignaturas/Tercer Año/SCD/Practicas/ETSIIT/build/Practicas.pdf' }, { name: 'Practica 1', path: '/Asignaturas/Tercer Año/SCD/Practicas/Practica1.zip' }, { name: 'Practica 2', path: '/Asignaturas/Tercer Año/SCD/Practicas/Practica2.zip' }, { name: 'Practica 3', path: '/Asignaturas/Tercer Año/SCD/Practicas/Practica3.zip' },{ name: 'Practica 4', path: '/Asignaturas/Tercer Año/SCD/Practicas/Practica4.zip' }, {name: 'Practicas Resueltas', path: 'https://github.com/ElblogdeIsmael/ElblogdeIsmael.github.io/tree/main/Asignaturas/Tercer%20A%C3%B1o/SCD/Practicas/Practicas_Resueltas'} ] },
+          { name: 'Seminarios', files: [{ name: 'Seminario 1', path: '/Asignaturas/Tercer Año/SCD/Seminarios/Seminario1.zip' }, { name: 'Seminario 2', path: '/Asignaturas/Tercer Año/SCD/Seminarios/Seminario2.zip' }, { name: 'Seminario 3', path: '/Asignaturas/Tercer Año/SCD/Seminarios/Seminario3.zip' }]},
+          { name: 'Teoría', files: [{name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/SCD/Teoria/ETSIIT/build/Teoria.pdf' }] },
+          { name: 'Relaciones de Ejercicios', files: [{name: 'Tema 1', path: 'https://github.com/ElblogdeIsmael/ElblogdeIsmael.github.io/blob/main/Asignaturas/Tercer%20A%C3%B1o/SCD/Teoria/Tema1/RelacionEjerciciosTema1.md' },{name: 'Tema 2', path: 'https://github.com/ElblogdeIsmael/ElblogdeIsmael.github.io/blob/main/Asignaturas/Tercer%20A%C3%B1o/SCD/Teoria/Tema2/RelacionEjerciciosTema2.md' },{name: 'Tema 3', path: '/Asignaturas/Tercer Año/SCD/Teoria/Tema3/SolucionesEjercicios/ETSIIT/build/Ejerciciost3.pdf' },{name: 'Tema 4', path: '/Asignaturas/Tercer Año/SCD/Teoria/Tema4/SolucionesEjercicios/ETSIIT/build/Ejerciciost4.pdf' }] },
+          { name: 'Exámenes', files: [{ name: 'Primer Parcial / Simulacro', path: '/Asignaturas/Tercer Año/SCD/Examenes/Primer_Parcial-Simulacro.zip' }, {name: 'Enunciado Examen de Prácticas' , path: '/Asignaturas/Tercer Año/SCD/Examenes/Enunciado_Examen_Practicas_Primerparcial.pdf'} , {name: 'Segundo Parcial', path: '/Asignaturas/Tercer Año/SCD/Examenes/SegundoParcial/ETSIIT/build/ExamenesAnteriores.pdf'}] },
+          { name: 'Autoevaluaciones / Tests', files: [{ name: 'Autoevaluacion 1', path: '/Asignaturas/Tercer Año/SCD/AutoevalSCD/Autoeval1.html' }, { name: 'Autoevaluacion 2 Monitores', path: '/Asignaturas/Tercer Año/SCD/AutoevalSCD/Autoeval2.html' }, { name: 'Autoevaluacion 2 Exclusión Mutua', path: '/Asignaturas/Tercer Año/SCD/AutoevalSCD/testExtraT2.html' },{ name: 'Autoevaluacion 3 Paso de Mensajes', path: '/Asignaturas/Tercer Año/SCD/AutoevalSCD/AutoevalT3.html' }, { name: 'Autoevaluacion 4 Sistemas de Tiempo Real', path: '/Asignaturas/Tercer Año/SCD/AutoevalSCD/AutoevalT4.html' }
+          ]},{ name: 'Resúmenes', files: [{ name: 'Resumen del Temario', path: '/Asignaturas/Tercer Año/SCD/Resumenes/ETSIIT/build/Apuntes.pdf' }
+          ]}
+        ]
+      },
+      // Add other subjects similarly
+    ];
+
+    subjects.push(
+      {
+        name: 'Fundamentos de Redes',
+        subfolders: [
+          { name: 'Prácticas', files: [{name : 'Apuntes Prácticas', path: '/Asignaturas/Tercer Año/FR/Practicas/ETSIIT/build/Practicas.pdf'}] },
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/FR/Teoria/ETSIIT/build/Teoria.pdf' }] },
+          { name: 'Tipo Test Practica', files: [{ name: 'Test Práctica 1', path: '/Asignaturas/Tercer Año/FR/TestsFR/TestPractica1.html' }, { name: 'Test Práctica 2', path: '/Asignaturas/Tercer Año/FR/TestsFR/TestPractica2.html' }, { name: 'Test Práctica 3', path: '/Asignaturas/Tercer Año/FR/TestsFR/TestPractica3.html' }] },
+          { name: 'Resúmenes', files: [{name : 'Tema 1 y 2', path: '/Asignaturas/Tercer Año/FR/Resumenes/ETSIIT/build/tema1_y_tema2.pdf'},{name : 'Tema 3', path: '/Asignaturas/Tercer Año/FR/Resumenes/ETSIIT/build/tema3.pdf'}, {name : 'Tema 4', path: '/Asignaturas/Tercer Año/FR/Resumenes/ETSIIT/build/tema4.pdf'}, {name : 'Tema 5', path: '/Asignaturas/Tercer Año/FR/Resumenes/ETSIIT/build/tema5.pdf'}] },
+        ]
+      },
+      {
+        name: 'Programación y Diseño Orientado a Objetos',
+        subfolders: [
+          { name: 'Material Practicas', files: [{ name: 'Guiones', path: '/Asignaturas/Tercer Año/PDOO/PracticasPDOO/Guiones.zip' }] },
+          { name: 'Prácticas', subfolders: [{ name: 'Proyecto Irrgarten', files: [{ name: 'Código Java', path: 'https://github.com/ElblogdeIsmael/ElblogdeIsmael.github.io/tree/main/Asignaturas/Tercer%20A%C3%B1o/PDOO/Practica/Proyecto_Irrgarten/Proyecto_Irrgarten/P5-java'}, { name: 'Código Ruby', path: 'https://github.com/ElblogdeIsmael/ElblogdeIsmael.github.io/tree/main/Asignaturas/Tercer%20A%C3%B1o/PDOO/Practica/Proyecto_Irrgarten/Proyecto_Irrgarten/P5-Ruby'}, { name: 'Prácticas Resueltas', path: 'https://github.com/ElblogdeIsmael/ElblogdeIsmael.github.io/tree/main/Asignaturas/Tercer%20A%C3%B1o/PDOO/Practica/Proyecto_Irrgarten'}]}] },
+          { name: 'Teoría', files: [{name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/PDOO/Teoria/ETSIIT/build/Teoria.pdf'}]} ,
+          { name: 'Relaciones de Problemas', files: [{name: 'Relación 1', path: '/Asignaturas/Tercer Año/PDOO/Teoria/RelacionesEjercicios/Solt1/ETSIIT/build/solt1.pdf'},{name: 'Relación 2', path: '/Asignaturas/Tercer Año/PDOO/Teoria/RelacionesEjercicios/t2.pdf'},{name: 'Relación 3', path: '/Asignaturas/Tercer Año/PDOO/Teoria/RelacionesEjercicios/Solt3/ETSIIT/build/solt3.pdf'}]}, 
+        { name: 'Examenes', files: [{name: 'Parcial Practicas 1', path: '/Asignaturas/Tercer Año/PDOO/Examenes/parcial1Practicas.pdf'},
+        {name: 'Parcial Practicas 2 grupo A1', path: '/Asignaturas/Tercer Año/PDOO/Examenes/parcial2Practicas.pdf'},
+        {name: 'Parcial Practicas 2 grupo A2', path: '/Asignaturas/Tercer Año/PDOO/Examenes/examenPDOOpracticas2_grupoA2.pdf'},
+        {name: 'Parcial Teoría', path: '/Asignaturas/Tercer Año/PDOO/Examenes/parcial1Teoria.pdf'}]
+        }
+        ]
+      },
+
+
+
+
+
+      
+      {
+        name: 'Econometría',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Base de Datos', path: '/Asignaturas/Tercer Año/ECO/Practicas/Trabajo/Data_Obesity.zip' },{name: ' Prácticas', path:'/Asignaturas/Tercer Año/ECO/Practicas/FCCEE/build/Practica.pdf'}, {name: 'Archivos Modelo Econométrico', path:'https://github.com/Ismael-Sallami/ModeloEconometrico'}] },
+          { name: 'Teoría', files: [{name: "Apuntes Teoría", path:'/Asignaturas/Tercer Año/ECO/Teoria/FCCEE/build/Teoria.pdf'}] },
+          { name: 'Tablas de Estadística', files: [{ name: 'Tablas', path: '/Asignaturas/Tercer Año/ECO/Teoria/Tablas Estadísticas-20241122.zip' } ] },
+          { name: 'Resúmenes', files: [{name:'Formulario', path: '/Asignaturas/Tercer Año/ECO/Formulario/FCCEE/build/Formulario.pdf'}]},
+          {name: 'Exámenes', files: [{name:'Examen de Informática-Ade Adelantado Resuelto', path: '/Asignaturas/Tercer Año/ECO/Teoria/Examenes/Examen_InfoAde_Adelantado_ECO.pdf'}]}
+        ]
+      },
+      {
+        name: 'Contabilidad Financiera I',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Relación de Ejercicios Tema 2', path: '/Asignaturas/Tercer Año/CF1/Practica/Tema2/EjerciciosPropuestos/FCCEE/build/EjPropt2.pdf'},
+          { name: 'Relación de Ejercicios Tema 3', path: '/Asignaturas/Tercer Año/CF1/Practica/Tema3/EjerciciosPropuestos/FCCEE/build/EjPropt3.pdf'},
+          { name: 'Relación de Ejercicios Tema 4', path: '/Asignaturas/Tercer Año/CF1/Practica/Tema4/EjerciciosPropuestos/FCCEE/build/EjPropT4.pdf'},
+          { name: 'Relación de Ejercicios Tema 5', path: '/Asignaturas/Tercer Año/CF1/Practica/Tema5/EjerciciosPropuestos/FCCEE/build/EjerciciosPropuestost5.pdf'},
+          { name: 'Relación de Ejercicios Tema 6', path: '/Asignaturas/Tercer Año/CF1/Practica/Tema6/EjerciciosPropuestos/FCCEE/build/EjerciciosPropuestost6.pdf'}]},
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría',  path: '/Asignaturas/Tercer Año/CF1/Teoria/FCCEE/build/Teoria.pdf' }] },
+          { name: 'Tests', files: [
+            { name: 'Test T1 del libro', path: '/Asignaturas/Tercer Año/CF1/Tests/testT1Libro.html' }, 
+            { name: 'Test T1', path: '/Asignaturas/Tercer Año/CF1/Tests/test-tema1.html' },
+            { name: 'Test T2 del libro', path: '/Asignaturas/Tercer Año/CF1/Tests/testT2Libro.html' }, 
+            { name: 'Test T2', path: '/Asignaturas/Tercer Año/CF1/Tests/testT2Libro.html' },
+            { name: 'Test T3 del libro', path: '/Asignaturas/Tercer Año/CF1/Tests/testT3Libro.html' }, 
+            { name: 'Test T4 del libro', path: '/Asignaturas/Tercer Año/CF1/Tests/testT4libro.html' },
+            { name: 'Test T5 del libro', path: '/Asignaturas/Tercer Año/CF1/Tests/testT5Libro.html' },
+            { name: 'Test T6 del libro', path: '/Asignaturas/Tercer Año/CF1/Tests/testT6Libro.html' }, 
+            { name: 'Varios Tests en formato PDF', path: 'https://github.com/ElblogdeIsmael/ElblogdeIsmael.github.io/tree/main/Asignaturas/Tercer%20A%C3%B1o/CF1/Tests/testPDF' }
+            ] },
+            {name: 'Resumenes', files: [{name:'Tema 1', path: '/Asignaturas/Tercer Año/CF1/Resumenes/Tema1/FCCEE/build/Resument1.pdf'},{name:'Tema 2', path: '/Asignaturas/Tercer Año/CF1/Resumenes/Tema2/FCCEE/build/Resument2.pdf'},{name:'Tema 3', path: '/Asignaturas/Tercer Año/CF1/Resumenes/Tema3/FCCEE/build/Resument3.pdf'},{name:'Tema 4', path: '/Asignaturas/Tercer Año/CF1/Resumenes/Tema4/FCCEE/build/Resument4.pdf'}, {name:'Tema 5', path: '/Asignaturas/Tercer Año/CF1/Resumenes/Tema5/FCCEE/build/Resument5.pdf'}, {name:'Tema 6', path: '/Asignaturas/Tercer Año/CF1/Resumenes/Tema6/FCCEE/build/Resument6.pdf'}]}
+          ]
+          }
+        );
+
+        var subjects_2 = [
+      {
+        name: 'Ingeniería de Servidores',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: '/Asignaturas/Tercer Año/IS/Practicas/ETSIIT/build/Practicas.pdf' }] },
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/IS/Teoria/ETSIIT/build/Teoria.pdf' }] },
+          { name: 'Exámenes', files: [{ name: 'Examen 1', path: '/Asignaturas/Tercer Año/IS/Examenes/Examen1.pdf' }] }
+        ]
+      },
+      {
+        name: 'Fundamentos de Ingeniería del Software',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Práctica 0', path: '/ElblogdeIsmael.github.io-main/Asignaturas/Tercer Año/FIS/Practicas/Practica-0/build/practica0_FIS.pdf' }] },
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/FIS/Teoria/ETSIIT/build/Teoria.pdf' }] },
+          { name: 'Exámenes', files: [{ name: 'Examen 1', path: '/Asignaturas/Tercer Año/FIS/Examenes/Examen1.pdf' }] }
+        ]
+      },
+      {
+        name: 'Inteligencia Artificial',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: '/Asignaturas/Tercer Año/IA/Practicas/ETSIIT/build/Practicas.pdf' }] },
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/IA/Teoria/ETSIIT/build/Teoria.pdf' }] },
+          { name: 'Exámenes', files: [{ name: 'Examen 1', path: '/Asignaturas/Tercer Año/IA/Examenes/Examen1.pdf' }] }
+        ]
+      },
+      {
+        name: 'Fundamentos de Base de Datos',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: '/Asignaturas/Tercer Año/FBD/Practicas/ETSIIT/build/Practicas.pdf' }] },
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/FBD/Teoria/ETSIIT/build/Teoria.pdf' }] },
+          { name: 'Exámenes', files: [{ name: 'Examen 1', path: '/Asignaturas/Tercer Año/FBD/Examenes/Examen1.pdf' }] }
+        ]
+      },
+      {
+        name: 'Contabilidad Financiera II',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: '/Asignaturas/Tercer Año/CF2/Practicas/ETSIIT/build/Practicas.pdf' }] },
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/CF2/Teoria/ETSIIT/build/Teoria.pdf' }] },
+          { name: 'Exámenes', files: [{ name: 'Examen 1', path: '/Asignaturas/Tercer Año/CF2/Examenes/Examen1.pdf' }] }
+        ]
+      },
+      {
+        name: 'Análisis de Operaciones',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: '/Asignaturas/Tercer Año/AO/Practicas/ETSIIT/build/Practicas.pdf' }] },
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/AO/Teoria/ETSIIT/build/Teoria.pdf' }] },
+          { name: 'Exámenes', files: [{ name: 'Examen 1', path: '/Asignaturas/Tercer Año/AO/Examenes/Examen1.pdf' }] }
+        ]
+      },
+      {
+        name: 'Métodos Cuantitativos',
+        subfolders: [
+          { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: '/Asignaturas/Tercer Año/MQ/Practicas/ETSIIT/build/Practicas.pdf' }] },
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: '/Asignaturas/Tercer Año/MQ/Teoria/ETSIIT/build/Teoria.pdf' }] },
+          { name: 'Exámenes', files: [{ name: 'Examen 1', path: '/Asignaturas/Tercer Año/MQ/Examenes/Examen1.pdf' }] }
+        ]
+      }
+    ];
+
+
+ 
+
+    function createFileList(files) {
+      var fileList = document.createElement('ul');
+      files.forEach(function(file) {
+        var fileLi = document.createElement('li');
+        var fileA = document.createElement('a');
+        fileA.textContent = file.name;
+        fileA.href = file.path;
+        fileLi.appendChild(fileA);
+        fileList.appendChild(fileLi);
+      });
+      return fileList;
+    }
+
+    function createSubfolderList(subfolders) {
+      var subfolderList = document.createElement('ul');
+      subfolders.forEach(function(subfolder) {
+        var subfolderLi = document.createElement('li');
+        var subfolderA = document.createElement('a');
+        subfolderA.textContent = subfolder.name;
+        subfolderA.href = '#';
+        subfolderA.addEventListener('click', function(e) {
+          e.preventDefault();
+          var nestedList = subfolderLi.querySelector('ul');
+          if (nestedList) {
+            nestedList.classList.toggle('hidden');
+          } else {
+            if (subfolder.files) {
+              nestedList = createFileList(subfolder.files);
+            } else if (subfolder.subfolders) {
+              nestedList = createSubfolderList(subfolder.subfolders);
+            }
+            subfolderLi.appendChild(nestedList);
+          }
+        });
+        subfolderLi.appendChild(subfolderA);
+        subfolderList.appendChild(subfolderLi);
+      });
+      return subfolderList;
+    }
+
+    var subjectsList = document.getElementById('subjects');
+    subjects.forEach(function(subject) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.textContent = subject.name;
+      a.href = '#';
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        var subfolderList = li.querySelector('ul');
+        if (subfolderList) {
+          subfolderList.classList.toggle('hidden');
+        } else {
+          subfolderList = createSubfolderList(subject.subfolders);
+          li.appendChild(subfolderList);
+        }
+      });
+
+      li.appendChild(a);
+      subjectsList.appendChild(li);
+    });
+
+    <!-- subjects 2 -->
+
+    function createFileList(files) {
+      var fileList = document.createElement('ul');
+      files.forEach(function(file) {
+        var fileLi = document.createElement('li');
+        var fileA = document.createElement('a');
+        fileA.textContent = file.name;
+        fileA.href = file.path;
+        fileLi.appendChild(fileA);
+        fileList.appendChild(fileLi);
+      });
+      return fileList;
+    }
+
+    function createSubfolderList(subfolders) {
+      var subfolderList = document.createElement('ul');
+      subfolders.forEach(function(subfolder) {
+        var subfolderLi = document.createElement('li');
+        var subfolderA = document.createElement('a');
+        subfolderA.textContent = subfolder.name;
+        subfolderA.href = '#';
+        subfolderA.addEventListener('click', function(e) {
+          e.preventDefault();
+          var nestedList = subfolderLi.querySelector('ul');
+          if (nestedList) {
+            nestedList.classList.toggle('hidden');
+          } else {
+            if (subfolder.files) {
+              nestedList = createFileList(subfolder.files);
+            } else if (subfolder.subfolders) {
+              nestedList = createSubfolderList(subfolder.subfolders);
+            }
+            subfolderLi.appendChild(nestedList);
+          }
+        });
+        subfolderLi.appendChild(subfolderA);
+        subfolderList.appendChild(subfolderLi);
+      });
+      return subfolderList;
+    }
+
+    var subjects_2List = document.getElementById('subjects_2');
+    subjects_2.forEach(function(subject) {
+      var li = document.createElement('li');
+      var a = document.createElement('a');
+      a.textContent = subject.name;
+      a.href = '#';
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        var subfolderList = li.querySelector('ul');
+        if (subfolderList) {
+          subfolderList.classList.toggle('hidden');
+        } else {
+          subfolderList = createSubfolderList(subject.subfolders);
+          li.appendChild(subfolderList);
+        }
+      });
+
+      li.appendChild(a);
+      subjects_2List.appendChild(li);
+    });
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

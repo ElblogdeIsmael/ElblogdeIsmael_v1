@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El blog de Ismael Sallami - Estudiante de la UGR - Informática + ADE </title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logoI.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <!--<figure class="avatar-box">
+          <img src="./assets/images/ismael.jpeg" alt="Ismael Sallami" width="80">
+        </figure>-->
+
+        <div class="info-content">
+          <h1 class="name" title="El blog de Ismael Sallami">El blog <br>de Ismael Sallami</h1>
+          <!-- <p class="title">Estudiante del Doble Grado de Ingeniería Informática y Administración y Dirección de Empresas - UGR</p> -->
+        </div>
+
+        <style>
+          .info-content {
+            text-align: center;
+            padding: 10px;
+          }
+
+          .name {
+            font-size: 2em;
+            line-height: 1.2;
+          }
+
+          .title {
+            font-size: 1em;
+            line-height: 1.5;
+          }
+
+          @media (min-width: 600px) {
+            .name {
+              font-size: 2.5em;
+            }
+
+            .title {
+              font-size: 1.2em;
+            }
+          }
+
+          @media (min-width: 900px) {
+            .name {
+              font-size: 3em;
+            }
+
+            .title {
+              font-size: 0.5em;
+            }
+          }
+        </style>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto: ism350zsallami@gmail.com" class="contact-link"> ism350zsallami@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+34 661 10 08 90" class="contact-link">+34 661 10 08 90</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2004-07-11">November 7, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Granada, Spain</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <!-- <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li> -->
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/ismaael_23_/?hl=es" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Degree</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>My way</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Works</button>
+          </li> -->
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about
+        active" data-page="about">
+
+        <header>
+            <!-- añadir una linea vacia para que se vea bien el titulo -->
+            <br>
+            <br>
+
+            <h2 class="h2 article-title break-word">Estudiante del Doble Grado <br> de Ingeniería Informática y <br> Administración y Dirección <br>de Empresas - UGR</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Este sitio web ha sido diseñado como un espacio para compartir y organizar diversos proyectos desarrollados a lo largo de mi trayectoria universitaria. En la página se encuentra un botón denominado "Degree", donde iré publicando recursos relacionados con mi doble grado. Estos recursos incluyen apuntes, tests en formato HTML, proyectos en distintos lenguajes de programación, fichas contables, prácticas vinculadas a Administración y Dirección de Empresas, entre otros materiales académicos.
+          </p>
+        
+          <p>
+            Cabe destacar que la creación de esta página no tiene un propósito económico. Su principal objetivo es proporcionar apoyo a otros estudiantes que puedan encontrarse en situaciones similares y necesiten apuntes, ejercicios u otros recursos. Si alguien desea colaborar con la página, puede hacerlo enviando un correo electrónico a: 
+            <br>
+            <a href="mailto:ism350zsallami@gmail.com">ism350zsallami@gmail.com</a>
+            <br>
+            Año de comienzo (puesta en funcionamiento de la web): 2024.
+            <br>
+            Es importante mencionar que la información publicada se recopila de diversas fuentes. Si alguien identifica contenido incorrecto o considera que debe modificarse, puede contactarme para realizar los ajustes necesarios. Algunos materiales pueden haberse obtenido de plataformas como Wuolah, otras páginas web o libros, lo que podría dar lugar a similitudes en los apuntes o códigos. Si alguien reconoce contenido propio y desea que sea eliminado, no dude en comunicármelo para proceder con su eliminación. 
+          </p>
+        
+          <p>
+            Aunque este sitio es gestionado únicamente por mí, hago un esfuerzo por citar las fuentes de la información utilizada y limitar el uso de contenido externo en la medida de lo posible. Sin embargo, en caso de que utilice materiales ajenos que sean de utilidad, trataré de garantizar su correcta atribución. Este espacio pretende ser una herramienta colaborativa y en constante mejora, por lo que cualquier sugerencia o corrección será bienvenida.
+          </p>
+        </section>
+        
+
+        <!--
+          - service
+        -->
+
+        <!-- <section class="service">
+
+          <h3 class="h3 service-title">What I want in the near future</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/digitalmedicine.jpg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Digital Medicine</h4>
+
+                <p class="service-item-text">
+                  Specializing in digital medicine involves leveraging technology and data to enhance healthcare delivery, diagnosis, and treatment, ultimately improving patient outcomes and transforming traditional medical practices through innovation and digital solutions.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/data.webp" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+
+                <p class="service-item-text">
+                  Specializing in data science enables unraveling hidden patterns in data to make informed decisions, transforming information into actionable knowledge, and playing a crucial role in innovation and decision-making across diverse fields.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Computer.webp" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Computer Engineer</h4>
+
+                <p class="service-item-text">
+                  Specializing in computer engineering equips individuals to design and optimize computing systems, ranging from hardware to software, fostering innovation in technology and addressing complex challenges in the digital realm.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/ia.jpg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Artificial Intelligence</h4>
+
+                <p class="service-item-text">
+                  Specializing in artificial intelligence involves developing algorithms and models that enable machines to simulate human-like intelligence, leading to advancements in automation, problem-solving, and decision-making across various industries.                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        
+<!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Future Masters</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/datascience.jpg" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Data Science</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/artificial.jpg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Artificial Intelligence</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            
+
+          </section>
+
+        </div>
+
+        <section class="github-link">
+          <h3 class="h3">Link to my GitHub</h3>
+          <a href="https://github.com/Ismael-Sallami" target="_blank" class="github-btn">
+            <ion-icon name="logo-github"></ion-icon>
+            <span>Visit My GitHub</span>
+          </a>
+        </section>
+
+        <!-- <section class="github-link">
+          <h3 class="h3">Link to my Blog</h3>
+          <a href="https://elblogdeismael.github.io" target="_blank" class="github-btn">
+            <ion-icon name="globe-outline"></ion-icon>
+            <span>Visit My Blog</span>
+          </a>
+        </section> -->
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- APARTADO DE LICENCIA -->
+    <section class="license">
+      <header>
+        <h2 class="h2 article-title">Licencia</h2>
+      </header>
+      <section class="license-text">
+        <p>
+          Este trabajo está licenciado bajo una 
+          <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Licencia Creative Commons Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional</a>
+        </p>
+        <p>
+          Usted es libre de:
+          <ul>
+            <li>Compartir — copiar y redistribuir el material en cualquier medio o formato</li>
+          </ul>
+        </p>
+        <p>
+          Bajo los siguientes términos:
+          <ul>
+            <li><strong>Reconocimiento</strong> — Debe otorgar el crédito adecuado, proporcionar un enlace a la licencia e indicar si se han realizado cambios. Puede hacerlo de cualquier manera razonable, pero no de una manera que sugiera que tiene el apoyo del licenciante o lo recibe por el uso que hace.</li>
+            <li><strong>NoComercial</strong> — No puede utilizar el material para fines comerciales.</li>
+            <li><strong>SinObraDerivada</strong> — Si remezcla, transforma o crea a partir del material, no puede distribuir el material modificado.</li>
+          </ul>
+
+            <figure style="text-align: center; margin-top: 20px;"></figure>
+            <img src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png" alt="Licencia Creative Commons" style="width: 120px;">
+            </figure>
+        </p>
+      </section>
+      <style>
+        .license {
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
+          margin: 20px 0;
+          border-radius: 10px;
+        }
+
+        .license-text {
+          font-size: 1em;
+          line-height: 1.5;
+        }
+
+        .license-text ul {
+          list-style-type: disc;
+          padding-left: 20px;
+        }
+
+        .license-text a {
+          color: #3dbce2;
+          text-decoration: none;
+        }
+
+        .license-text a:hover {
+          text-decoration: underline;
+        }
+      </style>
+
+      
+    </section>
+
+    <style>
+      .note {
+        background-color: #333;
+        border-left: 4px solid #3dbce2;
+        padding: 10px 20px;
+        margin: 20px 0;
+        font-style: italic;
+        color: #fff;
+      }
+    </style>
+    <section class="note">
+      <p>
+        Nota: La idea de realizar este blog con información sobre las asignaturas cursadas durante la carrera surgió en 2024, durante el tercer curso. Por lo tanto, no hay contenido disponible para los cursos de primero y segundo.
+      </p>
+    </section>
+
+        
+
+      </article> 
+      <!-- el article es de About -->
+      
+      
+      <article class="Degree" data-page="degree">
+        <header>
+          <h2 class="h2 article-title">Doble Grado - Ingeniería Informática + ADE</h2>
+        </header>
+        <section class="menu">
+          <ul class="subject-list"></ul>
+            <li class="subject-item">
+              <a href="Asignaturas/Tercer Año/index.html" class="subject-link">
+                <div class="subject-card">
+                  <h3>3º Curso</h3>
+                </div>
+              </a>
+            </li>
+            <li class="subject-item">
+              <a href="Otros/vacio_sineditar.html" class="subject-link">
+                <div class="subject-card">
+                  <h3>4º Curso</h3>
+                </div>
+              </a>
+            </li>
+            <li class="subject-item">
+              <a href="Otros/vacio_sineditar.html" class="subject-link">
+                <div class="subject-card">
+                  <h3>5º Curso</h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <style>
+          .menu {
+            padding: 20px;
+          }
+
+          .subject-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+          }
+
+          .subject-item {
+            flex: 1 1 calc(45% - 30px);
+            max-width: calc(45% - 30px);
+            transition: transform 0.3s, box-shadow 0.3s;
+          }
+
+          @media (min-width: 600px) {
+            .subject-item {
+              flex: 1 1 calc(30% - 30px);
+              max-width: calc(30% - 30px);
+            }
+          }
+
+          @media (min-width: 900px) {
+            .subject-item {
+              flex: 1 1 calc(22% - 30px);
+              max-width: calc(22% - 30px);
+            }
+          }
+
+          .subject-link {
+            text-decoration: none;
+            color: inherit;
+          }
+
+          .subject-card {
+            background-color: #3dbce2;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+          }
+
+          .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: #35a1c9;
+          }
+
+          .subject-card h3 {
+            margin: 0;
+            font-size: 1.2em;
+          }
+        </style>
+      </article>
+
+      
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="my way" data-page="my way">
+
+        <header>
+          <h2 class="h2 article-title">My student path</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Granada</h4>
+
+              <span>2021 — 2026</span>
+
+              <p class="timeline-text">
+                I am waited that I study in University at the Granada the five years, due to it is what 
+                my double degree last.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> I.E.S Alquivira</h4>
+
+              <span>2015 — 2021</span>
+
+              <p class="timeline-text">
+                This is one high school that there is in mu village.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Princesa Sofia</h4>
+
+              <span>2009 — 2019</span>
+
+              <p class="timeline-text">
+                This is my old school where I pass my primary formation.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Now I dont have experience, but wait a little time. If you are interested on me, contact with me!</h4>
+
+              <span></span>
+
+              <p class="timeline-text">
+              </p>
+
+            </li>
+
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming with C++</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Other Knowledge such as Mathematics, Medicine, Algorithm, Latex and other</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Work in team</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">English</h5>
+                <data value="50">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="works" data-page="works">
+
+        <header>
+          <h2 class="h2 article-title">My Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Github</button>
+            </li>
+
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>GitHub</button>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="github">
+              <a href="https://github.com/Ismael-Sallami/TDA-Imagen" target="_blank">
+                <figure class="project-img">
+                  <img src="./assets/images/inicio.png" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">TDA-Image</h3>
+                <p class="project-category">GitHub</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="github">
+              <a href="https://github.com/Ismael-Sallami/Air-lines-Project" target="_blank">
+                <figure class="project-img">
+                  <img src="./assets/images/fondo.png" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Air-lines</h3>
+                <p class="project-category">GitHub</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="github">
+              <a href="https://github.com/Ismael-Sallami/Course-of-python" target="_blank">
+                <figure class="project-img">
+                  <img src="./assets/images/WhatsApp Image 2024-02-15 at 18.48.18(1).jpeg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Course-of-python</h3>
+                <p class="project-category">GitHub</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="github">
+              <a href="https://github.com/Ismael-Sallami/Intro-Machine-Learning" target="_blank">
+                <figure class="project-img">
+                  <img src="./assets/images/WhatsApp Image 2024-02-15 at 18.47.56.jpeg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Intro-to-Machine-Learning</h3>
+                <p class="project-category">GitHub</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="github">
+              <a href="https://github.com/Ismael-Sallami/Macroeconomia-ejercicios" target="_blank">
+                <figure class="project-img">
+                  <img src="./assets/images/WhatsApp Image 2024-02-15 at 18.47.38.jpeg" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Macroeconomy-Exercises</h3>
+                <p class="project-category">GitHub</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="github">
+              <a href="https://github.com/Ismael-Sallami/Web-development" target="_blank">
+                <figure class="project-img">
+                  <img src="./assets/images/image.png" alt="finance" loading="lazy">
+                </figure>
+                <h3 class="project-title">Web-development</h3>
+                <p class="project-category">GitHub</p>
+              </a>
+            </li>
+            
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
+
+<!-- Estilo de la lista colorida de asignaturas:
+ 
+
+
+<style>
+        .subject-list {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 0;
+          list-style: none;
+        }
+
+        .subject-item {
+          flex: 1 1 auto;
+        }
+
+        .subject-link {
+          text-decoration: none;
+        }
+
+        .subject-card {
+          background-color: #f9f9f9;
+          color: #333;
+          padding: 15px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .subject-card:hover {
+          background-color: #f1f1f1;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .subject-card h3 {
+          margin: 0;
+          font-size: 1.2em;
+        }
+      </style>
+
+      <style>
+        .subject-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          padding: 0;
+          list-style: none;
+        }
+
+        .subject-item {
+          flex: 1 1 calc(100% - 40px);
+          max-width: calc(100% - 40px);
+        }
+
+        @media (min-width: 600px) {
+          .subject-item {
+            flex: 1 1 calc(50% - 40px);
+            max-width: calc(50% - 40px);
+          }
+        }
+
+        @media (min-width: 900px) {
+          .subject-item {
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+          }
+        }
+
+        .subject-link {
+          text-decoration: none;
+        }
+
+        .subject-card {
+          background-color: #3dbce2;
+          color: white;
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .subject-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .subject-card h3 {
+          margin: 0;
+          font-size: 1.5em;
+        }
+      </style>
+
+      <style>
+        .subject-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          padding: 0;
+          list-style: none;
+        }
+
+        .subject-item {
+          flex: 1 1 calc(100% - 40px);
+          max-width: calc(100% - 40px);
+        }
+
+        @media (min-width: 600px) {
+          .subject-item {
+            flex: 1 1 calc(50% - 40px);
+            max-width: calc(50% - 40px);
+          }
+        }
+
+        @media (min-width: 900px) {
+          .subject-item {
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+          }
+        }
+
+        .subject-link {
+          text-decoration: none;
+        }
+
+        .subject-card {
+          background-color: #3dbce2;
+          color: white;
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .subject-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .subject-card h3 {
+          margin: 0;
+          font-size: 1.5em;
+        }
+      </style>
+
+      <style>
+        .subject-list {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          justify-content: center;
+          padding: 0;
+          list-style: none;
+        }
+
+        .subject-item {
+          flex: 1 1 calc(33.333% - 40px);
+          max-width: calc(33.333% - 40px);
+        }
+
+        .subject-link {
+          text-decoration: none;
+        }
+
+        .subject-card {
+          background-color: #95c7f0;
+          color: white;
+          padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .subject-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .subject-card h3 {
+          margin: 0;
+          font-size: 1.5em;
+        }
+      </style>
+
+
+-->
