@@ -2,3 +2,4 @@
 \contentsline {section}{\numberline {1}Diagrama de casos de uso}{3}{section.1}%
 \contentsline {section}{\numberline {2}Modelo Conceptual}{4}{section.2}%
 \contentsline {section}{\numberline {3}Diagrama de secuencia del sistema}{5}{section.3}%
+\contentsline {section}{\numberline {4}Diagrama de Comunicación}{6}{section.4}%
