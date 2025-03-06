@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1741008491.93261 "/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer Año/FIS/Practicas/Practica-0/practica0_FIS.tex" "build/practica0_FIS.pdf" "practica0_FIS" 1741008493.255 0
-  "/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer Año/FIS/Practicas/Practica-0/practica0_FIS.tex" 1741008490.23401 3999 e290241dac12a947c3b43b3415b2d963 ""
+["pdflatex"] 1741277688.96604 "/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer Año/FIS/Practicas/Practica-0/practica0_FIS.tex" "build/practica0_FIS.pdf" "practica0_FIS" 1741277690.25114 0
+  "/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer Año/FIS/Practicas/Practica-0/practica0_FIS.tex" 1741277688.85208 3921 f4350489a86a14acbbe21df347908f5a ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1736268207 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1736268207 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1736268207 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -97,15 +97,15 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1736268207 41588 b43d3e860a4f94167ee1e725ff526a72 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1740853995.78477 5051269 efdf30736851f282b377fa9c098cc0bb ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1740854104 7232992 4dc63708d60f80701bcbfe62290c7a41 ""
-  "Diagrama_Comunicacion.jpg" 1741008133.44184 82721 8f3edfde898c2cc69e8efe1ddee4d109 ""
+  "Diagrama_Comunicacion.jpg" 1741277593.02155 82862 a5b76bd40cc5404c737c6ffa974f9658 ""
   "Diagrama_de_casos_de_uso.jpg" 1740859426.83433 63838 41f9e68d2b10cee88932228d9bd44d42 ""
   "Modelo_Conceptual.jpg" 1740953459.67955 68537 239b57afcea0400e2863f81d89dece35 ""
-  "Secuencia_Sistema.jpg" 1740956162.83281 35754 be284346074fa49501a1caf6afb60ee5 ""
-  "build/practica0_FIS.aux" 1741008493.21202 1816 3b97b3374a928338ac22087d495b2d99 "pdflatex"
-  "build/practica0_FIS.out" 1741008493.21302 698 b9f113477dfe9292a889140d6b5d5a65 "pdflatex"
-  "build/practica0_FIS.toc" 1741008493.21302 353 2afb544d0ef34b88a8dd5f0fb5b6b812 "pdflatex"
+  "Secuencia_Sistema.jpg" 1741277391.51941 36007 2f6de8b813fe30cd2a68246ad130de14 ""
+  "build/practica0_FIS.aux" 1741277690.21106 1816 3b97b3374a928338ac22087d495b2d99 "pdflatex"
+  "build/practica0_FIS.out" 1741277690.21204 698 b9f113477dfe9292a889140d6b5d5a65 "pdflatex"
+  "build/practica0_FIS.toc" 1741277690.21204 353 2afb544d0ef34b88a8dd5f0fb5b6b812 "pdflatex"
   "images/logo_ugr.png" 1740854414.52777 256624 daf92af884079233935592f2ae5a7396 ""
-  "practica0_FIS.tex" 1741008490.23401 3999 e290241dac12a947c3b43b3415b2d963 ""
+  "practica0_FIS.tex" 1741277688.85208 3921 f4350489a86a14acbbe21df347908f5a ""
   (generated)
   "build/practica0_FIS.aux"
   "build/practica0_FIS.log"

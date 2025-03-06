@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.1)  3 MAR 2025 14:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.1)  6 MAR 2025 17:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -461,19 +461,29 @@ LaTeX Info: Redefining \% on input line 1.
 File: Diagrama_de_casos_de_uso.jpg Graphic file (type jpg)
 <use Diagrama_de_casos_de_uso.jpg>
 Package pdftex.def Info: Diagrama_de_casos_de_uso.jpg  used on input line 81.
-(pdftex.def)             Requested size: 426.79135pt x 341.71017pt.
- [3 <./Diagrama_de_casos_de_uso.jpg>]
+(pdftex.def)             Requested size: 469.47308pt x 375.8835pt.
+
+Overfull \hbox (42.68173pt too wide) in paragraph at lines 81--82
+ [][] 
+ []
+
+[3 <./Diagrama_de_casos_de_uso.jpg>]
 <Modelo_Conceptual.jpg, id=46, 999.735pt x 868.24374pt>
 File: Modelo_Conceptual.jpg Graphic file (type jpg)
 <use Modelo_Conceptual.jpg>
 Package pdftex.def Info: Modelo_Conceptual.jpg  used on input line 92.
-(pdftex.def)             Requested size: 426.79135pt x 370.66138pt.
- [4 <./Modelo_Conceptual.jpg>]
-<Secuencia_Sistema.jpg, id=52, 659.46375pt x 488.82625pt>
+(pdftex.def)             Requested size: 469.47308pt x 407.73016pt.
+
+Overfull \hbox (42.68173pt too wide) in paragraph at lines 92--93
+ [][] 
+ []
+
+[4 <./Modelo_Conceptual.jpg>]
+<Secuencia_Sistema.jpg, id=52, 658.46pt x 488.82625pt>
 File: Secuencia_Sistema.jpg Graphic file (type jpg)
 <use Secuencia_Sistema.jpg>
 Package pdftex.def Info: Secuencia_Sistema.jpg  used on input line 104.
-(pdftex.def)             Requested size: 426.79135pt x 316.36832pt.
+(pdftex.def)             Requested size: 426.79135pt x 316.84567pt.
  [5 <./Secuencia_Sistema.jpg>]
 <Diagrama_Comunicacion.jpg, id=58, 789.95125pt x 1054.94125pt>
 File: Diagrama_Comunicacion.jpg Graphic file (type jpg)
@@ -503,9 +513,9 @@ Here is how much of TeX's memory you used:
  35966 multiletter control sequences out of 15000+600000
  567826 words of font info for 74 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
- 75i,12n,79p,485b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,410b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on build/practica0_FIS.pdf (7 pages, 583212 bytes).
+Output written on build/practica0_FIS.pdf (7 pages, 582927 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
