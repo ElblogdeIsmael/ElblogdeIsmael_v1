@@ -1,3 +1,0 @@
-- Podemos añadir la documentación en el formato pdf para darle más cohesión al ejercicio, en mi caso lo haré con latex.
-
-
