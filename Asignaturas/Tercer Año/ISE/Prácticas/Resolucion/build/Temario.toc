@@ -23,3 +23,6 @@
 \contentsline {subsection}{\numberline {1.7.2}Problema 2: Montar y trasladar /var al nuevo volumen}{11}{subsection.1.7.2}%
 \contentsline {section}{\numberline {1.8}Interpretación de \texttt {lsblk}}{12}{section.1.8}%
 \contentsline {part}{II\hspace {1em}Prácticas}{13}{part.2}%
+\contentsline {chapter}{\numberline {2}Bloque 1}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Ejercicio 1 Opcional}{15}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Solución}{15}{subsection.2.1.1}%
