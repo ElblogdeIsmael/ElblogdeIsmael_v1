@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  8 MAR 2025 18:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  9 MAR 2025 12:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7,19 +7,20 @@ entering extended mode
 (/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer AÃ±o/IA/Practicas/Temario/Temario.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
-(/usr/share/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+(/usr/share/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count188
-\c@section=\count189
-\c@subsection=\count190
-\c@subsubsection=\count191
-\c@paragraph=\count192
-\c@subparagraph=\count193
-\c@figure=\count194
-\c@table=\count195
+\c@chapter=\count189
+\c@section=\count190
+\c@subsection=\count191
+\c@subsubsection=\count192
+\c@paragraph=\count193
+\c@subparagraph=\count194
+\c@figure=\count195
+\c@table=\count196
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \bibindent=\dimen140
@@ -29,16 +30,16 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@posthook=\toks18
 ) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2024/02/07 v24.2 The Babel package
-\babel@savecnt=\count196
+\babel@savecnt=\count197
 \U@D=\dimen141
 \l@unhyphenated=\language31
  (/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count197
+\bbl@dirlevel=\count198
  (/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks19
-\es@quotdepth=\count198
+\es@quotdepth=\count199
 Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
@@ -65,14 +66,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count199
+\inf@bad=\count266
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count266
-\leftroot@=\count267
+\uproot@=\count267
+\leftroot@=\count268
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count268
-\DOTSCASE@=\count269
+\classnum@=\count269
+\DOTSCASE@=\count270
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -85,20 +86,20 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen144
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count270
+\macc@depth=\count271
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count271
+\c@MaxMatrixCols=\count272
 \dotsspace@=\muskip16
-\c@parentequation=\count272
-\dspbrk@lvl=\count273
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
 \tag@help=\toks21
-\row@=\count274
-\column@=\count275
-\maxfields@=\count276
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
 \andhelp@=\toks22
 \eqnshift@=\dimen145
 \alignsep@=\dimen146
@@ -176,14 +177,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count277
+\c@section@level=\count278
 ) (/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count278
+\etb@tempcnta=\count279
 )
 \@linkdim=\dimen153
-\Hy@linkcounter=\count279
-\Hy@pagecounter=\count280
+\Hy@linkcounter=\count280
+\Hy@pagecounter=\count281
  (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -191,7 +192,7 @@ Now handling font encoding PD1 ...
 ) (/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count281
+\Hy@SavedSpaceFactor=\count282
  (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -204,7 +205,7 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count282
+\c@Hy@tempcnt=\count283
  (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -216,7 +217,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count283
+\Fld@menulength=\count284
 \Field@Width=\dimen155
 \Fld@charsize=\dimen156
 Package hyperref Info: Hyper figures OFF on input line 6063.
@@ -230,9 +231,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count284
-\c@Item=\count285
-\c@Hfootnote=\count286
+\Hy@abspage=\count285
+\c@Item=\count286
+\c@Hfootnote=\count287
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -241,8 +242,8 @@ File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count287
-\c@bookmark@seq@number=\count288
+\Fld@listcount=\count288
+\c@bookmark@seq@number=\count289
  (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -256,9 +257,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count289
-\Gm@cntv=\count290
-\c@Gm@tempcnt=\count291
+\Gm@cnth=\count290
+\Gm@cntv=\count291
+\c@Gm@tempcnt=\count292
 \Gm@bindingoffset=\dimen157
 \Gm@wd@mp=\dimen158
 \Gm@odd@mp=\dimen159
@@ -302,12 +303,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen177
 \cmidrulekern=\dimen178
 \defaultaddspace=\dimen179
-\@cmidla=\count292
-\@cmidlb=\count293
+\@cmidla=\count293
+\@cmidlb=\count294
 \@aboverulesep=\dimen180
 \@belowrulesep=\dimen181
-\@thisruleclass=\count294
-\@lastruleclass=\count295
+\@thisruleclass=\count295
+\@lastruleclass=\count296
 \@thisrulewidth=\dimen182
 ) (/usr/share/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
@@ -323,8 +324,8 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen190
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count296
-\c@continuedfloat=\count297
+\c@caption@flags=\count297
+\c@continuedfloat=\count298
 Package caption Info: hyperref package is loaded.
 ) (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
@@ -332,18 +333,18 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen191
 \enit@toks=\toks28
 \enit@inbox=\box54
-\enit@count@id=\count298
-\enitdp@description=\count299
+\enit@count@id=\count299
+\enitdp@description=\count300
 ) (/usr/share/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count300
+\c@float@type=\count301
 \float@exts=\toks29
 \float@box=\box55
 \@float@everytoks=\toks30
 \@floatcapt=\box56
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count301
+\l__color_backend_stack_int=\count302
 \l__pdf_internal_box=\box57
 ) (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
@@ -373,16 +374,16 @@ LaTeX Info: Redefining \. on input line 52.
 LaTeX Info: Redefining \% on input line 52.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
+\scratchcounter=\count303
 \scratchdimen=\dimen192
 \scratchbox=\box58
-\nofMPsegments=\count303
-\nofMParguments=\count304
+\nofMPsegments=\count304
+\nofMParguments=\count305
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count305
+\MPscratchCnt=\count306
 \MPscratchDim=\dimen193
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
 \everyMPtoPDFconversion=\toks32
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -403,7 +404,7 @@ Package hyperref Info: Link coloring OFF on input line 52.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: twoside 
 * h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
@@ -412,127 +413,130 @@ Package hyperref Info: Link coloring OFF on input line 52.
 * \textheight=702.78308pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-38.1381pt
+* \topmargin=-33.0119pt
 * \headheight=14.49998pt
-* \headsep=25.0pt
+* \headsep=19.8738pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=35.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 56.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 56.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 59.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-<images/logo_ugr.png, id=16, 508.17854pt x 508.17854pt>
-File: images/logo_ugr.png Graphic file (type png)
-<use images/logo_ugr.png>
-Package pdftex.def Info: images/logo_ugr.png  used on input line 57.
-(pdftex.def)             Requested size: 213.39568pt x 213.39476pt.
- [1
+) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./images/logo_ugr.png
 
-pdfTeX warning: pdflatex (file ./images/logo_ugr.png): large interlaced PNG might cause out of memory (use non-interlaced PNG to fix this)
->] (build/Temario.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2
+
+] (build/Temario.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@toc=\write4
 \openout4 = `Temario.toc'.
 
- [2] [3{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+ [3] [4
+
+]
+Cap\'{\i }tulo 1.
+(./Capitulos/Practica1.tex [5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 []\T1/cmr/m/n/12 Google Deep-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--143
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
 []\T1/cmr/m/n/12 Suscripción
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--145
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 []\T1/cmr/m/n/12 Sesgo pro-
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 145--145
+Underfull \hbox (badness 4954) in paragraph at lines 72--72
 \T1/cmr/m/n/12 Beijing y cen-
  []
 
 
-Underfull \hbox (badness 4647) in paragraph at lines 145--145
+Underfull \hbox (badness 4647) in paragraph at lines 72--72
 \T1/cmr/m/n/12 su-ra en te-mas
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []\T1/cmr/m/n/12 Generación
  []
 
 
-Underfull \hbox (badness 5832) in paragraph at lines 147--147
+Underfull \hbox (badness 5832) in paragraph at lines 74--74
 \T1/cmr/m/n/12 de tex-to, pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--147
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 \T1/cmr/m/n/12 gra-ma-ción,
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 147--147
+Underfull \hbox (badness 4391) in paragraph at lines 74--74
 []\T1/cmr/m/n/12 Tareas es-pe-cí-fi-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 []\T1/cmr/m/n/12 Análisis mul-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 \T1/cmr/m/n/12 ti-mo-dal, in-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 \T1/cmr/m/n/12 te-gra-ción con
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
 \T1/cmr/m/n/12 ser-vi-cios de
  []
 
 
-Overfull \hbox (17.738pt too wide) in paragraph at lines 129--150
+Overfull \hbox (17.738pt too wide) in paragraph at lines 56--77
  [][] 
  []
 
-[4] [5] [6] (build/Temario.aux
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]) [7] [8
+
+] [9] (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -541,21 +545,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Temario.out' has not changed.
-(rerunfilecheck)             Checksum: D5E8D2FEF1899CBD2C7B503DF53F7DE1;316.
+(rerunfilecheck)             Checksum: 544A6C1D3042328B1DA678F6B9599625;307.
  ) 
 Here is how much of TeX's memory you used:
- 14087 strings out of 475508
- 219399 string characters out of 5782137
- 1941187 words of memory out of 5000000
- 36160 multiletter control sequences out of 15000+600000
- 573145 words of font info for 77 fonts, out of 8000000 for 9000
+ 14102 strings out of 475508
+ 219426 string characters out of 5782137
+ 1938187 words of memory out of 5000000
+ 36166 multiletter control sequences out of 15000+600000
+ 573139 words of font info for 77 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
- 75i,11n,79p,560b,463s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on build/Temario.pdf (6 pages, 456361 bytes).
+ 75i,11n,79p,592b,479s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
+Output written on build/Temario.pdf (9 pages, 185097 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 130 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
+ 19 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
