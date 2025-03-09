@@ -1,0 +1,83 @@
+
+
+% --- IA PR1 ---
+\begin{itemize}
+    \item \textbf{Agente}: recibe información del entorno, la interpreta y, en base a ello, produce una respuesta.
+    \item \textbf{Tipos de agentes}:
+    \begin{itemize}
+        \item \textbf{Reactivos}: perciben el entorno y toman decisiones concretas basadas en ello. No 'piensan' en un sentido profundo, sino que realizan operaciones con matrices, árboles de decisión y otros métodos para seleccionar una acción. Un ejemplo clásico es el ajedrez.
+
+        Para desarrollar un agente que resuelva un juego como el 8-puzzle, debemos estructurarlo de la siguiente manera:
+        \begin{itemize}
+            \item Definir el mundo en el que opera, en este caso, un tablero.
+            \item Identificar las posibles acciones en cada momento (derecha, izquierda, arriba, abajo) y encontrar un camino óptimo.
+        \end{itemize}
+
+        \item \textbf{Deliberativos}: resuelven problemas como el 8-puzzle.  
+        
+        En este caso, el agente evalúa distintas decisiones posibles y, basándose en ello, encuentra la solución del tablero si existe.  
+        Generalmente, esto se resuelve usando estructuras como árboles de búsqueda (por ejemplo, búsqueda en anchura), en los que se analizan los nodos hijos hasta encontrar la solución.  
+
+        Un ejemplo interactivo se puede ver en el siguiente enlace:  
+        \url{https://tristanpenman.com/demos/n-puzzle/}, donde la solución correcta aparece resaltada en verde.
+    \end{itemize}
+    
+    \item Una vez diseñado el plan del agente, es importante considerar que, en el mundo real, puede enfrentarse a situaciones para las que no ha sido completamente entrenado.
+    \item Algunas características clave a tener en cuenta son: determinismo, observabilidad, dinamismo del entorno, completitud del conocimiento y continuidad.
+    \item La IA ha logrado grandes avances en el desarrollo de agentes para mundos cerrados.
+\end{itemize}
+
+
+Para poder enfrentarse a los problemas, la IA debe ser capaz de adaptarse a las situaciones que encuentra en su entorno. Además, debe generalizar soluciones para casos similares basándose en experiencias previas.
+
+
+En el ámbito del aprendizaje automático, las IA se entrenan para resolver problemas para los cuales no han sido programadas explícitamente. Funcionan sin intervención humana directa. Existen agentes autónomos, que operan sin supervisión, y agentes colaborativos, como los sistemas de IA que conocemos, por ejemplo, ChatGPT y DeepSeek.
+
+
+También encontramos aplicaciones de autonomía en entornos abiertos, como el desarrollo de agentes en videojuegos como \textit{Minecraft}.
+
+
+Actualmente, una de las tendencias más populares en IA es el desarrollo de modelos generativos, como ChatGPT. 
+
+
+Estas inteligencias artificiales han sido entrenadas con enormes conjuntos de datos recopilados de internet. Durante su entrenamiento, se emplean técnicas como la eliminación de partes de un texto, obligando a la IA a predecir y completar la información faltante. Se estima que modelos como los de la familia GPT han sido entrenados con billones de parámetros, lo que representa una capacidad computacional inmensa.
+
+
+Este tipo de IA presenta tanto fortalezas como debilidades. Por ejemplo, pueden generar código de manera eficiente, pero también pueden cometer errores, lo que limita su fiabilidad en algunos contextos.
+
+\section{Prompts}
+En esta sección se nos pedía comprobar que respuesta nos daba ChatGPT a una serie de preguntas. A continuación, se muestran las preguntas y las respuestas obtenidas.
+
+\subsection*{Generar una tabla comparativa entre las ChatGPT, DeepSeek y Gemini}
+
+\begin{table}[H]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|l|p{3cm}|p{3cm}|p{3cm}|}
+        \hline
+        \textbf{Característica} & \textbf{ChatGPT} & \textbf{DeepSeek} & \textbf{Gemini} \\
+        \hline
+        \textbf{Desarrollador} & OpenAI & DeepSeek & Google DeepMind \\
+        \hline
+        \textbf{Modelo de lenguaje} & GPT-4.5 & DeepSeek-R1 & Gemini 1.0 \\
+        \hline
+        \textbf{Tamaño del modelo} & No especificado & 67 mil millones de parámetros & No especificado \\
+        \hline
+        \textbf{Entrenamiento} & Datos en múltiples idiomas & Datos en inglés y chino & Datos en múltiples idiomas \\
+        \hline
+        \textbf{Multimodalidad} & No & No & Sí \\
+        \hline
+        \textbf{Costo de uso} & Suscripción mensual & Gratuito & Gratuito \\
+        \hline
+        \textbf{Sesgo y censura} & Respuestas equilibradas & Sesgo pro-Beijing y censura en temas sensibles & Respuestas equilibradas \\
+        \hline
+        \textbf{Aplicaciones destacadas} & Generación de texto, programación, investigación & Tareas específicas, eficiencia en recursos & Análisis multimodal, integración con servicios de Google \\
+        \hline
+    \end{tabular}
+    \caption{Comparación entre ChatGPT, DeepSeek y Gemini}
+    \label{tab:comparacion_modelos}
+\end{table}
+
+\subsection{Otros casos}
+
+Se realizaron otra serie de preguntas a ChatGPT y a otras inteligencias artificiales, cosa que no voy a poner aquí porque no aporta nada y no es materia evaluable de examen.
