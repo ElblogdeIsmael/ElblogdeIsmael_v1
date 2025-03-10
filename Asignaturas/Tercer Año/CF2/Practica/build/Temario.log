@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  10 MAR 2025 10:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  10 MAR 2025 12:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -720,43 +720,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]\T1/cmr/m/n/12 Intereses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\T1/cmr/m/n/12 de-ven-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\T1/cmr/m/n/12 ga-dos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+[]\T1/cmr/m/n/12 Saldo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
+\T1/cmr/m/n/12 amor-ti-za-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+\T1/cmr/m/n/12 dien-te de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+\T1/cmr/m/n/12 amor-ti-zar
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 99--99
+[]\T1/cmr/m/n/12 01/07/2018| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 101--101
+[]\T1/cmr/m/n/12 31/12/2018| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 103--103
+[]\T1/cmr/m/n/12 31/12/2019| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 105--105
+[]\T1/cmr/m/n/12 01/07/2020| 
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 118--118
 []\T1/cmr/bx/n/12 Contabilización el
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 96--96
+Underfull \hbox (badness 3557) in paragraph at lines 118--118
 \T1/cmr/bx/n/12 01/07/2018 de la com-pra
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 109--109
-[]\T1/cmr/bx/n/12 A 31/12/2018, si pro-ce-de,
- []
-
-[6]
-Underfull \hbox (badness 1603) in paragraph at lines 122--122
+Underfull \hbox (badness 1603) in paragraph at lines 131--131
 []\T1/cmr/bx/n/12 A 31/12/2018, si pro-ce-de,
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 133--133
+Underfull \hbox (badness 1603) in paragraph at lines 144--144
+[]\T1/cmr/bx/n/12 A 31/12/2018, si pro-ce-de,
+ []
+
+
+Underfull \hbox (badness 1603) in paragraph at lines 155--155
 []\T1/cmr/bx/n/12 A 31/12/2019, si pro-ce-de,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--149
+[7{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 188--188
 []\T1/cmr/bx/n/12 Compra de los tí-tu-los
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 []\T1/cmr/m/n/12 126250 =
  []
 
-[7]) [8] [9
+[8]) [9] [10
 
-] (build/Temario.aux
+] [11] (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -768,18 +823,18 @@ Package rerunfilecheck Info: File `Temario.out' has not changed.
 (rerunfilecheck)             Checksum: 08E3D243BA578F290BDC5D5965549415;736.
  ) 
 Here is how much of TeX's memory you used:
- 24032 strings out of 475508
- 436356 string characters out of 5782137
+ 24039 strings out of 475508
+ 436435 string characters out of 5782137
  1947187 words of memory out of 5000000
- 45890 multiletter control sequences out of 15000+600000
- 572489 words of font info for 75 fonts, out of 8000000 for 9000
+ 45892 multiletter control sequences out of 15000+600000
+ 572826 words of font info for 76 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
- 83i,13n,93p,520b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,13n,93p,657b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on build/Temario.pdf (9 pages, 189970 bytes).
+Output written on build/Temario.pdf (11 pages, 197977 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 128 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
+ 181 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
