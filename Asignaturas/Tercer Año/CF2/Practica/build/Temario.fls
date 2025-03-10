@@ -292,6 +292,8 @@ OUTPUT build/Temario.toc
 INPUT ./Capitulos/tema2.tex
 INPUT ./Capitulos/tema2.tex
 INPUT Capitulos/tema2.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
+INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
 INPUT build/Temario.aux
 INPUT build/Temario.out
