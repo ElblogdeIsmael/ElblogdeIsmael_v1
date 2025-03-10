@@ -1,5 +1,10 @@
 
 \section{Ejercicio 1 Opcional}
+\begin{tcolorbox}[colback=yellow!5!white,colframe=yellow!75!black]
+    \textit{Cuando se hace referencia a la imagen X, se refiere a la imagen 2.X}
+  
+\end{tcolorbox}
+
 El alumno/a debe ser capaz de presentar un MV con la configuración descrita en este apartado. La configuración debe ser permanente, es decir, en todo caso, tras reiniciar el equipo, la configuración será la esperada.
 Para validar la configuración de red, el alumno/a debe ser capaz de:
 \begin{itemize}
@@ -174,7 +179,7 @@ Cada componente en LVM tiene una nomenclatura específica y se asocia a archivos
 \begin{itemize}
   \item \textbf{Physical Volumes}: Corresponden a dispositivos físicos, como \texttt{/dev/sda1}, \texttt{/dev/sdb1}, etc.
   \item \textbf{Volume Groups}: Se nombran según la convención establecida por el administrador, por ejemplo, \texttt{vg\_datos}.
-  \item \textbf{Logical Volumes}: Se nombran dentro de su VG correspondiente, como \texttt{/dev/vg\_datos/lv\_backup}, donde \texttt{lv\_backup} es el nombre del LV.
+  \item \textbf{Logical Volumes}: Se nombran dentro de su VG correspondiente, como \textit{/dev/vg\_datos/lv\_backup}, donde \textit{lv\_backup} es el nombre del LV.
 \end{itemize}
 
 \subsubsection{Comandos de LVM para la gestión de componentes}
@@ -250,23 +255,23 @@ La herramienta \texttt{mdadm} permite gestionar arreglos RAID en Linux. A contin
 
 \begin{itemize}
   \item Crear un RAID 0 con dos discos:
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     mdadm --create --verbose /dev/md0 --level=0 --raid-devices=2 /dev/sdX /dev/sdY
     \end{lstlisting}
   \item Crear un RAID 1 con dos discos:
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sdX /dev/sdY
     \end{lstlisting}
   \item Crear un RAID 5 con tres discos:
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/sdX /dev/sdY /dev/sdZ
     \end{lstlisting}
   \item Verificar el estado del RAID:
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     cat /proc/mdstat
     \end{lstlisting}
   \item Detener un RAID:
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     mdadm --stop /dev/md0
     \end{lstlisting}
 \end{itemize}
@@ -279,13 +284,13 @@ Para implementar eficazmente soluciones en servidores Linux, es esencial compren
 
 Los sistemas Linux operan en diferentes niveles de ejecución o \textit{runlevels}, que determinan los servicios y procesos que se ejecutan. Con la adopción de \textit{systemd}, estos niveles se denominan \textit{targets}. El modo de mantenimiento, conocido como \textit{rescue.target} o \textit{emergency.target}, es crucial para tareas de recuperación y administración del sistema. Para cambiar al modo de mantenimiento, se puede utilizar el siguiente comando:
 
-\begin{lstlisting}
+\begin{lstlisting}[style=mystyle]
 sudo systemctl isolate rescue.target
 \end{lstlisting}
 
 Para volver al modo multiusuario estándar:
 
-\begin{lstlisting}
+\begin{lstlisting}[style=mystyle]
 sudo systemctl isolate multi-user.target
 \end{lstlisting}
 
@@ -315,13 +320,13 @@ Linux soporta diversos sistemas de archivos. Algunos de los más comunes son:
 
 El montaje de sistemas de archivos permite acceder a dispositivos de almacenamiento. Para montar un dispositivo:
 
-\begin{lstlisting}
+\begin{lstlisting}[style=mystyle]
 sudo mount /dev/sdX1 /mnt/punto_de_montaje
 \end{lstlisting}
 
 Para desmontarlo:
 
-\begin{lstlisting}
+\begin{lstlisting}[style=mystyle]
 sudo umount /mnt/punto_de_montaje
 \end{lstlisting}
 
@@ -333,31 +338,31 @@ La administración de archivos en Linux se realiza mediante comandos de línea. 
 
 \begin{itemize}
   \item \texttt{cp}: Copiar archivos o directorios.
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     cp origen destino
     \end{lstlisting}
   \item \texttt{mv}: Mover o renombrar archivos o directorios.
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     mv origen destino
     \end{lstlisting}
   \item \texttt{rm}: Eliminar archivos.
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     rm archivo
     \end{lstlisting}
   \item \texttt{mkdir}: Crear un nuevo directorio.
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     mkdir nombre_del_directorio
     \end{lstlisting}
   \item \texttt{ls}: Listar el contenido de un directorio.
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     ls ruta_del_directorio
     \end{lstlisting}
   \item \texttt{cat}: Mostrar el contenido de un archivo.
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     cat archivo
     \end{lstlisting}
   \item \texttt{nano} o \texttt{vim}: Editores de texto para modificar archivos desde la terminal.
-    \begin{lstlisting}
+    \begin{lstlisting}[style=mystyle]
     nano archivo
     \end{lstlisting}
 \end{itemize}
@@ -384,6 +389,122 @@ información en el sistema y procuren la máxima disponibilidad del servicio.
 \subsubsection{Solución}
 
 Para la resolución de este ejercicio vamos a seguir lo realizado en clase. (Ver apuntes de clase correspondientes a la sección de LVM+RAID).
+
+En primer lugar creamos los discos, para ello entramos en la configuración de la máquina virtual y añadimos dos discos duros de 1GB cada uno. Una vez añadidos los discos duros, iniciamos la máquina virtual y ejecutamos el comando \texttt{lsblk} para ver los discos duros que tenemos disponibles. (Ver Figura 14).
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Bloque1/lsblk.png}
+      \caption{Resultado del comando lsblk}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Bloque1/mdadm.png}
+      \caption{Comando mdadm}
+  \end{minipage}
+\end{figure}
+
+A continuación, instalamos \textit{mdadm} con el comando \texttt{sudo dnf install -y mdadm} y creamos un RAID 1 con los dos discos duros que hemos añadido. Para ello ejecutamos el comando \texttt{sudo mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc} y vemos que se ha creado correctamente. (Ver Figura 15).
+
+Acto seguido debemos de crear un PV, VG y LV. Para ello ejecutamos los siguientes comandos (Ver Figura 16):
+\begin{itemize}
+  \item \texttt{sudo pvcreate /dev/md0}
+  \item \texttt{sudo vgcreate vg\_datos /dev/md0}
+  \item \texttt{sudo lvcreate -L 900M -n lv\_datos vg\_datos}
+\end{itemize}
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Bloque1/create.png}
+      \caption{Resultado de crear los volúmenes}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Bloque1/mkfs.png}
+      \caption{Comando mkfs}
+  \end{minipage}
+\end{figure}
+
+Ahora debemos de formatear el volumen lógico. (Ver Figura 17).
+
+A continuación, montamos (Ver Figura 18) y trasladamos la carpeta \textit{var} al nuevo volumen lógico. Para ello ejecutamos los comando que figuran en los apuntes de clase.
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Bloque1/mount.png}
+      \caption{Resultado del comando mount}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Bloque1/df.png}
+      \caption{Comando df}
+  \end{minipage}
+\end{figure}
+
+  Ejecutamos el comando \texttt{df -h} para ver que efectivamente se ha montado correctamente el volumen lógico. (Ver Figura 19).
+
+  Ejecutamos el isolate del systemctl para entrar en modo de mantenimiento y poder trasladar la carpeta \textit{var} al nuevo volumen lógico. (Ver Figura 20).
+
+  \begin{figure}[htbp]
+    \centering
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/Bloque1/isolate.png}
+        \caption{Resultado del comando systemctl isolate}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{images/Bloque1/var.png}
+        \caption{Serie de operaciones para trasladar la carpeta var}
+    \end{minipage}
+  \end{figure}
+
+Ahora debemos de trabajar con la serie de comandos que se especifican para poder mover la carpeta y que se haga de forma correcta. (Ver Figura 21).
+
+Una vez trasladad la carpeta, debemos de hacer permanentes los cambios, para ello debemos de editar el fichero \texttt{/etc/fstab} y añadir la siguiente línea (Ver Figura 22):
+
+\begin{lstlisting}[style=mystyle]
+  /dev/mapper/raid1-rvar /var ext4 defaults 0 0
+\end{lstlisting}
+
+Recargamos la configuraciones con el deamon de systemd y vemos que aparece la parte que estabamos montando (Ver Figura 23).
+
+\begin{figure}[htbp]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Bloque1/fstab.png}
+      \caption{Resultado del comando cat /etc/fstab}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/Bloque1/daemon.png}
+      \caption{Resultado del comando systemctl daemon-reload y mount}
+  \end{minipage}
+\end{figure}
+
+Y como podemos comprobar en la Figura 24, hemos conseguido trasladar la carpeta \textit{var} al nuevo volumen lógico y todo funciona correctamente.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{images/Bloque1/resultado_ipa.png}
+  \caption{Resultado final}
+\end{figure}
+
+
+
+
 
 
 
