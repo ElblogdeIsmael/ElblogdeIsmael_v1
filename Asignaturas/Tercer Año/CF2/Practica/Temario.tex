@@ -1,0 +1,125 @@
+\documentclass[a4paper,12pt]{book}
+
+% Paquetes necesarios
+\usepackage[utf8]{inputenc}   % Codificación de caracteres
+\usepackage[spanish]{babel}   % Idioma español
+\usepackage[T1]{fontenc}      % Codificación de fuentes
+\usepackage{amsmath, amssymb} % Símbolos matemáticos
+\usepackage{graphicx}         % Inclusión de gráficos
+\usepackage{cite}             % Gestión de citas
+\usepackage{hyperref}         % Enlaces y referencias
+\usepackage{geometry}         % Configuración de márgenes
+\usepackage{fancyhdr}         % Encabezados y pies de página
+\usepackage{titlesec}         % Formato de títulos
+\usepackage{booktabs}         % Tablas profesionales
+\usepackage{caption}          % Personalización de leyendas
+\usepackage{enumitem}         % Personalización de listas
+\usepackage{float}
+\usepackage{tcolorbox}
+
+
+\newcommand{\cuenta}[1]{
+    \ifnum#1=2800 2800. Amortización acumulada de investigación\fi
+    \ifnum#1=251 251. Valores representativos de deuda\fi
+    \ifnum#1=250 250. Inversiones financieras a l/p en instrumentos de patrimonio\fi
+    \ifnum#1=133 133. Ajustes en la valoración en AF a VR[PN]\fi
+    \ifnum#1=900 900. Beneficios en AF a VR[PN]\fi
+    \ifnum#1=7632 7632. Beneficios en AR a VR [PN] \fi
+    \ifnum#1=802 802. Transferencias de Beneficios en AR a VR [PN]\fi
+    \ifnum#1=766 766. Beneficios en participaciones y VRD\fi
+    \ifnum#1=800 800. Pérdidas en AR a VR[PN]\fi
+    \ifnum#1=761 761. Ingresos de valores representativos de deuda\fi
+    \ifnum#1=546 546.=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+}
+
+
+% Configuración de márgenes
+\geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
+
+% Configuración de encabezados y pies de página
+\setlength{\headheight}{14.49998pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Universidad de Granada}
+% \fancyhead[C]{Escuela Técnica Superior de Ingenierías Informática}
+\fancyhead[R]{Grado en Ingeniería Informática + ADE}
+\fancyfoot[L]{Ismael Sallami Moreno}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\today}
+
+% Formato de títulos
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+
+% Datos del documento
+\title{\textbf{Práctica Contabilidad Financiera II}}
+\author{
+    Ismael Sallami Moreno \\
+    \texttt{ism350zsallami@correo.ugr.es}
+}
+\date{
+    \vspace{1cm}
+    \begin{tabular}{rl}
+        \textbf{Asignatura:} & Contabilidad Financiera II \\
+        \textbf{Tema:} & Práctica \\
+        \textbf{Fecha:} & \today
+    \end{tabular}
+}
+
+\begin{document}
+
+% Portada
+\maketitle
+% \begin{center}
+%     \includegraphics[width=0.2\textwidth]{images/logo_ugr.png}
+% \end{center}
+\newpage
+
+% Resumen
+% \begin{abstract}
+% \noindent
+% \textbf{Resumen:} Este documento presenta los apuntes y/o resúmenes del tema que se expone que se han realizado a lo largo del curso de la asignatura de Inteligencia Artificial. En este caso, se trata de las prácticas de la asignatura.
+% \end{abstract}
+% \bigskip
+
+
+
+% Tabla de contenidos
+\tableofcontents
+\newpage
+
+\chapter{Tema 1}
+
+\input{Capitulos/tema2.tex}
+
+
+
+\newpage
+% Referencias
+\begin{thebibliography}{99}
+\bibitem{Referencia1}
+Autor(es), \emph{Título del artículo}, Nombre de la Revista, volumen(número), páginas, año.
+
+\bibitem{Referencia2}
+Autor(es), \emph{Título del libro}, Editorial, año.
+
+\bibitem{Referencia3}
+Autor(es), \emph{Título del documento}, Nombre de la Conferencia, páginas, año.
+\end{thebibliography}
+
+\end{document}
