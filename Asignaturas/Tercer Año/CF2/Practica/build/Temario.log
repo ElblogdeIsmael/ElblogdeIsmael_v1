@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  10 MAR 2025 12:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  10 MAR 2025 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -522,56 +522,82 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@temp=\box70
 \tcb@temp=\box71
 \tcb@temp=\box72
+) (/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
+ (/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen288
+\ar@mcellbox=\box73
+\extrarowheight=\dimen289
+\NC@list=\toks43
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box74
+)
+\everycr=\toks44
+\minrowclearance=\skip68
+\rownum=\count317
+) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip69
+\multirow@cntb=\count318
+\multirow@dima=\skip70
+\bigstrutjot=\dimen290
+) (/usr/share/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen291
+\c@nlinenum=\count319
+\TeXr@lab=\toks45
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count317
-\l__pdf_internal_box=\box73
+\l__color_backend_stack_int=\count320
+\l__pdf_internal_box=\box75
 ) (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `Temario.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count318
-\scratchdimen=\dimen288
-\scratchbox=\box74
-\nofMPsegments=\count319
-\nofMParguments=\count320
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count321
-\MPscratchDim=\dimen289
-\MPnumerator=\count322
-\makeMPintoPDFobject=\count323
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count321
+\scratchdimen=\dimen292
+\scratchbox=\box76
+\nofMPsegments=\count322
+\nofMParguments=\count323
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count324
+\MPscratchDim=\dimen293
+\MPnumerator=\count325
+\makeMPintoPDFobject=\count326
+\everyMPtoPDFconversion=\toks47
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 92.
  (build/Temario.out) (build/Temario.out)
 \@outlinefile=\write4
 \openout4 = `Temario.out'.
@@ -614,15 +640,15 @@ Package hyperref Info: Link coloring OFF on input line 84.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 99.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 99.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 91.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 99.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [1
@@ -637,181 +663,251 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@toc=\write5
 \openout5 = `Temario.toc'.
 
- [3] [4
+ [3]
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+
+
+Package fancyhdr Warning: \headheight is too small (14.49998pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.11859pt}.
+
+[4
 
 ]
 Cap\'{\i }tulo 1.
 (./Capitulos/tema2.tex
-Underfull \hbox (badness 4505) in paragraph at lines 7--7
-[]\T1/cmr/bx/n/12 Contabilización 01/04/2023
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+[]|\T1/cmr/m/n/12 Intereses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-[]\T1/cmr/m/n/12 5105,58 =
+Underfull \hbox (badness 10000) in paragraph at lines 17--17
+\T1/cmr/m/n/12 de-ven-ga-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-\OT1/cmr/m/n/12 98000 \OMS/cmsy/m/n/12 ^^B
+Underfull \hbox (badness 2653) in paragraph at lines 17--17
+[]|\T1/cmr/m/n/12 I. Ex-plí-ci-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
-\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 07006)[] \OMS/cmsy/m/n/12 ^^@
+Underfull \hbox (badness 4531) in paragraph at lines 17--17
+[]|\T1/cmr/m/n/12 I. im-plí-ci-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/cmr/m/n/12 1272,96 $\OMS/cmsy/m/n/12 !
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+[]|\T1/cmr/m/n/12 Coste
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\OT1/cmr/m/n/12 3727\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 03) \OMS/cmsy/m/n/12 ^^B
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 05)[] \OMS/cmsy/m/n/12 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\OT1/cmr/m/n/12 (100000 +
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-[]\T1/cmr/m/n/12 1760,23
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-\OT1/cmr/m/n/12 5105\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 58) \OMS/cmsy/m/n/12 ^^B
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 07006)[] \OMS/cmsy/m/n/12 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-\OT1/cmr/m/n/12 (98000 +
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
-Underfull \hbox (badness 1448) in paragraph at lines 50--50
-[]\T1/cmr/bx/n/12 01/04/2024 co-bro in-tere-ses
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-\OT1/cmr/m/n/12 [(99865\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 88 \OMS/cmsy/m/n/12 ^^B
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
-\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 07006)[] \OMS/cmsy/m/n/12 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-[]\T1/cmr/m/n/12 Intereses
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-\T1/cmr/m/n/12 de-ven-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-\T1/cmr/m/n/12 ga-dos
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
-[]\T1/cmr/m/n/12 Saldo
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 97--97
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 \T1/cmr/m/n/12 amor-ti-za-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Overfull \hbox (4.76277pt too wide) in paragraph at lines 19--19
+[]|\T1/cmr/m/n/12 01/04/20X3| 
+ []
+
+
+Overfull \hbox (4.76277pt too wide) in paragraph at lines 21--21
+[]|\T1/cmr/m/n/12 01/04/20X4| 
+ []
+
+
+Overfull \hbox (4.76277pt too wide) in paragraph at lines 23--23
+[]|\T1/cmr/m/n/12 01/04/20X5| 
+ []
+
+
+Overfull \hbox (4.76277pt too wide) in paragraph at lines 25--25
+[]|\T1/cmr/m/n/12 01/04/20X6| 
+ []
+
+[5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 4505) in paragraph at lines 49--49
+[]|\T1/cmr/bx/n/12 Contabilización 01/04/2023
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+[]|\T1/cmr/m/n/12 5105,58 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+\OT1/cmr/m/n/12 98000 \OMS/cmsy/m/n/12 ^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 07006)[] \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+[]|\T1/cmr/m/n/12 1272,96 $\OMS/cmsy/m/n/12 !
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+\OT1/cmr/m/n/12 3727\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 03) \OMS/cmsy/m/n/12 ^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 05)[] \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
+\OT1/cmr/m/n/12 (100000 +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+[]|\T1/cmr/m/n/12 1760,23
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+\OT1/cmr/m/n/12 5105\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 58) \OMS/cmsy/m/n/12 ^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+\OT1/cmr/m/n/12 (1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 07006)[] \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+\OT1/cmr/m/n/12 (98000 +
+ []
+
+
+Underfull \hbox (badness 1448) in paragraph at lines 95--95
+[]|\T1/cmr/bx/n/12 01/04/2024 co-bro in-tere-ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+\OT1/cmr/m/n/12 [(99865\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 88 \OMS/cmsy/m/n/12 ^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 07006)[] \OMS/cmsy/m/n/12 ^^@
+ []
+
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]|\T1/cmr/m/n/12 Intereses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\T1/cmr/m/n/12 de-ven-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\T1/cmr/m/n/12 ga-dos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+[]|\T1/cmr/m/n/12 Saldo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--144
+\T1/cmr/m/n/12 amor-ti-za-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 \T1/cmr/m/n/12 dien-te de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--98
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
 \T1/cmr/m/n/12 amor-ti-zar
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 99--99
-[]\T1/cmr/m/n/12 01/07/2018| 
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 146--146
+[]|\T1/cmr/m/n/12 01/07/2018| 
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 101--101
-[]\T1/cmr/m/n/12 31/12/2018| 
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 148--148
+[]|\T1/cmr/m/n/12 31/12/2018| 
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 103--103
-[]\T1/cmr/m/n/12 31/12/2019| 
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 150--150
+[]|\T1/cmr/m/n/12 31/12/2019| 
  []
 
 
-Overfull \hbox (1.83015pt too wide) in paragraph at lines 105--105
-[]\T1/cmr/m/n/12 01/07/2020| 
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 118--118
-[]\T1/cmr/bx/n/12 Contabilización el
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 152--152
+[]|\T1/cmr/m/n/12 01/07/2020| 
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 118--118
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]|\T1/cmr/bx/n/12 Contabilización el
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 166--166
 \T1/cmr/bx/n/12 01/07/2018 de la com-pra
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 131--131
-[]\T1/cmr/bx/n/12 A 31/12/2018, si pro-ce-de,
+Underfull \hbox (badness 1603) in paragraph at lines 180--180
+[]|\T1/cmr/bx/n/12 A 31/12/2018, si pro-ce-de,
+ []
+
+LaTeX Info: Redefining \. on input line 188.
+LaTeX Info: Redefining \% on input line 188.
+[7]
+Underfull \hbox (badness 1603) in paragraph at lines 194--194
+[]|\T1/cmr/bx/n/12 A 31/12/2018, si pro-ce-de,
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 144--144
-[]\T1/cmr/bx/n/12 A 31/12/2018, si pro-ce-de,
+Underfull \hbox (badness 1603) in paragraph at lines 206--206
+[]|\T1/cmr/bx/n/12 A 31/12/2019, si pro-ce-de,
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 155--155
-[]\T1/cmr/bx/n/12 A 31/12/2019, si pro-ce-de,
- []
-
-[7{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 188--188
-[]\T1/cmr/bx/n/12 Compra de los tí-tu-los
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+[]|\T1/cmr/bx/n/12 Compra de los tí-tu-los
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
-[]\T1/cmr/m/n/12 126250 =
+Underfull \hbox (badness 10000) in paragraph at lines 244--245
+[]|\T1/cmr/m/n/12 126250 =
  []
 
-[8]) [9] [10
+LaTeX Info: Redefining \. on input line 266.
+LaTeX Info: Redefining \% on input line 266.
+[8]
+LaTeX Info: Redefining \. on input line 313.
+LaTeX Info: Redefining \% on input line 313.
+ [9])
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+ [10] [11
 
-] [11] (build/Temario.aux
+] (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -820,21 +916,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Temario.out' has not changed.
-(rerunfilecheck)             Checksum: 08E3D243BA578F290BDC5D5965549415;736.
+(rerunfilecheck)             Checksum: C464D2B4EB0DE8D6539458508D3C828A;801.
  ) 
 Here is how much of TeX's memory you used:
- 24039 strings out of 475508
- 436435 string characters out of 5782137
- 1947187 words of memory out of 5000000
- 45892 multiletter control sequences out of 15000+600000
- 572826 words of font info for 76 fonts, out of 8000000 for 9000
+ 24432 strings out of 475508
+ 441921 string characters out of 5782137
+ 1949187 words of memory out of 5000000
+ 46264 multiletter control sequences out of 15000+600000
+ 572142 words of font info for 75 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
- 83i,13n,93p,657b,480s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on build/Temario.pdf (11 pages, 197977 bytes).
+ 83i,14n,93p,657b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
+Output written on build/Temario.pdf (11 pages, 181629 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 185 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
