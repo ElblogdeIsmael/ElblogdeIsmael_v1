@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  9 MAR 2025 19:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  10 MAR 2025 23:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -342,56 +342,80 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box55
 \@float@everytoks=\toks30
 \@floatcapt=\box56
-) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count302
+\lst@gtempboxa=\box57
+\lst@token=\toks31
+\lst@length=\count303
+\lst@currlwidth=\dimen192
+\lst@column=\count304
+\lst@pos=\count305
+\lst@lostspace=\dimen193
+\lst@width=\dimen194
+\lst@newlines=\count306
+\lst@lineno=\count307
+\lst@maxwidth=\dimen195
+ (/usr/share/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+) (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+\c@lstnumber=\count308
+\lst@skipnumbers=\count309
+\lst@framebox=\box58
+) (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/02/21 1.10 listings configuration
+))
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
+ (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count302
-\l__pdf_internal_box=\box57
+\l__color_backend_stack_int=\count310
+\l__pdf_internal_box=\box59
 ) (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `Temario.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Info: Redefining \. on input line 52.
-LaTeX Info: Redefining \% on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count303
-\scratchdimen=\dimen192
-\scratchbox=\box58
-\nofMPsegments=\count304
-\nofMParguments=\count305
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count306
-\MPscratchDim=\dimen193
-\MPnumerator=\count307
-\makeMPintoPDFobject=\count308
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count311
+\scratchdimen=\dimen196
+\scratchbox=\box60
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen197
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 54.
  (build/Temario.out) (build/Temario.out)
 \@outlinefile=\write3
 \openout3 = `Temario.out'.
@@ -433,16 +457,18 @@ Package hyperref Info: Link coloring OFF on input line 52.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
+\c@lstlisting=\count317
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 60.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 62.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ) [1
@@ -490,95 +516,9 @@ Cap\'{\i }tulo 2.
 (./Capitulos/Bloque1.tex [15
 
 ]
-<images/Bloque1/adaptador2.png, id=236, 808.01875pt x 386.44376pt>
+<images/Bloque1/adaptador2.png, id=261, 808.01875pt x 386.44376pt>
 File: images/Bloque1/adaptador2.png Graphic file (type png)
 <use images/Bloque1/adaptador2.png>
-Package pdftex.def Info: images/Bloque1/adaptador2.png  used on input line 41.
+Package pdftex.def Info: images/Bloque1/adaptador2.png  used on input line 42.
 (pdftex.def)             Requested size: 192.0548pt x 91.8521pt.
-<images/Bloque1/vbox.png, id=238, 928.46875pt x 995.72pt>
-File: images/Bloque1/vbox.png Graphic file (type png)
-<use images/Bloque1/vbox.png>
-Package pdftex.def Info: images/Bloque1/vbox.png  used on input line 47.
-(pdftex.def)             Requested size: 192.0548pt x 205.96233pt.
-<images/Bloque1/nmtui1.png, id=239, 596.2275pt x 248.93pt>
-File: images/Bloque1/nmtui1.png Graphic file (type png)
-<use images/Bloque1/nmtui1.png>
-Package pdftex.def Info: images/Bloque1/nmtui1.png  used on input line 57.
-(pdftex.def)             Requested size: 192.0548pt x 80.1834pt.
-<images/Bloque1/nmtui_2.png, id=240, 608.2725pt x 479.7925pt>
-File: images/Bloque1/nmtui_2.png Graphic file (type png)
-<use images/Bloque1/nmtui_2.png>
-Package pdftex.def Info: images/Bloque1/nmtui_2.png  used on input line 63.
-(pdftex.def)             Requested size: 192.0548pt x 151.48683pt.
-<images/Bloque1/sshd_PS1.png, id=241, 808.01875pt x 386.44376pt>
-File: images/Bloque1/sshd_PS1.png Graphic file (type png)
-<use images/Bloque1/sshd_PS1.png>
-Package pdftex.def Info: images/Bloque1/sshd_PS1.png  used on input line 72.
-(pdftex.def)             Requested size: 341.43437pt x 163.2959pt.
-<images/Bloque1/resultado_ipa.png, id=242, 812.03375pt x 408.52625pt>
-File: images/Bloque1/resultado_ipa.png Graphic file (type png)
-<use images/Bloque1/resultado_ipa.png>
-Package pdftex.def Info: images/Bloque1/resultado_ipa.png  used on input line 78.
-(pdftex.def)             Requested size: 341.43437pt x 171.76686pt.
-<images/Bloque1/ping2.png, id=243, 825.0825pt x 397.485pt>
-File: images/Bloque1/ping2.png Graphic file (type png)
-<use images/Bloque1/ping2.png>
-Package pdftex.def Info: images/Bloque1/ping2.png  used on input line 86.
-(pdftex.def)             Requested size: 341.43437pt x 164.48618pt.
-<images/Bloque1/ip_a_host.png, id=245, 873.2625pt x 657.45625pt>
-File: images/Bloque1/ip_a_host.png Graphic file (type png)
-<use images/Bloque1/ip_a_host.png>
-Package pdftex.def Info: images/Bloque1/ip_a_host.png  used on input line 96.
-(pdftex.def)             Requested size: 192.0548pt x 144.59065pt.
-<images/Bloque1/ping_a_anfitriona.png, id=246, 537.00626pt x 208.78pt>
-File: images/Bloque1/ping_a_anfitriona.png Graphic file (type png)
-<use images/Bloque1/ping_a_anfitriona.png>
-Package pdftex.def Info: images/Bloque1/ping_a_anfitriona.png  used on input line 102.
-(pdftex.def)             Requested size: 192.0548pt x 74.66695pt.
-<images/Bloque1/ping_anf_a_mv.png, id=247, 678.535pt x 246.9225pt>
-File: images/Bloque1/ping_anf_a_mv.png Graphic file (type png)
-<use images/Bloque1/ping_anf_a_mv.png>
-Package pdftex.def Info: images/Bloque1/ping_anf_a_mv.png  used on input line 112.
-(pdftex.def)             Requested size: 192.0548pt x 69.88759pt.
-<images/Bloque1/ping_fuera.png, id=248, 521.95pt x 190.7125pt>
-File: images/Bloque1/ping_fuera.png Graphic file (type png)
-<use images/Bloque1/ping_fuera.png>
-Package pdftex.def Info: images/Bloque1/ping_fuera.png  used on input line 118.
-(pdftex.def)             Requested size: 192.0548pt x 70.17256pt.
-<images/Bloque1/ssh1.png, id=249, 883.3pt x 356.33125pt>
-File: images/Bloque1/ssh1.png Graphic file (type png)
-<use images/Bloque1/ssh1.png>
-Package pdftex.def Info: images/Bloque1/ssh1.png  used on input line 135.
-(pdftex.def)             Requested size: 192.0548pt x 77.47423pt.
-<images/Bloque1/ssh2.png, id=250, 369.38pt x 126.4725pt>
-File: images/Bloque1/ssh2.png Graphic file (type png)
-<use images/Bloque1/ssh2.png>
-Package pdftex.def Info: images/Bloque1/ssh2.png  used on input line 141.
-(pdftex.def)             Requested size: 192.0548pt x 65.75835pt.
- [16 <./images/Bloque1/adaptador2.png> <./images/Bloque1/vbox.png>] [17 <./images/Bloque1/nmtui1.png> <./images/Bloque1/nmtui_2.png> <./images/Bloque1/sshd_PS1.png> <./images/Bloque1/resultado_ipa.png>] [18 <./images/Bloque1/ping2.png> <./images/Bloque1/ip_a_host.png> <./images/Bloque1/ping_a_anfitriona.png> <./images/Bloque1/ping_anf_a_mv.png> <./images/Bloque1/ping_fuera.png>]) [19 <./images/Bloque1/ssh1.png> <./images/Bloque1/ssh2.png>] (build/Temario.aux
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
-)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-02-20>
- ***********
-Package rerunfilecheck Info: File `Temario.out' has not changed.
-(rerunfilecheck)             Checksum: 8D713AF4E56C0A6453BA99926B3A9140;4826.
- ) 
-Here is how much of TeX's memory you used:
- 14313 strings out of 475508
- 224222 string characters out of 5782137
- 1941187 words of memory out of 5000000
- 36313 multiletter control sequences out of 15000+600000
- 576079 words of font info for 83 fonts, out of 8000000 for 9000
- 290 hyphenation exceptions out of 8191
- 75i,11n,79p,745b,659s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb>
-Output written on build/Temario.pdf (19 pages, 870798 bytes).
-PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 293 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
- 282 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+<images/
