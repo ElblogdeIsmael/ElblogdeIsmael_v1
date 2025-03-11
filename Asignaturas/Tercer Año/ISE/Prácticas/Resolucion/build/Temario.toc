@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {1.2}LVM y RAID}{7}{section.1.2}%
 \contentsline {section}{\numberline {1.3}LVM (Logical Volume Manager)}{7}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Directorios base en Linux}{7}{subsection.1.3.1}%
-\contentsline {section}{\numberline {1.4}RAID}{8}{section.1.4}%
+\contentsline {section}{\numberline {1.4}RAID (Redundant Array of Independent Disks)}{8}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Ventajas}{8}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Niveles de RAID}{8}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Tipos de RAID}{8}{subsection.1.4.3}%
@@ -30,7 +30,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Aspectos clave de LVM}{19}{subsection.2.2.1}%
 \contentsline {subsubsection}{Componentes de la arquitectura de almacenamiento}{19}{subsection.2.2.1}%
 \contentsline {subsubsection}{Gestión de almacenamiento con diferentes características físicas}{19}{subsection.2.2.1}%
-\contentsline {subsubsection}{Etiquetado y correspondencia con los archivos de dispositivo}{19}{subsection.2.2.1}%
+\contentsline {subsubsection}{Etiquetado y correspondencia con los archivos de dispositivo}{20}{subsection.2.2.1}%
 \contentsline {subsubsection}{Comandos de LVM para la gestión de componentes}{20}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Niveles de RAID: 0, 1 y 5}{20}{subsection.2.2.2}%
 \contentsline {subsubsection}{RAID 0}{20}{subsection.2.2.2}%
@@ -40,8 +40,8 @@
 \contentsline {subsection}{\numberline {2.2.3}Aspectos clave para la administración de servidores Linux}{22}{subsection.2.2.3}%
 \contentsline {subsubsection}{Modos de ejecución y modo de mantenimiento en un servidor Linux}{22}{subsection.2.2.3}%
 \contentsline {subsubsection}{Estructura estándar del sistema de archivos en Linux}{22}{lstnumber.-7.1}%
-\contentsline {subsubsection}{Sistemas de archivos comunes en Linux}{22}{lstnumber.-7.1}%
+\contentsline {subsubsection}{Sistemas de archivos comunes en Linux}{23}{lstnumber.-7.1}%
 \contentsline {subsubsection}{Montaje y desmontaje de volúmenes}{23}{lstnumber.-7.1}%
 \contentsline {subsubsection}{Comandos básicos para la gestión de archivos}{23}{lstnumber.-9.1}%
-\contentsline {subsection}{\numberline {2.2.4}Ejercicio Opcional}{24}{subsection.2.2.4}%
-\contentsline {subsubsection}{Solución}{24}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.4}Ejercicio Opcional}{23}{subsection.2.2.4}%
+\contentsline {subsubsection}{Solución}{23}{subsection.2.2.4}%
