@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {1.2}LVM y RAID}{7}{section.1.2}%
 \contentsline {section}{\numberline {1.3}LVM (Logical Volume Manager)}{7}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Directorios base en Linux}{7}{subsection.1.3.1}%
-\contentsline {section}{\numberline {1.4}RAID (Redundant Array of Independent Disks)}{8}{section.1.4}%
+\contentsline {section}{\numberline {1.4}RAID}{8}{section.1.4}%
 \contentsline {subsection}{\numberline {1.4.1}Ventajas}{8}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Niveles de RAID}{8}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Tipos de RAID}{8}{subsection.1.4.3}%
