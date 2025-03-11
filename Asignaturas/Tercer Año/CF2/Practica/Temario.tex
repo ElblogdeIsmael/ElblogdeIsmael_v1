@@ -23,6 +23,7 @@
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{eurosym}
+\usepackage{tikz}
 
 
 \newcommand{\cuenta}[1]{
@@ -94,10 +95,50 @@
 \begin{document}
 
 % Portada
-\maketitle
-% \begin{center}
-%     \includegraphics[width=0.2\textwidth]{images/logo_ugr.png}
-% \end{center}
+\begin{titlepage}
+    \begin{center}
+        % \vspace*{1cm}
+        
+        % \Huge
+        % \textbf{Práctica Contabilidad Financiera II}
+        \Huge \textbf{Práctica Contabilidad Financiera II} 
+        % \vspace{0.5cm}
+        % \LARGE
+        % \textbf{Ismael Sallami Moreno}\\
+        % \LARGE
+        % \texttt{ism350zsallami@correo.ugr.es}
+        % \LARGE
+        % \url{https://github.com/Ismael-Sallami}
+        
+        % \vfill
+        
+        % \Large
+        % \textbf{Universidad de Granada}
+        
+        \vspace{0.8cm}
+        
+        \begin{tikzpicture}[remember picture, overlay]
+            \node[opacity=0.2] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{portada.jpg}};
+            \node[align=center] at (current page.center) {
+                
+                \vspace{0.5cm}
+                \LARGE \textbf{Ismael Sallami Moreno} \\
+                \LARGE \texttt{ism350zsallami@correo.ugr.es} \\
+                \LARGE \url{https://ismael-sallami.github.io/} \\
+                \LARGE \url{https://elblogdeismael.github.io/} \\
+                \vspace{2cm}
+                \Large \textbf{Universidad de Granada} \\
+                \vspace{0.8cm}
+                % \Large \textbf{2025}
+            };
+        \end{tikzpicture}
+        \vfill
+        
+        \Large
+        \textbf{2025}
+        
+    \end{center}
+\end{titlepage}
 \newpage
 
 % Resumen
