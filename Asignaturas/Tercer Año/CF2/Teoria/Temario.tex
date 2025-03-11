@@ -24,12 +24,15 @@
 \setlength{\headheight}{14.49998pt}
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{Universidad de Granada}
-% \fancyhead[C]{Escuela Técnica Superior de Ingenierías Informática}
-\fancyhead[R]{Grado en Ingeniería Informática + ADE}
-\fancyfoot[L]{Ismael Sallami Moreno}
-\fancyfoot[C]{\thepage}
-\fancyfoot[R]{\today}
+%\fancyhead[L]{Universidad de Granada}
+\fancyhead[L]{\nouppercase{\chaptername \thechapter. \leftmark}}
+\fancyhead[R]{Contabilidad Financiera II}
+\fancyfoot[L]{\rule[0pt]{\textwidth}{0.2pt}\\Ismael Sallami Moreno}
+\fancyfoot[C]{\rule[0pt]{\textwidth}{0.2pt}\\\thepage}
+\fancyfoot[R]{\rule[0pt]{\textwidth}{0.2pt}\\\today}
+
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % Configura \leftmark para que solo muestre la sección
+
 
 % Formato de títulos
 \titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
