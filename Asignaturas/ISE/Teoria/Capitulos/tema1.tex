@@ -1,0 +1,80 @@
+\section{Tema 1}
+
+\subsection{Fundamentos de la Ingeniería del Software}
+
+
+\subsubsection{Disponibilidad}
+
+Se trata del porcentaje de tiempo en que el servidor está operativo, u otro tipo de componente independientemente de que si las respuestas son correctas o no.
+
+Conocemos como tiempo de inactividad a la cantidad de tiempo que el servidor no está disponible. A su vez podemos distinguir entre planificado y no planificado. La disponibilidad puede mejorarse implementando diversas alternativas como SO modulares, inserción de componentes en caliente, reemplazo de componentes y cualquier modificación que lo haga más escalable.
+
+\subsubsection{Extensibilidad-expansibilidad}
+
+Facilidad que tiene el sistema de aumentar sus recursos/características.
+
+\subsubsection{Escalabilidad}
+
+Capacidad de aumentar significativamente las características. Podemos distinguir entre la vertical y la horizontal. \textbf{Todos los sistemas que son escalables son extensibles, pero no a la inversa.}
+
+\subsubsection{Coste}
+
+Tenemos que ser capaces de poder adaptarnos al presupuesto del que disponemos. Hay diferentes manera de abaratar el coste como puede ser mediante el Cloud Computing, usar open source, reducir costes de electricidad.
+
+\subsection{Introducción a la comparación de las características entre servidores}
+
+\subsubsection{Comparación de prestaciones}
+
+Debemos de fijarnos en cuantas veces es más rápido un computador que otro o que mejora en la velocidad se da.
+
+\subsubsection{Speedup}
+
+\begin{equation}
+    S_B(A) = \frac{v_A}{v_B} = \frac{t_B}{t_A}
+\end{equation}
+Donde denotamos $S_B$ como la ganacia en velocidad de B.
+
+\subsubsection{Mejora del tiempo de ejecución de un proceso}
+
+Vamos a pensar que tenemos un procesador nomohebra, es decir, que no hay pararelismo. En la vida real es distinto, es para entender conceptos básicos.
+
+La mejor forma de mejorar el tiempo de respuesta es sustituir los componentes por otros que son más rápidos.
+
+\textbf{Nota:} En este tipo de ejercicios debemos de tener cuidado de cara al examen, y saber que significa cada elemento de la Ley de Amdahl.
+
+\subsubsection{Ley de Amdahl}
+
+\begin{equation}
+    \frac{1}{1-f + \frac{f}{k}}
+\end{equation}
+
+\subsubsection{Ganancia Máxima}
+
+Cuando $k=\infty$, por lo que ese elemento de la ecuación tiende a 0, por lo que nos queda:
+
+\begin{equation}
+    \frac{1}{1-f}
+\end{equation}
+
+Siempre nos sale mas rentable mejorar la parte que más fracción de tiempo consuma, es decir, que mayor f tenga.
+
+\textbf{Si el sistema que nos dan es el 100\% más rápido, la ganacia es del 2.}
+\\\\
+
+\begin{tcolorbox}[colback=blue!20, colframe=blue]
+\textbf{Lo más importante hasta este punto es:}
+
+\begin{itemize}
+    \item \textit{f} es la fracción de tiempo mejorable.
+    \item k es la cantidad que se mejora, si se duplica, $k=2$.
+    \item La ganacia: 
+    \begin{equation}
+        S=\frac{T_o}{T_m}
+    \end{equation}
+    Denotando como $T_o$ al tiempo de la máquina sin mejora y a $T_m$ al mejorado.
+    \item Para calcular la ganacia en pocertaje es:
+    \begin{equation}
+        S(\%) = S-1 \times 100
+    \end{equation}
+\end{itemize}
+\end{tcolorbox}

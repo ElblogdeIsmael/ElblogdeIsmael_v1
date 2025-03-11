@@ -1,0 +1,116 @@
+\documentclass[a4paper,12pt]{book}
+
+% Paquetes necesarios
+\usepackage[utf8]{inputenc}   % Codificación de caracteres
+\usepackage[spanish]{babel}   % Idioma español
+\usepackage[T1]{fontenc}      % Codificación de fuentes
+\usepackage{amsmath, amssymb} % Símbolos matemáticos
+\usepackage{graphicx}         % Inclusión de gráficos
+\usepackage{cite}             % Gestión de citas
+\usepackage{hyperref}         % Enlaces y referencias
+\usepackage{geometry}         % Configuración de márgenes
+\usepackage{fancyhdr}         % Encabezados y pies de página
+\usepackage{titlesec}         % Formato de títulos
+\usepackage{booktabs}         % Tablas profesionales
+\usepackage{caption}          % Personalización de leyendas
+\usepackage{enumitem}         % Personalización de listas
+\usepackage{float}
+\usepackage{listings}
+\usepackage{tcolorbox}
+
+%creacion de un lstlisting claro y bonito
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{white},   
+    commentstyle=\color{green},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{red},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+
+% Configuración de márgenes
+\geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
+
+% Configuración de encabezados y pies de página
+% \setlength{\headheight}{14.49998pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Universidad de Granada}
+\fancyhead[L]{\nouppercase{\chaptername~\thechapter. \leftmark}}
+
+% \fancyhead[C]{Escuela Técnica Superior de Ingenierías Informática}
+\fancyhead[R]{Ingeniería de Servidores}
+\fancyfoot[L]{\rule[0pt]{\textwidth}{0.2pt}\\Ismael Sallami Moreno}
+\fancyfoot[C]{\rule[0pt]{\textwidth}{0.2pt}\\\thepage}
+\fancyfoot[R]{\rule[0pt]{\textwidth}{0.2pt}\\\today}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % Configura \leftmark para que solo muestre la sección
+
+
+% Formato de títulos
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+
+% Datos del documento
+\title{\textbf{Prácticas Ingeniería de Servidores}}
+\author{
+    Ismael Sallami Moreno \\
+    \texttt{ism350zsallami@correo.ugr.es}
+}
+\date{
+    \vspace{1cm}
+    \begin{tabular}{rl}
+        \textbf{Asignatura:} & Ingeniería de Servidores \\
+        \textbf{Tema:} & Prácticas \\
+        \textbf{Fecha:} & \today
+    \end{tabular}
+}
+
+\begin{document}
+
+% Portada
+\maketitle
+% \begin{center}
+%     \includegraphics[width=0.5\textwidth]{images/logo_ugr.png}
+% \end{center}
+% \newpage
+
+%Resumen
+% \begin{abstract}
+% \noindent
+% \textbf{Resumen:} Este documento presenta los apuntes y/o resúmenes del tema que se expone que se han realizado a lo largo del curso de la asignatura de Ingeniería de Servidores. En este caso, se trata de las prácticas de la asignatura.
+% \end{abstract}
+% \bigskip
+
+
+
+% Tabla de contenidos
+\tableofcontents
+\newpage
+
+\part{Apuntes de Clase}
+
+\chapter{Bloque 1}
+
+\input{Capitulos/ApuntesClase}
+
+
+
+\part{Prácticas}
+\chapter{Bloque 1}
+
+\input{Capitulos/Bloque1}
+
+
+
+\end{document}
