@@ -1,0 +1,65 @@
+\section{Definición}
+
+Previamente, debemos de llevar a cabo un análisis de los datos y de esta manera obtenemos el esquema conceptual y lógico de la BD. En este tema entre la siguiente fase de \textit{Diseño}, dando como resultado el modelo lógico. Este se trata de uno ya implementado, por eso se dice que es un modelo implementable. 
+
+En cuanto al proceso de transformación, distinguimos:
+
+\begin{enumerate}
+    \item Mundo real 
+    \item Datos operativos
+    \item Esquema conceptual
+\end{enumerate}
+
+En esta etapa se introduce lo que conocemos como \textit{tablas}. En la última fase llevamos a cabo la implementación de esa tabla mediante un lenguaje.
+
+Definición: Mecanismo formal para representar y manipular la información con la que voy a trabajar. Debe de constar de datos, operaciones y reglas de integridad.
+
+La necesidad de usar el modelo de datos son:
+\begin{itemize}
+    \item Se usan lenguajes de definición de datos.
+    \item Es de muy bajo nivel.
+    \item Se necesitan niveles superior para su abstracción.
+\end{itemize}
+
+El objetivo que se tiene es establecer que representen los datos y que los describan de una forma entendible y manipulable. Según ANSI distinguimos tres niveles:
+\begin{itemize}
+    \item Externo
+    \item Conceptual
+    \item Interno
+\end{itemize}
+
+En cuanto a la clasificación:
+\begin{itemize}
+    \item Basados en registros.
+    \item Basados en objetos.
+    \item Físico.
+\end{itemize}
+
+Los dos primeros son de nivel externo y conceptual, mientras que el último es de nivel interno.
+
+\section{Modelo Relacional}
+
+La información se organiza en tablas: 
+
+\begin{enumerate}
+    \item La estructura de almacenamiento son las tablas.
+    \item Integridad.
+    \item Consulta y Manipulación.
+\end{enumerate}
+
+Esta tabla es a nivel lógico, en cuanto al nivel físico depende de varias estructuras, como son las listas enlazadas,...
+
+Elementos a conocer:
+\begin{itemize}
+    \item Atributo.
+    \item Dominio: rango de valores que puede tomar (enteros, letras,...)
+    \item Relación: Se conoce como cualquier subconjunto del producto cartesiano $D_1 \times D_2 \times ... D_n$. En este caso a relación se refiere a la tabla. Se denota como $R(A_1..A_n)$. De esta manera conseguimos todos los valores que pueden tomar y de aquí sacamos los datos (solo a nivel teórico).
+    \item Tupla: filas de la tabla.
+    \item Cardinalidad de una relación: número de tuplas.
+    \item Esquema de una relación R: Atributos de la relación junto a su dominio.
+    \item Grado de una relación: Número de atributos. Aunque se supone que es invariable, esto depende ya que se puede modificar.
+    \item Instancia de una relación: datos que tengo en un determinado momento.
+    \item Esquema de la BD: colección de esquemas de relaciones junto con las restricciones de integridad.
+    \item Instancia o estado de una BD: colección de instancias de relaciones que verifican las condiciones de integridad.
+    \item BD relaciones: instancia de la BD junto con su esquema.
+\end{itemize}

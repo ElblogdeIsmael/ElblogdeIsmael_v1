@@ -27,6 +27,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{float}
+\usepackage{pdfpages}
 
 % Configuración de márgenes
 \geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
@@ -125,6 +126,15 @@
 
 \input{Capitulos/tema1}
 
+\part{Relaciones de Ejercicios}
+\section{Ejercicios Tema 1}
+% \begin{figure}[h]
+%     \centering
+%     \fbox{\includegraphics[width=\textwidth]{Capitulos/Ejercicios_ISE_T1.pdf}}
+%     \caption{Documento insertado con encabezados propios}
+% \end{figure}
+%\includepdf[pages=-]{Capitulos/Ejercicios_ISE_T1.pdf} 
+\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_ISE_T1.pdf}
 
 
 
