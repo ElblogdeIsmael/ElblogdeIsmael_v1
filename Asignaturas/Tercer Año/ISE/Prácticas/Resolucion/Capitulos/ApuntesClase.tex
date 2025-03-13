@@ -337,3 +337,17 @@ Para usar la pública:
 
 \textit{Nota: El directorio .ssh se crea en el home cuando es el cliente, mientras que en el servidor se crea en el /etc/ssh, también podemos crearlo nosotros a priori.}
 
+Ahora podemos ejecuar un comando remoto, por ejemplo: \texttt{ssh usuario@ip comando}, de esta manera se ejecuta el comando en la máquina remota. En este punto comienza la automatización de configuración remota. \textit{Ansible son scripts pero ejecutados de manera remota.} Además, podemos copiar archivos usando el comando scp (secure copy), de esta manera se copia el archivo de una máquina a otra. \textit{Nota: scp es un comando de ssh.} El comando es \texttt{scp origen destino}, por ejemplo: \texttt{scp /home/usuario/archivo usuario@ip:/home/usuario/}, de esta manera se copia el archivo de la máquina local a la remota. Si queremos copiar un directorio, usamos el comando \texttt{scp -r origen destino}. Además podemos conectarnos mediante \textit{sftp} (secure file transfer protocol), de esta manera se conecta a la máquina remota y podemos copiar archivos de manera interactiva. \textit{Nota: sftp es un comando de ssh.} Para conectarnos, usamos el comando \texttt{sftp usuario@ip}, y luego podemos usar los comandos \texttt{put} y \texttt{get} para copiar archivos de una máquina a otra.
+
+\subsection{Ejercicio Opcional}
+
+En el ejercicio debemos de dar acceso mediante ssh usando la llave pública y privada, debemos de modificar el puerto para conectarnos en vez del 22 para el ssh usar otro que sea mayor que el 1024, para ello podemos asegurarnos de que no estamos colisionando con un puerto conocido buscando en Innternet.
+
+\begin{enumerate}
+    \item Accedemos al contenido del demonio del ssh que se encuentra en /etc/ssh, una vez dentro nos pone el comando que debemos de ejecuar \texttt{semanage...} (aparece en el fichero de ssh de la máquina Rocky), para que se apliquen los cambios debemos de reiniciar el servicio, para ello usamos el comando \texttt{sudo systemctl restart sshd} o bien reiniciar la máquina.
+    \item Además debemos de modificar el firewall para permitir ese puerto, para ello usamos el comando \texttt{sudo firewall-cmd --add-port=puerto/tcp --permanent}, y luego reiniciamos el servicio con \texttt{sudo systemctl restart firewalld}.
+    \item Luego debemos de copiar la llave pública a la máquina remota, para ello usamos el comando \texttt{ssh-copy-id usuario@ip}, y luego nos pide la contraseña, una vez introducida, ya podemos conectarnos sin contraseña.
+    \item Para comprobar que todo está correcto, usamos el comando \texttt{ssh usuario@ip -p puerto}, de esta manera nos conectamos a la máquina remota.
+\end{enumerate}
+
+Con el parámetro -p le especificamos el puerto al que nos queremos conectar, de esta manera nos conectamos al puerto que hemos especificado, ya que de manera predeterminada se conecta al puerto 22.

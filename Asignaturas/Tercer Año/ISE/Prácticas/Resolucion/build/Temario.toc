@@ -25,6 +25,7 @@
 \contentsline {section}{\numberline {1.3}Firewall + SSHD}{12}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Ejercicio Opcional}{13}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}SSH}{13}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Ejercicio Opcional}{16}{subsection.1.3.3}%
 \contentsline {part}{II\hspace {1em}Prácticas}{17}{part.2}%
 \contentsline {chapter}{\numberline {2}Bloque 1}{19}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Ejercicio 1 Opcional}{19}{section.2.1}%
