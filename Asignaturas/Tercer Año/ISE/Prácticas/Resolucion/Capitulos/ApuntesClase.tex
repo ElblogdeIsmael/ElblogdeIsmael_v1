@@ -4,7 +4,7 @@ Sobre esta parte no decidí tomar apuntes en clase debido a que son conceptos vi
 
 \section{LVM y RAID}
 
-\section{LVM (Logical Volume Manager)}
+\subsection{LVM (Logical Volume Manager)}
 
 \begin{itemize}
     \item \textbf{Discos y particiones}:
@@ -28,7 +28,7 @@ Sobre esta parte no decidí tomar apuntes en clase debido a que son conceptos vi
     \item \textbf{/var}: Contiene datos variables del sistema, como logs y archivos temporales. Puede crecer mucho, por lo que se recomienda monitorearlo.
 \end{itemize}
 
-\section{RAID (Redundant Array of Independent Disks)}
+\subsection{RAID (Redundant Array of Independent Disks)}
 
 RAID es una tecnología que permite combinar múltiples discos para mejorar la redundancia y/o el rendimiento del sistema de almacenamiento.
 
@@ -82,7 +82,7 @@ RAID es una tecnología que permite combinar múltiples discos para mejorar la r
     \end{itemize}
 \end{itemize}
 
-\section{Ejercicio Opcional: Configuración de RAID1 para /var}
+\subsection{Ejercicio Opcional: Configuración de RAID1 para /var}
 
 \subsection{Objetivo}
 El objetivo es proporcionar a \texttt{/var} un respaldo frente a fallos mediante la creación de un RAID1. Para ello, debemos montar un RAID1 y mover \texttt{/var} dentro de este.
@@ -118,7 +118,7 @@ El objetivo es proporcionar a \texttt{/var} un respaldo frente a fallos mediante
     \end{itemize}
 \end{enumerate}
 
-\section{LVM (Logical Volume Manager)}
+\subsection{LVM (Logical Volume Manager)}
 
 \subsection{Conceptos Clave}
 \begin{itemize}
@@ -167,7 +167,7 @@ Después de crear el volumen lógico, debemos mover \texttt{/var} dentro del RAI
     \item También puede aparecer como \texttt{/dev/mapper/raid1-rvar}, ya que son sinónimos creados mediante enlaces simbólicos.
 \end{itemize}
 
-\section{Resolución de Problemas}
+\subsection{Resolución de Problemas}
 
 \subsection{Problema 1: Configurar el sistema de archivos en \texttt{rvar}}
 
@@ -251,7 +251,7 @@ El volumen lógico \texttt{rvar} debe ser montado en el sistema y debemos trasla
     Si todo está correcto, reiniciamos el sistema.
 \end{enumerate}
 
-\section{Interpretación de \texttt{lsblk}}
+\subsection{Interpretación de \texttt{lsblk}}
 
 El comando \texttt{lsblk} nos permite visualizar la estructura de almacenamiento del sistema. Es importante identificar:
 
@@ -260,3 +260,80 @@ El comando \texttt{lsblk} nos permite visualizar la estructura de almacenamiento
     \item \textbf{Volúmenes lógicos}: Se muestran bajo \texttt{/dev/mapper/}.
     \item \textbf{SR0}: Indica la unidad de CD-ROM.
 \end{itemize}
+
+
+\section{Firewall + SSHD}
+
+Ya sabemos de otras Asignaturas que un \textbf{firewall} es un sistema que controla el tráfico de red, permitiendo o bloqueando ciertas conexiones. En Linux, el firewall más común es \textbf{iptables}.
+
+El comando que tenemos que aprender a gestionar es \texttt{firewall-cmd}, tiene diversas opciones como status, state. Otra forma para ver si esta arrancado es \texttt{systemctl status firewall}.
+
+Otras opciones: \texttt{firewall-cmd --lis-all}, en este comando debemos de ver los filtros que estan definidos, en services podemos ver los servicios que están habilitados.
+
+Con sudo firewall-cmd --add-service=http, cuando lo listo otra vez, se añade el puerto http en la opción services. Cuando se hace con firewall-cmd, se hace dinámica, por lo que si reiniciamos esto se pierde. Para que se quede debemos de ejecutar el comando \texttt{sudo fire firewall-cmd --runtime-to-permanent}. De forma alternativa, podemos ejecuar primero la opción \texttt{--permanent} y luego \texttt{--add-port=443/http}, pero si lo listamos no lo lleva a memoria, no hay ninguna opción que lo deje permanente y que lo lleve a memoria. Tenemos dos opciones o trabajar con servicios o llevarlo a memoria.
+
+Si queremos conocer los servicios, podemos ejecutar \texttt{firewall-cmd --get-services}.
+
+Los firewalls en Linux son muy eficientes debido a que en este SO se trabaja con servicios, por lo que se puede controlar el tráfico de forma muy precisa. Al implementarse a nivel de Kernel ayuda a que sea muy eficiente.
+\textit{No se va a preguntar nada sobre iptables}.
+
+Debemos de usar el programa \texttt{nmap} ya que nos dice que puertos están abietos en un servidor. Para instalarlo, usamos \texttt{sudo dnf install nmap}. En el guión debemos de mirar la referenia número 31.
+
+\subsection{Ejercicio Opcional}
+
+Debemos de instalar un servicio HTTP, se recomienda Apache. Podemos escanear los 100 puertos mas usados con el comando \texttt{nmap -F localhost}. Para instalar Apache, usamos \texttt{sudo dnf install httpd}. Para arrancar el servicio, usamos \texttt{sudo systemctl start httpd}. Para comprobar que está arrancado, usamos \texttt{sudo systemctl status httpd}. Para que arranque en el inicio, usamos \texttt{sudo systemctl enable httpd}. Para comprobar que está escuchando en el puerto 80, usamos \texttt{sudo ss -tulnp | grep 80}.
+
+Debemos de poder acceder desde el navegador de la máquina anfitrión.
+
+\subsection{SSH}
+
+Es un programa de terminal remoto, ya lo hemos usado en Asignaturas anteriormente. Antes se usaba Telnet, en este se especifica la dirección IP y el puerto, pero no era seguro, por lo que cualquier man in the middle podía interceptarlo y suplantar la identidad. Además, todas las respuestas que se producían eran en abierto, los \texttt{cat},... En cambio, SSH es seguro, ya que se cifra la información. Este hace lo mismo que Telnet, pero de forma segura. Se recomienda hacerlo \texttt{ssh usuario@ip}. O bien sustituir la IP por el nombre del dominio. Para cerrar la conexión, usamos \texttt{exit}. 
+
+Ya hemos estudiado en otras Asignaturas el tema de criptografía en cuanto al cifrado simétrico y asimétrico. En especial, en Fundamentos de Redes. Por si acaso, vamos a hacer una pequeña introducción. Tenemos dos tipos de cifrado:
+\begin{itemize}
+    \item \textbf{Cifrado simétrico}: Se usa una clave para cifrar y descifrar. El problema es que si alguien intercepta la clave, puede descifrar todo. Por ello, se usa poco.
+    \item \textbf{Cifrado asimétrico}: Se usa una clave pública para cifrar y una privada para descifrar. La clave pública se puede compartir, pero la privada no. Se usa para firmar documentos, ya que si se cifra con la clave privada, solo se puede descifrar con la clave pública.
+\end{itemize}
+
+Debemos de destacar los conceptos de \textbf{autenticación} y \textbf{autorización}. La autenticación es el proceso de verificar la identidad de un usuario, mientras que la autorización es el proceso de verificar si un usuario tiene permiso para acceder a un recurso. Además, del uso de certificados digitales, que son un tipo de credencial que se usa para autenticar la identidad de un usuario o un servidor. Este se consigue a través de una entidad certificadora, usando una clave pública y privada (Big Brother).
+
+Algoritmos :
+\begin{itemize}
+    \item Llave simétrica: DES(tenemos dos llaves, una que es privada y otra que es pública, lo que se cifra con la privada solo se puede descifrar con la pública, por dentro se gestiona en base a números primos muy grandes).
+    \item Llave asimétrica: RSA (Se guarda la privada, mientras que la pública se comparte, estando incluso compartida en la propia web, de manera que la persona que quiera compartir contigo usa la pública para codificar el texto y te lo manda codificado, de esta manera si hay un man in the middle lo ve cifrado, solo la persona con la llave privada puede ver su contenido).
+\end{itemize}
+
+Otro uso de la llave privada es la \textit{firma}, de esta manera se garantiza la confidencialidad y la autenticación del mensaje debido a que es confidencial debido a que solo se puede descifrar con la llave pública, y autenticidad debido a que solo se puede cifrar con la llave privada, la cual solo conoce esa entidad.
+
+Firma Digital: Usando Hash SHA256, se cifra con la llave privada y se envía el mensaje cifrado y el mensaje en abierto. La persona que recibe el mensaje cifrado con la llave privada, lo descifra y lo compara con el mensaje en abierto, si son iguales, se garantiza la autenticidad del mensaje. Ejemplo de ello puede ser el minado de monedas como es el Bitcoin. Además, otro ejemplo de ello es cuando descargamos algo y podemos verificar que es el del propio distribuidor usando el Hash que me proporciona. \textit{Por ende, podemos cosiderar que un HASH + llave privada es el certificado digital}. Para asegurarnos de que la llave pública es de quien dice ser debemos de ver el certificado digital, como hemos mencionado anteriormente. Este proceso para cuando encontramos un certificado digital que es de confianza, ya que si no lo es, no podemos asegurar que la llave pública sea de quien dice ser. Para ver los certificados, vemos que en Firefox, accedemos a settings y buscamos \textit{certificados}, podemos ver las entidades que nuestro browser reconoce.
+
+\begin{tcolorbox}[colback=yellow!10!white, colframe=red!75!black, title=Advertencia]
+El tema de certificados y demás al ser materia de Fundamentos de Redes, no se va a preguntar en el examen.
+\end{tcolorbox}
+
+Nos conectamos a un ordenador remoto mediante ssh, de esta manera le decimos que nos queremos conectar, el te envía la llave pública, es decir, se va a su configuración, recupera la llave y te la envía. A continuación, le enviamos nuestras creedenciales cifradas con la llave pública, y cuando le llega, las descifra con la llave privada y comprueba si son correctas. Si lo son, nos deja entrar. Si no lo son, nos dice que no podemos entrar. Además, de esta manera se prevee que un \textit{man-in-the-middle} no pueda interceptar las credenciales.
+
+Podemos meterle una entrada en el fichero de host, de esta manera cuando nos conectamos a un servidor, nos conectamos a una IP, pero si le metemos una entrada en el fichero de host, le decimos que esa IP es un nombre, de esta manera cuando nos conectamos a ese nombre, nos conectamos a esa IP. Para ello, debemos de editar el fichero \texttt{/etc/hosts} y añadir la IP y el nombre del servidor, así es más cómdo, para ello en Linux es \texttt{ssh usuario@nombre}. 
+
+Cuando ejecutamos el comando para conectarnos, nos imprime un mensaje con el HASH, y nos pregunta que si nos lo creemos, si en vez de una llave pública esta reconocida en nuestras llaves y ve que tenemos el certificado no nos preguntaría. En todos lo equipos se crea el directorio ssh en home, dentro de este tenemos un archivo que se llama known\_hosts, el cual contiene las llaves públicas de los ordenadores que ya has confiado, de manera que no nos va a preguntar cuando nos conectemos de nuevo, si queremos que en la primera vez tampoco pregunta la copiamos y pegamos, entre otras opciones. \textit{Nota: Por defecto se crea ese directorio cuando se conetca por ssh.}
+
+Este proceso es muy costos en términos de cómputo, por lo que se usa lo más mínimo posible. Por esto se usa un proceso de handshaking, de esta manera el equipo le manda una propuesta de llave simétrica y de esta manera ya se usa en adelante, ya que el uso de clave privada y pública es muy costoso.
+
+¿Cómo puedo acceder sin contraseña? Para ello nos autenticamos con llave pública y llave privada. En el caso de que decidamos hacerlo asi cuando le mandamos que soy 'nombre', recupera la llave de el directorio .ssh y le manda un mensaje de firmame esto con la clave privada de dicho usuario, y de esta manera se asegura de que efectivamente es el usuario que dice ser. Además, en el directorio home solo puede escribir el usuario y el root.
+
+En la MV:
+
+\begin{itemize}
+    \item ssh-keygen: crea la llave privada dentro de home, luego nos pregunta si queremos protegerla con contraseña, si no queremos, le damos a enter, \textit{pero siempre debe de hacerse.} Luego si nos vamos al directorio vemos dos documentos la llave privada y la pública. Si queremos que no nos pregunte siempre la contraseña, usamos el comando \texttt{ssh-agent}, de esta manera el la escribe por ti, hasta que usamos el comando \texttt{exit}, en este caso se olvida.
+\end{itemize}
+
+Para usar la pública:
+\begin{itemize}
+    \item Accedemos al directorio /home/.ssh 
+    \item usamos el comando ssh-copy-id usuario@{ip/hostname} (copia mi identidad, se puede hacer con ctrl+c/v), y luego nos hace una prueba para que le demostremos que de verdad somos el usuario al que nos queremos conectar, para ello le mandamos la contraseña.
+    \item Luego comprobamos que podemos entrar sin contraseña.
+    \item En la máquina donde nos hemos conectado, vemos un fichero llamado \textit{id\_rsa.pub}, y si lo listamos debe de ser el mismo que la clave pública de la máquina inicial, desde la que nos conectamos a esta.
+\end{itemize}
+
+\textit{Nota: El directorio .ssh se crea en el home cuando es el cliente, mientras que en el servidor se crea en el /etc/ssh, también podemos crearlo nosotros a priori.}
+
