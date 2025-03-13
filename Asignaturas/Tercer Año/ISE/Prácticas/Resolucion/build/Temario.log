@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  12 MAR 2025 00:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  13 MAR 2025 16:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -613,56 +613,91 @@ File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
- (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
+ (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count337
+\calc@Bcount=\count338
+\calc@Adimen=\dimen307
+\calc@Bdimen=\dimen308
+\calc@Askip=\skip71
+\calc@Bskip=\skip72
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count339
+\calc@Cskip=\skip73
+) (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen309
+\ESO@tempdimb=\dimen310
+)
+\AM@pagewidth=\dimen311
+\AM@pageheight=\dimen312
+\AM@fboxrule=\dimen313
+ (/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count340
+\AM@pagebox=\box82
+\AM@global@opts=\toks49
+\AM@pagecnt=\count341
+\AM@toc@title=\toks50
+\AM@lof@heading=\toks51
+\c@AM@survey=\count342
+\AM@templatesizebox=\box83
+) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count337
-\l__pdf_internal_box=\box82
+\l__color_backend_stack_int=\count343
+\l__pdf_internal_box=\box84
 ) (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `Temario.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen307
-\scratchbox=\box83
-\nofMPsegments=\count339
-\nofMParguments=\count340
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen308
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count344
+\scratchdimen=\dimen314
+\scratchbox=\box85
+\nofMPsegments=\count345
+\nofMParguments=\count346
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count347
+\MPscratchDim=\dimen315
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
+\everyMPtoPDFconversion=\toks53
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 89.
+Package hyperref Info: Link coloring OFF on input line 90.
  (build/Temario.out) (build/Temario.out)
 \@outlinefile=\write4
 \openout4 = `Temario.out'.
@@ -706,46 +741,80 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count344
+\c@lstlisting=\count350
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
 <portada.jpg, id=135, 97.8054pt x 146.4672pt>
 File: portada.jpg Graphic file (type jpg)
 <use portada.jpg>
-Package pdftex.def Info: portada.jpg  used on input line 115.
+Package pdftex.def Info: portada.jpg  used on input line 116.
 (pdftex.def)             Requested size: 597.84468pt x 845.21478pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 120.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 121.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 121.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 122.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 121.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 122.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./portada.jpg>]
+<../../../../../licencia.pdf, id=147, 614.295pt x 794.97pt>
+File: ../../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../../licencia.pdf>
+Package pdftex.def Info: ../../../../../licencia.pdf  used on input line 140.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../../licencia.pdf>
+Package pdftex.def Info: ../../../../../licencia.pdf  used on input line 140.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../../../../../licencia.pdf, id=150, page=1, 614.295pt x 794.97pt>
+File: ../../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../../licencia.pdf , page1 used on input line 140.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../../licencia.pdf , page1 used on input line 140.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../../licencia.pdf , page1 used on input line 140.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../../licencia.pdf , page1 used on input line 140.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../../licencia.pdf , page1 used on input line 140.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [2
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[2
-
-] (build/Temario.toc
+ <../../../../../licencia.pdf>] (build/Temario.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@toc=\write5
 \openout5 = `Temario.toc'.
 
- [3]
-LaTeX Info: Redefining \. on input line 144.
-LaTeX Info: Redefining \% on input line 144.
+ [3
+
+]
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -823,8 +892,8 @@ Overfull \hbox (22.38083pt too wide) in paragraph at lines 242--242
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 254.
 )
-LaTeX Info: Redefining \. on input line 152.
-LaTeX Info: Redefining \% on input line 152.
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -840,57 +909,57 @@ Cap\'{\i }tulo 2.
 (./Capitulos/Bloque1.tex [15
 
 ]
-<images/Bloque1/adaptador2.png, id=264, 808.01875pt x 386.44376pt>
+<images/Bloque1/adaptador2.png, id=296, 808.01875pt x 386.44376pt>
 File: images/Bloque1/adaptador2.png Graphic file (type png)
 <use images/Bloque1/adaptador2.png>
 Package pdftex.def Info: images/Bloque1/adaptador2.png  used on input line 47.
 (pdftex.def)             Requested size: 192.0548pt x 91.8521pt.
-<images/Bloque1/vbox.png, id=266, 928.46875pt x 995.72pt>
+<images/Bloque1/vbox.png, id=298, 928.46875pt x 995.72pt>
 File: images/Bloque1/vbox.png Graphic file (type png)
 <use images/Bloque1/vbox.png>
 Package pdftex.def Info: images/Bloque1/vbox.png  used on input line 53.
 (pdftex.def)             Requested size: 192.0548pt x 205.96233pt.
-<images/Bloque1/nmtui1.png, id=267, 596.2275pt x 248.93pt>
+<images/Bloque1/nmtui1.png, id=299, 596.2275pt x 248.93pt>
 File: images/Bloque1/nmtui1.png Graphic file (type png)
 <use images/Bloque1/nmtui1.png>
 Package pdftex.def Info: images/Bloque1/nmtui1.png  used on input line 63.
 (pdftex.def)             Requested size: 192.0548pt x 80.1834pt.
-<images/Bloque1/nmtui_2.png, id=268, 608.2725pt x 479.7925pt>
+<images/Bloque1/nmtui_2.png, id=300, 608.2725pt x 479.7925pt>
 File: images/Bloque1/nmtui_2.png Graphic file (type png)
 <use images/Bloque1/nmtui_2.png>
 Package pdftex.def Info: images/Bloque1/nmtui_2.png  used on input line 69.
 (pdftex.def)             Requested size: 192.0548pt x 151.48683pt.
-<images/Bloque1/sshd_PS1.png, id=269, 808.01875pt x 386.44376pt>
+<images/Bloque1/sshd_PS1.png, id=301, 808.01875pt x 386.44376pt>
 File: images/Bloque1/sshd_PS1.png Graphic file (type png)
 <use images/Bloque1/sshd_PS1.png>
 Package pdftex.def Info: images/Bloque1/sshd_PS1.png  used on input line 78.
 (pdftex.def)             Requested size: 341.43437pt x 163.2959pt.
-<images/Bloque1/resultado_ipa.png, id=270, 812.03375pt x 408.52625pt>
+<images/Bloque1/resultado_ipa.png, id=302, 812.03375pt x 408.52625pt>
 File: images/Bloque1/resultado_ipa.png Graphic file (type png)
 <use images/Bloque1/resultado_ipa.png>
 Package pdftex.def Info: images/Bloque1/resultado_ipa.png  used on input line 84.
 (pdftex.def)             Requested size: 341.43437pt x 171.76686pt.
-<images/Bloque1/ping2.png, id=271, 825.0825pt x 397.485pt>
+<images/Bloque1/ping2.png, id=303, 825.0825pt x 397.485pt>
 File: images/Bloque1/ping2.png Graphic file (type png)
 <use images/Bloque1/ping2.png>
 Package pdftex.def Info: images/Bloque1/ping2.png  used on input line 92.
 (pdftex.def)             Requested size: 341.43437pt x 164.48618pt.
-<images/Bloque1/ip_a_host.png, id=273, 873.2625pt x 657.45625pt>
+<images/Bloque1/ip_a_host.png, id=305, 873.2625pt x 657.45625pt>
 File: images/Bloque1/ip_a_host.png Graphic file (type png)
 <use images/Bloque1/ip_a_host.png>
 Package pdftex.def Info: images/Bloque1/ip_a_host.png  used on input line 102.
 (pdftex.def)             Requested size: 192.0548pt x 144.59065pt.
-<images/Bloque1/ping_a_anfitriona.png, id=274, 537.00626pt x 208.78pt>
+<images/Bloque1/ping_a_anfitriona.png, id=306, 537.00626pt x 208.78pt>
 File: images/Bloque1/ping_a_anfitriona.png Graphic file (type png)
 <use images/Bloque1/ping_a_anfitriona.png>
 Package pdftex.def Info: images/Bloque1/ping_a_anfitriona.png  used on input line 108.
 (pdftex.def)             Requested size: 192.0548pt x 74.66695pt.
-<images/Bloque1/ping_anf_a_mv.png, id=275, 678.535pt x 246.9225pt>
+<images/Bloque1/ping_anf_a_mv.png, id=307, 678.535pt x 246.9225pt>
 File: images/Bloque1/ping_anf_a_mv.png Graphic file (type png)
 <use images/Bloque1/ping_anf_a_mv.png>
 Package pdftex.def Info: images/Bloque1/ping_anf_a_mv.png  used on input line 118.
 (pdftex.def)             Requested size: 192.0548pt x 69.88759pt.
-<images/Bloque1/ping_fuera.png, id=276, 521.95pt x 190.7125pt>
+<images/Bloque1/ping_fuera.png, id=308, 521.95pt x 190.7125pt>
 File: images/Bloque1/ping_fuera.png Graphic file (type png)
 <use images/Bloque1/ping_fuera.png>
 Package pdftex.def Info: images/Bloque1/ping_fuera.png  used on input line 124.
@@ -928,12 +997,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [18 <./images/Bloque1/ping2.png> <./images/Bloque1/ip_a_host.png> <./images/Bloque1/ping_a_anfitriona.png> <./images/Bloque1/ping_anf_a_mv.png> <./images/Bloque1/ping_fuera.png>]
-<images/Bloque1/ssh1.png, id=312, 883.3pt x 356.33125pt>
+<images/Bloque1/ssh1.png, id=343, 883.3pt x 356.33125pt>
 File: images/Bloque1/ssh1.png Graphic file (type png)
 <use images/Bloque1/ssh1.png>
 Package pdftex.def Info: images/Bloque1/ssh1.png  used on input line 141.
 (pdftex.def)             Requested size: 192.0548pt x 77.47423pt.
-<images/Bloque1/ssh2.png, id=313, 369.38pt x 126.4725pt>
+<images/Bloque1/ssh2.png, id=344, 369.38pt x 126.4725pt>
 File: images/Bloque1/ssh2.png Graphic file (type png)
 <use images/Bloque1/ssh2.png>
 Package pdftex.def Info: images/Bloque1/ssh2.png  used on input line 147.
@@ -982,12 +1051,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [22]
-<images/Bloque1/lsblk.png, id=357, 342.5297pt x 132.495pt>
+<images/Bloque1/lsblk.png, id=388, 342.5297pt x 132.495pt>
 File: images/Bloque1/lsblk.png Graphic file (type png)
 <use images/Bloque1/lsblk.png>
 Package pdftex.def Info: images/Bloque1/lsblk.png  used on input line 402.
 (pdftex.def)             Requested size: 192.0548pt x 74.2917pt.
-<images/Bloque1/mdadm.png, id=358, 621.82312pt x 204.01219pt>
+<images/Bloque1/mdadm.png, id=389, 621.82312pt x 204.01219pt>
 File: images/Bloque1/mdadm.png Graphic file (type png)
 <use images/Bloque1/mdadm.png>
 Package pdftex.def Info: images/Bloque1/mdadm.png  used on input line 408.
@@ -1012,32 +1081,32 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [23]
-<images/Bloque1/create.png, id=367, 505.13719pt x 160.34906pt>
+<images/Bloque1/create.png, id=398, 505.13719pt x 160.34906pt>
 File: images/Bloque1/create.png Graphic file (type png)
 <use images/Bloque1/create.png>
 Package pdftex.def Info: images/Bloque1/create.png  used on input line 426.
 (pdftex.def)             Requested size: 192.0548pt x 60.96507pt.
-<images/Bloque1/mkfs.png, id=368, 417.05812pt x 173.89969pt>
+<images/Bloque1/mkfs.png, id=399, 417.05812pt x 173.89969pt>
 File: images/Bloque1/mkfs.png Graphic file (type png)
 <use images/Bloque1/mkfs.png>
 Package pdftex.def Info: images/Bloque1/mkfs.png  used on input line 432.
 (pdftex.def)             Requested size: 192.0548pt x 80.08238pt.
-<images/Bloque1/mount.png, id=369, 568.37344pt x 48.93282pt>
+<images/Bloque1/mount.png, id=400, 568.37344pt x 48.93282pt>
 File: images/Bloque1/mount.png Graphic file (type png)
 <use images/Bloque1/mount.png>
 Package pdftex.def Info: images/Bloque1/mount.png  used on input line 445.
 (pdftex.def)             Requested size: 192.0548pt x 16.53464pt.
-<images/Bloque1/df.png, id=370, 407.27156pt x 134.75343pt>
+<images/Bloque1/df.png, id=401, 407.27156pt x 134.75343pt>
 File: images/Bloque1/df.png Graphic file (type png)
 <use images/Bloque1/df.png>
 Package pdftex.def Info: images/Bloque1/df.png  used on input line 451.
 (pdftex.def)             Requested size: 192.0548pt x 63.54384pt.
-<images/Bloque1/isolate.png, id=371, 598.48593pt x 316.18124pt>
+<images/Bloque1/isolate.png, id=402, 598.48593pt x 316.18124pt>
 File: images/Bloque1/isolate.png Graphic file (type png)
 <use images/Bloque1/isolate.png>
 Package pdftex.def Info: images/Bloque1/isolate.png  used on input line 464.
 (pdftex.def)             Requested size: 192.0548pt x 101.45988pt.
-<images/Bloque1/var.png, id=372, 578.16pt x 212.29312pt>
+<images/Bloque1/var.png, id=403, 578.16pt x 212.29312pt>
 File: images/Bloque1/var.png Graphic file (type png)
 <use images/Bloque1/var.png>
 Package pdftex.def Info: images/Bloque1/var.png  used on input line 470.
@@ -1053,24 +1122,24 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24 <./images/Bloque1/lsblk.png (PNG copy)> <./images/Bloque1/mdadm.png (PNG copy)> <./images/Bloque1/create.png (PNG copy)> <./images/Bloque1/mkfs.png (PNG copy)> <./images/Bloque1/mount.png (PNG copy)> <./images/Bloque1/df.png (PNG copy)>]
-<images/Bloque1/fstab.png, id=380, 601.4972pt x 200.24812pt>
+<images/Bloque1/fstab.png, id=411, 601.4972pt x 200.24812pt>
 File: images/Bloque1/fstab.png Graphic file (type png)
 <use images/Bloque1/fstab.png>
 Package pdftex.def Info: images/Bloque1/fstab.png  used on input line 489.
 (pdftex.def)             Requested size: 192.0548pt x 63.93709pt.
-<images/Bloque1/daemon.png, id=381, 411.78844pt x 94.85437pt>
+<images/Bloque1/daemon.png, id=412, 411.78844pt x 94.85437pt>
 File: images/Bloque1/daemon.png Graphic file (type png)
 <use images/Bloque1/daemon.png>
 Package pdftex.def Info: images/Bloque1/daemon.png  used on input line 495.
 (pdftex.def)             Requested size: 192.0548pt x 44.23853pt.
-<images/Bloque1/resultadofinal_raid.png, id=382, 347.79938pt x 271.0125pt>
+<images/Bloque1/resultadofinal_raid.png, id=413, 347.79938pt x 271.0125pt>
 File: images/Bloque1/resultadofinal_raid.png Graphic file (type png)
 <use images/Bloque1/resultadofinal_raid.png>
 Package pdftex.def Info: images/Bloque1/resultadofinal_raid.png  used on input line 504.
 (pdftex.def)             Requested size: 256.07741pt x 199.54948pt.
 )
-LaTeX Info: Redefining \. on input line 159.
-LaTeX Info: Redefining \% on input line 159.
+LaTeX Info: Redefining \. on input line 158.
+LaTeX Info: Redefining \% on input line 158.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1079,7 +1148,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25 <./images/Bloque1/isolate.png (PNG copy)> <./images/Bloque1/var.png (PNG copy)> <./images/Bloque1/fstab.png (PNG copy)> <./images/Bloque1/daemon.png (PNG copy)> <./images/Bloque1/resultadofinal_raid.png (PNG copy)>] (build/Temario.aux
+[25 <./images/Bloque1/isolate.png (PNG copy)> <./images/Bloque1/var.png (PNG copy)> <./images/Bloque1/fstab.png (PNG copy)> <./images/Bloque1/daemon.png (PNG copy)> <./images/Bloque1/resultadofinal_raid.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26
+
+] [27] (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1091,18 +1173,18 @@ Package rerunfilecheck Info: File `Temario.out' has not changed.
 (rerunfilecheck)             Checksum: 75C2DAFBA3118EA7B58413EC3EDEB550;5915.
  ) 
 Here is how much of TeX's memory you used:
- 29053 strings out of 475508
- 534258 string characters out of 5782137
+ 29925 strings out of 475508
+ 549614 string characters out of 5782137
  1986187 words of memory out of 5000000
- 50748 multiletter control sequences out of 15000+600000
+ 51589 multiletter control sequences out of 15000+600000
  580564 words of font info for 94 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
- 83i,11n,93p,745b,1262s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
-Output written on build/Temario.pdf (25 pages, 1236670 bytes).
+ 83i,17n,93p,745b,1266s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
+Output written on build/Temario.pdf (27 pages, 1291456 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 390 compressed objects within 4 object streams
- 117 named destinations out of 1000 (max. 500000)
- 394 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 537 PDF objects out of 1000 (max. 8388607)
+ 419 compressed objects within 5 object streams
+ 121 named destinations out of 1000 (max. 500000)
+ 414 words of extra memory for PDF output out of 10000 (max. 10000000)
 

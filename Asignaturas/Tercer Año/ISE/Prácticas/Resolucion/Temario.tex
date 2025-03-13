@@ -27,6 +27,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{float}
+\usepackage{pdfpages}
 
 %creacion de un lstlisting claro y bonito
 \lstdefinestyle{mystyle}{
@@ -136,7 +137,7 @@
 \newpage
 
 
-
+\includepdf[pages=-]{../../../../../licencia.pdf}
 % Tabla de contenidos
 \tableofcontents
 \newpage
@@ -153,6 +154,18 @@
 \chapter{Bloque 1}
 
 \input{Capitulos/Bloque1}
+
+\newpage
+% Referencias
+\begin{thebibliography}{99}
+\bibitem{Referencia1}
+Ismael Sallami Moreno, \textbf{Estudiante del Doble Grado en Ingeniería Informática + ADE}, Universidad de Granada, 2025.
+% \bibitem{Referencia2}
+% Autor(es), \emph{Título del libro}, Editorial, año.
+
+% \bibitem{Referencia3}
+% Autor(es), \emph{Título del documento}, Nombre de la Conferencia, páginas, año.
+\end{thebibliography}
 
 
 

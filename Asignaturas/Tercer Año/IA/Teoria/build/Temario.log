@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  12 MAR 2025 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  13 MAR 2025 16:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer AÃ±o/IA/Practicas/Temario/Temario.tex"
-(/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer AÃ±o/IA/Practicas/Temario/Temario.tex
+**"/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer AÃ±o/IA/Teoria/Temario.tex"
+(/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer AÃ±o/IA/Teoria/Temario.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/share/texmf-dist/tex/latex/base/book.cls
@@ -613,56 +613,91 @@ File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
 File: listings.cfg 2024/02/21 1.10 listings configuration
 ))
 Package: listings 2024/02/21 1.10 (Carsten Heinz)
- (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+ (/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
+ (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count337
+\calc@Bcount=\count338
+\calc@Adimen=\dimen307
+\calc@Bdimen=\dimen308
+\calc@Askip=\skip71
+\calc@Bskip=\skip72
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count339
+\calc@Cskip=\skip73
+) (/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen309
+\ESO@tempdimb=\dimen310
+)
+\AM@pagewidth=\dimen311
+\AM@pageheight=\dimen312
+\AM@fboxrule=\dimen313
+ (/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count340
+\AM@pagebox=\box82
+\AM@global@opts=\toks49
+\AM@pagecnt=\count341
+\AM@toc@title=\toks50
+\AM@lof@heading=\toks51
+\c@AM@survey=\count342
+\AM@templatesizebox=\box83
+) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count337
-\l__pdf_internal_box=\box82
+\l__color_backend_stack_int=\count343
+\l__pdf_internal_box=\box84
 ) (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `Temario.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count338
-\scratchdimen=\dimen307
-\scratchbox=\box83
-\nofMPsegments=\count339
-\nofMParguments=\count340
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count341
-\MPscratchDim=\dimen308
-\MPnumerator=\count342
-\makeMPintoPDFobject=\count343
-\everyMPtoPDFconversion=\toks50
+\scratchcounter=\count344
+\scratchdimen=\dimen314
+\scratchbox=\box85
+\nofMPsegments=\count345
+\nofMParguments=\count346
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count347
+\MPscratchDim=\dimen315
+\MPnumerator=\count348
+\makeMPintoPDFobject=\count349
+\everyMPtoPDFconversion=\toks53
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 69.
  (build/Temario.out) (build/Temario.out)
 \@outlinefile=\write4
 \openout4 = `Temario.out'.
@@ -706,46 +741,80 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count344
-<portada.png, id=19, 578.16pt x 866.7582pt>
+\c@lstlisting=\count350
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+<portada.png, id=35, 578.16pt x 866.7582pt>
 File: portada.png Graphic file (type png)
 <use portada.png>
-Package pdftex.def Info: portada.png  used on input line 94.
+Package pdftex.def Info: portada.png  used on input line 95.
 (pdftex.def)             Requested size: 597.54051pt x 845.03957pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 99.
-(/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 100.
+ (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 100.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 101.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 100.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 101.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./portada.png>]
+<../../../../licencia.pdf, id=47, 614.295pt x 794.97pt>
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf>
+Package pdftex.def Info: ../../../../licencia.pdf  used on input line 119.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf>
+Package pdftex.def Info: ../../../../licencia.pdf  used on input line 119.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../../../../licencia.pdf, id=50, page=1, 614.295pt x 794.97pt>
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 119.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 119.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 119.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 119.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 119.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [2
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[2
-
-] (build/Temario.toc
+ <../../../../licencia.pdf>] (build/Temario.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@toc=\write5
 \openout5 = `Temario.toc'.
 
- [3]
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
+ [3
+
+]
+LaTeX Info: Redefining \. on input line 125.
+LaTeX Info: Redefining \% on input line 125.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -758,90 +827,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Cap\'{\i }tulo 1.
-(./Capitulos/Practica1.tex [5{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
-[]|\T1/cmr/m/n/12 Google Deep-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-[]|\T1/cmr/m/n/12 Suscripción
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
-[]|\T1/cmr/m/n/12 Sesgo pro-
- []
-
-
-Underfull \hbox (badness 4954) in paragraph at lines 72--72
-\T1/cmr/m/n/12 Beijing y cen-
- []
-
-
-Underfull \hbox (badness 4647) in paragraph at lines 72--72
-\T1/cmr/m/n/12 su-ra en te-mas
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]|\T1/cmr/m/n/12 Generación
- []
-
-
-Underfull \hbox (badness 5832) in paragraph at lines 74--74
-\T1/cmr/m/n/12 de tex-to, pro-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-\T1/cmr/m/n/12 gra-ma-ción,
- []
-
-
-Underfull \hbox (badness 4391) in paragraph at lines 74--74
-[]|\T1/cmr/m/n/12 Tareas es-pe-cí-fi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-[]|\T1/cmr/m/n/12 Análisis mul-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-\T1/cmr/m/n/12 ti-mo-dal, in-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-\T1/cmr/m/n/12 te-gra-ción con
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--75
-\T1/cmr/m/n/12 ser-vi-cios de
- []
-
-
-Overfull \hbox (19.73796pt too wide) in paragraph at lines 56--77
- [][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[6])
+(./Capitulos/Tema1.tex [5])
 LaTeX Info: Redefining \. on input line 129.
 LaTeX Info: Redefining \% on input line 129.
 
@@ -852,9 +838,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
+[6]
+Cap\'{\i }tulo 2.
+(./Capitulos/Tema2.tex) [7
+
+]
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -874,21 +864,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Temario.out' has not changed.
-(rerunfilecheck)             Checksum: 544A6C1D3042328B1DA678F6B9599625;307.
+(rerunfilecheck)             Checksum: FE6762A6563C7D48AA202E085907BD6D;943.
  ) 
 Here is how much of TeX's memory you used:
- 28416 strings out of 475508
- 523487 string characters out of 5782137
- 1938187 words of memory out of 5000000
- 50220 multiletter control sequences out of 15000+600000
- 575178 words of font info for 80 fonts, out of 8000000 for 9000
+ 29308 strings out of 475508
+ 539240 string characters out of 5782137
+ 1934187 words of memory out of 5000000
+ 51081 multiletter control sequences out of 15000+600000
+ 574528 words of font info for 78 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
- 83i,11n,93p,592b,887s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
-Output written on build/Temario.pdf (9 pages, 2690383 bytes).
+ 83i,17n,93p,670b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
+Output written on build/Temario.pdf (9 pages, 2721627 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 94 words of extra memory for PDF output out of 10000 (max. 10000000)
 

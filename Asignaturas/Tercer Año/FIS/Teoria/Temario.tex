@@ -27,7 +27,7 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{float}
-
+\usepackage{pdfpages}
 % Configuración de márgenes
 \geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
 
@@ -36,10 +36,10 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{Universidad de Granada}
-\fancyhead[L]{\nouppercase{\chaptername~\thechapter. \leftmark}}
+\fancyhead[L]{\nouppercase{\leftmark}}
 
 % \fancyhead[C]{Escuela Técnica Superior de Ingenierías Informática}
-\fancyhead[R]{Inteligencia Artificial}
+\fancyhead[R]{Fundamentos de Ingeniería del Software}
 \fancyfoot[L]{\rule[0pt]{\textwidth}{0.2pt}\\Ismael Sallami Moreno}
 \fancyfoot[C]{\rule[0pt]{\textwidth}{0.2pt}\\\thepage}
 \fancyfoot[R]{\rule[0pt]{\textwidth}{0.2pt}\\\today}
@@ -51,7 +51,7 @@
 \titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
 
 % Datos del documento
-\title{\textbf{Prácticas Inteligencia Artificial}}
+\title{\textbf{Temario Fundamentos de Ingenierías del Software}}
 \author{
     Ismael Sallami Moreno \\
     \texttt{ism350zsallami@correo.ugr.es}
@@ -59,8 +59,8 @@
 \date{
     \vspace{1cm}
     \begin{tabular}{rl}
-        \textbf{Asignatura:} & Inteligencia Artificial \\
-        \textbf{Tema:} & Prácticas \\
+        \textbf{Asignatura:} & Fundamentos de Base de Datos \\
+        \textbf{Tema:} & Teoría \\
         \textbf{Fecha:} & \today
     \end{tabular}
 }
@@ -74,7 +74,7 @@
         
         % \Huge
         % \textbf{Práctica Contabilidad Financiera II}
-        \Huge \textbf{Práctica Inteligencia Artificial} 
+        \Huge \textbf{Temario Fundamentos de Ingeniería del Software} 
         % \vspace{0.5cm}
         % \LARGE
         % \textbf{Ismael Sallami Moreno}\\
@@ -91,7 +91,7 @@
         \vspace{0.8cm}
         
         \begin{tikzpicture}[remember picture, overlay]
-            \node[opacity=0.2] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{portada.png}};
+            \node[opacity=0.2] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{portada.jpg}};
             \node[align=center] at (current page.center) {
                 
                 \vspace{0.5cm}
@@ -115,14 +115,31 @@
 \newpage
 
 
+\includepdf[pages=-]{../../../../licencia.pdf}
 
 % Tabla de contenidos
 \tableofcontents
 \newpage
 
-\chapter{Práctica 1}
+\chapter{Introducción}
 
-\input{Capitulos/Practica1.tex}
+La Ingeniería del Software es una disciplina que se centra en el desarrollo, de coste eficiente, de sistemas software de alta calidad. El software es abstracto e intangible y no se construye con materiales ni se rige por leyes físicas o por procesos de fabricación. De alguna forma, esto simplifica la ingeniería del software ya que no existen limitaciones físicas sobre el potencial del software. Sin embargo, la ausencia de restricciones naturales significa que el software fácilmente puede llegar a ser extremadamente complejo y, por consiguiente, difícil de entender.
+
+En este tema se proporcionará una visión general de las características propias y diferenciadoras del producto software. Se plantearán algunas definiciones del concepto de Ingeniería del Software y, por último, se estudiarán las particularidades específicas del proceso de desarrollo del software.
+
+
+\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Tema1.pdf}
+
+\chapter{Ingeniería de Requisitos}
+
+Uno de los problemas recurrentes a los que se enfrenta la ingeniería del software es la dificultad para determinar exactamente cuáles son los requisitos de un sistema, es decir, las funcionalidades que debe incluir el sistema a construir, así como todas las consideraciones adicionales sobre seguridad, rendimiento, fiabilidad, cuestiones legales, etc. Y lo que resulta aún más complicado: establecer claramente qué es lo que no debe contemplarse como parte de los requisitos del sistema, bien porque no ha sido incluido en el contrato de desarrollo, o bien porque simplemente queda fuera del alcance del sistema a desarrollar.
+
+La dificultad de la tarea proviene de la dificultad inherente a enunciar, de modo claro y preciso, cualquier problema complejo. Muchos factores afectan negativamente a esta tarea, como por ejemplo el hecho de que los usuarios del futuro sistema pueden no colaborar en la especificación de los requisitos, que los requisitos cambien a lo largo del desarrollo o que aparezcan otros nuevos.
+
+En este tema se planteará qué es la ingeniería de requisitos, se definirá el concepto de requisito y se analizarán los distintos tipos de requisitos y sus propiedades.
+
+\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Tema2.pdf}
+
 
 
 
@@ -130,13 +147,12 @@
 % Referencias
 \begin{thebibliography}{99}
 \bibitem{Referencia1}
-Autor(es), \emph{Título del artículo}, Nombre de la Revista, volumen(número), páginas, año.
+\emph{Transparencias de la Asignatura de Fundamentos de Ingeniería del Software}, Universidad de Granada, 2025.
 
-\bibitem{Referencia2}
-Autor(es), \emph{Título del libro}, Editorial, año.
+\bibitem{Referencia1}
+Ismael Sallami Moreno, \textbf{Estudiante del Doble Grado en Ingeniería Informática + ADE}, Universidad de Granada, 2025.
 
-\bibitem{Referencia3}
-Autor(es), \emph{Título del documento}, Nombre de la Conferencia, páginas, año.
+
 \end{thebibliography}
 
 \end{document}
