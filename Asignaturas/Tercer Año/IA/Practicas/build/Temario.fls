@@ -274,6 +274,10 @@ INPUT /usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 INPUT /usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT /usr/share/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/share/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/share/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT build/Temario.aux
@@ -375,12 +379,12 @@ OUTPUT build/Temario.toc
 INPUT ./Capitulos/Practica1.tex
 INPUT ./Capitulos/Practica1.tex
 INPUT Capitulos/Practica1.tex
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ectt1200.tfm
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecrm1440.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm
 INPUT build/Temario.aux
 INPUT build/Temario.out
 INPUT build/Temario.out

@@ -1,17 +1,21 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {part}{I\hspace {1em}Apuntes de Clase}{5}{part.1}%
-\contentsline {chapter}{\numberline {1}Tema 1}{7}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Tema 1}{7}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Fundamentos de la Ingeniería del Software}{7}{subsection.1.1.1}%
-\contentsline {subsubsection}{Disponibilidad}{7}{subsection.1.1.1}%
-\contentsline {subsubsection}{Extensibilidad-expansibilidad}{7}{subsection.1.1.1}%
-\contentsline {subsubsection}{Escalabilidad}{7}{subsection.1.1.1}%
-\contentsline {subsubsection}{Coste}{7}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Introducción a la comparación de las características entre servidores}{7}{subsection.1.1.2}%
-\contentsline {subsubsection}{Comparación de prestaciones}{7}{subsection.1.1.2}%
-\contentsline {subsubsection}{Speedup}{8}{subsection.1.1.2}%
-\contentsline {subsubsection}{Mejora del tiempo de ejecución de un proceso}{8}{equation.1.1.1}%
-\contentsline {subsubsection}{Ley de Amdahl}{8}{equation.1.1.1}%
-\contentsline {subsubsection}{Ganancia Máxima}{8}{equation.1.1.2}%
-\contentsline {part}{II\hspace {1em}Relaciones de Ejercicios}{9}{part.2}%
-\contentsline {section}{\numberline {1.2}Ejercicios Tema 1}{11}{section.1.2}%
+\contentsline {chapter}{\numberline {1}Introducción a la Ingeniería de Servidores}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Apuntes de Clase}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Fundamentos de la Ingeniería del Software}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{Disponibilidad}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{Extensibilidad-expansibilidad}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{Escalabilidad}{5}{subsection.1.1.1}%
+\contentsline {subsubsection}{Coste}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Introducción a la comparación de las características entre servidores}{6}{subsection.1.1.2}%
+\contentsline {subsubsection}{Comparación de prestaciones}{6}{subsection.1.1.2}%
+\contentsline {subsubsection}{Speedup}{6}{subsection.1.1.2}%
+\contentsline {subsubsection}{Mejora del tiempo de ejecución de un proceso}{6}{equation.1.1.1}%
+\contentsline {subsubsection}{Ley de Amdahl}{6}{equation.1.1.1}%
+\contentsline {subsubsection}{Ganancia Máxima}{6}{equation.1.1.2}%
+\contentsline {section}{\numberline {1.2}Ejercicios Tema 1}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Diapositivas Tema 1}{33}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Componentes Hardware de un Servidor}{41}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Apuntes de Clase}{41}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Fuente de Alimentación}{41}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Ejercicios Tema 2}{44}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Diapositivas Tema 2}{44}{section.2.3}%

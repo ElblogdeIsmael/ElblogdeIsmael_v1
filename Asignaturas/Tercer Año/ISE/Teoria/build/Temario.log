@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  13 MAR 2025 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  14 MAR 2025 17:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,7 +751,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<portada.jpg, id=35, 97.8054pt x 146.4672pt>
+<portada.jpg, id=51, 97.8054pt x 146.4672pt>
 File: portada.jpg Graphic file (type jpg)
 <use portada.jpg>
 Package pdftex.def Info: portada.jpg  used on input line 94.
@@ -771,7 +771,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./portada.jpg>]
-<../../../../licencia.pdf, id=47, 614.295pt x 794.97pt>
+<../../../../licencia.pdf, id=63, 614.295pt x 794.97pt>
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf>
 Package pdftex.def Info: ../../../../licencia.pdf  used on input line 118.
@@ -780,7 +780,7 @@ File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf>
 Package pdftex.def Info: ../../../../licencia.pdf  used on input line 118.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<../../../../licencia.pdf, id=50, page=1, 614.295pt x 794.97pt>
+<../../../../licencia.pdf, id=66, page=1, 614.295pt x 794.97pt>
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf, page 1>
 Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 118.
@@ -825,21 +825,760 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4
 
-] [5] [6]
-Cap\'{\i }tulo 1.
-(./Capitulos/tema1.tex [7
-
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Cap\'{\i }tulo 1.
+(./Capitulos/tema1.tex
+Underfull \vbox (badness 1997) has occurred while \output is active []
+
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--63
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
 )
+Underfull \vbox (badness 1158) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=137, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf  used on input line 127.
+(pdftex.def)             Requested size: 2039.61505pt x 3059.42256pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf  used on input line 127.
+(pdftex.def)             Requested size: 2039.61505pt x 3059.42256pt.
+<Capitulos/Ejercicios_ISE_T1.pdf, id=140, page=1, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 127.
+(pdftex.def)             Requested size: 2039.61505pt x 3059.42256pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[8
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=904, page=2, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 2>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page2 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 2>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page2 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 2>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page2 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[9
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=909, page=3, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 3>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page3 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 3>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page3 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 3>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page3 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[10
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6547, page=4, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 4>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page4 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 4>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page4 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 4>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page4 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[11
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6552, page=5, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 5>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page5 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 5>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page5 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 5>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page5 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[12
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6557, page=6, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 6>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page6 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 6>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page6 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 6>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page6 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[13
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6563, page=7, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 7>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page7 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 7>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page7 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 7>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page7 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[14
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6568, page=8, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 8>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page8 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 8>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page8 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 8>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page8 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[15
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6573, page=9, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 9>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page9 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 9>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page9 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 9>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page9 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[16
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6578, page=10, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 10>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page10 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 10>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page10 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 10>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page10 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[17
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6583, page=11, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 11>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page11 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 11>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page11 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 11>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page11 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[18
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6588, page=12, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 12>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page12 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 12>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page12 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 12>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page12 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[19
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6595, page=13, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 13>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page13 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 13>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page13 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 13>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page13 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[20
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6600, page=14, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 14>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page14 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 14>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page14 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 14>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page14 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[21
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6605, page=15, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 15>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page15 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 15>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page15 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 15>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page15 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[22
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6610, page=16, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 16>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page16 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 16>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page16 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 16>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page16 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[23
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6615, page=17, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 17>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page17 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 17>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page17 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 17>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page17 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[24
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6620, page=18, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 18>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page18 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 18>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page18 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 18>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page18 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[25
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6626, page=19, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 19>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page19 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 19>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page19 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 19>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page19 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[26
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6631, page=20, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 20>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page20 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 20>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page20 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 20>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page20 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[27
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6636, page=21, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 21>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page21 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 21>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page21 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 21>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page21 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[28
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6641, page=22, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 22>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page22 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 22>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page22 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 22>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page22 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[29
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6646, page=23, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 23>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page23 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 23>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page23 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 23>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page23 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[30
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6651, page=24, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 24>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page24 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 24>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page24 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 24>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page24 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[31
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+<Capitulos/Ejercicios_ISE_T1.pdf, id=6657, page=25, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 25>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page25 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 25>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page25 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_ISE_T1.pdf, page 25>
+Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page25 used on input line 127.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[32
+
+ <./Capitulos/Ejercicios_ISE_T1.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema1.pdf, id=6662, 614.295pt x 794.97pt>
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf>
+Package pdftex.def Info: Capitulos/Tema1.pdf  used on input line 129.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf>
+Package pdftex.def Info: Capitulos/Tema1.pdf  used on input line 129.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema1.pdf, id=6665, page=1, 614.295pt x 794.97pt>
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page1 used on input line 129.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page1 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33]
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page1 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page1 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 LaTeX Info: Redefining \. on input line 129.
 LaTeX Info: Redefining \% on input line 129.
 
@@ -850,650 +1589,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8] [9
-
-] [10]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 130.
-
-<Capitulos/Ejercicios_ISE_T1.pdf, id=137, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf  used on input line 137.
-(pdftex.def)             Requested size: 2039.61505pt x 3059.42256pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf  used on input line 137.
-(pdftex.def)             Requested size: 2039.61505pt x 3059.42256pt.
-<Capitulos/Ejercicios_ISE_T1.pdf, id=140, page=1, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 137.
-(pdftex.def)             Requested size: 2039.61505pt x 3059.42256pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[11]
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 1>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page1 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[12
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=900, page=2, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 2>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page2 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 2>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page2 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 2>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page2 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[13
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=906, page=3, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 3>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page3 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 3>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page3 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 3>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page3 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[14
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6544, page=4, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 4>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page4 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 4>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page4 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 4>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page4 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[15
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6549, page=5, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 5>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page5 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 5>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page5 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 5>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page5 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[16
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6554, page=6, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 6>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page6 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 6>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page6 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 6>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page6 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[17
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6559, page=7, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 7>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page7 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 7>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page7 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 7>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page7 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[18
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6564, page=8, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 8>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page8 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 8>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page8 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 8>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page8 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[19
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6570, page=9, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 9>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page9 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 9>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page9 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 9>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page9 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[20
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6575, page=10, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 10>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page10 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 10>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page10 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 10>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page10 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[21
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6580, page=11, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 11>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page11 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 11>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page11 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 11>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page11 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[22
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6586, page=12, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 12>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page12 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 12>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page12 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 12>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page12 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[23
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6591, page=13, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 13>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page13 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 13>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page13 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 13>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page13 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[24
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6596, page=14, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 14>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page14 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 14>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page14 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 14>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page14 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[25
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6602, page=15, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 15>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page15 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 15>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page15 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 15>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page15 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[26
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6607, page=16, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 16>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page16 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 16>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page16 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 16>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page16 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[27
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6612, page=17, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 17>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page17 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 17>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page17 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 17>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page17 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[28
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6617, page=18, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 18>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page18 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 18>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page18 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 18>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page18 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[29
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6622, page=19, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 19>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page19 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 19>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page19 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 19>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page19 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[30
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6627, page=20, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 20>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page20 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 20>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page20 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 20>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page20 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[31
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6633, page=21, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 21>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page21 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 21>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page21 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 21>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page21 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[32
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6638, page=22, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 22>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page22 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 22>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page22 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 22>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page22 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[33
-
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6643, page=23, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 23>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page23 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 23>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page23 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 23>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page23 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page1 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [34
 
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6648, page=24, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 24>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page24 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 24>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page24 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
+ <./Capitulos/Tema1.pdf>]
 
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema1.pdf, id=6854, page=2, 614.295pt x 794.97pt>
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 2>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page2 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 2>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page2 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1501,24 +1616,165 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 24>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page24 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 2>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page2 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [35
 
- <./Capitulos/Ejercicios_ISE_T1.pdf>]
-<Capitulos/Ejercicios_ISE_T1.pdf, id=6653, page=25, 2039.62pt x 3059.43pt>
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 25>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page25 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 25>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page25 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
+ <./Capitulos/Tema1.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema1.pdf, id=6890, page=3, 614.295pt x 794.97pt>
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 3>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page3 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 3>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page3 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 3>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page3 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[36
+
+ <./Capitulos/Tema1.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema1.pdf, id=6959, page=4, 614.295pt x 794.97pt>
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 4>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page4 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 4>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page4 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 4>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page4 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[37
+
+ <./Capitulos/Tema1.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema1.pdf, id=6996, page=5, 614.295pt x 794.97pt>
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 5>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page5 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 5>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page5 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 5>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page5 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[38
+
+ <./Capitulos/Tema1.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema1.pdf, id=7044, page=6, 614.295pt x 794.97pt>
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 6>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page6 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 6>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page6 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 6>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page6 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[39
+
+ <./Capitulos/Tema1.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema1.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema1.pdf, id=7069, page=7, 614.295pt x 794.97pt>
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 7>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page7 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 7>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page7 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema1.pdf Graphic file (type pdf)
+<use Capitulos/Tema1.pdf, page 7>
+Package pdftex.def Info: Capitulos/Tema1.pdf , page7 used on input line 129.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[40
+
+ <./Capitulos/Tema1.pdf>]
+Cap\'{\i }tulo 2.
+(./Capitulos/tema2.tex
+<images/Tema2/evol.png, id=7089, 752.8125pt x 590.205pt>
+File: images/Tema2/evol.png Graphic file (type png)
+<use images/Tema2/evol.png>
+Package pdftex.def Info: images/Tema2/evol.png  used on input line 37.
+(pdftex.def)             Requested size: 341.43437pt x 267.68814pt.
+ [41
+
+]
+<images/Tema2/piramide.png, id=7094, 432.61626pt x 312.16624pt>
+File: images/Tema2/piramide.png Graphic file (type png)
+<use images/Tema2/piramide.png>
+Package pdftex.def Info: images/Tema2/piramide.png  used on input line 65.
+(pdftex.def)             Requested size: 341.43437pt x 246.37999pt.
+LaTeX Info: Redefining \. on input line 73.
+LaTeX Info: Redefining \% on input line 73.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1527,13 +1783,325 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-File: Capitulos/Ejercicios_ISE_T1.pdf Graphic file (type pdf)
-<use Capitulos/Ejercicios_ISE_T1.pdf, page 25>
-Package pdftex.def Info: Capitulos/Ejercicios_ISE_T1.pdf , page25 used on input line 137.
-(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
-[36
+[42 <./images/Tema2/evol.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
 
- <./Capitulos/Ejercicios_ISE_T1.pdf>] [37
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[43{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./images/Tema2/piramide.png (PNG copy)>])
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7112, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf>
+Package pdftex.def Info: Capitulos/Tema2.pdf  used on input line 141.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf>
+Package pdftex.def Info: Capitulos/Tema2.pdf  used on input line 141.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7115, page=1, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page1 used on input line 141.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page1 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[44]
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page1 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page1 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 1>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page1 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[45
+
+ <./Capitulos/Tema2.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7304, page=2, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 2>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page2 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 2>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page2 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 2>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page2 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[46
+
+ <./Capitulos/Tema2.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7339, page=3, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 3>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page3 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 3>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page3 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 3>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page3 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[47
+
+ <./Capitulos/Tema2.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7369, page=4, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 4>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page4 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 4>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page4 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 4>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page4 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[48
+
+ <./Capitulos/Tema2.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7410, page=5, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 5>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page5 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 5>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page5 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 5>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page5 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[49
+
+ <./Capitulos/Tema2.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7458, page=6, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 6>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page6 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 6>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page6 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 6>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page6 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[50
+
+ <./Capitulos/Tema2.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7498, page=7, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 7>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page7 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 7>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page7 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 7>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page7 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[51
+
+ <./Capitulos/Tema2.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7543, page=8, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 8>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page8 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 8>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page8 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 8>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page8 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[52
+
+ <./Capitulos/Tema2.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7586, page=9, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 9>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page9 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 9>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page9 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 9>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page9 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[53
+
+ <./Capitulos/Tema2.pdf>]
+
+pdfTeX warning: pdflatex (file ./Capitulos/Tema2.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Capitulos/Tema2.pdf, id=7626, page=10, 614.295pt x 794.97pt>
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 10>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page10 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 10>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page10 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Tema2.pdf Graphic file (type pdf)
+<use Capitulos/Tema2.pdf, page 10>
+Package pdftex.def Info: Capitulos/Tema2.pdf , page10 used on input line 141.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+[54
+
+ <./Capitulos/Tema2.pdf>] [55
 
 ] (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
@@ -1544,21 +2112,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Temario.out' has not changed.
-(rerunfilecheck)             Checksum: BF87D3275CF477580573B7F5960284F0;1359.
+(rerunfilecheck)             Checksum: 3E3690044589F4320954050EFD969BE6;2289.
  ) 
 Here is how much of TeX's memory you used:
- 29413 strings out of 475508
- 543381 string characters out of 5782137
- 1937187 words of memory out of 5000000
- 51159 multiletter control sequences out of 15000+600000
- 574528 words of font info for 78 fonts, out of 8000000 for 9000
+ 29567 strings out of 475508
+ 547103 string characters out of 5782137
+ 1936187 words of memory out of 5000000
+ 51278 multiletter control sequences out of 15000+600000
+ 578859 words of font info for 90 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
- 83i,17n,93p,586b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
-Output written on build/Temario.pdf (37 pages, 7245884 bytes).
+ 83i,17n,93p,804b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
+Output written on build/Temario.pdf (55 pages, 19603171 bytes).
 PDF statistics:
- 6738 PDF objects out of 7423 (max. 8388607)
- 6528 compressed objects within 66 object streams
- 53 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 7755 PDF objects out of 8907 (max. 8388607)
+ 6966 compressed objects within 70 object streams
+ 78 named destinations out of 1000 (max. 500000)
+ 391 words of extra memory for PDF output out of 10000 (max. 10000000)
 

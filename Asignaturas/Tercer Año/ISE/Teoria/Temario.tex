@@ -37,7 +37,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{Universidad de Granada}
-\fancyhead[L]{\nouppercase{\chaptername~\thechapter. \leftmark}}
+\fancyhead[L]{\nouppercase{ \leftmark}}
 
 % \fancyhead[C]{Escuela Técnica Superior de Ingenierías Informática}
 \fancyhead[R]{Ingeniería de Servidores}
@@ -120,22 +120,25 @@
 \tableofcontents
 \newpage
 
-\part{Apuntes de Clase}
-
-\chapter{Tema 1}
-
+\chapter{Introducción a la Ingeniería de Servidores}
+\section{Apuntes de Clase}
 \input{Capitulos/tema1}
-
-\part{Relaciones de Ejercicios}
 \section{Ejercicios Tema 1}
-% \begin{figure}[h]
-%     \centering
-%     \fbox{\includegraphics[width=\textwidth]{Capitulos/Ejercicios_ISE_T1.pdf}}
-%     \caption{Documento insertado con encabezados propios}
-% \end{figure}
-%\includepdf[pages=-]{Capitulos/Ejercicios_ISE_T1.pdf} 
 \includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_ISE_T1.pdf}
+\section{Diapositivas Tema 1}
+\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Tema1.pdf}
 
+
+\chapter{Componentes Hardware de un Servidor}
+\section{Apuntes de Clase}
+\input{Capitulos/tema2}
+
+\section{Ejercicios Tema 2}
+
+% \includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_ISE_T2.pdf}
+
+\section{Diapositivas Tema 2}
+\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Tema2.pdf}
 
 
 \newpage
