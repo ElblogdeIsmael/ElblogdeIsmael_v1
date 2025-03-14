@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  13 MAR 2025 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  14 MAR 2025 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -655,6 +655,10 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 ) (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
+
+
+LaTeX Warning: Label `fig:agentes' multiply defined.
+
 )
 \openout1 = `Temario.aux'.
 
@@ -751,7 +755,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<portada.png, id=35, 578.16pt x 866.7582pt>
+<portada.png, id=71, 578.16pt x 866.7582pt>
 File: portada.png Graphic file (type png)
 <use portada.png>
 Package pdftex.def Info: portada.png  used on input line 95.
@@ -771,7 +775,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./portada.png>]
-<../../../../licencia.pdf, id=47, 614.295pt x 794.97pt>
+<../../../../licencia.pdf, id=83, 614.295pt x 794.97pt>
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf>
 Package pdftex.def Info: ../../../../licencia.pdf  used on input line 119.
@@ -780,7 +784,7 @@ File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf>
 Package pdftex.def Info: ../../../../licencia.pdf  used on input line 119.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<../../../../licencia.pdf, id=50, page=1, 614.295pt x 794.97pt>
+<../../../../licencia.pdf, id=86, page=1, 614.295pt x 794.97pt>
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf, page 1>
 Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 119.
@@ -840,11 +844,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6]
 Cap\'{\i }tulo 2.
-(./Capitulos/Tema2.tex) [7
+(./Capitulos/Tema2.tex [7
 
 ]
-LaTeX Info: Redefining \. on input line 137.
-LaTeX Info: Redefining \% on input line 137.
+<images/Tema2/metodo.png, id=165, 736.7525pt x 474.77374pt>
+File: images/Tema2/metodo.png Graphic file (type png)
+<use images/Tema2/metodo.png>
+Package pdftex.def Info: images/Tema2/metodo.png  used on input line 41.
+(pdftex.def)             Requested size: 213.39568pt x 137.51424pt.
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -853,9 +862,78 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8
+[8 <./images/Tema2/metodo.png (PNG copy)>]
+<images/Tema2/ar_re.png, id=176, 754.82pt x 438.63875pt>
+File: images/Tema2/ar_re.png Graphic file (type png)
+<use images/Tema2/ar_re.png>
+Package pdftex.def Info: images/Tema2/ar_re.png  used on input line 114.
+(pdftex.def)             Requested size: 298.75264pt x 173.60509pt.
+LaTeX Info: Redefining \. on input line 117.
+LaTeX Info: Redefining \% on input line 117.
 
-] [9] (build/Temario.aux
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9]
+<images/Tema2/percep.png, id=181, 355.3275pt x 461.725pt>
+File: images/Tema2/percep.png Graphic file (type png)
+<use images/Tema2/percep.png>
+Package pdftex.def Info: images/Tema2/percep.png  used on input line 149.
+(pdftex.def)             Requested size: 170.71393pt x 221.83684pt.
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10 <./images/Tema2/ar_re.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./images/Tema2/percep.png (PNG copy)>])
+LaTeX Info: Redefining \. on input line 133.
+LaTeX Info: Redefining \% on input line 133.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12]
+Cap\'{\i }tulo 3.
+(./Capitulos/Tema3.tex) [13
+
+]
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14
+
+] [15] (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -863,22 +941,26 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Temario.out' has not changed.
-(rerunfilecheck)             Checksum: FE6762A6563C7D48AA202E085907BD6D;943.
+(rerunfilecheck)             Checksum: B5EC65BC6793AF9CF5A2D96D26DB3DC1;2692.
  ) 
 Here is how much of TeX's memory you used:
- 29308 strings out of 475508
- 539240 string characters out of 5782137
- 1934187 words of memory out of 5000000
- 51081 multiletter control sequences out of 15000+600000
- 574528 words of font info for 78 fonts, out of 8000000 for 9000
+ 29402 strings out of 475508
+ 540913 string characters out of 5782137
+ 1936187 words of memory out of 5000000
+ 51146 multiletter control sequences out of 15000+600000
+ 578859 words of font info for 90 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
  83i,17n,93p,670b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
-Output written on build/Temario.pdf (9 pages, 2721627 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
+Output written on build/Temario.pdf (15 pages, 2937745 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 278 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 181 words of extra memory for PDF output out of 10000 (max. 10000000)
 
