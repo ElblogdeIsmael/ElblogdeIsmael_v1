@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  13 MAR 2025 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  15 MAR 2025 13:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -751,7 +751,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<portada.jpg, id=7, 642.4pt x 963.6pt>
+<portada.jpg, id=15, 642.4pt x 963.6pt>
 File: portada.jpg Graphic file (type jpg)
 <use portada.jpg>
 Package pdftex.def Info: portada.jpg  used on input line 94.
@@ -771,7 +771,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./portada.jpg>]
-<../../../../licencia.pdf, id=19, 614.295pt x 794.97pt>
+<../../../../licencia.pdf, id=27, 614.295pt x 794.97pt>
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf>
 Package pdftex.def Info: ../../../../licencia.pdf  used on input line 118.
@@ -780,7 +780,7 @@ File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf>
 Package pdftex.def Info: ../../../../licencia.pdf  used on input line 118.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<../../../../licencia.pdf, id=22, page=1, 614.295pt x 794.97pt>
+<../../../../licencia.pdf, id=30, page=1, 614.295pt x 794.97pt>
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf, page 1>
 Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 118.
@@ -813,8 +813,8 @@ LaTeX Info: Redefining \% on input line 1.
  [3
 
 ]
-LaTeX Info: Redefining \. on input line 127.
-LaTeX Info: Redefining \% on input line 127.
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -825,7 +825,522 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4
 
-] [5] (build/Temario.aux
+]
+Cap\'{\i }tulo 1.
+<Capitulos/Ejercicios_FBD_S1.pdf, id=75, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf  used on input line 126.
+(pdftex.def)             Requested size: 2039.61505pt x 3059.42256pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf  used on input line 126.
+(pdftex.def)             Requested size: 2039.61505pt x 3059.42256pt.
+<Capitulos/Ejercicios_FBD_S1.pdf, id=78, page=1, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page1 used on input line 126.
+(pdftex.def)             Requested size: 2039.61505pt x 3059.42256pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page1 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[5]
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page1 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page1 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 1>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page1 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[6
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4735, page=2, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 2>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page2 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 2>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page2 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 2>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page2 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[7
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4742, page=3, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 3>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page3 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 3>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page3 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 3>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page3 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[8
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4747, page=4, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 4>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page4 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 4>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page4 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 4>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page4 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[9
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4752, page=5, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 5>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page5 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 5>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page5 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 5>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page5 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[10
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4757, page=6, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 6>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page6 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 6>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page6 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 6>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page6 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[11
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4762, page=7, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 7>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page7 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 7>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page7 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 7>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page7 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[12
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4767, page=8, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 8>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page8 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 8>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page8 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 8>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page8 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[13
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4773, page=9, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 9>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page9 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 9>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page9 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 9>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page9 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[14
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4778, page=10, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 10>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page10 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 10>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page10 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 10>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page10 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[15
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4783, page=11, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 11>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page11 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 11>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page11 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 11>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page11 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[16
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4788, page=12, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 12>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page12 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 12>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page12 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 12>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page12 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[17
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4793, page=13, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 13>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page13 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 13>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page13 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 13>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page13 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[18
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4798, page=14, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 14>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page14 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 14>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page14 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 14>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page14 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[19
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4804, page=15, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 15>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page15 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 15>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page15 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 15>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page15 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[20
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4809, page=16, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 16>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page16 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 16>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page16 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 16>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page16 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[21
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4814, page=17, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 17>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page17 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 17>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page17 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 17>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page17 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[22
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4819, page=18, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 18>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page18 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 18>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page18 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 18>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page18 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[23
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>]
+<Capitulos/Ejercicios_FBD_S1.pdf, id=4824, page=19, 2039.62pt x 3059.43pt>
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 19>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page19 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 19>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page19 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+File: Capitulos/Ejercicios_FBD_S1.pdf Graphic file (type pdf)
+<use Capitulos/Ejercicios_FBD_S1.pdf, page 19>
+Package pdftex.def Info: Capitulos/Ejercicios_FBD_S1.pdf , page19 used on input line 126.
+(pdftex.def)             Requested size: 563.43369pt x 845.15054pt.
+[24
+
+ <./Capitulos/Ejercicios_FBD_S1.pdf>] [25
+
+] (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -834,21 +1349,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `Temario.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 99FF81B9AB5BFADBFDA16F39E07F678E;314.
  ) 
 Here is how much of TeX's memory you used:
- 29199 strings out of 475508
- 537512 string characters out of 5782137
+ 29322 strings out of 475508
+ 541167 string characters out of 5782137
  1931187 words of memory out of 5000000
- 51006 multiletter control sequences out of 15000+600000
- 569201 words of font info for 63 fonts, out of 8000000 for 9000
+ 51095 multiletter control sequences out of 15000+600000
+ 573844 words of font info for 77 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
  83i,17n,93p,579b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
-Output written on build/Temario.pdf (5 pages, 305936 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
+Output written on build/Temario.pdf (25 pages, 5705547 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 38 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4882 PDF objects out of 5155 (max. 8388607)
+ 4710 compressed objects within 48 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
