@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1741974424.94498 "/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer Año/IA/Teoria/Temario.tex" "build/Temario.pdf" "Temario" 1741974425.82627 0
+["pdflatex"] 1741975976.0179 "/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer Año/IA/Teoria/Temario.tex" "build/Temario.pdf" "Temario" 1741975977.04955 0
   "../../../../licencia.pdf" 1741879589.35766 60041 b28a94751df425b9c4e221ff0e74b64b ""
   "/home/ismael/Escritorio/Github/ElblogdeIsmael.github.io-main/Asignaturas/Tercer Año/IA/Teoria/Temario.tex" 1741974424.80952 4660 ecae68dc03e8ee4ca0992aa48a7f5647 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1736268207 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -211,12 +211,12 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1741452761.71758 5346644 5bad2f9f38dfb4fc4ecfde4cfe611ae0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1741452756 7232994 ed9cc3e48500d9f642cdde846d59e29f ""
   "Capitulos/Tema1.tex" 1741881305.01353 3858 44a0df47152abc1cb9386e925f2c1edc ""
-  "Capitulos/Tema2.tex" 1741974422.06507 11264 6c6bdef975157d55236c25b261c59f80 ""
+  "Capitulos/Tema2.tex" 1741975068.05656 11614 022851a0967cfaa8100446fbfdb5476f ""
   "Capitulos/Tema3.tex" 1741971837.40451 660 ad1bb7cf370a66d8c7a87308668694a6 ""
   "Temario.tex" 1741974424.80952 4660 ecae68dc03e8ee4ca0992aa48a7f5647 ""
-  "build/Temario.aux" 1741974425.74056 4086 236c5d5bed5640d701460aff90770609 "pdflatex"
-  "build/Temario.out" 1741974425.74156 2692 b5ec65bc6793af9cf5a2d96d26db3dc1 "pdflatex"
-  "build/Temario.toc" 1741974425.74156 1818 c31255f9b0a90d8a8175d529b4e1f7a7 "pdflatex"
+  "build/Temario.aux" 1741975976.96123 4086 236c5d5bed5640d701460aff90770609 "pdflatex"
+  "build/Temario.out" 1741975976.96223 2692 b5ec65bc6793af9cf5a2d96d26db3dc1 "pdflatex"
+  "build/Temario.toc" 1741975976.96323 1818 c31255f9b0a90d8a8175d529b4e1f7a7 "pdflatex"
   "images/Tema2/ar_re.png" 1741973374.36744 34500 8849d93b023ca66f5b4ef6189b5204bc ""
   "images/Tema2/metodo.png" 1741972002.50029 62175 5e8d3c4019aadfc4f97f8153131b260f ""
   "images/Tema2/percep.png" 1741973845.11583 78385 addcc3854694d6e11fab1ed6adaa3ac1 ""

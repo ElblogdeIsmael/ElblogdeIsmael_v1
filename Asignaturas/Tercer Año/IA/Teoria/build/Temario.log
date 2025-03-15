@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  14 MAR 2025 18:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2025.3.8)  14 MAR 2025 19:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -863,13 +863,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8 <./images/Tema2/metodo.png (PNG copy)>]
-<images/Tema2/ar_re.png, id=176, 754.82pt x 438.63875pt>
-File: images/Tema2/ar_re.png Graphic file (type png)
-<use images/Tema2/ar_re.png>
-Package pdftex.def Info: images/Tema2/ar_re.png  used on input line 114.
-(pdftex.def)             Requested size: 298.75264pt x 173.60509pt.
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -879,13 +874,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
+<images/Tema2/ar_re.png, id=180, 754.82pt x 438.63875pt>
+File: images/Tema2/ar_re.png Graphic file (type png)
+<use images/Tema2/ar_re.png>
+Package pdftex.def Info: images/Tema2/ar_re.png  used on input line 116.
+(pdftex.def)             Requested size: 298.75264pt x 173.60509pt.
 <images/Tema2/percep.png, id=181, 355.3275pt x 461.725pt>
 File: images/Tema2/percep.png Graphic file (type png)
 <use images/Tema2/percep.png>
-Package pdftex.def Info: images/Tema2/percep.png  used on input line 149.
+Package pdftex.def Info: images/Tema2/percep.png  used on input line 151.
 (pdftex.def)             Requested size: 170.71393pt x 221.83684pt.
-LaTeX Info: Redefining \. on input line 152.
-LaTeX Info: Redefining \% on input line 152.
+LaTeX Info: Redefining \. on input line 154.
+LaTeX Info: Redefining \% on input line 154.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -895,8 +895,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10 <./images/Tema2/ar_re.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 185.
-LaTeX Info: Redefining \% on input line 185.
+LaTeX Info: Redefining \. on input line 187.
+LaTeX Info: Redefining \% on input line 187.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -949,15 +949,15 @@ Package rerunfilecheck Info: File `Temario.out' has not changed.
 (rerunfilecheck)             Checksum: B5EC65BC6793AF9CF5A2D96D26DB3DC1;2692.
  ) 
 Here is how much of TeX's memory you used:
- 29402 strings out of 475508
- 540913 string characters out of 5782137
- 1936187 words of memory out of 5000000
- 51146 multiletter control sequences out of 15000+600000
+ 29409 strings out of 475508
+ 541067 string characters out of 5782137
+ 1937187 words of memory out of 5000000
+ 51153 multiletter control sequences out of 15000+600000
  578859 words of font info for 90 fonts, out of 8000000 for 9000
  290 hyphenation exceptions out of 8191
  83i,17n,93p,670b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt2074.pfb>
-Output written on build/Temario.pdf (15 pages, 2937745 bytes).
+Output written on build/Temario.pdf (15 pages, 2938145 bytes).
 PDF statistics:
  278 PDF objects out of 1000 (max. 8388607)
  218 compressed objects within 3 object streams
