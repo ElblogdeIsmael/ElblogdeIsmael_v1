@@ -46,6 +46,7 @@
 
     body {
       font-family: var(--ff-poppins);
+      font-style: italic;
       background: var(--smoky-black);
       color: var(--white-2);
       margin: 0;
@@ -55,16 +56,24 @@
     #content {
       max-width: 800px;
       margin: 0 auto;
-      background: var(--eerie-black-2);
+      background: var(--smoky-black);
       box-shadow: var(--shadow-1);
       border-radius: 10px;
       padding: 20px;
       animation: fadeIn 1s ease-in-out;
     }
 
-    h1, h2 {
-      color: var(--orange-yellow-crayola);
+    h1{
+      color: hsl(30, 100%, 50%);
       font-size: var(--fs-1);
+      margin-bottom: 20px;
+      animation: slideIn 0.5s ease-in-out;
+      text-decoration: underline;
+    }
+
+    h2{
+      color: hsl(30, 89%, 56%);
+      font-size: var(--fs-2);
       margin-bottom: 20px;
       animation: slideIn 0.5s ease-in-out;
     }
@@ -72,7 +81,7 @@
     ul#subjects {
       list-style-type: none;
       padding: 0;
-      font-size: var(--fs-2);
+      font-size: var(--fs-3);
     }
 
     ul#subjects li {
@@ -180,16 +189,17 @@
 </head>
 <body>
   <div id="content">
-    <h1>3º curso del doble grado de Ingeniería Informática y ADE - <span id="year"></span></h1>
+    <h1>3º Curso del Doble Grado en Ingeniería Informática y ADE (2024/2025)</h1>
+    <hr style="border: 3px solid var(--light-gray); margin: 20px 0;">
     <h2>1º Semestre</h2>
     <ul id="subjects"></ul>
+    <hr style="border: 3px solid var(--light-gray); margin: 20px 0;">
     <h2>2º Semestre</h2>
     <ul id="subjects_2"></ul>
   </div>
 
   <script>
-    var currentYear = new Date().getFullYear();
-    document.getElementById('year').textContent = currentYear;
+    
 
     var subjects = [
       {
@@ -300,7 +310,7 @@
       {
         name: 'Inteligencia Artificial',
         subfolders: [
-          { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: 'IA/Practicas/Temario/build/Temario.pdf' }] },
+          { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: 'IA/Practicas/build/Temario.pdf' }] },
           { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: 'IA/Teoria/build/Temario.pdf' }] },
           { name: 'Exámenes', files: [] }
         ]
@@ -465,6 +475,8 @@
       li.appendChild(a);
       subjects_2List.appendChild(li);
     });
+
+
 
 
 
