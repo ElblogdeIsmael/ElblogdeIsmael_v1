@@ -1,0 +1,265 @@
+\section{Ejercicios}
+
+\subsection*{9. Resolver utilizando el método de las dos fases:}
+
+\begin{itemize}
+    \item[a)] Min. $20x_1 + 25x_2$
+    \begin{align*}
+        \text{s.a.} \quad & 2x_1 + 3x_2 \geq 18 \\
+        & x_1 + 3x_2 \geq 12 \\
+        & 4x_1 + 3x_2 \geq 24 \\
+        & x_1, x_2 \geq 0
+    \end{align*}
+    
+    \item[b)] Max. $4x_1 + 3x_2$
+    \begin{align*}
+        \text{s.a.} \quad & 3x_1 + 4x_2 \leq 12 \\
+        & x_1 + x_2 \geq 4 \\
+        & 4x_1 + 2x_2 \leq 8 \\
+        & x_1, x_2 \geq 0
+    \end{align*}
+    
+    \item[c)] Max. $x_1 - 2x_2 + 3x_3$
+    \begin{align*}
+        \text{s.a.} \quad & x_1 + x_2 + x_3 = 6 \\
+        & x_3 \leq 2 \\
+        & x_1, x_2, x_3 \geq 0
+    \end{align*}
+
+    Pasamos a forma estándar:
+
+    \begin{align*}
+        Max. \quad & x_1 - 2x_2 + 3x_3 + 0s_1 -Mt_1\\
+        \text{s.a.} \quad & x_1 + x_2 + x_3 + t_1= 6 \\
+        & x_3 + s_1 = 2 \\
+        & x_1, x_2, x_3, s_1, t_1 \geq 0
+    \end{align*}
+
+    \subsubsection*{Fase 1}
+
+    Paso 1. La función artificial es: 
+
+    \begin{equation*}
+        z^0=0x_1 + 0x_2 + 0x_3 + 0s_1 -t_1
+    \end{equation*}
+
+    Paso 2. Aplicar el método simplex al programa construido:
+
+    \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    &  & 0 & 0 & 0 & 0 & -1 &\\
+    \hline
+    & VB & $x_1$ & $x_2$ & $x_3$ & $s_1$ & $t_1$ & XB \\
+    \hline
+    -1 & $t_1$ & 1 & 1 & 1 & 0 & 1 & 6\\
+    \hline
+    0 & $s_1$ & 0 & 0 & 1 & 1& 0 &2\\
+    \hline
+    & $z_j - c_j$ & -1 & -1 & -1 & 0 & 0 &-6\\
+    \hline
+    \end{tabular}
+    \end{table}
+
+    Ahora debemos de coger la más negativa, pero al ser todos con valor -1, da igual cual cojamos, cogemos la primera, es decir, la de $x_1$.
+
+    % \begin{tcolorbox}[colback=green!5!white,colframe=green!75!black]
+        \begin{align*}
+            F_p = F_1\\
+            F2N = F2 (\text{Ya tiene un 0})
+        \end{align*}
+        
+    % \end{tcolorbox}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        &  & 0 & 0 & 0 & 0 & -1 &\\
+        \hline
+        & VB & $x_1$ & $x_2$ & $x_3$ & $s_1$ & $t_1$ & XB \\
+        \hline
+        0 & $x_1$ & 1 & 1 & 1 & 0 & 1 & 6\\
+        \hline
+        0 & $s_1$ & 0 & 0 & 1 & 1& 0 &2\\
+        \hline
+        & $z_j - c_j$ & 0 & 0& 0 & 0 & 1 &0\\
+        \hline
+        \end{tabular}
+    \end{table}
+
+    En este punto no podemos continuar ya que todos los valores de la fila $z_j - c_j$ son positivos, por lo que debemos de pasar a la fase 2.
+
+    \subsubsection*{Fase 2}
+
+    Ahora debemos de eliminar las variables artificiales y continuar con el problema original.
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        &  & 1 & -2 & 3 & 0 &\\
+        \hline
+        & VB & $x_1$ & $x_2$ & $x_3$ & $s_1$ & XB \\
+        \hline
+        1 & $x_1$ & 1 & 1 & 1 & 0 & 6\\
+        \hline
+        0 & $s_1$ & 0 & 0 & 1 & 1& 2\\
+        \hline
+        & $z_j - c_j$ & 0 & 3&-2 & 0 & 6\\
+        \hline
+        \end{tabular}
+    \end{table}
+
+    Cogemos la fila más negativa, en este caso la de $x_3$, con valor -2.
+
+    \begin{align*}
+        F_p = F_2\\
+        F1N = F1 - F_p
+    \end{align*}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|c|}
+        \hline
+        &  & 1 & -2 & 3 & 0 &\\
+        \hline
+        & VB & $x_1$ & $x_2$ & $x_3$ & $s_1$ & XB \\
+        \hline
+        1 & $x_1$ & 1 & 1 & 0 & -1 & 4\\
+        \hline
+        3 & $x_3$ & 0 & 0 & 1 & 1& 2\\
+        \hline
+        & $z_j - c_j$ & 0 & 3&0 & 2 & 10\\
+        \hline
+        \end{tabular}
+    \end{table}
+
+    Como todos los valores de la fila $z_j - c_j$ son positivos, hemos llegado a la solución óptima.
+
+
+    
+    \item[d)] Max. $x_1 + x_2 + 10x_3$
+    \begin{align*}
+        \text{s.a.} \quad & x_2 + 4x_3 = 2 \\
+        & -2x_1 + x_2 - 6x_3 = 2 \\
+        & x_1, x_2, x_3 \geq 0
+    \end{align*}
+
+    Pasamos a forma estándar:
+
+    \begin{align*}
+        Max. \quad & x_1 + x_2 + 10x_3 - t_1 -t_2\\
+        \text{s.a.} \quad & x_2 + 4x_3 + t_1= 2 \\
+        & -2x_1 + x_2 - 6x_3 + t_2 = 2 \\
+        & x_1, x_2, x_3, s_1, t_1 \geq 0
+    \end{align*}
+
+    \subsubsection*{Fase 1}
+
+    Paso 1. La función artificial es: 
+    \begin{equation*}
+        z^0=0x_1 + 0x_2 + 0x_3  -t_1 -t_2
+    \end{equation*}
+
+    Paso 2. Aplicar el método simplex al programa construido:
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        &  & 0 & 0 & 0 & -1 & -1 &\\
+        \hline
+        & VB & $x_1$ & $x_2$ & $x_3$ & $t_1$ & $t_2$ & XB \\
+        \hline
+        -1 & $t_1$ & 0 & 1 & 4 & 1 & 0 & 2\\
+        \hline
+        -1 & $t_2$ & -2 & 1 & -6 & 0& 1 &2\\
+        \hline
+        & $z_j - c_j$ & 2 & -2& 2 & 0 & 0 &0\\
+        \hline
+        \end{tabular}
+    \end{table}
+
+    Cogemos la columna más negativa, en este caso la de $x_2$.
+
+    \begin{align*}
+        F_p = F_1\\
+        F2N = F_p - F_2
+    \end{align*}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        &  & 0 & 0 & 0 & -1 & -1 &\\
+        \hline
+        & VB & $x_1$ & $x_2$ & $x_3$ & $t_1$ & $t_2$ & XB \\
+        \hline
+        0 & $x_2$ & 0 & 1 & 4 & 1 & 0 & 2\\
+        \hline
+        -1 & $t_2$ & 2 & 0 & 10 & 1& -1 &0\\
+        \hline
+        & $z_j - c_j$ & -2 & 0& -10 & 0 & 2 &0\\
+        \hline
+        \end{tabular}
+    \end{table}
+
+    Cogemos la columna más negativa, en este caso la de $x_3$.
+
+    \begin{align*}
+        F_p = F_2\\
+        F2N = F2 / 10\\
+        F1N = F_1 - 4F_p
+    \end{align*}
+
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|c|c|}
+        \hline
+        &  & 0 & 0 & 0 & -1 & -1 &\\
+        \hline
+        & VB & $x_1$ & $x_2$ & $x_3$ & $t_1$ & $t_2$ & XB \\
+        \hline
+        0 & $x_2$ & 0.8 & 1 & 0 & 0.6 & 0.4 & 2\\
+        \hline
+        0 & $x_3$ & 0.2 & 0 & 1 & 0.1 & -0.1 & 0\\       \hline
+        & $z_j - c_j$ & 0 & 0& 0 & 1 & 1 &0\\
+        \hline
+        \end{tabular}
+    \end{table}
+
+    En este punto no podemos continuar ya que todos los valores de la fila $z_j - c_j$ son positivos, por lo que debemos de pasar a la fase 2.
+
+    \subsubsection*{Fase 2}
+
+    Ahora debemos de eliminar las variables artificiales y continuar con el problema original.
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        &  & 1 & 1 & 10 &\\
+        \hline
+        & VB & $x_1$ & $x_2$ & $x_3$ & XB \\
+        \hline
+        1 & $x_2$ & 0.8 & 1 & 0 & 2\\
+        \hline
+        10 & $x_3$ & 0.2 & 0 & 1 & 0\\
+        \hline
+        & $z_j - c_j$ & 1.8 & 0 & 0 &2\\
+        \hline
+        \end{tabular}
+    \end{table}
+
+    Como todos los valores de la fila $z_j - c_j$ son positivos, hemos llegado a la solución óptima.
+
+    
+    \item[e)] Max. $x_1 + 2x_2$
+    \begin{align*}
+        \text{s.a.} \quad & x_1 + x_2 = 4 \\
+        & 2x_1 - 3x_2 = 3 \\
+        & 3x_1 - x_2 = 8 \\
+        & x_1, x_2 \geq 0
+    \end{align*}
+\end{itemize}
