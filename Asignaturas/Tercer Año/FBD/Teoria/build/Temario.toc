@@ -1,7 +1,0 @@
-\babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {1}Tema 1}{5}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Tema 2: Arquitectura de un SGBD}{7}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Lenguajes de una BD}{7}{section.2.1}%
-\contentsline {chapter}{\numberline {3}Tema 3: Modelos de datos}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Definición}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Modelo Relacional}{10}{section.3.2}%
