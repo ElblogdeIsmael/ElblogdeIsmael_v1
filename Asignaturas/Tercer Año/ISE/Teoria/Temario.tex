@@ -28,6 +28,17 @@
 \usepackage{color}
 \usepackage{float}
 \usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{aligned-overset}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{nicefrac}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{pgfplots}
 
 % Configuración de márgenes
 \geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
@@ -124,9 +135,11 @@
 \section{Apuntes de Clase}
 \input{Capitulos/tema1}
 \section{Ejercicios Tema 1}
-\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_ISE_T1.pdf}
-\section{Diapositivas Tema 1}
-\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Tema1.pdf}
+%\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_ISE_T1.pdf}
+\input{Capitulos/EjerciciosT1.tex}
+
+% \section{Diapositivas Tema 1}
+% \includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Tema1.pdf}
 
 
 \chapter{Componentes Hardware de un Servidor}
@@ -137,8 +150,8 @@
 
 % \includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_ISE_T2.pdf}
 
-\section{Diapositivas Tema 2}
-\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Tema2.pdf}
+% \section{Diapositivas Tema 2}
+% \includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Tema2.pdf}
 
 
 \newpage
