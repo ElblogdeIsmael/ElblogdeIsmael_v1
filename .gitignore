@@ -1,1 +1,12 @@
 token.txt
+vacio_sinconocimientos.html 
+/Asignaturas/.vscode
+# Ignorar todos los archivos que tienen esta extension
+# Ignorar todos los archivos generados por LaTeX en cualquier directorio
+**/*.aux
+**/*.log
+**/*.fls
+**/*.out
+**/*.toc
+**/*.fdb_latexmk
+**/*.synctex.gz
