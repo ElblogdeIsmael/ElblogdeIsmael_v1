@@ -1,7 +1,7 @@
 \section{Ping y SSH}
 
 Sobre esta parte no decidí tomar apuntes en clase debido a que son conceptos vistos en la Asignatura de Fundamentos de Redes, por lo que consideré que no era necesario. De todas formas en la parte de Prácticas (Resolución) se comenta paso a paso lo que se hizo en esta parte.
-
+\newpage
 \section{LVM y RAID}
 
 \subsection{LVM (Logical Volume Manager)}
@@ -9,13 +9,13 @@ Sobre esta parte no decidí tomar apuntes en clase debido a que son conceptos vi
 \begin{itemize}
     \item \textbf{Discos y particiones}:
     \begin{itemize}
-        \item \texttt{sda}: Primer disco del sistema.
-        \item Luego pueden existir \texttt{sdb}, \texttt{sdc}, etc.
+        \item \micode{sda}: Primer disco del sistema.
+        \item Luego pueden existir \micode{sdb}, \micode{sdc}, etc.
     \end{itemize}
     \item Consideraciones importantes:
     \begin{itemize}
-        \item Si el directorio \texttt{/boot} se llena, el sistema podría fallar al arrancar debido a la falta de espacio disponible.
-        \item Se recomienda evitar el uso de \texttt{swap} en sistemas virtualizados, ya que reduce el rendimiento.
+        \item Si el directorio \micode{/boot} se llena, el sistema podría fallar al arrancar debido a la falta de espacio disponible.
+        \item Se recomienda evitar el uso de \micode{swap} en sistemas virtualizados, ya que reduce el rendimiento.
     \end{itemize}
 \end{itemize}
 
@@ -53,7 +53,7 @@ RAID es una tecnología que permite combinar múltiples discos para mejorar la r
         \item Si un disco falla, el otro sigue funcionando con los mismos datos.
         \item Aporta robustez al sistema.
         \item \textbf{Problema}: Se paga el doble en almacenamiento.
-        \item Se usa frecuentemente en \texttt{/boot} para garantizar que el sistema pueda arrancar en caso de fallo de un disco.
+        \item Se usa frecuentemente en \micode{/boot} para garantizar que el sistema pueda arrancar en caso de fallo de un disco.
     \end{itemize}
     
     \item \textbf{RAID 5 (Paridad distribuida)}:
@@ -85,36 +85,36 @@ RAID es una tecnología que permite combinar múltiples discos para mejorar la r
 \subsection{Ejercicio Opcional: Configuración de RAID1 para /var}
 
 \subsection{Objetivo}
-El objetivo es proporcionar a \texttt{/var} un respaldo frente a fallos mediante la creación de un RAID1. Para ello, debemos montar un RAID1 y mover \texttt{/var} dentro de este.
+El objetivo es proporcionar a \micode{/var} un respaldo frente a fallos mediante la creación de un RAID1. Para ello, debemos montar un RAID1 y mover \micode{/var} dentro de este.
 
 \subsection{Pasos a seguir}
 \begin{enumerate}
     \item \textbf{Creación de discos virtuales en la máquina virtual (MV)}
     \begin{itemize}
-        \item Se crean dos discos: \texttt{raid1} y \texttt{raid2}.
-        \item Usamos \texttt{lsblk} para verificar la existencia de \texttt{sdb} y \texttt{sdc}.
+        \item Se crean dos discos: \micode{raid1} y \micode{raid2}.
+        \item Usamos \micode{lsblk} para verificar la existencia de \micode{sdb} y \micode{sdc}.
     \end{itemize}
 
-    \item \textbf{Instalación de \texttt{mdadm}}
+    \item \textbf{Instalación de \micode{mdadm}}
     \begin{itemize}
-        \item \texttt{sudo dnf provides mdadm} (para verificar qué paquete lo proporciona).
-        \item \texttt{sudo dnf install mdadm} (para instalarlo).
+        \item \micode{sudo dnf provides mdadm} (para verificar qué paquete lo proporciona).
+        \item \micode{sudo dnf install mdadm} (para instalarlo).
     \end{itemize}
 
     \item \textbf{Creación del RAID1}
     \begin{itemize}
-        \item \texttt{sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc}
+        \item \micode{sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sdb /dev/sdc}
         \item Aparecerá un \textit{warning} sobre la creación de metadatos, confirmamos con "sí".
         \item Para monitorear la sincronización del RAID:  
-              \texttt{watch -n 1 more /proc/mdstat}
-        \item Luego, verificamos con \texttt{lsblk}.
+              \micode{watch -n 1 more /proc/mdstat}
+        \item Luego, verificamos con \micode{lsblk}.
     \end{itemize}
 
     \item \textbf{Prueba de fallo de disco}
     \begin{itemize}
         \item Podemos simular la falla de un disco con:  
-              \texttt{echo 1 > /dev/sdb}
-        \item Se observa que \texttt{md0} sigue funcionando al ser un \textit{mirror}.
+              \micode{echo 1 > /dev/sdb}
+        \item Se observa que \micode{md0} sigue funcionando al ser un \textit{mirror}.
     \end{itemize}
 \end{enumerate}
 
@@ -142,8 +142,8 @@ Un \textbf{Logical Volume (LV)} puede expandirse tomando espacio libre de otros 
 
 \subsection{Visualización de LVM}
 \begin{itemize}
-    \item Para ver los discos que son de tipo LVM, usamos \texttt{lsblk} en la columna de \textit{type}.
-    \item Para ver opciones de \texttt{pv}, \texttt{vg} y \texttt{lv}, usamos \texttt{tab-completion}.
+    \item Para ver los discos que son de tipo LVM, usamos \micode{lsblk} en la columna de \textit{type}.
+    \item Para ver opciones de \micode{pv}, \micode{vg} y \micode{lv}, usamos \micode{tab-completion}.
 \end{itemize}
 
 \subsection{Consideraciones sobre Volumen Groups}
@@ -152,26 +152,26 @@ Si un \textbf{Volume Group} contiene un disco magnético, un SSD y un RAID, el a
 \subsection{Creación del LVM sobre el RAID}
 \begin{enumerate}
     \item Convertir el RAID en un Physical Volume:
-          \texttt{pvcreate /dev/md0}
-    \item Crear un Volume Group llamado \texttt{raid1}:
-          \texttt{vgcreate raid1 /dev/md0}
+          \micode{pvcreate /dev/md0}
+    \item Crear un Volume Group llamado \micode{raid1}:
+          \micode{vgcreate raid1 /dev/md0}
     \item Crear un Logical Volume de 10GB dentro del Volume Group:
-          \texttt{lvcreate -L 10G -n rvar raid1}
+          \micode{lvcreate -L 10G -n rvar raid1}
 \end{enumerate}
 
 \subsection{Movimiento de /var al RAID}
-Después de crear el volumen lógico, debemos mover \texttt{/var} dentro del RAID:
+Después de crear el volumen lógico, debemos mover \micode{/var} dentro del RAID:
 
 \begin{itemize}
-    \item El nombre del volumen dentro del RAID es \texttt{/dev/raid1/rvar}.
-    \item También puede aparecer como \texttt{/dev/mapper/raid1-rvar}, ya que son sinónimos creados mediante enlaces simbólicos.
+    \item El nombre del volumen dentro del RAID es \micode{/dev/raid1/rvar}.
+    \item También puede aparecer como \micode{/dev/mapper/raid1-rvar}, ya que son sinónimos creados mediante enlaces simbólicos.
 \end{itemize}
 
 \subsection{Resolución de Problemas}
 
-\subsection{Problema 1: Configurar el sistema de archivos en \texttt{rvar}}
+\subsection{Problema 1: Configurar el sistema de archivos en \micode{rvar}}
 
-Actualmente, el volumen lógico \texttt{rvar} está vacío y sin un sistema de archivos. Para solucionarlo, seguimos estos pasos:
+Actualmente, el volumen lógico \micode{rvar} está vacío y sin un sistema de archivos. Para solucionarlo, seguimos estos pasos:
 
 \begin{enumerate}
     \item \textbf{Seleccionar un sistema de archivos:}  
@@ -181,7 +181,7 @@ Actualmente, el volumen lógico \texttt{rvar} está vacío y sin un sistema de a
     \begin{verbatim}
     ls /lib/modules/$(uname -r)/kernel/fs
     \end{verbatim}
-    \item \textbf{Formatear el volumen lógico con \texttt{ext4}:}
+    \item \textbf{Formatear el volumen lógico con \micode{ext4}:}
     \begin{verbatim}
     mkfs.ext4 /dev/mapper/raid1-rvar
     \end{verbatim}
@@ -189,11 +189,11 @@ Actualmente, el volumen lógico \texttt{rvar} está vacío y sin un sistema de a
 
 \subsection{Problema 2: Montar y trasladar /var al nuevo volumen}
 
-El volumen lógico \texttt{rvar} debe ser montado en el sistema y debemos trasladar \texttt{/var} sin perder datos. Para ello:
+El volumen lógico \micode{rvar} debe ser montado en el sistema y debemos trasladar \micode{/var} sin perder datos. Para ello:
 
 \begin{enumerate}
     \item \textbf{Montar el volumen lógico:}  
-    Primero, montamos \texttt{rvar} en un directorio temporal:
+    Primero, montamos \micode{rvar} en un directorio temporal:
     \begin{verbatim}
     mount /dev/mapper/raid1-rvar /mnt/
     \end{verbatim}
@@ -201,10 +201,10 @@ El volumen lógico \texttt{rvar} debe ser montado en el sistema y debemos trasla
     \begin{verbatim}
     mount
     \end{verbatim}
-    Al revisar \texttt{/mnt/}, aparecerá el directorio \texttt{lost+found}, indicando que el sistema de archivos está activo.
+    Al revisar \micode{/mnt/}, aparecerá el directorio \micode{lost+found}, indicando que el sistema de archivos está activo.
 
     \item \textbf{Cambiar a modo mantenimiento:}  
-    Para evitar la pérdida de datos al copiar \texttt{/var}, debemos entrar en el \textbf{runlevel1}, también conocido como \textbf{modo mantenimiento}. Esto se hace con:
+    Para evitar la pérdida de datos al copiar \micode{/var}, debemos entrar en el \textbf{runlevel1}, también conocido como \textbf{modo mantenimiento}. Esto se hace con:
     \begin{verbatim}
     systemctl isolate runlevel1.target
     \end{verbatim}
@@ -214,13 +214,13 @@ El volumen lógico \texttt{rvar} debe ser montado en el sistema y debemos trasla
     \end{verbatim}
 
     \item \textbf{Copiar los datos de /var a /mnt/}:  
-    Copiamos todo el contenido de \texttt{/var} manteniendo atributos con:
+    Copiamos todo el contenido de \micode{/var} manteniendo atributos con:
     \begin{verbatim}
     cp -a /var/* /mnt/
     \end{verbatim}
 
     \item \textbf{Crear un respaldo de /var:}  
-    Antes de reemplazar \texttt{/var}, hacemos una copia de seguridad por si algo falla:
+    Antes de reemplazar \micode{/var}, hacemos una copia de seguridad por si algo falla:
     \begin{verbatim}
     mv /var /var_old
     \end{verbatim}
@@ -236,8 +236,8 @@ El volumen lógico \texttt{rvar} debe ser montado en el sistema y debemos trasla
     df -h
     \end{verbatim}
 
-    \item \textbf{Hacer el montaje permanente en \texttt{/etc/fstab}:}  
-    Si reiniciamos ahora, la configuración se perdería. Para evitarlo, editamos el archivo \texttt{/etc/fstab} y agregamos la siguiente línea:
+    \item \textbf{Hacer el montaje permanente en \micode{/etc/fstab}:}  
+    Si reiniciamos ahora, la configuración se perdería. Para evitarlo, editamos el archivo \micode{/etc/fstab} y agregamos la siguiente línea:
     \begin{verbatim}
     /dev/mapper/raid1-rvar      /var       ext4     defaults     0 0
     \end{verbatim}
@@ -251,43 +251,43 @@ El volumen lógico \texttt{rvar} debe ser montado en el sistema y debemos trasla
     Si todo está correcto, reiniciamos el sistema.
 \end{enumerate}
 
-\subsection{Interpretación de \texttt{lsblk}}
+\subsection{Interpretación de \micode{lsblk}}
 
-El comando \texttt{lsblk} nos permite visualizar la estructura de almacenamiento del sistema. Es importante identificar:
+El comando \micode{lsblk} nos permite visualizar la estructura de almacenamiento del sistema. Es importante identificar:
 
 \begin{itemize}
-    \item \textbf{Discos físicos y particiones}: Aparecen como \texttt{sda}, \texttt{sdb}, \texttt{sdc}, etc.
-    \item \textbf{Volúmenes lógicos}: Se muestran bajo \texttt{/dev/mapper/}.
+    \item \textbf{Discos físicos y particiones}: Aparecen como \micode{sda}, \micode{sdb}, \micode{sdc}, etc.
+    \item \textbf{Volúmenes lógicos}: Se muestran bajo \micode{/dev/mapper/}.
     \item \textbf{SR0}: Indica la unidad de CD-ROM.
 \end{itemize}
 
-
+\newpage
 \section{Firewall + SSHD}
 
 Ya sabemos de otras Asignaturas que un \textbf{firewall} es un sistema que controla el tráfico de red, permitiendo o bloqueando ciertas conexiones. En Linux, el firewall más común es \textbf{iptables}.
 
-El comando que tenemos que aprender a gestionar es \texttt{firewall-cmd}, tiene diversas opciones como status, state. Otra forma para ver si esta arrancado es \texttt{systemctl status firewall}.
+El comando que tenemos que aprender a gestionar es \micode{firewall-cmd}, tiene diversas opciones como status, state. Otra forma para ver si esta arrancado es \micode{systemctl status firewall}.
 
-Otras opciones: \texttt{firewall-cmd --lis-all}, en este comando debemos de ver los filtros que estan definidos, en services podemos ver los servicios que están habilitados.
+Otras opciones: \micode{firewall-cmd --list-all}, en este comando debemos de ver los filtros que estan definidos, en services podemos ver los servicios que están habilitados.
 
-Con sudo firewall-cmd --add-service=http, cuando lo listo otra vez, se añade el puerto http en la opción services. Cuando se hace con firewall-cmd, se hace dinámica, por lo que si reiniciamos esto se pierde. Para que se quede debemos de ejecutar el comando \texttt{sudo fire firewall-cmd --runtime-to-permanent}. De forma alternativa, podemos ejecuar primero la opción \texttt{--permanent} y luego \texttt{--add-port=443/http}, pero si lo listamos no lo lleva a memoria, no hay ninguna opción que lo deje permanente y que lo lleve a memoria. Tenemos dos opciones o trabajar con servicios o llevarlo a memoria.
+Con sudo firewall-cmd --add-service=http, cuando lo listo otra vez, se añade el puerto http en la opción services. Cuando se hace con firewall-cmd, se hace dinámica, por lo que si reiniciamos esto se pierde. Para que se quede debemos de ejecutar el comando \micode{sudo fire firewall-cmd --runtime-to-permanent}. De forma alternativa, podemos ejecuar primero la opción \micode{--permanent} y luego \micode{--add-port=443/http}, pero si lo listamos no lo lleva a memoria, no hay ninguna opción que lo deje permanente y que lo lleve a memoria. Tenemos dos opciones o trabajar con servicios o llevarlo a memoria.
 
-Si queremos conocer los servicios, podemos ejecutar \texttt{firewall-cmd --get-services}.
+Si queremos conocer los servicios, podemos ejecutar \micode{firewall-cmd --get-services}.
 
 Los firewalls en Linux son muy eficientes debido a que en este SO se trabaja con servicios, por lo que se puede controlar el tráfico de forma muy precisa. Al implementarse a nivel de Kernel ayuda a que sea muy eficiente.
 \textit{No se va a preguntar nada sobre iptables}.
 
-Debemos de usar el programa \texttt{nmap} ya que nos dice que puertos están abietos en un servidor. Para instalarlo, usamos \texttt{sudo dnf install nmap}. En el guión debemos de mirar la referenia número 31.
+Debemos de usar el programa \micode{nmap} ya que nos dice que puertos están abietos en un servidor. Para instalarlo, usamos \micode{sudo dnf install nmap}. En el guión debemos de mirar la referenia número 31.
 
 \subsection{Ejercicio Opcional}
 
-Debemos de instalar un servicio HTTP, se recomienda Apache. Podemos escanear los 100 puertos mas usados con el comando \texttt{nmap -F localhost}. Para instalar Apache, usamos \texttt{sudo dnf install httpd}. Para arrancar el servicio, usamos \texttt{sudo systemctl start httpd}. Para comprobar que está arrancado, usamos \texttt{sudo systemctl status httpd}. Para que arranque en el inicio, usamos \texttt{sudo systemctl enable httpd}. Para comprobar que está escuchando en el puerto 80, usamos \texttt{sudo ss -tulnp | grep 80}.
+Debemos de instalar un servicio HTTP, se recomienda Apache. Podemos escanear los 100 puertos mas usados con el comando \micode{nmap -F localhost}. Para instalar Apache, usamos \micode{sudo dnf install httpd}. Para arrancar el servicio, usamos \micode{sudo systemctl start httpd}. Para comprobar que está arrancado, usamos \micode{sudo systemctl status httpd}. Para que arranque en el inicio, usamos \micode{sudo systemctl enable httpd}. Para comprobar que está escuchando en el puerto 80, usamos \micode{sudo ss -tulnp | grep 80}.
 
 Debemos de poder acceder desde el navegador de la máquina anfitrión.
 
 \subsection{SSH}
 
-Es un programa de terminal remoto, ya lo hemos usado en Asignaturas anteriormente. Antes se usaba Telnet, en este se especifica la dirección IP y el puerto, pero no era seguro, por lo que cualquier man in the middle podía interceptarlo y suplantar la identidad. Además, todas las respuestas que se producían eran en abierto, los \texttt{cat},... En cambio, SSH es seguro, ya que se cifra la información. Este hace lo mismo que Telnet, pero de forma segura. Se recomienda hacerlo \texttt{ssh usuario@ip}. O bien sustituir la IP por el nombre del dominio. Para cerrar la conexión, usamos \texttt{exit}. 
+Es un programa de terminal remoto, ya lo hemos usado en Asignaturas anteriormente. Antes se usaba Telnet, en este se especifica la dirección IP y el puerto, pero no era seguro, por lo que cualquier man in the middle podía interceptarlo y suplantar la identidad. Además, todas las respuestas que se producían eran en abierto, los \micode{cat},... En cambio, SSH es seguro, ya que se cifra la información. Este hace lo mismo que Telnet, pero de forma segura. Se recomienda hacerlo \micode{ssh usuario@ip}. O bien sustituir la IP por el nombre del dominio. Para cerrar la conexión, usamos \micode{exit}. 
 
 Ya hemos estudiado en otras Asignaturas el tema de criptografía en cuanto al cifrado simétrico y asimétrico. En especial, en Fundamentos de Redes. Por si acaso, vamos a hacer una pequeña introducción. Tenemos dos tipos de cifrado:
 \begin{itemize}
@@ -313,7 +313,7 @@ El tema de certificados y demás al ser materia de Fundamentos de Redes, no se v
 
 Nos conectamos a un ordenador remoto mediante ssh, de esta manera le decimos que nos queremos conectar, el te envía la llave pública, es decir, se va a su configuración, recupera la llave y te la envía. A continuación, le enviamos nuestras creedenciales cifradas con la llave pública, y cuando le llega, las descifra con la llave privada y comprueba si son correctas. Si lo son, nos deja entrar. Si no lo son, nos dice que no podemos entrar. Además, de esta manera se prevee que un \textit{man-in-the-middle} no pueda interceptar las credenciales.
 
-Podemos meterle una entrada en el fichero de host, de esta manera cuando nos conectamos a un servidor, nos conectamos a una IP, pero si le metemos una entrada en el fichero de host, le decimos que esa IP es un nombre, de esta manera cuando nos conectamos a ese nombre, nos conectamos a esa IP. Para ello, debemos de editar el fichero \texttt{/etc/hosts} y añadir la IP y el nombre del servidor, así es más cómdo, para ello en Linux es \texttt{ssh usuario@nombre}. 
+Podemos meterle una entrada en el fichero de host, de esta manera cuando nos conectamos a un servidor, nos conectamos a una IP, pero si le metemos una entrada en el fichero de host, le decimos que esa IP es un nombre, de esta manera cuando nos conectamos a ese nombre, nos conectamos a esa IP. Para ello, debemos de editar el fichero \micode{/etc/hosts} y añadir la IP y el nombre del servidor, así es más cómdo, para ello en Linux es \micode{ssh usuario@nombre}. 
 
 Cuando ejecutamos el comando para conectarnos, nos imprime un mensaje con el HASH, y nos pregunta que si nos lo creemos, si en vez de una llave pública esta reconocida en nuestras llaves y ve que tenemos el certificado no nos preguntaría. En todos lo equipos se crea el directorio ssh en home, dentro de este tenemos un archivo que se llama known\_hosts, el cual contiene las llaves públicas de los ordenadores que ya has confiado, de manera que no nos va a preguntar cuando nos conectemos de nuevo, si queremos que en la primera vez tampoco pregunta la copiamos y pegamos, entre otras opciones. \textit{Nota: Por defecto se crea ese directorio cuando se conetca por ssh.}
 
@@ -324,7 +324,7 @@ Este proceso es muy costos en términos de cómputo, por lo que se usa lo más m
 En la MV:
 
 \begin{itemize}
-    \item ssh-keygen: crea la llave privada dentro de home, luego nos pregunta si queremos protegerla con contraseña, si no queremos, le damos a enter, \textit{pero siempre debe de hacerse.} Luego si nos vamos al directorio vemos dos documentos la llave privada y la pública. Si queremos que no nos pregunte siempre la contraseña, usamos el comando \texttt{ssh-agent}, de esta manera el la escribe por ti, hasta que usamos el comando \texttt{exit}, en este caso se olvida.
+    \item ssh-keygen: crea la llave privada dentro de home, luego nos pregunta si queremos protegerla con contraseña, si no queremos, le damos a enter, \textit{pero siempre debe de hacerse.} Luego si nos vamos al directorio vemos dos documentos la llave privada y la pública. Si queremos que no nos pregunte siempre la contraseña, usamos el comando \micode{ssh-agent}, de esta manera el la escribe por ti, hasta que usamos el comando \micode{exit}, en este caso se olvida.
 \end{itemize}
 
 Para usar la pública:
@@ -337,17 +337,17 @@ Para usar la pública:
 
 \textit{Nota: El directorio .ssh se crea en el home cuando es el cliente, mientras que en el servidor se crea en el /etc/ssh, también podemos crearlo nosotros a priori.}
 
-Ahora podemos ejecuar un comando remoto, por ejemplo: \texttt{ssh usuario@ip comando}, de esta manera se ejecuta el comando en la máquina remota. En este punto comienza la automatización de configuración remota. \textit{Ansible son scripts pero ejecutados de manera remota.} Además, podemos copiar archivos usando el comando scp (secure copy), de esta manera se copia el archivo de una máquina a otra. \textit{Nota: scp es un comando de ssh.} El comando es \texttt{scp origen destino}, por ejemplo: \texttt{scp /home/usuario/archivo usuario@ip:/home/usuario/}, de esta manera se copia el archivo de la máquina local a la remota. Si queremos copiar un directorio, usamos el comando \texttt{scp -r origen destino}. Además podemos conectarnos mediante \textit{sftp} (secure file transfer protocol), de esta manera se conecta a la máquina remota y podemos copiar archivos de manera interactiva. \textit{Nota: sftp es un comando de ssh.} Para conectarnos, usamos el comando \texttt{sftp usuario@ip}, y luego podemos usar los comandos \texttt{put} y \texttt{get} para copiar archivos de una máquina a otra.
+Ahora podemos ejecuar un comando remoto, por ejemplo: \micode{ssh usuario@ip comando}, de esta manera se ejecuta el comando en la máquina remota. En este punto comienza la automatización de configuración remota. \textit{Ansible son scripts pero ejecutados de manera remota.} Además, podemos copiar archivos usando el comando scp (secure copy), de esta manera se copia el archivo de una máquina a otra. \textit{Nota: scp es un comando de ssh.} El comando es \micode{scp origen destino}, por ejemplo: \micode{scp /home/usuario/archivo usuario@ip:/home/usuario/}, de esta manera se copia el archivo de la máquina local a la remota. Si queremos copiar un directorio, usamos el comando \micode{scp -r origen destino}. Además podemos conectarnos mediante \textit{sftp} (secure file transfer protocol), de esta manera se conecta a la máquina remota y podemos copiar archivos de manera interactiva. \textit{Nota: sftp es un comando de ssh.} Para conectarnos, usamos el comando \micode{sftp usuario@ip}, y luego podemos usar los comandos \micode{put} y \micode{get} para copiar archivos de una máquina a otra.
 
 \subsection{Ejercicio Opcional}
 
 En el ejercicio debemos de dar acceso mediante ssh usando la llave pública y privada, debemos de modificar el puerto para conectarnos en vez del 22 para el ssh usar otro que sea mayor que el 1024, para ello podemos asegurarnos de que no estamos colisionando con un puerto conocido buscando en Innternet.
 
 \begin{enumerate}
-    \item Accedemos al contenido del demonio del ssh que se encuentra en /etc/ssh, una vez dentro nos pone el comando que debemos de ejecuar \texttt{semanage...} (aparece en el fichero de ssh de la máquina Rocky), para que se apliquen los cambios debemos de reiniciar el servicio, para ello usamos el comando \texttt{sudo systemctl restart sshd} o bien reiniciar la máquina.
-    \item Además debemos de modificar el firewall para permitir ese puerto, para ello usamos el comando \texttt{sudo firewall-cmd --add-port=puerto/tcp --permanent}, y luego reiniciamos el servicio con \texttt{sudo systemctl restart firewalld}.
-    \item Luego debemos de copiar la llave pública a la máquina remota, para ello usamos el comando \texttt{ssh-copy-id usuario@ip}, y luego nos pide la contraseña, una vez introducida, ya podemos conectarnos sin contraseña.
-    \item Para comprobar que todo está correcto, usamos el comando \texttt{ssh usuario@ip -p puerto}, de esta manera nos conectamos a la máquina remota.
+    \item Accedemos al contenido del demonio del ssh que se encuentra en /etc/ssh, una vez dentro nos pone el comando que debemos de ejecuar \micode{semanage...} (aparece en el fichero de ssh de la máquina Rocky), para que se apliquen los cambios debemos de reiniciar el servicio, para ello usamos el comando \micode{sudo systemctl restart sshd} o bien reiniciar la máquina.
+    \item Además debemos de modificar el firewall para permitir ese puerto, para ello usamos el comando \micode{sudo firewall-cmd --add-port=puerto/tcp --permanent}, y luego reiniciamos el servicio con \micode{sudo systemctl restart firewalld}.
+    \item Luego debemos de copiar la llave pública a la máquina remota, para ello usamos el comando \micode{ssh-copy-id usuario@ip}, y luego nos pide la contraseña, una vez introducida, ya podemos conectarnos sin contraseña.
+    \item Para comprobar que todo está correcto, usamos el comando \micode{ssh usuario@ip -p puerto}, de esta manera nos conectamos a la máquina remota.
 \end{enumerate}
 
 Con el parámetro -p le especificamos el puerto al que nos queremos conectar, de esta manera nos conectamos al puerto que hemos especificado, ya que de manera predeterminada se conecta al puerto 22.

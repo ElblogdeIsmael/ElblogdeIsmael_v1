@@ -29,6 +29,23 @@
 \usepackage{float}
 \usepackage{pdfpages}
 
+%\newcommand{\micode}[1]{\lstinline[basicstyle=\ttfamily, keywordstyle=\bfseries, breaklines=true]{#1}}      % Cargar el paquete listings
+
+% Configuración para que listings soporte UTF-8
+\lstset{
+    extendedchars=true,  % Permite caracteres extendidos (opcional en versiones recientes)
+    inputencoding=utf8,  % Asegura que listings entienda UTF-8
+    breaklines=true,
+    emphstyle=\itshape,
+    basicstyle=\ttfamily, keywordstyle=\bfseries,
+    literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 
+             {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+             {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{¿}}1 {¡}{{¡}}1
+}
+
+% Definir \micode con soporte para tildes
+\newcommand{\micode}[1]{\lstinline{#1}}
+
 %creacion de un lstlisting claro y bonito
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{white},   
@@ -49,6 +66,7 @@
     tabsize=2
 }
 
+\setlength{\headheight}{14.5pt}
 
 % Configuración de márgenes
 \geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
@@ -58,7 +76,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{Universidad de Granada}
-\fancyhead[L]{\nouppercase{\chaptername~\thechapter. \leftmark}}
+\fancyhead[L]{\nouppercase{\leftmark}}
 
 % \fancyhead[C]{Escuela Técnica Superior de Ingenierías Informática}
 \fancyhead[R]{Ingeniería de Servidores}
@@ -149,7 +167,7 @@
 \input{Capitulos/ApuntesClase}
 
 
-
+\newpage
 \part{Prácticas}
 \chapter{Bloque 1}
 

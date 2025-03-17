@@ -1,7 +1,7 @@
 
 \section{Ejercicio 1 Opcional}
 \begin{tcolorbox}[colback=yellow!5!white,colframe=yellow!75!black]
-    \textit{Cuando se hace referencia a la imagen X, se refiere a la imagen 2.X}
+    \textit{Cuando se hace referencia a la imagen X, se refiere a la imagen 2.X(hasta el punto de Firewall)}
   
 \end{tcolorbox}
 
@@ -148,7 +148,7 @@ En cuanto al servicio ssh, debemos de ver el estado del servicio sshd con el com
         \caption{Ver el contenido del archivo creado en la MV desde el anfitrión}
     \end{minipage}
 \end{figure}
-
+\newpage
 \section{Servidor con LVM + RAID}
 
 \subsection{Aspectos clave de LVM}
@@ -255,23 +255,23 @@ La herramienta \texttt{mdadm} permite gestionar arreglos RAID en Linux. A contin
 
 \begin{itemize}
   \item Crear un RAID 0 con dos discos:
-    \begin{lstlisting}[style=mystyle]
+    \begin{lstlisting}[style=mystyle][style=mystyle]
     mdadm --create --verbose /dev/md0 --level=0 --raid-devices=2 /dev/sdX /dev/sdY
     \end{lstlisting}
   \item Crear un RAID 1 con dos discos:
-    \begin{lstlisting}[style=mystyle]
+    \begin{lstlisting}[style=mystyle][style=mystyle]
     mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sdX /dev/sdY
     \end{lstlisting}
   \item Crear un RAID 5 con tres discos:
-    \begin{lstlisting}[style=mystyle]
+    \begin{lstlisting}[style=mystyle][style=mystyle]
     mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/sdX /dev/sdY /dev/sdZ
     \end{lstlisting}
   \item Verificar el estado del RAID:
-    \begin{lstlisting}[style=mystyle]
+    \begin{lstlisting}[style=mystyle][style=mystyle]
     cat /proc/mdstat
     \end{lstlisting}
   \item Detener un RAID:
-    \begin{lstlisting}[style=mystyle]
+    \begin{lstlisting}[style=mystyle][style=mystyle]
     mdadm --stop /dev/md0
     \end{lstlisting}
 \end{itemize}
@@ -284,13 +284,13 @@ Para implementar eficazmente soluciones en servidores Linux, es esencial compren
 
 Los sistemas Linux operan en diferentes niveles de ejecución o \textit{runlevels}, que determinan los servicios y procesos que se ejecutan. Con la adopción de \textit{systemd}, estos niveles se denominan \textit{targets}. El modo de mantenimiento, conocido como \textit{rescue.target} o \textit{emergency.target}, es crucial para tareas de recuperación y administración del sistema. Para cambiar al modo de mantenimiento, se puede utilizar el siguiente comando:
 
-\begin{lstlisting}[style=mystyle]
+\begin{lstlisting}[style=mystyle][style=mystyle]
 sudo systemctl isolate rescue.target
 \end{lstlisting}
 
 Para volver al modo multiusuario estándar:
 
-\begin{lstlisting}[style=mystyle]
+\begin{lstlisting}[style=mystyle][style=mystyle]
 sudo systemctl isolate multi-user.target
 \end{lstlisting}
 
@@ -320,13 +320,13 @@ Linux soporta diversos sistemas de archivos. Algunos de los más comunes son:
 
 El montaje de sistemas de archivos permite acceder a dispositivos de almacenamiento. Para montar un dispositivo:
 
-\begin{lstlisting}[style=mystyle]
+\begin{lstlisting}[style=mystyle][style=mystyle]
 sudo mount /dev/sdX1 /mnt/punto_de_montaje
 \end{lstlisting}
 
 Para desmontarlo:
 
-\begin{lstlisting}[style=mystyle]
+\begin{lstlisting}[style=mystyle][style=mystyle]
 sudo umount /mnt/punto_de_montaje
 \end{lstlisting}
 
@@ -341,31 +341,31 @@ La administración de archivos en Linux se realiza mediante comandos de línea.
 
 % \begin{itemize}
 %   \item \texttt{cp}: Copiar archivos o directorios.
-%     \begin{lstlisting}[style=mystyle]
+%     \begin{lstlisting}[style=mystyle][style=mystyle]
 %     cp origen destino
 %     \end{lstlisting}
 %   \item \texttt{mv}: Mover o renombrar archivos o directorios.
-%     \begin{lstlisting}[style=mystyle]
+%     \begin{lstlisting}[style=mystyle][style=mystyle]
 %     mv origen destino
 %     \end{lstlisting}
 %   \item \texttt{rm}: Eliminar archivos.
-%     \begin{lstlisting}[style=mystyle]
+%     \begin{lstlisting}[style=mystyle][style=mystyle]
 %     rm archivo
 %     \end{lstlisting}
 %   \item \texttt{mkdir}: Crear un nuevo directorio.
-%     \begin{lstlisting}[style=mystyle]
+%     \begin{lstlisting}[style=mystyle][style=mystyle]
 %     mkdir nombre_del_directorio
 %     \end{lstlisting}
 %   \item \texttt{ls}: Listar el contenido de un directorio.
-%     \begin{lstlisting}[style=mystyle]
+%     \begin{lstlisting}[style=mystyle][style=mystyle]
 %     ls ruta_del_directorio
 %     \end{lstlisting}
 %   \item \texttt{cat}: Mostrar el contenido de un archivo.
-%     \begin{lstlisting}[style=mystyle]
+%     \begin{lstlisting}[style=mystyle][style=mystyle]
 %     cat archivo
 %     \end{lstlisting}
 %   \item \texttt{nano} o \texttt{vim}: Editores de texto para modificar archivos desde la terminal.
-%     \begin{lstlisting}[style=mystyle]
+%     \begin{lstlisting}[style=mystyle][style=mystyle]
 %     nano archivo
 %     \end{lstlisting}
 % \end{itemize}
@@ -476,7 +476,7 @@ Ahora debemos de trabajar con la serie de comandos que se especifican para poder
 
 Una vez trasladad la carpeta, debemos de hacer permanentes los cambios, para ello debemos de editar el fichero \texttt{/etc/fstab} y añadir la siguiente línea (Ver Figura 22):
 
-\begin{lstlisting}[style=mystyle]
+\begin{lstlisting}[style=mystyle][style=mystyle]
   /dev/mapper/raid1-rvar /var ext4 defaults 0 0
 \end{lstlisting}
 
@@ -505,7 +505,451 @@ Y como podemos comprobar en la Figura 24, hemos conseguido trasladar la carpeta 
   \caption{Resultado final}
 \end{figure}
 
+\newpage
+\section{Acceso seguro al servidor: Firewall + SSHD}
 
+\subsection{Iptables}
+
+\texttt{iptables} es una herramienta de línea de comandos utilizada para configurar el cortafuegos en el núcleo de Linux, implementado dentro del proyecto Netfilter. Aunque \texttt{iptables} es un marco heredado, \texttt{nftables} se presenta como su reemplazo moderno, ofreciendo una capa de compatibilidad. 
+
+\subsubsection{Instalación}
+
+El núcleo estándar de Arch Linux viene compilado con soporte para \texttt{iptables}. Para instalar las utilidades de usuario, se debe instalar el paquete \texttt{iptables}, que es una dependencia indirecta del metapaquete \texttt{base}, por lo que debería estar instalado por defecto en el sistema. 
+
+\subsubsection{Conceptos Básicos}
+
+\begin{itemize}
+    \item \textbf{Tablas}: Colecciones de reglas con propósitos específicos.
+    \item \textbf{Cadenas}: Listas de reglas dentro de una tabla que se recorren en orden.
+    \item \textbf{Reglas}: Definiciones que consisten en un criterio de coincidencia y una acción a ejecutar si se cumple dicho criterio.
+\end{itemize}
+
+\subsubsection{Configuración y Uso}
+
+\texttt{iptables} se puede configurar directamente desde la línea de comandos o mediante diversas interfaces frontales, tanto de consola como gráficas. Para mostrar las reglas actuales, se utiliza:
+
+\begin{verbatim}
+iptables -L
+\end{verbatim}
+
+Para restablecer las reglas:
+
+\begin{verbatim}
+iptables -F
+\end{verbatim}
+
+\subsubsection{Registro de Actividad}
+
+\texttt{iptables} permite registrar paquetes para monitorear actividad o depurar reglas. Es posible limitar la tasa de registro para evitar la saturación de los registros del sistema. 
+\subsubsection{Alternativas y Herramientas Relacionadas}
+
+\begin{itemize}
+    \item \textbf{\texttt{nftables}}: Proyecto que busca reemplazar a \texttt{iptables}, proporcionando un nuevo marco de filtrado de paquetes y una utilidad de espacio de usuario llamada \texttt{nft}. 
+    \item \textbf{\texttt{ipset}}: Aplicación complementaria que permite crear conjuntos de direcciones IP para ser utilizados en reglas de \texttt{iptables}, facilitando el bloqueo o la aceptación de múltiples direcciones de manera eficiente. 
+    \item \textbf{\texttt{ufw} (Uncomplicated Firewall)}: Programa para gestionar el cortafuegos de manera sencilla, proporcionando una interfaz de línea de comandos fácil de usar. 
+\end{itemize}
+
+\subsubsection{Recursos Adicionales}
+
+Para configuraciones más avanzadas, como la creación de un cortafuegos con estado o compartir la conexión a Internet, se pueden consultar las siguientes guías:
+
+\begin{itemize}
+    \item \textbf{Cortafuegos con Estado Sencillo}: Explica cómo configurar un cortafuegos con estado utilizando \texttt{iptables}, detallando las reglas necesarias y su propósito. 
+    \item \textbf{Compartir Conexión a Internet}: Describe cómo compartir la conexión a Internet desde una máquina a otras, incluyendo los requisitos y pasos necesarios.
+\end{itemize}
+
+
+\subsection{firewalld y firewall-cmd en Rocky Linux}
+
+\texttt{firewalld} es un servicio de cortafuegos dinámico que permite gestionar reglas de firewall sin necesidad de reiniciar el servicio. Su herramienta de línea de comandos, \texttt{firewall-cmd}, proporciona una interfaz para la administración del firewall en sistemas como Rocky Linux.
+
+\subsubsection{Gestión del Firewall con firewall-cmd}
+
+\texttt{firewall-cmd} permite configurar reglas de firewall de manera flexible y en tiempo real. Algunas de las operaciones más comunes incluyen:
+
+\begin{itemize}
+    \item \textbf{Verificar el estado del firewall}:
+    \begin{verbatim}
+    firewall-cmd --state
+    \end{verbatim}
+
+    \item \textbf{Listar las reglas activas}:
+    \begin{verbatim}
+    firewall-cmd --list-all
+    \end{verbatim}
+
+    \item \textbf{Abrir un puerto específico} (ejemplo: puerto 80 TCP):
+    \begin{verbatim}
+    firewall-cmd --add-port=80/tcp --permanent
+    \end{verbatim}
+    
+    \item \textbf{Cerrar un puerto específico}:
+    \begin{verbatim}
+    firewall-cmd --remove-port=80/tcp --permanent
+    \end{verbatim}
+
+    \item \textbf{Recargar la configuración del firewall} para aplicar cambios:
+    \begin{verbatim}
+    firewall-cmd --reload
+    \end{verbatim}
+\end{itemize}
+
+\subsubsection{Administración del Servicio firewalld con systemctl}
+
+\texttt{systemctl} es una herramienta utilizada para gestionar servicios en sistemas basados en \texttt{systemd}, como Rocky Linux. Se puede utilizar para controlar el servicio \texttt{firewalld} de la siguiente manera:
+
+\begin{itemize}
+    \item \textbf{Verificar si el servicio está activo}:
+    \begin{verbatim}
+    systemctl status firewalld
+    \end{verbatim}
+
+    \item \textbf{Iniciar el servicio} si está detenido:
+    \begin{verbatim}
+    systemctl start firewalld
+    \end{verbatim}
+
+    \item \textbf{Detener el servicio} si se necesita desactivarlo temporalmente:
+    \begin{verbatim}
+    systemctl stop firewalld
+    \end{verbatim}
+
+    \item \textbf{Habilitar el servicio para que se inicie automáticamente} al arrancar el sistema:
+    \begin{verbatim}
+    systemctl enable firewalld
+    \end{verbatim}
+
+    \item \textbf{Deshabilitar el servicio para evitar su inicio automático}:
+    \begin{verbatim}
+    systemctl disable firewalld
+    \end{verbatim}
+\end{itemize}
+
+\subsubsection{Verificación de Configuración con nmap}
+
+\texttt{nmap} es una herramienta de escaneo de redes que permite verificar los puertos abiertos y configuraciones de firewall. Se puede usar para comprobar la efectividad de las reglas de firewall aplicadas. Algunos ejemplos de uso incluyen:
+
+\begin{itemize}
+    \item \textbf{Escanear los puertos abiertos de una dirección IP específica}:
+    \begin{verbatim}
+    nmap <direccion_ip>
+    \end{verbatim}
+
+    \item \textbf{Escanear puertos específicos} (ejemplo: puertos 22 y 80):
+    \begin{verbatim}
+    nmap -p 22,80 <direccion_ip>
+    \end{verbatim}
+
+    \item \textbf{Detectar el sistema operativo del host analizado}:
+    \begin{verbatim}
+    nmap -O <direccion_ip>
+    \end{verbatim}
+\end{itemize}
+
+Estas herramientas permiten una administración avanzada del firewall en Rocky Linux, garantizando la seguridad de la red y el control del tráfico de red en el sistema.
+
+\subsection{Ejercicio Opcional}
+
+Como caso práctico, partiendo de una MV con la configuración base descrita en el apartado 2, el
+alumno/a deberá ser capaz de instalar un servidor de HTTP, Apache o Nginx,
+y habilitar/deshabilitar su acceso por Firewall.
+
+Para ello, instalará el servidor web de su elección y modificará la home page para mostrar un
+mensaje:'Bienvenidos a la web de <Nombre y Apellidos del alumno/a> en Prácticas ISE'.
+
+El servicio web debe estar accesible en la servidor (MV) en el puerto por defecto (80) usando un
+navegador web convencional corriendo en el anfitrión (Host).
+
+Un escaneo de puertos sobre el servidor solo debe mostrar como accesibles los puerto web y ssh.
+
+\subsection*{Solución}
+
+Para la resolución de este ejercicio vamos a seguir los siguientes pasos:
+
+\begin{enumerate}
+  \item Instalamos el servidor web Apache con el comando \micode{sudo dnf install -y httpd}. También tenemos la opción de instalar Nginx con el comando \micode{sudo dnf install nginx- y}. \textit{Tenemos libre elección de servidor web, en mi caso será Apache}.
+  \item Debemos de activar este servicio con el comando:
+  \begin{itemize}
+    \item Apache: \micode{sudo systemctl enable httpd --now}
+    \item Nginx: \micode{sudo systemctl enable nginx --now}
+  \end{itemize}
+  \item Debemos de verificar que el servicio esta activo con los comandos:
+  \begin{itemize}
+    \item \micode{sudo systemctl status httpd # Para Apache}
+    \item \micode{sudo systemctl status nginx # Para Nginx}
+  \end{itemize}
+  \item Modificación de la página principal.\\
+  Debemos de personalizar la página de inicio de nuestra web para que muestre el mensaje que se nos pide en el enunciado.
+  \begin{itemize}
+    \item Apache: \micode{echo "Bienvenidos a la web de <Nombre y Apellidos> en Prácticas ISE" | sudo tee /var/www/html/index.html}
+    \item Nginx: \micode{echo "Bienvenidos a la web de <Nombre y Apellidos> en Prácticas ISE" | sudo tee /usr/share/nginx/html/index.html}
+  \end{itemize}
+  \item Configuración del Firewall.\\
+  Para permitir el acceso a la web, es necesario abrir el puerto 80 en el firewall. Para ello, ejecutamos los siguientes comandos:
+  \begin{itemize}
+    \item \micode{sudo firewall-cmd --add-service=http --permanent}
+    \item \micode{sudo firewall-cmd --reload}
+    \item Para verificar que el puerto esta abierto: \micode{sudo firewall-cmd --list-all}
+  \end{itemize}
+  \item Acceder desde el Navegador.\\
+  Si todo está configurado correctamente, se visualizará el mensaje personalizado\footnote{Para saber a que ip acceder, podemos usar el comando \textit{ip a} y coger la correspondiente a \textit{enp0s8.}}(Ver Figura \ref{web}).
+  \begin{figure}[H]
+    \centering
+      \includegraphics[width=0.7\textwidth]{images/Bloque1/web.png}
+      \caption{Acceso a la web desde el navegador}
+      \label{web}
+  \end{figure}
+  \item Restricción de puertos con Firewall.\\
+  Para asegurar que solo los puertos web (80) y SSH (22) estén accesibles, se deben eliminar
+otras reglas de firewall:
+\begin{itemize}
+  \item \micode{sudo firewall-cmd --list-services --permanent}\footnote{Con este comando podemos ver los servicios que están activos en el firewall, desactivamos todos, a excepción de http y ssh.}
+  \item \micode{sudo firewall-cmd --remove-service=<nombre> --permanent}
+  \item \micode{sudo firewall-cmd --reload}
+  \item Extra.\\
+  Como extra podemos ver los puertos que están abiertos con el comando \micode{sudo firewall-cmd --list-ports --permanent
+  } y cerramos el puerto con \micode{sudo firewall-cmd --remove-port=xxxx/tcp --permanent
+  }, donde xxxx es el puerto que queremos cerrar. Otra forma de solo tener dos puertos abiertos es con los comandos:
+  \begin{itemize}
+    \item \micode{sudo firewall-cmd --add-service=http --permanent}
+    \item \micode{sudosudo firewall-cmd --add-service=ssh --permanent}
+    \item Y de nuevo recargamos y listamos todos los puertos.
+  \end{itemize}
+\end{itemize}
+\end{enumerate}
+
+\newpage
+\section{SSH}
+
+\subsection{Administración remota con SSH y criptografía asimétrica}
+
+La administración remota es una tarea fundamental en la gestión de servidores. Una de las herramientas más utilizadas para este propósito es \texttt{SSH} (Secure Shell), que permite acceder y administrar un sistema de manera segura a través de una red. Es importante destacar que \texttt{SSH} puede referirse tanto a un cliente como a un servicio.
+
+\subsubsection{Instalación y configuración de SSH}
+Para instalar y habilitar el servicio SSH en un sistema basado en Rocky Linux, se utilizan los siguientes comandos:
+
+\begin{lstlisting}[style=mystyle]
+sudo dnf install -y openssh-server
+sudo systemctl enable --now sshd
+\end{lstlisting}
+
+El servicio \texttt{sshd} es el demonio que permite las conexiones SSH entrantes. Su configuración se encuentra en el archivo:
+
+\begin{lstlisting}[style=mystyle]
+/etc/ssh/sshd_config
+\end{lstlisting}
+
+Al editar este archivo, es posible modificar diversas opciones de seguridad, como:
+
+\begin{itemize}
+    \item \textbf{Deshabilitar el acceso como root por contraseña:} Para mejorar la seguridad, se recomienda restringir el acceso directo de root:
+    \begin{lstlisting}[style=mystyle]
+    PermitRootLogin no
+    \end{lstlisting}
+    
+    \item \textbf{Cambio de puerto predeterminado:} SSH por defecto usa el puerto 22, pero puede cambiarse para reducir ataques automatizados:
+    \begin{lstlisting}[style=mystyle]
+    Port 2222
+    \end{lstlisting}
+\end{itemize}
+
+Después de modificar la configuración, es necesario reiniciar el servicio:
+
+\begin{lstlisting}[style=mystyle]
+sudo systemctl restart sshd
+\end{lstlisting}
+
+\subsubsection{Configuración del firewall para SSH}
+Si se cambia el puerto de \texttt{SSH}, es necesario actualizar la configuración del firewall:
+
+\begin{lstlisting}[style=mystyle]
+sudo firewall-cmd --add-port=2222/tcp --permanent
+sudo firewall-cmd --reload
+\end{lstlisting}
+
+\subsubsection{Criptografía simétrica y asimétrica en SSH}
+\textbf{Criptografía simétrica} es un método en el que la misma clave se usa tanto para cifrar como para descifrar los datos. Es rápida pero menos segura para la comunicación remota, ya que ambas partes deben compartir la clave de forma segura.
+
+\textbf{Criptografía asimétrica}, utilizada en SSH, emplea un par de claves: una clave pública y una clave privada. El cliente genera un par de claves y comparte la clave pública con el servidor, lo que permite autenticarse sin necesidad de enviar una contraseña.
+
+Para generar un par de claves en SSH, se usa:
+
+\begin{lstlisting}[style=mystyle]
+ssh-keygen -t rsa -b 4096
+\end{lstlisting}
+
+Y para copiar la clave pública al servidor:
+
+\begin{lstlisting}[style=mystyle]
+ssh-copy-id usuario@servidor
+\end{lstlisting}
+
+Esto permite autenticarse sin necesidad de contraseña, mejorando la seguridad y facilitando la automatización de tareas en servidores remotos.
+
+\subsection{Ejercicio Opcional}
+
+Partiendo de un servidor base configurado siguiendo las indicaciones del apartado 2, el
+alumno/a modificará servicio SSHD para que, en lugar del puerto por defecto (22), se ejecute en
+un puerto alternativo de un valor mayor a 1024. Se recomienda que consulte la lista de puertos
+reconocidos por el sistema en /etc/ports para evitar emplear un puerto que ya tenga una
+aplicación predefinida.
+
+Se concederá acceso remoto por llave pública a un usuario de su elección.
+El ejercicio se validará ejecutando un comando de forma remota sobre el servidor SSH con la
+nueva configuración. El comando presentará el contenido completo (incluido ficheros y
+directorios ocultos) con del directorio home del usuario remoto empleado en la conexión. Para
+ello, desde el ordenador anfitrión (o una MV distinta a la que se va a acceder) se empleará ssh
+sin terminal remoto y sin contraseña, pasando como único como parámetro el comando a
+ejecutar.
+
+\subsection*{Solución}
+
+\subsection*{Modificación del servicio SSHD y acceso remoto por llave pública}
+
+En este ejercicio, se modificará la configuración del servicio SSH para que utilice un puerto alternativo y se habilitará el acceso remoto mediante autenticación con clave pública.
+
+\subsubsection*{Paso 1: Verificar puertos disponibles}
+
+Antes de modificar la configuración de SSH, es recomendable consultar la lista de puertos reconocidos por el sistema para evitar conflictos con otros servicios. Para ello, se puede inspeccionar el archivo:
+
+\begin{lstlisting}[style=mystyle]
+cat /etc/services | less
+\end{lstlisting}
+
+Se debe elegir un puerto mayor a 1024 que no esté en uso.
+
+\subsubsection*{Paso 2: Modificar la configuración de SSH}
+
+Editar el archivo de configuración de SSH con un editor de texto como `vim` o `nano`:
+
+\begin{lstlisting}[style=mystyle]
+sudo nano /etc/ssh/sshd_config
+\end{lstlisting}
+
+Buscar la línea que especifica el puerto (`#Port 22`), descomentarla y cambiarla por el número de puerto elegido, por ejemplo:
+
+\begin{lstlisting}[style=mystyle]
+Port 2222
+\end{lstlisting}
+
+Guardar los cambios y salir del editor.
+
+\subsubsection{Solución al error al cambiar el puerto de SSH}
+
+Si al cambiar el puerto en la configuración de SSH y reiniciar el servicio se obtiene un error, se deben seguir los siguientes pasos para solucionar el problema:
+
+\begin{enumerate}
+    \item \textbf{Verificar errores en la configuración de SSH}  
+    Ejecutar el siguiente comando para comprobar si hay errores en el archivo de configuración:
+
+    \begin{lstlisting}[style=mystyle]
+    sudo sshd -t
+    \end{lstlisting}
+
+    Si se detectan errores de sintaxis o configuración en el archivo \textit{/etc/ssh/sshd\_config}, se deben corregir antes de continuar.
+
+    \item \textbf{Confirmar que el puerto está permitido en SELinux (si aplica)}  
+    Si el sistema usa SELinux, es necesario permitir el nuevo puerto:
+
+    \begin{lstlisting}[style=mystyle]
+    sudo semanage port -a -t ssh_port_t -p tcp 2222
+    \end{lstlisting}
+
+    Si el comando \texttt{semanage} no está disponible, se puede instalar con:
+
+    \begin{lstlisting}[style=mystyle]
+    sudo dnf install policycoreutils-python-utils
+    \end{lstlisting}
+
+    Luego, verificar que el puerto se agregó correctamente con:
+
+    \begin{lstlisting}[style=mystyle]
+    sudo semanage port -l | grep ssh
+    \end{lstlisting}
+
+    \item \textbf{Permitir el nuevo puerto en \texttt{firewalld}}  
+    Si el sistema usa \texttt{firewalld}, se debe agregar el puerto y recargar la configuración:
+
+    \begin{lstlisting}[style=mystyle]
+    sudo firewall-cmd --permanent --add-port=2222/tcp
+    sudo firewall-cmd --reload
+    \end{lstlisting}
+
+    \item \textbf{Reiniciar el servicio SSH y comprobar su estado}  
+    Una vez realizados los cambios, reiniciar el servicio SSH:
+
+    \begin{lstlisting}[style=mystyle]
+    sudo systemctl restart sshd
+    \end{lstlisting}
+
+    Si el servicio sigue fallando, revisar los logs para obtener más detalles sobre el error:
+
+    \begin{lstlisting}[style=mystyle]
+    sudo journalctl -xeu sshd
+    \end{lstlisting}
+\end{enumerate}
+
+Siguiendo estos pasos, se podrá cambiar el puerto de SSH sin problemas y reiniciar el servicio correctamente.
+
+
+\subsubsection*{Paso 3: Ajustar firewalld para permitir conexiones en el nuevo puerto}
+
+Si `firewalld` está en uso, es necesario agregar el nuevo puerto al firewall y eliminar el acceso al puerto 22 si no se desea que permanezca abierto:
+
+\begin{lstlisting}[style=mystyle]
+sudo firewall-cmd --permanent --add-port=2222/tcp
+sudo firewall-cmd --permanent --remove-service=ssh
+sudo firewall-cmd --reload
+\end{lstlisting}
+
+\subsubsection*{Paso 4: Reiniciar el servicio SSH}
+
+Aplicar los cambios reiniciando el servicio SSH:
+
+\begin{lstlisting}[style=mystyle]
+sudo systemctl restart sshd
+\end{lstlisting}
+
+\subsubsection*{Paso 5: Configurar autenticación por clave pública}
+
+Desde el cliente, generar un par de claves SSH si no se tienen:
+
+\begin{lstlisting}[style=mystyle]
+ssh-keygen -t rsa -b 4096
+\end{lstlisting}
+
+Copiar la clave pública al servidor(Ver Figura \ref{copiaLlave}):
+
+\begin{lstlisting}[style=mystyle]
+ssh-copy-id -p 2222 usuario@IP_del_Servidor
+\end{lstlisting}
+
+\begin{figure}[H]
+  \centering
+  \begin{minipage}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/copiaLlave.png}
+    \caption{SSH en mi máquina}
+    \label{copiaLlave}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/finalSSH.png}
+    \caption{SSH final}
+    \label{finalSSH}
+  \end{minipage}
+\end{figure}
+
+\subsubsection*{Paso 6: Validar la conexión sin contraseña}
+
+Para comprobar que el acceso es correcto, se ejecutará un comando remoto en la máquina virtual desde otro equipo o una máquina anfitriona. Se listará el contenido completo del directorio home del usuario remoto, incluidos los archivos ocultos (Ver Figura \ref{finalSSH}):
+
+\begin{lstlisting}[style=mystyle]
+ssh -p 2222 usuario@IP_del_Servidor "ls -la ~"
+\end{lstlisting}
+
+Si todo está configurado correctamente, el comando mostrará los archivos del directorio home sin requerir contraseña.
 
 
 
