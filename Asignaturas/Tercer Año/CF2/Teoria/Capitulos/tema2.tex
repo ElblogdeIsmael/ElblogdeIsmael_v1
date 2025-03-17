@@ -98,18 +98,229 @@ Ahora vamos a tratar los AF que pueden ser considerados en estas catergorías de
 
     En cualquier caso, los activos financieros mantenidos para negociar se incluirán obligarioriamente en esta catergoría.
 
-    %PAG 53 MANUAL
-
 \end{enumerate}
 
+A efectos de catalogar lo que se entiende por negociación, consideramos las compras y ventas con el objetivo de generar una ganacia por las fluctuaciones a c/p. El activo \textit{adquiere esta condición} cuando:
+
+\begin{itemize}
+    \item Se origine o adquiera con el propósito de venderlo en el corto plazo.
+    \item Forme parte en el momento de su reconocimiento inicial de una cartera de instrumentos financieros identificados y gestionados conjuntamente.
+    \item Sea un instrumento financiero derivado
+\end{itemize}
+
+Los que se mantengan para negociar, ni se valoren al coste, la empresa puede realizar \textit{elección irrevocable}, en el momento de su reconocimiento inicial, de presentar los cambios posteriores en el VR directamente en el PN.
+
+Por último, un activo se puede incluir en esta categoría para reducir las asimetrías contables. Esta opción hace referencia a la valoración de los activos de manera conjunta, aunque alguno de sus componentes se pueda valorar de manera separada.
+
+La siguiente Figura \ref{fig:Acciones} muestra la clasificación de las acciones, en base a los siguientes criterios:
+
+\begin{itemize}
+    \item Exitencia de un modelo de negocio o SCPI. Si no se cumple no es posible clasificar el instrumento de patrimonio como \c{Activos financieros a coste amortizado}.
+    \item Existencia o no de VR. Si no, solo puede valorarse a \c{coste}.  
+    \item Intención o no de negociar. Si esta condiciones se cumple, se valorará a \c{valor razonable con cambios en la cuenta de pérdidas y ganancias}, mientras que si no se cumple debemos de valorar a \c{valor razonable con cambios en el patrimonio neto}.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/clasacc.png}
+    \caption{Clasificación de las acciones}
+    \label{fig:Acciones}
+\end{figure}
+
+De la misma manera, la Figura \ref{fig:Deuda} muestra la clasificación de la deuda, en base a los mencionados anterirmente.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/deuda.png}
+    \caption{Clasificación de la deuda}
+    \label{fig:Deuda}
+\end{figure}
+
+\subsection*{Ejemplo 2}
+
+La empresa CHOTIS, S.A. realiza diferentes adquisiciones de instrumentos de patrimonio y de deuda, con las siguientes características:
+
+\begin{enumerate}
+    \item Adquisición de 100 acciones cotizadas en mercado activo, donde se plantean dos opciones:
+    \begin{enumerate}
+        \item La empresa tiene intención de negociar.
+        \item La empresa tiene intención de mantenerlas a largo plazo.
+    \end{enumerate}
+    \item Adquisición de 100 obligaciones cotizadas en mercado activo, donde se plantean dos opciones:
+    \begin{enumerate}
+        \item La empresa tiene intención de mantener el modelo de negocio, esperar a vencimiento y recibir los flujos de efectivo contractuales.
+        \item La empresa tiene intención de especular o negociar con las mismas en el corto plazo y no espera recibir los flujos de efectivo contractuales.
+    \end{enumerate}
+    \item Adquisición de 100 acciones no cotizadas en mercado activo, donde no es posible determinar un valor razonable fiable.
+    \item Adquisición de 100 obligaciones no cotizadas en mercado activo, donde se plantean dos opciones:
+    \begin{enumerate}
+        \item La empresa tiene intención de mantener el modelo de negocio, esperar a vencimiento y recibir los flujos de efectivo contractuales.
+        \item La empresa tiene intención de especular o negociar con las mismas en el corto plazo y no espera recibir los flujos de efectivo contractuales.
+    \end{enumerate}
+    En ambos casos no es posible disponer de un valor razonable fiable.
+\end{enumerate}
+
+La respuesta a este ejercicio se muestra en la Cuadro \ref{tab:Chotis}.
+
+
+\begin{table}
+    \centering 
+    % \begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+    \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+        \hline 
+        Categorías & Compra 100 acciones, cotizadas en un mercado activo. & Compra 100 obligaciones, cotizadas en un mercado activo. & Compra 100 acciones, no cotizadas en un mercado activo & Compra 100 obligaciones, no cotizadas en un mercado activo. \\
+        \hline
+        Modelo de negocio / Cobros principal e intereses & No modelo de negocio y no SCPI- Existe VR fiable. Tenemos dos opciones: \begin{itemize}
+            \item Intención de negociar.
+            \item No negociar.
+        \end{itemize}& 
+        \begin{itemize}
+            \item Opción A: La empresa tiene intención de percibir flujos de efectivo y MN.
+            \item Opción B: Sin MN y sin intención de percibir flujos de efectivo. Intención de negociar.
+        \end{itemize} & 
+        No MN y no SCPI. Intención de negociar. No es posible estimar un VR fiable & 
+        \begin{itemize}
+            \item Opción A: No puede estimarse un VR fiable, pero si hay SCPI y MN.
+            \item Opción B: Carácter inversión especulativa sin VR.
+        \end{itemize} \\
+        \hline
+        \hline
+        AVRF (PyG) & \ding{51} (A) & \ding{51} (B) & \ding{55} & \ding{55} \\
+        \hline
+        Activos a coste amortizado & \ding{55} & \ding{51}(A) & \ding{55} & \ding{51}(A) \\
+        \hline
+        Activos a coste & \ding{55} & \ding{55} & \ding{51} & \ding{51}(B) \\
+        \hline
+        AVRF (PN) & \ding{51}(B) & \ding{51}(A) & \ding{55} & \ding{55} \\
+        \hline
+    \end{tabularx}
+    \caption{Clasificación de activos financieros de la Chotis S.A.}
+    \label{tab:Chotis}
+\end{table}
+
+% \begin{table}
+%     \centering
+%     \begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+%         \hline
+%         AVRF (PyG) & \ding{51} (A) & \ding{51} (B) & \ding{55} & \ding{55} \\
+%         \hline
+%         Activos a coste amortizado & \ding{55} & \ding{51}(A) & \ding{55} & \ding{51}(A) \\
+%         \hline
+%         Activos a coste & \ding{55} & \ding{55} & \ding{51} & \ding{51}(B) \\
+%         \hline
+%         AVRF (PN) & \ding{51}(B) & \ding{51}(A) & \ding{55} & \ding{55} \\
+%         \hline
+%     \end{tabular}
+%     \caption{Clasificación de activos financieros de la Chotis S.A.}
+%     \label{tab:Chotis2}
+% \end{table}
+
+Como se ha señalado a lo largo de este capítulo, es necesario identificar, en primer lugar, si se cumple el modelo de negocio y el modelo SCPI. Además, se debe indicar si el activo tiene un valor razonable y éste es fiable, determinando si la intención es negociar con los mismos. Con estas premisas:
+
+\begin{enumerate}
+    \item Para el caso 1:
+    \begin{itemize}
+        \item Si no se cumplen el SCPI ni el modelo de negocio, pero existe un valor razonable fiable, la clasificación depende de la intención de la empresa.
+        \begin{itemize}
+            \item Sin intención de negociar: AFVRPN.
+            \item Con intención de negociar: AFVRPYG.
+        \end{itemize}
+    \end{itemize}
+
+    \item Para el caso 2:
+    \begin{itemize}
+        \item Opción a): Si se cumplen el SCPI y el modelo de negocio, el instrumento de deuda se clasifica como activo a coste amortizado.
+        \item Opción b): Si no se cumple ningún criterio, los instrumentos de deuda se clasifican como AFVRPYG.
+    \end{itemize}
+
+    \item Para el caso 3: 
+    \begin{itemize}
+        \item Los instrumentos de patrimonio no cotizados se clasifican como activos a coste.
+    \end{itemize}
+
+    \item Para el caso 4:
+    \begin{itemize}
+        \item Opción a): Con modelo de negocio y SCPI, se clasifican como activos a coste amortizado.
+        \item Opción b): Sin valor razonable y siendo una inversión especulativa, se clasifican como activos a coste.
+    \end{itemize}
+\end{enumerate}
+
+\c{Si no existiera un valor razonable fiable para los casos 1 y 2, se podrían clasificar como activos financieros a coste, según la NV9-2.4 f).}
+
+\subsection*{Ejemplo 3}
+
+En este veremos otros activos financieros y como es su clasificación. Podemos verlo en la Cuadro \ref{tab:otrosAF}.
+
+
+% \begin{enumerate}
+%     \item \textbf{Acciones ordinarias.} No cumple con la condición de SCPI, es decir, de ellos no se puede establecer que exista un acuerdo de préstamos con devolución de principal. Partiendo de esto, debemos de ver si existe in VR y si es fiable o no. Si no existiera las acciones se deben de clasificar a coste. Si existiera un VR y se hace el reconocimiento inicial, se clasifica como AFVRPN. Si se tiene la intención de negociar, o cualquier otro caso se clasificará como AFVRPYG.
+%     \item \b{Bono simple a tipo de interés fijo, o bono simple, en euros o con fecha de vencimiento determinada.}: \begin{itemize}
+%         \item Inversión cumple con SCPI.
+%         \item Si no lo vende hasta el vencimiento se clasifica como \c{Activos financieros a coste amortizado}, si es por el contrario se vende antes, se clasifica como \c{Activos financieros a valor razonable con cambios en el patrimonio neto}.
+%         \item \b{Bono con remuneración referenciada a precios de acciones}
+%     \end{itemize}
+% \end{enumerate}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\textbf{Activo financiero} & \textbf{¿Cumple SCPI?} & \textbf{Se clasifica como...} \\ \hline
+Acciones ordinarias & 
+No cumple SCPI. El rendimiento (intereses) no refleja el valor temporal del dinero por el uso de un capital principal, y depende del valor de un título en el mercado. & 
+• AFVR (PyG) si hay intención de negociar y el valor razonable es fiable. 
+• AFVR (PN) si el valor razonable es fiable pero no hay intención de negociar. 
+• A coste, si no cotizan en mercados activos. \\ \hline
+Bono simple (interés fijo) & 
+Cumple SCPI, se esperan flujos de efectivo contractuales con intereses que reflejan el valor temporal del dinero. & 
+• AFVRC si se piensa negociar a corto plazo. 
+• A coste amortizado, si se mantienen a vencimiento.
+• A coste, si no cotizan en mercados activos. \\ \hline
+Bono referenciado a acciones & 
+No cumple SCPI. Intereses dependen de precios de acciones, no reflejan valor temporal del dinero. & 
+• AFVR (PyG) si el valor razonable es fiable y hay intención de negociar.
+• AFVR (PN) si no hay intención de negociar. \\ \hline
+Derivados (forwards, opciones) & 
+No cumple SCPI. Los beneficios están sujetos a cambios en el mercado. & 
+• AFVR (PyG) con valor razonable fiable.
+• A coste, si el valor razonable no es fiable. \\ \hline
+Bono a perpetuidad & 
+No cumple SCPI. No refleja valor temporal del dinero. & 
+• AFVR (PN), si el valor razonable es fiable.
+• A coste, si no existe un valor razonable fiable. \\ \hline
+\end{tabularx}
+\caption{Clasificación y análisis de diferentes tipos de activos financieros.}
+\label{tab:otrosAF}
+\end{table}
+
+\subsection{Valoración inicial y posterior de los activos financieros}
+
+El siguiente paso es determinar el proceso de valoración de las mismas. (Ver Figura \ref{fig:Valoracion}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/cri_val.png}
+    \caption{Valoración de los activos financieros}
+    \label{fig:Valoracion}
+\end{figure}
+
+\section{Activos financieros con valoración posterior a coste amortizado}
+
+\subsection{Valoración inicial}
+
+Los activos incluidos en esta categoría se valorarán inicialmente por su VR, salvo evidencia en contrario. \c{Será el precio de la transacción, que equivladrá al VR de la contraprestación entregada más los costes de transacción.}
+
+\subsection{Valoración posterior}
+
+Se valorarán por su coste amortizado. Los intereses devengados se contabilizarán en la cuenta de Pérdidas y Ganancias, aplicando el tipo de interés efectivo (TIE).
+
+% Pag 63 manual
 
 
 
 
 
-
-
-
+\newpage
 \section{Baja de Activos financieros}
 
 Se dará de baja a un activo financiero cuando expiren o se hayan cedido los derechos contractuales sobres los flujos de efectivo del mismo, siendo necesario que se hayan transferido de manera sustancial los riesgos y beneficios inherentes a su propiedad. 
@@ -125,7 +336,7 @@ Se dará de baja a un activo financiero cuando expiren o se hayan cedido los der
 
 
 Consideramos desinversión a la venta de algún activo. 
-
+\newpage
 \section{Memoria}
 
 Debemos de indicar los criterios que estoy aplicando en la calificación y la valoración de las diferentes catergorías de los activos financieros. 
