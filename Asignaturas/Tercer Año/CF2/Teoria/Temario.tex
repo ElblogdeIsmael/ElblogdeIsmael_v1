@@ -28,6 +28,35 @@
 \usepackage{pifont}
 \usepackage{tabularx}
 
+\newcommand{\cuenta}[1]{
+    \ifnum#1=2800 2800. Amortización acumulada de investigación\fi
+    \ifnum#1=251 251. Valores representativos de deuda\fi
+    \ifnum#1=250 250. Inversiones financieras a l/p en instrumentos de patrimonio\fi
+    \ifnum#1=133 133. Ajustes en la valoración en AF a VR[PN]\fi
+    \ifnum#1=900 900. Beneficios en AF a VR[PN]\fi
+    \ifnum#1=7632 7632. Beneficios en AR a VR [PN] \fi
+    \ifnum#1=802 802. Transferencias de Beneficios en AR a VR [PN]\fi
+    \ifnum#1=766 766. Beneficios en participaciones y VRD\fi
+    \ifnum#1=800 800. Pérdidas en AR a VR[PN]\fi
+    \ifnum#1=761 761. Ingresos de valores representativos de deuda\fi
+    \ifnum#1=546 546. Intereses a corto plazo de valores representativos de deuda\fi
+    \ifnum#1=572 572. Bancos c/c \fi
+    \ifnum#1=541 541. Valores representativos de deuda a corto plazo \fi
+    \ifnum#1=669 669. Otros gastos financieros\fi
+    \ifnum#1=666 666. Pérdidas en participaciones y VRD\fi
+    \ifnum#1=540 540. Inversiones financieras c/p en instrumentos de patrimonio\fi
+    \ifnum#1=252 252.Créditos a l/p\fi
+    \ifnum#1=542 542. Créditos a c/p\fi
+    \ifnum#1=76203 76203. Ingresos de créditos a largo plazo, otras empresas\fi
+    \ifnum#1=547 547. Intereses a corto plazo de créditos\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+    % \ifnum#1=\fi
+}
+
 % Configuración de márgenes
 \geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
 
@@ -36,7 +65,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{Universidad de Granada}
-\fancyhead[L]{\nouppercase{\chaptername~\thechapter. \leftmark}}
+\fancyhead[L]{\nouppercase{\leftmark}}
 
 % \fancyhead[C]{Escuela Técnica Superior de Ingenierías Informática}
 \fancyhead[R]{Contabilidad Financiera II}

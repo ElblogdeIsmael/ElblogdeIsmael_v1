@@ -136,7 +136,7 @@ De la misma manera, la Figura \ref{fig:Deuda} muestra la clasificación de la de
     \label{fig:Deuda}
 \end{figure}
 
-\subsection*{Ejemplo 2}
+\subsection*{\textcolor{blue}{Ejemplo 2}}
 
 La empresa CHOTIS, S.A. realiza diferentes adquisiciones de instrumentos de patrimonio y de deuda, con las siguientes características:
 
@@ -247,7 +247,7 @@ Como se ha señalado a lo largo de este capítulo, es necesario identificar, en 
 
 \c{Si no existiera un valor razonable fiable para los casos 1 y 2, se podrían clasificar como activos financieros a coste, según la NV9-2.4 f).}
 
-\subsection*{Ejemplo 3}
+\subsection*{\textcolor{blue}{Ejemplo 3}}
 
 En este veremos otros activos financieros y como es su clasificación. Podemos verlo en la Cuadro \ref{tab:otrosAF}.
 
@@ -304,7 +304,7 @@ El siguiente paso es determinar el proceso de valoración de las mismas. (Ver Fi
     \label{fig:Valoracion}
 \end{figure}
 
-\section{Activos financieros con valoración posterior a coste amortizado}
+\section{AF con valoración posterior a coste amortizado}
 
 \subsection{Valoración inicial}
 
@@ -314,7 +314,298 @@ Los activos incluidos en esta categoría se valorarán inicialmente por su VR, s
 
 Se valorarán por su coste amortizado. Los intereses devengados se contabilizarán en la cuenta de Pérdidas y Ganancias, aplicando el tipo de interés efectivo (TIE).
 
-% Pag 63 manual
+Sabemos que la valoración posterior incluye alguno deterioros de valor en la mayoría de casos.
+
+La primera parte del Marco Conceptual define el coste amortizado como \c{Importe al que inicalmente feu valorado un AF o un PF, menos los reembolsos del principal, más o menos la parte imputada en la cuenta de PyG, mediante la utilización del tipo de interés efectivo, de la diferencia entre el importe inicial y el valor de reembolso en el vencimiento.}
+
+De esta definición cabe destacar:
+\begin{enumerate}
+    \item + valoración inicial del instrumento.
+    \item - los reembolsos del princial realizados.
+    \item $\pm$ la imputación en resultados de la diferencia entre el valor inicial y el valor de reembolso al vencimiento.
+    \item - las reducciones por deterioro de valor.
+\end{enumerate}
+
+\subsection*{\textcolor{blue}{Ejemplo 4}}
+
+La entidad A concede un crédito el 1-1-2018 a la entidad B con las siguientes características:
+
+\begin{itemize}
+    \item Nominal: 1.000.000 €.
+    \item Comisión de apertura (a cargo de la empresa A): 10.000 €.
+    \item Tipo de interés nominal: 6\%.
+    \item Plazo: 3 años.
+    \item Cuota anual constante: 374.109,81 €.
+\end{itemize}
+
+\textbf{SE PIDE:} Contabilizar la operación en la empresa A.
+
+Debemos de identificar en  que categoría debemos de clasifiacar el activo. Para ello debemoos de ver de identificar el modelo de negocio y si sigue un modelo SCPI. En este en particular se cumplen ambos, \c{ya que la empresa esperará al vencimiento del crédito y sigue un modelo de crédito de principal más intereses.}
+
+En el examen se nos dará el el tipo de interés efectivo, pero debemos de saber como se calcula, así que en este caso:
+
+\begin{align*}
+    \text{1.010.000} = \frac{\text{374.109,81 €}}{(1+i)} + \frac{\text{374.109,81 €}}{(1+i)^2} + \frac{\text{374.109,81 €}}{(1+i)^3} \\\\ 
+    \text{i efectivo} \rightarrow 5,46\%
+\end{align*}
+
+En base a este tipo de interés calculamos la siguiente tabla:
+
+\begin{table}[h]
+    \centering
+    \caption{Tabla de amortización}
+    \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+    \hline
+    \textbf{Plazo} & \textbf{Cuota} & \textbf{Capital} & \textbf{Intereses} & \textbf{Coste amortizado} \\
+    \hline
+    01-01-2018 & & & & 1.010.000 \\
+    \hline
+    31-12-2018 & 374.110 & 318.923 & 55.187 & 691.077 \\
+    \hline
+    31-12-2019 & 374.110 & 336.349 & 37.761 & 354.727 \\
+    \hline
+    31-12-2020 & 374.110 & 354.728 & 19.382 & 0 \\
+    \hline
+    \end{tabularx}
+    \label{tabla:amortizacion1}
+\end{table}
+
+En base a la tabla \ref{tabla:amortizacion1}, podemos ver que el coste amortizado es de 1.010.000 €, que es el importe inicial del crédito. Los interses se van calculando en base al coste amortizado, y el capital se va reduciendo en base a la cuota anual.\\
+\textbf{Solución.} 
+A continuación, procedemos al registro contable de las operaciones:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Concesión del crédito el 01.01.2018} & \textbf{HABER} \\
+    \hline
+    691.077& \cuenta{252} & \\
+    \hline
+    318.923 &  \cuenta{542}& \\
+    \hline
+    &  \cuenta{572}& 1.010.000\\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la concesión del crédito}
+    \label{tabla:asiento1ej4}
+\end{table}
+\c{En el anterior asiento debemos de tener cuidado, ya que tenemos pagos que realizar a c/p y otros a l/p.}
+
+Ahora debemos de reconocer la primera cuota, pero esta está compuesta por dos operaciones, que son la amortización del capital y los intereses devengados.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Valoración posterior a coste amortizado el 31.12.2018} & \textbf{HABER} \\
+    \hline
+    374.110 & \cuenta{572} & \\
+    \hline
+    &  \cuenta{76203}& 55.187\\
+    \hline
+    &  \cuenta{542}& 318.923\\
+    \hline
+    \end{tabular}
+    \label{tabla:asiento2ej4}
+\end{table}
+
+\c{Al final de este ejercicio debemos de reclasificar el cŕedito a largo plazo, que vence el año siguiente.}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Reclasificaciónn el 31.12.2018} & \textbf{HABER} \\
+    \hline
+    336.349 &  \cuenta{542}& \\
+    \hline
+    &  \cuenta{252}& 336.349\\
+    \hline
+    \end{tabular}
+    \label{tabla:asiento3ej4}
+\end{table}
+
+\c{Y así debemos de continuar con el resto de cuotas.}
+
+\subsection*{\textcolor{blue}{Ejemplo 5}}
+
+La entidad A concede un crédito el 1-2-2018 a la entidad B con las siguientes características:
+\begin{itemize}
+    \item Nominal: 1.000.000 €.
+    \item Comisión de apertura (a cargo de la empresa A): 10.000 €.
+    \item Tipo de interés nominal: 6\%.
+    \item Plazo: 3 años.
+    \item Cuota anual constante: 374.109,81 €.
+\end{itemize}
+
+\textbf{SE PIDE:} Contabilizar la operación en la empresa A.
+
+\textbf{Solución.} En su resolución obviamos todos los comentarios que son similares a los del ejemplo 4 y nos centramos en las diferencias, principalmente, el cambio en la fecha que aparece en el cuadro de amortización.
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Plazo} & \textbf{Cuota} & \textbf{Capital} & \textbf{Intereses} & \textbf{Coste amortizado} \\ \hline
+01-02-2018 &  &  &  & 1.010.000 \\ \hline
+01-02-2019 & 374.110 & 318.923 & 55.187 & 691.077 \\ \hline
+01-02-2020 & 374.110 & 336.349 & 37.761 & 354.727 \\ \hline
+01-02-2021 & 374.110 & 354.728 & 19.382 & 0 \\ \hline
+\end{tabular}
+\caption{Cuadro de amortización a coste efectivo 5,46\%}
+\label{tabla:amortizacion2}
+\end{table}
+
+La contabilización de la concesión es idéntica a la figura \ref{tabla:asiento1ej4}, pero la contabilización de la primera cuota es diferente, ya que la fecha de vencimiento es diferente.
+
+A 31.12.Año debemos de reclasificar y calcular los intereses devengados.
+
+\begin{equation*}
+    \text{Intereses devengados} = \left[\text{1.010.000} \times (1+0,055)^{\frac{11}{12}}\right] - \text{1.010.000} = \text{50.474,70 €}
+\end{equation*}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Intereses a 31.12.2018} & \textbf{HABER} \\
+    \hline
+    50.474,70&  \cuenta{547}& \\
+    \hline
+    &  \cuenta{76203}& 50.474,70\\
+    \hline
+    \end{tabular}
+    \label{tabla:asiento1ej5}
+\end{table}
+
+\c{Ahora debemos de contabilizar el mes de enero y el cobro  de la cuenta, podemos hacerlo en uno o en dos asientos.}
+
+\begin{align*}
+    \text{Intereses devengados} = \left[\text{(1.010.000+ 50.474,70)} \times (1+0,055)^{\frac{1}{12}}\right] - \text{(1.010.000+50.474,70)} = \\ \text{50.474,70 €}
+\end{align*}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Contabilización de los intereses devengados a 01-02-2019} & \textbf{HABER} \\
+    \hline
+    4.711,84 & (547) Intereses a corto plazo de créditos & \\
+    \hline
+    & (76203) Ingresos de créditos a largo plazo, otras empresas & 4.711,84 \\
+    \hline
+    \end{tabular}
+    \caption{Asiento 2. Ejercicio 5.}
+    \label{tabla:asiento1ej1}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Contabilización del cobro de la primera cuota a 01-02-2019} & \textbf{HABER} \\
+    \hline
+    374.110 & (572) Bancos c/c & \\
+    \hline
+    & (547) Intereses a corto plazo de créditos & 55.187 \\
+    \hline
+    & (542) Créditos a corto plazo & 318.923 \\
+    \hline
+    \end{tabular}
+    \caption{Asiento 3. Ejercicio 5.}
+    \label{tabla:asiento2ej1}
+\end{table}
+
+\c{Y así debemos de continuar con el resto de cuotas.}
+
+Una vez visto los ejemplos anteriores, debemos de tener en cuenta que al final del ejercicio debemos de realizar un ajuste por deterioro de valor, que se calcula en base a la diferencia entre el valor en libros y el valor razonable del activo.
+
+En el caso de la existencia de un deterioro contabilizado anteriormente, debemos de revertirlo, si se ha producido una mejora en la situación del activo, es lo que se conoce como \textit{reversión del deterioro de valor}.
+
+\subsection*{Ejemplo 6}
+El 1 de octubre de 2021, "BART, S.A." vendió 50.000 € en mercancías a "VERT, S.A." que se cobrarán el 1 de octubre de 2022. En el contrato de la operación de venta se incluye un tipo de interés del 3\% anual, por lo que a la fecha de vencimiento se debe desembolsar el importe de 51.500 €.\\
+
+A 31 de diciembre de 2021 se tiene información sobre el riesgo de insolvencia de VERT donde se considera que a la fecha de vencimiento es altamente probable que se cobre el 90\% de la valoración posterior del crédito.\\
+
+\textbf{SE PIDE:} Realizar las anotaciones contables de las operaciones anteriores del ejercicio 2021.\\
+
+\c{El objetivo de este ejercicio es ver como se contabiliza un deterioro de valor.}
+
+\begin{align*}
+    \text{Coste amortizado derecho de cobro a 31.12.2021} = \\
+    50000(1,03)^{\frac{92}{365}} = 50.37391 €
+\end{align*}
+
+En el enunciado se nos dice que solo cobraremos el 90\% de la valoración posterior, por lo que el deterioro de valor es de 50.373,91 - 45.336,52 = 5.037,39 €.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    50.000 & (430) Clientes &  \\
+    \hline
+     & (700) Venta de mercaderías & 50.000 \\
+    \hline
+    \end{tabular}
+    \caption{Asiento 1. Ejercicio 6. Registro contable de la venta a 1 de octubre de 2021.}
+    \label{tabla:asiento1ej6}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    373,91 & (430) Clientes &  \\
+    \hline
+     & (76213) Ingresos de créditos a corto plazo, otras empresas & 373,91 \\
+    \hline
+    \end{tabular}
+    \caption{Asiento 2. Ejercicio 6. Registro contable del coste amortizado a 31/12/2021.}
+    \label{tabla:asiento2ej6}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    5.037,39 & (694) Pérdidas por deterioro de créditos por operaciones comerciales &  \\
+    \hline
+     & (490) Deterioro de valor de créditos comerciales & 5.037,39 \\
+    \hline
+    \end{tabular}
+    \caption{Asiento 3. Ejercicio 6. Registro contable del deterioro a 31/12/2021.}
+    \label{tabla:asiento3ej6}
+\end{table}
+
+%pag 32 del manual ejemplo 7
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
