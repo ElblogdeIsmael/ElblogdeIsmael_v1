@@ -529,7 +529,7 @@ Una vez visto los ejemplos anteriores, debemos de tener en cuenta que al final d
 
 En el caso de la existencia de un deterioro contabilizado anteriormente, debemos de revertirlo, si se ha producido una mejora en la situación del activo, es lo que se conoce como \textit{reversión del deterioro de valor}.
 
-\subsection*{Ejemplo 6}
+\subsection*{\textcolor{blue}{Ejemplo 6}}
 El 1 de octubre de 2021, "BART, S.A." vendió 50.000 € en mercancías a "VERT, S.A." que se cobrarán el 1 de octubre de 2022. En el contrato de la operación de venta se incluye un tipo de interés del 3\% anual, por lo que a la fecha de vencimiento se debe desembolsar el importe de 51.500 €.\\
 
 A 31 de diciembre de 2021 se tiene información sobre el riesgo de insolvencia de VERT donde se considera que a la fecha de vencimiento es altamente probable que se cobre el 90\% de la valoración posterior del crédito.\\
@@ -593,10 +593,128 @@ En el enunciado se nos dice que solo cobraremos el 90\% de la valoración poster
     \label{tabla:asiento3ej6}
 \end{table}
 
-%pag 32 del manual ejemplo 7
+\subsection*{\textcolor{blue}{Ejemplo 7}}
+
+La entidad A adquiere un bono el 1-1-2018 con la intención de mantenerlo hasta vencimiento hasta dentro de 3 años. Las características son las siguientes:
+\begin{itemize}
+    \item Valor de emisión: 48.000 €.
+    \item Comisión de adquisición: 1.000 €.
+    \item Valor de reembolso: 52.000 €.
+    \item Intereses: 5\% anual sobre valor nominal (VN= 50.000 €).
+\end{itemize}
+
+A 31 de diciembre de 2018 y 2019 los títulos cotizan al 95\% y al 105\%, respectivamente, valor que la empresa considera como lo suficientemente fiable como para considerarlo representativo del valor que pudiera recuperar la empresa.
+
+\subsubsection*{Solución}
+
+Podemos definir bono como \textit{instrumento de deuda que emite una empresa o entidad pública para financiarse.} El emisor de un bono promete devolver el dinero prestado al comprador de ese bono, normalmente más unos intereses, conocidos como cupón, por eso se conoce como instrumento de renta fija.
+
+Como se produce la adquisición por parte de la empresa A del bono, se atiende al modelo de negocio. Y el hecho de mantenerlo hasta el vencimiento de 3 años, hace que cumpla con el SCPI. Por lo que se clasifica como activo a \c{coste amortizado}.
 
 
+\c{Tenemos que calcular el VR al inicio y el valor posterior a coste amortizado del activo, siendo necesario para este último el cálculo del tipo de interés efectivo.}
 
+\begin{align*}
+    \text{49.000} \e = \\ 
+    \frac{\text{2.500}}{(1+i)} + \frac{\text{2.500}}{(1+i)^2} + \frac{\text{2.500}}{(1+i)^3} \rightarrow \\
+    \rightarrow \text{i efectivo} = 7,006\%
+\end{align*}
+
+A partir de este i, debemos de calcular el cuadro de amortización\footnote{Cade destacar que se proporciona en el examen, pero debemos de saber el cálculo de cada una de las celdas.}.
+
+\begin{tcolorbox}[colback=yellow!5!white,colframe=yellow!75!black, title=Cálculo de intereses]
+    \begin{itemize}
+        \item Devengados: Calculados aplicando el tipo de interés efectivo.
+        \item Explícitos: referencia al cupón que paga la empresa emisora.
+        \item Implícitos: diferencia entre el los explícitos y los devengados.
+    \end{itemize}
+\end{tcolorbox}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{Plazo} & \textbf{I. Devengados} & \textbf{I. Explícitos y Reembolso} & \textbf{I. Implícitos} & \textbf{Coste Amortizado} \\
+    \hline
+    01/01/2018 & & & & 49.000 \\
+    \hline
+    31/12/2018 & 3.433 & 2.500 & 933 & 49.993 \\
+    \hline
+    31/12/2019 & 3.498 & 2.500 & 998 & 50.932 \\
+    \hline
+    31/12/2020 & 3.568,29 & 54.500 & 1.068,29 & 0 \\
+    \hline
+    \end{tabular}
+    \caption{Cuadro de amortización a coste efectivo (7,0006\%).}
+    \label{tabla:ejercicio7-asiento1-tema2}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Suscripción de loos títulos el 1.1.2018} & \textbf{HABER} \\
+    \hline
+    49.000&  \cuenta{251}& \\
+    \hline
+    & \cuenta{572} &49.000 \\
+    \hline
+    &  & \\
+    \hline
+    \end{tabular}
+    \caption{Asiento 2. Ejercicio 7.}
+    \label{tabla:asiento2Ej7T2}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Valoración posterior a coste amortizado el 31.12.2018} & \textbf{HABER} \\
+    \hline
+    2.500&  \cuenta{572}& \\
+    \hline
+    & \cuenta{7613} & 2.500\\
+    \hline
+    \end{tabular}
+    \caption{Asiento 3. Ejercicio 7.}
+    \label{tabla:asiento3ej7T2}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Valoración posterior a coste amortizado 31.12.2018} & \textbf{HABER} \\
+    \hline
+    933& \cuenta{251} & \\
+    \hline
+    &  \cuenta{7613}& 933\\
+    \hline
+    \end{tabular}
+    \caption{Asiento 4. Ejercicio 7.}
+    \label{tabla:asiento4ej7T2}
+\end{table}
+
+Llegado a esta fecha debemos de comprobar si hay o no deterioro, una de las formas es comparar si el valor contable coincide con los flujos de caja esperados (VAFE).
+
+\begin{align*}
+    \text{Flujos de caja esperados a recibir (bono) con ti efectio} = \\
+    \text{49.933,39} \e = \\
+    \frac{2500}{1,07006} + \frac{54500}{1,07006^2}
+\end{align*}
+
+Siguiendo este criterio podemos ver que no hay deterioro.
+
+La NV9 establece que \c{como sustituto del valor actual de los flujos de efectivo futuros, se puede utilizar el valor de mercado del instrumento.}
+
+En el enunciado se nos expone que a 31 de diciembre, los títulos cotizan al 95\% y 105\%, respectivamente.
+
+%pag 34 del pdf
 
 
 

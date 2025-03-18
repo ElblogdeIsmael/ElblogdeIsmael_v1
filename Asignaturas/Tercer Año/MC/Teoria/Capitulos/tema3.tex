@@ -376,7 +376,7 @@ Dado los siguientes problemas primales, encontrar sus problemas duales asociados
     \item[c)] Min. \quad $6x_1 + 4x_2$ \\
     s.a. \quad $x_1 \leq 700$ \\
     \quad \quad $3x_1 + x_2 \geq 2400$ \\
-    \quad \quad $x_1 + 2x_2 = 1600$ \\
+    \quad \quad $x_1 + 2x_2 \leq 1600$ \\
     \quad \quad $x_1, x_2 \geq 0$
 
     Debemos de calcular las siguientes matrices:
@@ -405,9 +405,9 @@ Dado los siguientes problemas primales, encontrar sus problemas duales asociados
 
     \begin{align*}
         Max \quad w = 700y_1 + 2400y_2 + 1600y_3 \\
-        s.a. \quad y_1 + 3y_2 + y_3 \geq 6 \\
-        y_2 + 2y_3 \geq 4 \\
-        y_1, y_2 \geq 0 \quad y_3 \rightarrow \text{libre}
+        s.a. \quad y_1 + 3y_2 + y_3 \leq 6 \\
+        y_2 + 2y_3 \leq 4 \\
+        y_2 \geq 0, y_1, y_3 \leq 0  
     \end{align*}
     
     \item[d)] Max. \quad $4.5x_1 + 3x_2 + 1.5x_3$ \\
@@ -444,9 +444,9 @@ Dado los siguientes problemas primales, encontrar sus problemas duales asociados
 
     \begin{align*}
         Min \quad w = 4y_1 + 8y_2 + 6y_3 \\
-        s.a. \quad y_1 + 2y_2 + y_3 \geq 4 \\
-        2y_1 - y_2 - y_3 = 8 \\
-        - y_1 + y_2 \geq 6 \\
+        s.a. \quad y_1 + 2y_2 + y_3 \geq 4,5 \\
+        2y_1 - y_2 - y_3 = 3 \\
+        - y_1 + y_2 \geq 1,5 \\
         y_1, y_2, y_3 \geq 0 
     \end{align*}
     
@@ -482,8 +482,8 @@ Dado los siguientes problemas primales, encontrar sus problemas duales asociados
 
     \begin{align*}
         Max \quad w = 700y_1 + 2400y_2 + 1600y_3 \\
-        s.a. \quad y_1 + 3y_2 + y_3 \geq 6 \\
+        s.a. \quad y_1 + 3y_2 + y_3 \leq 6 \\
         y_2 + 2y_3 = 4 \\
-        y_1, y_2 \geq 0 \quad y_3 \rightarrow \text{libre}
+        y_1\leq0 , y_2 \geq 0 \quad y_3 \rightarrow \text{libre}
     \end{align*}
 \end{itemize}
