@@ -703,8 +703,8 @@ A partir de este i, debemos de calcular el cuadro de amortización\footnote{Cade
 Llegado a esta fecha debemos de comprobar si hay o no deterioro, una de las formas es comparar si el valor contable coincide con los flujos de caja esperados (VAFE).
 
 \begin{align*}
-    \text{Flujos de caja esperados a recibir (bono) con ti efectio} = \\
-    \text{49.933,39} \e = \\
+    \text{Flujos de caja esperados a recibir (bono) con ti efectivo} = \\
+    \text{49.933,39} \e = 
     \frac{2500}{1,07006} + \frac{54500}{1,07006^2}
 \end{align*}
 
@@ -713,8 +713,607 @@ Siguiendo este criterio podemos ver que no hay deterioro.
 La NV9 establece que \c{como sustituto del valor actual de los flujos de efectivo futuros, se puede utilizar el valor de mercado del instrumento.}
 
 En el enunciado se nos expone que a 31 de diciembre, los títulos cotizan al 95\% y 105\%, respectivamente.
+Este valor lo considera la empresa lo suficientemente fiable como para considerarlo representativo del valor que pudiera recuperar la empresa.
 
-%pag 34 del pdf
+De manera que el valor fiable de mercado asciende a:
+\begin{align*}
+    \text{50.000} \times 0,95 = 47.500  \e\\
+\end{align*}
+
+Para el valor contable del bono debemos de fijarnos en el coste amortizado, el cual vemos que asciende a 49.933 \e. Por lo que debemos de contabilizar un \c{deterioro de valor }de 2.433 \e.
+
+\[
+\begin{array}{r}
+   49.933 \\
+   -47.500 \\
+   \hline
+    2.433
+\end{array}
+\]
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Deterioro de valor del bono a 31.12.2018} & \textbf{HABER} \\
+    \hline
+    2.433&  \cuenta{6968}& \\
+    \hline
+    & \cuenta{297} & 2.433\\
+    \hline
+    \end{tabular}
+    \caption{Asiento 5. Ejercicio 7.}
+    \label{tabla:asiento5ej7T2}
+\end{table}
+
+En este punto hemos acabado con las operaciones correspondientes con el bono hasta el ejercicio 2018, pero debemos de continuar con el ejercicio 2019.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    2.500 & (572) Bancos c/c & \\
+    \hline
+    & (7613) Ingresos de valores representativos de deuda, otras empresas \newline&2.500 \\
+    \hline
+    \end{tabular}
+    \caption{Reconocimiento del bono y su cobro (31-12-2019).}
+    \label{tabla:reconocimiento_bono}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    998 & (251) Valores representativos de deuda a largo plazo & \\
+    \hline
+    & (7613) Ingresos de valores representativos de deuda, otras empresas& 998 \\
+    \hline
+    \end{tabular}
+    \caption{Reconocimiento de intereses implícitos y valoración a coste amortizado (31-12-2019).}
+    \label{tabla:intereses_implicitos}
+\end{table}
+
+En este punto debemos de tener en cuenta que el valor de mercado es de 52.500 \e (50.000 $\times$ 105\%), por lo que debemos de contabilizar un \c{reversión del deterioro de valor}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    2.433 & (297) Reversión del deterioro de valor de créditos comerciales & \\
+    \hline
+    & (6968) Pérdidas por deterioro de valor de créditos comerciales & 2.433 \\
+    \hline
+    \end{tabular}
+    \caption{Reversión del deterioro de valor (31-12-2019).}
+    \label{tabla:reversion_deterioro}
+\end{table}
+
+Sabemos que el valor contable del bono ascendió a 49.933 en 2018 menos el deterioro a finales de 2018 y más los intereses implícitos de 998 \e:
+\begin{align*}
+    49.933 - 2.433 + 998 = 48.498 \e \\
+    \rightarrow \text{Tras revertir el deterioro} \\ \rightarrow 48.498 + 2.433 = 50.931 \e 
+\end{align*}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    50.931 & (251) Valores representativos de deuda a largo plazo & \\
+    \hline
+    & (572) Bancos c/c & 50.931 \\
+    \hline
+    \end{tabular}
+    \caption{Reconocimiento del bono y su cobro (31-12-2019).}
+    \label{tabla:reconocimiento_bono_2019}
+\end{table}
+
+Ahora se deben de realizar las mismas operaciones, pero correspondientes al ejercicio 2020.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    2.500 & (572) Bancos c/c & \\
+    \hline
+    & (7613) Ingresos de valores representativos de deuda, otras empresas & 2.500 \\
+    \hline
+    \end{tabular}
+    \caption{Reconocimiento del bono y su cobro (31-12-2020).}
+    \label{tabla:reconocimiento_bono_2020}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    1.068,29 & (541) Valores representativos de deuda a corto plazo & \\
+    \hline
+    & (7613) Ingresos de valores representativos de deuda, otras empresas & 1.068,29 \\
+    \hline
+    \end{tabular}
+    \caption{Por la valoración posterior a coste amortizado (31-12-2020).}
+    \label{tabla:valoracion_posterior}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{} & \textbf{HABER} \\
+    \hline
+    & (541) Valores representativos de deuda a corto plazo & 52.000 \\
+    \hline
+     1.068,29& \cuenta{572}& \\
+    \hline
+    \end{tabular}
+    \caption{Por el cobro del principal del bono (31-12-2020).}
+    \label{tabla:cobro_principal}
+\end{table}
+
+\textit{En este punto tocaría ver un ejemplo similar, pero con la diferencia de que la operación se inicia en un período distinto al año natural.}\textbf{ Esto hace que el cálculo de los intereses devengados sea distinto.} Pero la única diferencia que hay es que a 31 de diciembre de cada ejercicio debemos de calcular y de contabilizar los intereses devengados\footnote{Para ampliar se puede mirar el ejemplo 8 del Manual, Capítulo 2.}.
+
+\newpage
+\section{AF con valoración posterior a VR}
+\subsection{Valoración posterior a VR con cambios en la cuenta de PyG}
+
+La \underline{valoración inicial} en esta categoría se realiza a VR. Salvo evidencia en contrario, será \c{el precio de la transacción, que equivaldrá al VR de la contraprestación entregada}.
+
+En cuanto a la \underline{valoración posterior}, se realizará a VR con cambios en la cuenta de PyG. 
+
+\subsection*{\textcolor{blue}{Ejemplo 9}}
+
+El 1-1-2020 se compra una acción que cotiza en Bolsa siendo su precio de mercado 100 € con la intención de negociarla en el corto plazo. En fechas posteriores (31/12/2020) su precio de mercado es de, dos posibilidades:
+\begin{itemize}
+    \item[a)] 90 €.
+    \item[b)] 110 €.
+\end{itemize}
+
+\textbf{SE PIDE:} Contabilizar las operaciones.
+
+\textbf{Solución.} 
+%El primer paso consiste en identificar si el activo puede clasificarse como financiero para negociar. En este caso, la intención de la empresa es negociar la acción en el corto plazo, por lo que se clasifica como \textit{Activos financieros a valor razonable con cambios en la cuenta de pérdidas y ganancias (AFVRPYG)}.
+
+\begin{itemize}
+    \item \textbf{Caso a:} Si el precio de mercado es 90 € a 31/12/2020, se debe reconocer una pérdida de 10 €.
+    \item \textbf{Caso b:} Si el precio de mercado es 110 € a 31/12/2020, se debe reconocer una ganancia de 10 €.
+\end{itemize}
+
+\begin{itemize}
+    \item Presenta intención de venderlo a c/p y presenta un VR, por lo que no cumple el modelo SCPI.
+    \item Tampoco presenta un vencimiento específico.
+    \item Debe de clasificarse como \textit{Activos financieros a valor razonable con cambios en la cuenta de pérdidas y ganancias} (AFVRPYG).
+\end{itemize}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Compra de la acción el 01.01.2020} & \textbf{HABER} \\
+    \hline
+    100 & \cuenta{540} & \\
+    \hline
+    & \cuenta{572} & 100 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la compra de la acción}
+    \label{tabla:compra_accion}
+\end{table}
+
+Continuando con el caso a), debemos de contabilizar la pérdida por valoración a 31/12/2020, ya que el precio del título es de 90 €, \c{originando una pérdida en base a la valoración inicial de 10 €.}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Valoración a 31.12.2020 (Caso a)} & \textbf{HABER} \\
+    \hline
+    10 & \cuenta{6630}  & \\
+    \hline
+    & \cuenta{540} & 10 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la pérdida por valoración}
+    \label{tabla:perdida_valoracion}
+\end{table}
+
+En cambio, si el precio de mercado es de 110 €, debemos de contabilizar una ganancia por valor (opción b).
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Valoración a 31.12.2020 (Caso b)} & \textbf{HABER} \\
+    \hline
+    10  & \cuenta{540} &  \\
+    \hline
+    & \cuenta{7630} Beneficios por valoración de inversiones financieras & 10 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la ganancia por valoración}
+    \label{tabla:ganancia_valoracion}
+\end{table}
+
+
+\subsection*{\textcolor{blue}{Ejemplo 10}}
+
+``MALQUIS, S.A.'' adquiere el 1 de noviembre de 2021, 100 acciones de ``TIMON, S.A.'' al precio unitario de 10 €. Los gastos iniciales de la operación han ascendido a 100 €. Las acciones se adquieren al conocer que en breve sufrirán una subida y se espera poder venderlas en un horizonte temporal no superior a 3 meses.
+
+\textbf{SE PIDE:} Especificar la categoría en la que pueden clasificarse estos activos y contabilizar las operaciones derivadas de esta clasificación.
+
+\textbf{Solución.}
+
+Dado que la empresa tiene la intención de vender las acciones en un horizonte temporal no superior a 3 meses \c{y presentan un VR}, se clasificarán como \textit{Activos financieros a valor razonable con cambios en la cuenta de pérdidas y ganancias (AFVRPYG)}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Compra de las acciones el 01.11.2021} & \textbf{HABER} \\
+    \hline
+    1.000 & \cuenta{540} & \\
+    \hline
+    100&\cuenta{669}& \\
+    \hline
+    & \cuenta{572} & 1.100 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la compra de las acciones}
+    \label{tabla:compra_acciones}
+\end{table}
+
+\c{A 31 de diciembre, debemos de recoger un beneficio por aplicación del VR como valoración posterior.}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Valoración a 31.12.2021} & \textbf{HABER} \\
+    \hline
+    1000 & \cuenta{540} & \\
+    \hline
+    & \cuenta{7630} Beneficios por valoración de inversiones financieras & 1000 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la ganancia por valoración}
+    \label{tabla:ganancia_valoracion_acciones}
+\end{table}
+
+La valoración inicial y la posterior, se realizan a VR, pero a diferencia de la categoría anterior se imputan en la cuenta de \underbar{patrimonio neto}.
+
+También es distinto el tratamiento contable de los \underline{costes de transacción}.
+
+Por último, debemos de resaltar otra diferencia en cuanto al tratamiento contable del deterioro:
+\begin{itemize}
+    \item [a)] \underline{En instrumentos de deuda}, una reducción o retraso en los flujos de efectivo futuros.
+    \item [b)] \underline{En instrumentos de patrimonio}, cuando se produzcan descensos durante un año y medio o por valor de un 40\% de su cotización.
+\end{itemize}
+
+\c{Señala la norma que en estos casos las pérdidas por deterioro se reconocerán en la cuenta de PyG.}
+
+\subsection*{\textcolor{blue}{Ejemplo 11}}
+
+El 1-1-20X8 ``BROX'' S.A. compra acciones que cotizan en Bolsa siendo su precio de mercado 100 €. La sociedad tiene intención de mantener los instrumentos de patrimonio durante largo plazo. En fechas posteriores (31/12/20X8) su precio de mercado es de 110 €. Se vende por 110 € el 1 de abril de 20X9.
+
+\textbf{SE PIDE:} Especificar la categoría en la que pueden clasificarse estos activos y contabilizar las operaciones derivadas de esta clasificación, exceptuando su efecto impositivo.
+
+\textbf{Solución.}
+
+\begin{itemize}
+    \item Cotizan en bolsa, por ende no se pueden valorar a coste.
+    \item Tampoco se van a mantener para negociar, por lo que la empresa puede acceder a realizar la elección irrevocable en el momento inicial de presentar los cambios posteriores directamente en el patrimonio neto.
+\end{itemize}
+
+Dado que la empresa tiene la intención de mantener las acciones a largo plazo, se clasificarán como \textit{Activos financieros a valor razonable con cambios en el patrimonio neto (AFVRPN)}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Compra de las acciones el 01.01.20X8} & \textbf{HABER} \\
+    \hline
+    100 & \cuenta{250} & \\
+    \hline
+    & \cuenta{572} & 100 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la compra de las acciones}
+    \label{tabla:compra_acciones_11}
+\end{table}
+
+A 31 de diciembre de 20X8, debemos de reconocer una ganancia por valoración a valor razonable, ya que el precio del título es de 110 €, originando una ganancia en base a la valoración inicial de 10 €.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Valoración a 31.12.20X8} & \textbf{HABER} \\
+    \hline
+    10 & \cuenta{250} & \\
+    \hline
+    & \cuenta{133} & 10 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la ganancia por valoración}
+    \label{tabla:ganancia_valoracion_11}
+\end{table}
+
+Al final del ejercicio por la regularización de la cuenta 900 a través de la cuenta 133.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Regularización de la cuenta 900} & \textbf{HABER} \\
+    \hline
+    10 & \cuenta{133} & \\
+    \hline
+    & \cuenta{900} & 10 \\
+    \hline
+    \end{tabular}
+    \caption{Regularización de la cuenta 900}
+    \label{tabla:regularizacion_11}
+\end{table}
+
+Finalmente, el 1 de abril de 20X9, se vende la acción por 110 €, por lo que debemos de reconocer la venta y dar de baja el activo.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Venta de las acciones el 01.04.20X9} & \textbf{HABER} \\
+    \hline
+    110 & \cuenta{572} & \\
+    \hline
+    & \cuenta{250} & 110 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la venta de las acciones}
+    \label{tabla:venta_acciones_11}
+\end{table}
+
+Al producirse la venta hay que traspasar el resultado que se encuentra en el PN a la cuenta de PyG.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Anulación del beneficio reflejado en la cuenta 133 y su transferencia a PyG} & \textbf{HABER} \\
+    \hline
+    10 & \cuenta{802} & \\
+    \hline
+    & \cuenta{7632} & 10 \\
+    \hline
+    \end{tabular}
+    \caption{Regularización de la cuenta 133}
+    \label{tabla:regularizacion_133_11}
+\end{table}
+
+Por último, se regulariza la cuenta 802 con la cuenta 133, de esta forma las cuentas del grupo 8, 9 y 133 quedan a saldadas.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Regularización de la cuenta 802} & \textbf{HABER} \\
+    \hline
+    10 & \cuenta{133} & \\
+    \hline
+    & \cuenta{802} & 10 \\
+    \hline
+    \end{tabular}
+    \caption{Regularización de la cuenta 802}
+    \label{tabla:regularizacion_802_11}
+\end{table}
+
+\subsection{AF con valoración a coste }
+
+La última categoría de AF recoge las inversiones del grupo multigrupo y asociadas. Además se incluirán en las mismas los AF cuyo VR \c{no pueda ser fiablemente medido}.
+
+En esta categoría los AF se valorarán inicialmente a coste, que equivaldrá al VR de la \c{contraprestación más los costes de transacción.}
+
+En cuanto a la \underline{valoración posterior}, se valorarán por su \c{\underline{coste} menos el importe acumulado de las correcciones valorativas por deterioro}.
+
+\begin{align*}
+    \text{Deterioro de valor} \rightarrow \left\{
+        \begin{array}{l}
+            \text{Valor en libros} \\
+            \text{Importe recuperable}
+        \end{array}
+    \right.
+\end{align*}
+
+\begin{align*}
+    \text{Siendo el Importe Recuperable } = Max\left\{
+        \begin{array}{l}
+            \text{Valor razonable - Costes de venta} \\
+            \text{Valor actual de flujos de efectivo}
+        \end{array}
+    \right.
+\end{align*}
+
+Algunos de los activos no presentan un valor fiable, por lo que en muchos casos tendra que recurrirse a os flujos de efectivo de la inversión:
+\begin{enumerate}
+    \item En base a los dividendos que pretenda repartir la entidad participada.
+    \item Mediante la estimación de su participación en los flujos de efectivo que se espera que sean generados por la entidad participada.
+\end{enumerate}
+
+\subsection*{\textcolor{blue}{Ejemplo 12}}
+
+La entidad ``NASTIPLÁ S.A.'' adquiere el 1 de junio de 2021 el 30\% de la entidad ``RUMBA, S.A.'' Para llegar a este porcentaje NASTIPLÁ ha adquirido 20.000 acciones con un precio de 100 € cada una. En la fecha de adquisición el patrimonio neto de RUMBA asciende a 6.000.000 €. Posteriormente, al cierre del ejercicio el patrimonio neto de RUMBA asciende a 5.500.000 €. Se conoce la existencia de una plusvalía tácita de un terreno de RUMBA.
+
+\textbf{SE PIDE:} Especificar la categoría en la que pueden clasificarse estos activos y contabilizar las operaciones derivadas de esta clasificación.
+
+\textbf{Solución.}
+
+\underline{Primer paso.} Debemos de ver en que categoría podemos clasificar esta inversión. 
+\begin{itemize}
+    \item El enunciado indica que la empresa adquiere el 30\% de la entidad, estamos ante una empresa asociada, correspondiente a la categoría de \c{Activos a coste}, cuya valoración inicial se realiza a coste.
+\end{itemize}
+
+%Dado que NASTIPLÁ ha adquirido el 30\% de RUMBA, se considera una inversión en una empresa asociada. Por lo tanto, se clasifica como \textit{Activos financieros a coste}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Compra de las acciones el 01.06.2021} & \textbf{HABER} \\
+    \hline
+    2.000.000 = 20.000 $\times$ 100 \e& \cuenta{2404} & \\
+    \hline
+    & \cuenta{572} & 2.000.000 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la compra de las acciones}
+    \label{tabla:compra_acciones_12}
+\end{table}
+
+Cabe destacar que se comenta en el enunciado que se adquiere el 30\% que es 30\% $\times$ 6.000.000 = 1.800.000 \e, por lo que la empresa ha adquirido un 200.000 \e  de \underline{plusvalía tácita}.
+
+Al cierre del ejercicio, se debe de realizar la valoracion posterior, que será a coste.  
+
+\begin{align*}
+    \text{PN a final del ejercicio} \rightarrow 5.500.000 \e \\
+    \text{Valoración de la inversión} \rightarrow 30\% \times 5.500.000 = 1.650.000 \e \\
+    \text{Parte de la plusvalía que se añade} \rightarrow 200.000 \e = \left[\text{2.000.000 \e  } - \text{1.800.000 \e}\right]\\
+    \implies \text{Importe Recuperable } =  \text{1.650.000 \e} + \text{200.000 \e} = 1.850.000 \e \\
+    \text{\textcolor{red}{Deterioro de valor}} = 2.000.000 \e - 1.850.000 \e = 150.000 \e
+\end{align*}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Valoración posterior (deterioro) de la adquisición del 30\% de RUMBA por NASTIPLÁ} & \textbf{HABER} \\
+    \hline
+    150.000 & (6961) Pérdidas por deterioro de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas & \\
+    \hline
+    & (2934) Deterioro de valor de participaciones en instrumentos de patrimonio neto a largo plazo, empresas asociadas & 150.000 \\
+    \hline
+    \end{tabular}
+    \caption{Valoración posterior (deterioro) de la adquisición del 30\% de RUMBA por NASTIPLÁ}
+    \label{tabla:deterioro_valor_12}
+\end{table}
+
+\newpage 
+
+\subsection*{Figura Resumen de valoración inicial y posterior}
+
+\begin{table}[H]
+    \centering
+    \caption{Resumen de la valoración inicial y posterior. Deterioro de valor.}
+    \begin{tabularx}{\textwidth}{|X|X|X|X|}
+        \hline
+        \textbf{Categorías} & \textbf{Valoración Inicial} & \textbf{Valoración Posterior} & \textbf{Deterioro de valor} \\
+        \hline
+        \underline{AFVR} (PyG) & \underline{Valor Razonable}: será el precio de la transacción, que equivaldrá al valor razonable de la contraprestación entregada + Costes de transacción a PyG. & \underline{Valor Razonable} con cambios a PyG. & No es posible \\
+        \hline
+        Activos a coste amortizado & \underbar{Valor Razonable}: será el precio de la transacción, que equivaldrá al valor razonable de la contraprestación entregada + Costes de transacción & \underbar{Coste amortizado}. Los intereses devengados se contabilizarán en la cuenta de pérdidas y ganancias, aplicando el tipo de interés efectivo. & Al cierre ejercicio, correcciones valorativas: Valor en libros - VAFE (valor actual de los flujos de efectivo calculados al tipo de interés efectivo calculado en el momento de su reconocimiento inicial). \\
+        \hline
+        Activos a coste & \underbar{Coste} + Costes de Transacción & \underbar{Coste} menos el importe acumulado de las correcciones por deterioro. & Al cierre ejercicio, correcciones valorativas: Valor en libros - Importe recuperable = mayor VR-CV o VAFE; en función del patrimonio de la entidad participada. \\
+        \hline
+        AFVR (PN) & \underbar{Valor Razonable}: será el precio de la transacción, que equivaldrá al valor razonable de la contraprestación entregada + Costes de transacción & \underbar{Valor Razonable} con cambios a Patrimonio Neto. & - Retraso de flujos de efectivo estimados futuros (instrumento de deuda) - Descenso prolongado o rápido de la cotización (instrumentos de patrimonio). \\
+        \hline
+    \end{tabularx}
+    \label{tab:valoracion}
+\end{table}
+
+\newpage
+
+\subsubsection{Intereses y dividendos recibidos de activos financieros}
+
+Los intereses y dividendos recibidos de los AF se contabilizarán en la cuenta de pérdidas y ganancias si son devengados con posterioridad al momento de la adquisición del activo.
+
+No se ha tratado aún que ocurre si existieran unos intereses explícitos devengados y no vencidos (\c{no cobrados}) antes de su adquisición.
+
+Por ende, el anterior mencionado y la existencia de dividendos acordados  por el órgano competente en el momento de su adquisición y que no hayan sido liquidados \c{se registran de manera independiente, es decir, pasan a formar parte de la valoración inicial del activo.}
+
+
+\subsection*{\textcolor{blue}{Ejemplo 13}}
+
+La empresa ``BALOS, S.A.'' adquiere 100 acciones de la empresa ``LIBRA, S.A.'' el 1 de julio de 2021 cuando el precio de cotización es de 10 €/acción, siendo el valor nominal de los títulos de 5 €/acción, con la intención de realizar operaciones especulativas en el corto plazo. Los gastos de la transacción ascienden a un 1\% del valor de cotización. En relación con esta adquisición se conoce que la Junta General de Accionistas de LIBRA acordó el reparto de dividendos 0,10 €/acción que será abonada el 1 de septiembre de 2021.
+
+\textbf{SE PIDE:} Especificar la categoría en la que pueden clasificarse estos activos y contabilizar las operaciones derivadas de esta clasificación.
+
+\textbf{Solución.}
+
+Dado que la empresa tiene la intención de realizar operaciones especulativas en el corto plazo, se clasificarán como \textit{Activos financieros a valor razonable con cambios en la cuenta de pérdidas y ganancias (AFVRPYG)}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Compra de las acciones el 01.07.2021} & \textbf{HABER} \\
+    \hline
+    1.000 & \cuenta{540} & \\
+    \hline
+    10 & \cuenta{669} & \\
+    \hline
+    & \cuenta{572} & 1.010 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable de la compra de las acciones}
+    \label{tabla:compra_acciones_13}
+\end{table}
+
+El 1 de septiembre de 2021, se recibe el dividendo de 0,10 €/acción, lo que equivale a 10 €.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Cobro del dividendo el 01.09.2021} & \textbf{HABER} \\
+    \hline
+    10 & \cuenta{572} & \\
+    \hline
+    & \cuenta{7630} & 10 \\
+    \hline
+    \end{tabular}
+    \caption{Registro contable del cobro del dividendo}
+    \label{tabla:cobro_dividendo_13}
+\end{table}
+
+%REVISAR EJ 13 PAGINA 49
+
+
+
 
 
 
