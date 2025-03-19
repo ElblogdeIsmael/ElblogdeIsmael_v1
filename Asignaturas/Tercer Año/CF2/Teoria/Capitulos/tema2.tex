@@ -419,7 +419,7 @@ Ahora debemos de reconocer la primera cuota, pero esta está compuesta por dos o
     \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
     \hline
     \rowcolor{blue!30}
-    \textbf{DEBE} & \textbf{Reclasificaciónn el 31.12.2018} & \textbf{HABER} \\
+    \textbf{DEBE} & \textbf{Reclasificación el 31.12.2018} & \textbf{HABER} \\
     \hline
     336.349 &  \cuenta{542}& \\
     \hline
@@ -1272,49 +1272,333 @@ La empresa ``BALOS, S.A.'' adquiere 100 acciones de la empresa ``LIBRA, S.A.'' e
 
 \textbf{Solución.}
 
-Dado que la empresa tiene la intención de realizar operaciones especulativas en el corto plazo, se clasificarán como \textit{Activos financieros a valor razonable con cambios en la cuenta de pérdidas y ganancias (AFVRPYG)}.
+Estamos ante la existencia de dividendos acordados por el órgano competente que no han vencido aún, por lo que a la hora de registrar la valoración inicial del activo, estos dividendos \c{tienen que registrarse de manera independiente} mediante la cuenta \c{545. Dividendo a cobrar}.
+Dado que la empresa tiene la intención de realizar operaciones especulativas en el corto plazo y \c{tienen un valor de cotización de mercado}, así que se clasificarán como \textit{Activos financieros a valor razonable con cambios en la cuenta de pérdidas y ganancias (AFVRPYG)}.
 
 \begin{table}[H]
     \centering
     \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
     \hline
     \rowcolor{blue!30}
-    \textbf{DEBE} & \textbf{Compra de las acciones el 01.07.2021} & \textbf{HABER} \\
+    \textbf{DEBE} & \textbf{Valoración inicial de las acciones que adquiere BALOS} & \textbf{HABER} \\
     \hline
-    1.000 & \cuenta{540} & \\
+    990 & (540) Inversiones financieras a corto plazo en instrumentos de patrimonio & \\
+    & [(10 €/acción - 0,1 €) x 100 acciones] & \\
     \hline
-    10 & \cuenta{669} & \\
+    10 & (545) Dividendo a cobrar & \\
+    & [0,1 x 100 acciones] & \\
     \hline
-    & \cuenta{572} & 1.010 \\
+    10 & (669) Otros gastos financieros & \\
+    \hline
+    & (572) Banco X c/c & 1.010 \\
     \hline
     \end{tabular}
-    \caption{Registro contable de la compra de las acciones}
-    \label{tabla:compra_acciones_13}
+    \caption{Valoración inicial de las acciones que adquiere BALOS}
+    \label{tab:valoracion_inicial_bal}
 \end{table}
 
-El 1 de septiembre de 2021, se recibe el dividendo de 0,10 €/acción, lo que equivale a 10 €.
+\newpage 
+\section{Reclasificación y Baja de AF}
+
+\subsection{Reclasificación de AF}
+
+El concepto de reclasificación, atiende a la necesidad que tiene la empresa en cambiar la forma en que se gestionan los AF para generar los flujos de efectivo. La reclasificación de categoría no es un suspenso de baja de balance sino un cambio en el criterio de valoración.
+
+Las reclasificaciones se hacen con carácter prospectivo\footnote{Es decir, a partir del momento que se toma la decisión de la reclasificación.} y nunca retroactivo, en base a los siguientes criterios:
+\begin{enumerate}
+    \item Reclasificación de AF a coste amortizado $\rightarrow$ AFVRPYG\footnote{AFVRPYG: Activos financieros a valor razonable con cambios en la cuenta de pérdidas y ganancias}.
+    \item Reclasificación de AFVRPYG $\rightarrow$ AF a coste amortizado\footnote{AF a coste amortizado: Activos financieros a coste amortizado}.
+    \item Reclasificación de AF a coste amortizado $\rightarrow$ AFVRPN\footnote{AFVRPN: Activos financieros a valor razonable con cambios en el patrimonio neto}.
+    \item Reclasificación de AFVRPN $\rightarrow$ AF a coste amortizado.
+    \item Reclasificación de AFVRPYG $\rightarrow$ AFVRPN.
+    \item Reclasificación de AFVRPN $\rightarrow$ AFVRPYG.
+    \item Reclasificación de Inversiones a coste $\rightarrow$ AFVRPYG.
+    \item Reclasificación de AFVRPYG $\rightarrow$ Inversiones a coste\footnote{Inversiones a coste: Activos financieros a coste}.
+\end{enumerate}
+
+\begin{table}[H]
+    \centering
+    \caption{Resumen de las posibles reclasificaciones de activos financieros}
+    \resizebox{\textwidth}{!}{ % Ajuste automático al ancho del documento
+    \begin{scriptsize} % Reduce el tamaño de la letra SOLO en la tabla
+    \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
+        \hline
+        \rowcolor{yellow!30}
+        \textbf{Origen/destino} & \textbf{AFVRPYG} & \textbf{AFVRPN} & \textbf{Coste amortizado} & \textbf{Coste} \\
+        \hline
+        AFVRPYG & 
+        \begin{itemize}
+            \item El VR en la fecha de reclasificación;
+            \item No se generan diferencias de valoración;
+            \item No posible para Instrumentos de patrimonio.
+        \end{itemize} & 
+        \begin{itemize}
+            \item El VR en la fecha de reclasificación;
+            \item No se generan diferencias de valoración.
+        \end{itemize} & 
+        \begin{itemize}
+            \item El VR pasa a ser el coste amortizado del activo;
+            \item No se generan diferencias de valoración.
+        \end{itemize} & 
+        \begin{itemize}
+            \item El VR en la fecha de reclasificación.
+        \end{itemize} \\
+        \hline
+        AFVRPN & 
+        \begin{itemize}
+            \item El VR en la fecha de reclasificación;
+            \item Los resultados acumulados en PN se trasladan a PyG.
+        \end{itemize} & 
+        \begin{itemize}
+            \item El VR en la fecha de reclasificación;
+            \item No se generan diferencias de valoración.
+        \end{itemize} & 
+        \begin{itemize}
+            \item El coste amortizado determinado al inicio las diferencias a PN.
+        \end{itemize} & \hspace{1pt} \\
+        \hline
+        Coste amortizado & 
+        \begin{itemize}
+            \item El VR en la fecha de reclasificación;
+            \item La diferencia de valoración se imputa a PyG.
+        \end{itemize} & 
+        \begin{itemize}
+            \item El VR pasa a ser el coste amortizado del activo;
+            \item Las diferencias se imputan a PN, sin modificación del tipo de interés.
+        \end{itemize} & \hspace{1pt} & \hspace{1pt} \\
+        \hline
+        Coste & 
+        \begin{itemize}
+            \item El VR en la fecha de reclasificación;
+            \item La diferencia de valoración se imputa a PyG.
+        \end{itemize} & 
+        \begin{itemize}
+            \item El VR en la fecha de reclasificación;
+            \item La diferencia de valoración se imputa a PN.
+        \end{itemize} & \hspace{1pt} & \hspace{1pt} \\
+        \hline
+    \end{tabularx}
+    \end{scriptsize}
+    } % Cierre de resizebox
+    \label{tab:ReclasificacionAF}
+\end{table}
+
+\subsection*{\textcolor{blue}{Ejemplo 14}}
+
+La entidad A adquiere un bono el 1-1-2018 con la intención de mantenerlo hasta vencimiento hasta dentro de 3 años. Las características del mismo son las siguientes:
+\begin{itemize}
+    \item Valor de emisión: 48.000 €.
+    \item Comisión de adquisición: 1.000 €.
+    \item Valor de reembolso: 52.000 €.
+    \item Intereses: 5\% anual sobre valor nominal (VN= 50.000 €).
+\end{itemize}
+
+A 31 de diciembre de 2018 y 2019 los títulos cotizan al 95\% y al 105\%, respectivamente, valor que la empresa considera como lo suficientemente fiable como para considerarlo representativo del valor que pudiera recuperar la empresa.
+
+La empresa decide cambiar la categoría del bono a valor razonable con cambios a patrimonio neto el 31 de diciembre de 2019.
+
+\textbf{SE PIDE:} registrar contablemente la reclasificación del bono a AFVRPN.
+
+\textbf{Solución.}\\
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{Plazo} & \textbf{I. Devengados} & \textbf{I. Explícitos y Reembolso} & \textbf{I. Implícitos} & \textbf{Coste Amortizado} \\
+    \hline
+    01/01/2018 & & & & 49.000 \\
+    \hline
+    31/12/2018 & 3.433 & 2.500 & 933 & 49.993 \\
+    \hline
+    31/12/2019 & 3.498 & 2.500 & 998 & 50.932 \\
+    \hline
+    31/12/2020 & 3.568,29 & 54.500 & 1.068,29 & 0 \\
+    \hline
+    \end{tabular}
+    \caption{Cuadro de amortización a coste efectivo (7,0006\%).}
+    \label{tabla:ejercicio7-asiento1-tema2}
+\end{table}
+
+
 
 \begin{table}[H]
     \centering
     \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
     \hline
     \rowcolor{blue!30}
-    \textbf{DEBE} & \textbf{Cobro del dividendo el 01.09.2021} & \textbf{HABER} \\
+    \textbf{DEBE} & \textbf{Asiento contable de la suscripción de los títulos (1/1/2018)} & \textbf{HABER} \\
     \hline
-    10 & \cuenta{572} & \\
+    49.000 & (251) Valores representativos de deuda a largo plazo & \\
     \hline
-    & \cuenta{7630} & 10 \\
+    & (572) Bancos c/c & 49.000 \\
     \hline
     \end{tabular}
-    \caption{Registro contable del cobro del dividendo}
-    \label{tabla:cobro_dividendo_13}
+    \caption{Asiento contable de la suscripción de los títulos (1/1/2018)}
+    \label{tabla:asiento_suscripcion}
 \end{table}
 
-%REVISAR EJ 13 PAGINA 49
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Por la valoración posterior a coste amortizado (31-12-2018)} & \textbf{HABER} \\
+    \hline
+    2.500 & (572) Bancos c/c & \\
+    \hline
+    & (7613) Ingresos de valores representativos de deuda, otras empresas & 2.500 \\
+    \hline
+    \end{tabular}
+    \caption{Por la valoración posterior a coste amortizado (31-12-2018)}
+    \label{tabla:valoracion_posterior}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Por la valoración posterior a coste amortizado (31-12-2018)} & \textbf{HABER} \\
+    \hline
+    933 & (251) Bancos c/c & \\
+    \hline
+    & (7613) Ingresos de valores representativos de deuda, otras empresas & 2.500 \\
+    \hline
+    \end{tabular}
+    \caption{Por la valoración posterior a coste amortizado (31-12-2018)}
+    \label{tabla:valoracion_posterior2}
+\end{table}
 
 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Por el deterioro de valor del bono (31-12-2018)} & \textbf{HABER} \\
+    \hline
+    2.433 & (6968) Pérdidas por deterioro de valores representativos de deuda a largo plazo, otras empresas & \\
+    \hline
+    & (297) Deterioro de valor de valores representativos de deuda a l/p & 2.433 \\
+    \hline
+    \end{tabular}
+    \caption{Por el deterioro de valor del bono (31-12-2018)}
+    \label{tabla:deterioro_valor_bono}
+\end{table}
 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Reconocimiento del bono y su cobro (31-12-2019)} & \textbf{HABER} \\
+    \hline
+    2.500 & (572) Bancos c/c & \\
+    \hline
+    & (7613) Ingresos de valores representativos de deuda, otras empresas & 2.500 \\
+    \hline
+    \end{tabular}
+    \caption{Reconocimiento del bono y su cobro (31-12-2019)}
+    \label{tabla:reconocimiento_bono}
+\end{table}
 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Por el reconocimiento de los intereses implícitos y valoración a coste amortizado (31-12-2019)} & \textbf{HABER} \\
+    \hline
+    998 & (251) Valores representativos de deuda a largo plazo & \\
+    \hline
+    & (7613) Ingresos de valores representativos de deuda, otras empresas & 998 \\
+    \hline
+    \end{tabular}
+    \caption{Por el reconocimiento de los intereses implícitos y valoración a coste amortizado (31-12-2019)}
+    \label{tabla:intereses_implicitos}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{2cm}|p{6cm}|p{2cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Reversión del deterioro (31-12-2019)} & \textbf{HABER} \\
+    \hline
+    2.433 & (297) Deterioro de valor de valores representativos de deuda a l/p & \\
+    \hline
+    & (6968) Reversión del deterioro de valores representativos de deuda a largo plazo, otras empresas & 2.433 \\
+    \hline
+    \end{tabular}
+    \caption{Reversión del deterioro (31-12-2019)}
+    \label{tabla:reversion_deterioro}
+\end{table}
+
+\c{En esta fecha el activo pasa a valorarse como AFVRPN,} así que necesitamos comprobar cuál es el valor en libros del activo y su VR a 31.12.2019, imputando para ello las diferencias en el PN.
+
+\begin{align*}
+    \text{Valor después de la reversión = 50.932} \\
+    \text{Valor Razonable = 52.500} \\
+    \text{Diferencia = 1.568} \rightarrow \text{\textcolor{green}{Beneficio que se imputa a PN}}
+\end{align*}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Valoración a valor razonable del bono a 31/12/2019 con cambios en el patrimonio neto} & \textbf{HABER} \\
+    \hline
+    1.568 & (251) Valores representativos de deuda a largo plazo & \\
+    \hline
+    & (900) Beneficios en activos financieros a valor razonable con cambio en el patrimonio neto & 1.568\\
+    \hline
+    \end{tabular}
+    \caption{Valoración a valor razonable del bono a 31/12/2019 con cambios en el patrimonio neto}
+    \label{tabla:valoracion_bono}
+\end{table}
+
+\c{Al haber sido valorado a coste amortizado el valor en libros seguiría siendo 50.932 y no el valor razonable.}
+
+\textcolor{red}{Debemos de tener en cuenta que en estas dos tablas} se realiza la consideración del tipo impositivo y la regularización de las cuentas del grupo 8 y 9.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Contabilización del impuesto diferido} & \textbf{HABER} \\
+    \hline
+    470,7 = \(1569 \times 0,3\) & (8301) Impuesto diferido (consideramos el 30\%) & \\
+    \hline
+    & (479) Pasivos por diferencias temporarias imponibles & 470,7 \\
+    \hline
+    \end{tabular}
+    \caption{Contabilización del impuesto diferido}
+    \label{tabla:impuesto_diferido}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{6cm}|p{3cm}|}
+    \hline
+    \rowcolor{blue!30}
+    \textbf{DEBE} & \textbf{Regularización cuentas del grupo 8 y 9} & \textbf{HABER} \\
+    \hline
+    1.568,29 & (900) Beneficios en activos financieros a valor razonable con cambio en el patrimonio neto & \\
+    \hline
+    & (8301) Impuesto diferido &470,7  \\
+    \hline
+    & (133) Ajustes por valoración de activos financieros a valor razonable con cambios en el patrimonio neto & 1.097,80 \\
+    \hline
+    \end{tabular}
+    \caption{Regularización cuentas del grupo 8 y 9}
+    \label{tabla:regularizacion_grupo_8_9}
+\end{table}
+
+%diapo 54 baja de act finan
 
 
 
@@ -1332,9 +1616,6 @@ El 1 de septiembre de 2021, se recibe el dividendo de 0,10 €/acción, lo que e
 \section{Baja de Activos financieros}
 
 Se dará de baja a un activo financiero cuando expiren o se hayan cedido los derechos contractuales sobres los flujos de efectivo del mismo, siendo necesario que se hayan transferido de manera sustancial los riesgos y beneficios inherentes a su propiedad. 
-
-
-
 
 
 
