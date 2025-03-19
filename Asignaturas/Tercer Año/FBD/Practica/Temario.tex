@@ -28,15 +28,19 @@
 \usepackage{color}
 \usepackage{float}
 \usepackage{pdfpages}
+\usepackage{subcaption}
+\usepackage{pgffor}
+\usetikzlibrary{shapes, arrows, positioning}
 % Configuración de márgenes
 \geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
+
 
 % Configuración de encabezados y pies de página
 % \setlength{\headheight}{14.49998pt}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{Universidad de Granada}
-\fancyhead[L]{\nouppercase{\chaptername~\thechapter. \leftmark}}
+\fancyhead[L]{\nouppercase{\leftmark}}
 
 % \fancyhead[C]{Escuela Técnica Superior de Ingenierías Informática}
 \fancyhead[R]{Fundamentos de Base de Datos}
@@ -64,6 +68,7 @@
         \textbf{Fecha:} & \today
     \end{tabular}
 }
+\renewcommand{\b}[1]{\textbf{#1}}
 
 \begin{document}
 
@@ -122,6 +127,11 @@
 \newpage
 \chapter{Modelado Conceptual}
 \section{Relación de Ejercicios}
+\includepdf[pages=-]{Capitulos/RelacionS1S2-SinEditar}%\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_FBD_S1.pdf}
+
+
+
+\input{Capitulos/seminario1}
 
 %\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_FBD_S1.pdf}
 
