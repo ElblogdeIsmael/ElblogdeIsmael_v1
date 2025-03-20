@@ -54,6 +54,7 @@
     % \ifnum#1=\fi
     % \ifnum#1=\fi
 }
+\renewcommand{\c}[1]{\textit{#1}}
 
 
 % Configuración de márgenes
@@ -63,15 +64,11 @@
 % \setlength{\headheight}{14.49998pt}
 \pagestyle{fancy}
 \fancyhf{}
-<<<<<<< HEAD
 \fancyhead[L]{Universidad de Granada}
-\fancyhead[L]{\nouppercase{\chaptername~\thechapter. \leftmark}}
+\fancyhead[L]{\nouppercase{\leftmark}}
 
 % \fancyhead[C]{Escuela Técnica Superior de Ingenierías Informática}
-=======
 %\fancyhead[L]{Universidad de Granada}
-\fancyhead[L]{\nouppercase{\chaptername \thechapter. \leftmark}}
->>>>>>> 6880c38 (añadiendo el formato adecuado de los libros que tengo)
 \fancyhead[R]{Contabilidad Financiera II}
 \fancyfoot[L]{\rule[0pt]{\textwidth}{0.2pt}\\Ismael Sallami Moreno}
 \fancyfoot[C]{\rule[0pt]{\textwidth}{0.2pt}\\\thepage}
