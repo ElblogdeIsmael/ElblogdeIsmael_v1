@@ -1,0 +1,2744 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.5)  20 MAR 2025 12:33
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/home/ismael-sallami/Escritorio/GitHub/ElblogdeIsmael.github.io/Asignaturas/Tercer AÃ±o/CF2/Teoria/Temario.tex"
+(/home/ismael-sallami/Escritorio/GitHub/ElblogdeIsmael.github.io/Asignaturas/Tercer AÃ±o/CF2/Teoria/Temario.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/01/07 v24.1 The Babel package
+\babel@savecnt=\count196
+\U@D=\dimen141
+\l@unhyphenated=\language89
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count197
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks19
+\es@quotdepth=\count198
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+)) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen142
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count199
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count266
+\leftroot@=\count267
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count268
+\DOTSCASE@=\count269
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count270
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count271
+\dotsspace@=\muskip16
+\c@parentequation=\count272
+\dspbrk@lvl=\count273
+\tag@help=\toks21
+\row@=\count274
+\column@=\count275
+\maxfields@=\count276
+\andhelp@=\toks22
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
+) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+) (/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count277
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count278
+)
+\@linkdim=\dimen153
+\Hy@linkcounter=\count279
+\Hy@pagecounter=\count280
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count281
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count282
+ (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen154
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count283
+\Field@Width=\dimen155
+\Fld@charsize=\dimen156
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count284
+\c@Item=\count285
+\c@Hfootnote=\count286
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count287
+\c@bookmark@seq@number=\count288
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip53
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count289
+\Gm@cntv=\count290
+\c@Gm@tempcnt=\count291
+\Gm@bindingoffset=\dimen157
+\Gm@wd@mp=\dimen158
+\Gm@odd@mp=\dimen159
+\Gm@even@mp=\dimen160
+\Gm@layoutwidth=\dimen161
+\Gm@layoutheight=\dimen162
+\Gm@layouthoffset=\dimen163
+\Gm@layoutvoffset=\dimen164
+\Gm@dimlist=\toks26
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip54
+\f@nch@O@elh=\skip55
+\f@nch@O@erh=\skip56
+\f@nch@O@olh=\skip57
+\f@nch@O@orh=\skip58
+\f@nch@O@elf=\skip59
+\f@nch@O@erf=\skip60
+\f@nch@O@olf=\skip61
+\f@nch@O@orf=\skip62
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip63
+\aftertitleunit=\skip64
+\ttl@plus=\dimen165
+\ttl@minus=\dimen166
+\ttl@toksa=\toks27
+\titlewidth=\dimen167
+\titlewidthlast=\dimen168
+\titlewidthfirst=\dimen169
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen170
+\lightrulewidth=\dimen171
+\cmidrulewidth=\dimen172
+\belowrulesep=\dimen173
+\belowbottomsep=\dimen174
+\aboverulesep=\dimen175
+\abovetopsep=\dimen176
+\cmidrulesep=\dimen177
+\cmidrulekern=\dimen178
+\defaultaddspace=\dimen179
+\@cmidla=\count292
+\@cmidlb=\count293
+\@aboverulesep=\dimen180
+\@belowrulesep=\dimen181
+\@thisruleclass=\count294
+\@lastruleclass=\count295
+\@thisrulewidth=\dimen182
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen183
+\captionmargin=\dimen184
+\caption@leftmargin=\dimen185
+\caption@rightmargin=\dimen186
+\caption@width=\dimen187
+\caption@indent=\dimen188
+\caption@parindent=\dimen189
+\caption@hangindent=\dimen190
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
+Package caption Info: hyperref package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip65
+\enit@outerparindent=\dimen191
+\enit@toks=\toks28
+\enit@inbox=\box54
+\enit@count@id=\count298
+\enitdp@description=\count299
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count300
+\float@exts=\toks29
+\float@box=\box55
+\@float@everytoks=\toks30
+\@floatcapt=\box56
+) (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2024/01/10 version 6.2.0 text color boxes
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen192
+\pgfutil@tempdimb=\dimen193
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box57
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks34
+))
+\pgf@x=\dimen194
+\pgf@y=\dimen195
+\pgf@xa=\dimen196
+\pgf@ya=\dimen197
+\pgf@xb=\dimen198
+\pgf@yb=\dimen199
+\pgf@xc=\dimen256
+\pgf@yc=\dimen257
+\pgf@xd=\dimen258
+\pgf@yd=\dimen259
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count301
+\c@pgf@countb=\count302
+\c@pgf@countc=\count303
+\c@pgf@countd=\count304
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+\pgf@sys@id@count=\count305
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count306
+\pgfsyssoftpath@bigbuffer@items=\count307
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen260
+\pgfmath@count=\count308
+\pgfmath@box=\box58
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count309
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen261
+\pgf@picmaxx=\dimen262
+\pgf@picminy=\dimen263
+\pgf@picmaxy=\dimen264
+\pgf@pathminx=\dimen265
+\pgf@pathmaxx=\dimen266
+\pgf@pathminy=\dimen267
+\pgf@pathmaxy=\dimen268
+\pgf@xx=\dimen269
+\pgf@xy=\dimen270
+\pgf@yx=\dimen271
+\pgf@yy=\dimen272
+\pgf@zx=\dimen273
+\pgf@zy=\dimen274
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen275
+\pgf@path@lasty=\dimen276
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen277
+\pgf@shorten@start@additional=\dimen278
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count310
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen279
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen280
+\pgf@pt@y=\dimen281
+\pgf@pt@temp=\dimen282
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen283
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen284
+\pgf@sys@shading@range@num=\count311
+\pgf@shadingcount=\count312
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box62
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box63
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen285
+\pgf@nodesepend=\dimen286
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2023-11-06 v1.5v LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks41
+\verbatim@line=\toks42
+\verbatim@in@stream=\read4
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\tcb@titlebox=\box64
+\tcb@upperbox=\box65
+\tcb@lowerbox=\box66
+\tcb@phantombox=\box67
+\c@tcbbreakpart=\count313
+\c@tcblayer=\count314
+\c@tcolorbox@number=\count315
+\l__tcobox_tmpa_box=\box68
+\l__tcobox_tmpa_dim=\dimen287
+\tcb@temp=\box69
+\tcb@temp=\box70
+\tcb@temp=\box71
+\tcb@temp=\box72
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen288
+\ar@mcellbox=\box73
+\extrarowheight=\dimen289
+\NC@list=\toks43
+\extratabsurround=\skip66
+\backup@length=\skip67
+\ar@cellbox=\box74
+)
+\everycr=\toks44
+\minrowclearance=\skip68
+\rownum=\count316
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip69
+\multirow@cntb=\count317
+\multirow@dima=\skip70
+\bigstrutjot=\dimen290
+) (/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen291
+\c@nlinenum=\count318
+\TeXr@lab=\toks45
+) (/usr/share/texlive/texmf-dist/tex/latex/eurosym/eurosym.sty
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box75
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen292
+\pgffor@skip=\dimen293
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count319
+\pgfplotmarksize=\dimen294
+)
+\tikz@lastx=\dimen295
+\tikz@lasty=\dimen296
+\tikz@lastxsaved=\dimen297
+\tikz@lastysaved=\dimen298
+\tikz@lastmovetox=\dimen299
+\tikz@lastmovetoy=\dimen300
+\tikzleveldistance=\dimen301
+\tikzsiblingdistance=\dimen302
+\tikz@figbox=\box76
+\tikz@figbox@bg=\box77
+\tikz@tempbox=\box78
+\tikz@tempbox@bg=\box79
+\tikztreelevel=\count320
+\tikznumberofchildren=\count321
+\tikznumberofcurrentchild=\count322
+\tikz@fig@count=\count323
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count324
+\pgfmatrixcurrentcolumn=\count325
+\pgf@matrix@numberofcolumns=\count326
+)
+\tikz@expandcount=\count327
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count328
+\calc@Bcount=\count329
+\calc@Adimen=\dimen303
+\calc@Bdimen=\dimen304
+\calc@Askip=\skip71
+\calc@Bskip=\skip72
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count330
+\calc@Cskip=\skip73
+) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen305
+\ESO@tempdimb=\dimen306
+)
+\AM@pagewidth=\dimen307
+\AM@pageheight=\dimen308
+\AM@fboxrule=\dimen309
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count331
+\AM@pagebox=\box80
+\AM@global@opts=\toks48
+\AM@pagecnt=\count332
+\AM@toc@title=\toks49
+\AM@lof@heading=\toks50
+\c@AM@survey=\count333
+\AM@templatesizebox=\box81
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+)) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen310
+\TX@old@table=\dimen311
+\TX@old@col=\dimen312
+\TX@target=\dimen313
+\TX@delta=\dimen314
+\TX@cols=\count334
+\TX@ftn=\toks51
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input line 102.
+
+(/home/ismael-sallami/Escritorio/GitHub/ElblogdeIsmael.github.io/ARCHIVOS_LATEX/Personalizacion/Indice/indice_personalizado.tex (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip74
+\cftbeforetoctitleskip=\skip75
+\cftaftertoctitleskip=\skip76
+\cftbeforepartskip=\skip77
+\cftpartnumwidth=\skip78
+\cftpartindent=\skip79
+\cftbeforechapskip=\skip80
+\cftchapindent=\skip81
+\cftchapnumwidth=\skip82
+\cftbeforesecskip=\skip83
+\cftsecindent=\skip84
+\cftsecnumwidth=\skip85
+\cftbeforesubsecskip=\skip86
+\cftsubsecindent=\skip87
+\cftsubsecnumwidth=\skip88
+\cftbeforesubsubsecskip=\skip89
+\cftsubsubsecindent=\skip90
+\cftsubsubsecnumwidth=\skip91
+\cftbeforeparaskip=\skip92
+\cftparaindent=\skip93
+\cftparanumwidth=\skip94
+\cftbeforesubparaskip=\skip95
+\cftsubparaindent=\skip96
+\cftsubparanumwidth=\skip97
+\cftbeforeloftitleskip=\skip98
+\cftafterloftitleskip=\skip99
+\cftbeforefigskip=\skip100
+\cftfigindent=\skip101
+\cftfignumwidth=\skip102
+\c@lofdepth=\count335
+\c@lotdepth=\count336
+\cftbeforelottitleskip=\skip103
+\cftafterlottitleskip=\skip104
+\cftbeforetabskip=\skip105
+\cfttabindent=\skip106
+\cfttabnumwidth=\skip107
+) (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2023/10/27 v2.16 TOC entries
+\ttl@leftsep=\dimen315
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count337
+\l__pdf_internal_box=\box82
+) (build/Temario.aux
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+
+
+LaTeX Warning: Label `tabla:ejercicio7-asiento1-tema2' multiply defined.
+
+
+LaTeX Warning: Label `tabla:valoracion_posterior' multiply defined.
+
+
+LaTeX Warning: Label `tabla:reconocimiento_bono' multiply defined.
+
+
+LaTeX Warning: Label `tabla:intereses_implicitos' multiply defined.
+
+
+LaTeX Warning: Label `tabla:reversion_deterioro' multiply defined.
+
+)
+\openout1 = `Temario.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Info: Redefining \. on input line 104.
+LaTeX Info: Redefining \% on input line 104.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count338
+\scratchdimen=\dimen316
+\scratchbox=\box83
+\nofMPsegments=\count339
+\nofMParguments=\count340
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count341
+\MPscratchDim=\dimen317
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
+\everyMPtoPDFconversion=\toks53
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring OFF on input line 104.
+ (build/Temario.out) (build/Temario.out)
+\@outlinefile=\write4
+\openout4 = `Temario.out'.
+
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-33.0119pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=88.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+ (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+<portada.jpg, id=107, 4175.6pt x 6263.4pt>
+File: portada.jpg Graphic file (type jpg)
+<use portada.jpg>
+Package pdftex.def Info: portada.jpg  used on input line 130.
+(pdftex.def)             Requested size: 597.45035pt x 845.04468pt.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 135.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 136.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./portada.jpg>]
+<../../../../licencia.pdf, id=119, 614.295pt x 794.97pt>
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf>
+Package pdftex.def Info: ../../../../licencia.pdf  used on input line 154.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf>
+Package pdftex.def Info: ../../../../licencia.pdf  used on input line 154.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../../../../licencia.pdf, id=122, page=1, 614.295pt x 794.97pt>
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../../../../licencia.pdf Graphic file (type pdf)
+<use ../../../../licencia.pdf, page 1>
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [2
+
+ <../../../../licencia.pdf>] (build/Temario.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@toc=\write5
+\openout5 = `Temario.toc'.
+
+ [3]
+LaTeX Info: Redefining \. on input line 161.
+LaTeX Info: Redefining \% on input line 161.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.61858pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.61858pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.61858pt}.
+
+[4
+
+]
+Cap\'{\i }tulo 1.
+(./Capitulos/tema2.tex [5]
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
+Overfull \hbox (20.92134pt too wide) in paragraph at lines 78--81
+[]\T1/cmr/m/n/12 Activos fi-nan-cie-ros a va-lor ra-zo-na-ble con cam-bios en el pa-tri-mo-nio ne-to [AFVRPN].
+ []
+
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[7]
+Overfull \hbox (295.79933pt too wide) in paragraph at lines 120--121
+[]\T1/cmr/m/n/12 Intención o no de ne-go-ciar. Si es-ta con-di-cio-nes se cum-ple, se va-lo-ra-rá a [],
+ []
+
+
+Overfull \hbox (116.52026pt too wide) in paragraph at lines 120--121
+\T1/cmr/m/n/12 mien-tras que si no se cum-ple de-be-mos de va-lo-rar a []. 
+ []
+
+LaTeX Info: Redefining \. on input line 121.
+LaTeX Info: Redefining \% on input line 121.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8]
+<images/clasacc.png, id=234, 543.02875pt x 308.15125pt>
+File: images/clasacc.png Graphic file (type png)
+<use images/clasacc.png>
+Package pdftex.def Info: images/clasacc.png  used on input line 125.
+(pdftex.def)             Requested size: 341.43437pt x 193.76015pt.
+<images/deuda.png, id=236, 638.385pt x 338.26375pt>
+File: images/deuda.png Graphic file (type png)
+<use images/deuda.png>
+Package pdftex.def Info: images/deuda.png  used on input line 134.
+(pdftex.def)             Requested size: 341.43437pt x 180.91512pt.
+LaTeX Info: Redefining \. on input line 148.
+LaTeX Info: Redefining \% on input line 148.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[9 <./images/clasacc.png (PNG copy)> <./images/deuda.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/12 Compra 100
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 ac-cio-nes, co-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 ti-za-das en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 un mer-ca-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/12 Compra 100
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 obli-ga-cio-nes,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 co-ti-za-das en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 un mer-ca-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/12 Compra 100
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 ac-cio-nes, no
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 co-ti-za-das en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 un mer-ca-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T1/cmr/m/n/12 Compra 100
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 obli-ga-cio-nes,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 no co-ti-za-das
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 196--196
+\T1/cmr/m/n/12 go-cio / Co-
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 196--196
+\T1/cmr/m/n/12 SCPI- Exis-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]
+ []
+
+
+Overfull \hbox (4.13336pt too wide) in paragraph at lines 196--196
+\T1/cmr/m/n/12 Intención
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/cmr/m/n/12 No ne-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/cmr/m/n/12 Opción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 A: La
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 em-pre-sa
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 tie-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 in-ten-
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 196--196
+\T1/cmr/m/n/12 ción de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 per-ci-bir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 efec-ti-vo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/cmr/m/n/12 Opción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 B: Sin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 MN
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 y sin
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 in-ten-
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 196--196
+\T1/cmr/m/n/12 ción de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 per-ci-bir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 efec-ti-vo.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 In-ten-
+ []
+
+
+Underfull \hbox (badness 4479) in paragraph at lines 196--196
+\T1/cmr/m/n/12 ción de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 ne-go-
+ []
+
+
+Underfull \hbox (badness 6284) in paragraph at lines 196--196
+\T1/cmr/m/n/12 SC-PI. In-ten-
+ []
+
+
+Underfull \hbox (badness 7168) in paragraph at lines 196--196
+\T1/cmr/m/n/12 si-ble es-ti-mar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/cmr/m/n/12 Opción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 A: No
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 pue-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 es-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 mar-se
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 un VR
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 fia-ble,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 pe-ro
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 si hay
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 196--196
+\T1/cmr/m/n/12 SC-PI y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]\T1/cmr/m/n/12 Opción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 B: Ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 rác-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 in-ver-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 sión
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 es-pe-cu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T1/cmr/m/n/12 la-ti-va
+ []
+
+LaTeX Info: Redefining \. on input line 245.
+LaTeX Info: Redefining \% on input line 245.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+LaTeX Info: Redefining \. on input line 245.
+LaTeX Info: Redefining \% on input line 245.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11]
+Underfull \hbox (badness 2961) in paragraph at lines 291--291
+\T1/cmr/m/n/12 di-mien-to (in-tere-ses) no
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 291--291
+\T1/cmr/m/n/12 ne-fi-cios es-tán su-je-tos a
+ []
+
+<images/cri_val.png, id=270, 671.50874pt x 454.69875pt>
+File: images/cri_val.png Graphic file (type png)
+<use images/cri_val.png>
+Package pdftex.def Info: images/cri_val.png  used on input line 302.
+(pdftex.def)             Requested size: 384.1096pt x 260.08987pt.
+LaTeX Info: Redefining \. on input line 306.
+LaTeX Info: Redefining \% on input line 306.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12]
+Overfull \hbox (1392.21529pt too wide) in paragraph at lines 319--320
+[]\T1/cmr/m/n/12 La pri-me-ra par-te del Mar-co Con-cep-tual de-fi-ne el cos-te amor-ti-za-do co-mo [] 
+ []
+
+LaTeX Info: Redefining \. on input line 336.
+LaTeX Info: Redefining \% on input line 336.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13 <./images/cri_val.png (PNG copy)>]
+Overfull \hbox (316.41162pt too wide) in paragraph at lines 343--344
+\T1/cmr/m/n/12 te en par-ti-cu-lar se cum-plen am-bos, [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 382--382
+[]|\T1/cmr/bx/n/12 Concesión del cré-di-to el
+ []
+
+
+Overfull \hbox (125.16257pt too wide) in paragraph at lines 394--395
+[][] 
+ []
+
+LaTeX Info: Redefining \. on input line 414.
+LaTeX Info: Redefining \% on input line 414.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+Overfull \hbox (100.45883pt too wide) in paragraph at lines 415--416
+[][] 
+ []
+
+LaTeX Info: Redefining \. on input line 485.
+LaTeX Info: Redefining \% on input line 485.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15]
+Overfull \hbox (178.5773pt too wide) in paragraph at lines 486--487
+[][] 
+ []
+
+
+Overfull \hbox (48.23044pt too wide) detected at line 490
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
+
+ []
+
+LaTeX Info: Redefining \. on input line 538.
+LaTeX Info: Redefining \% on input line 538.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 544.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 544.
+
+Missing character: There is no ¿ in font cmr12!
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 544.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 544.
+
+Missing character: There is no ¿ in font cmr12!
+LaTeX Info: Redefining \. on input line 607.
+LaTeX Info: Redefining \% on input line 607.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17]
+Underfull \hbox (badness 4752) in paragraph at lines 638--638
+[]|\T1/cmr/bx/n/12 I. Ex-plí-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--638
+\T1/cmr/bx/n/12 ci-tos y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--638
+\T1/cmr/bx/n/12 Re-em-bol-
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 638--638
+[]|\T1/cmr/bx/n/12 I. Im-plí-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
+[]|\T1/cmr/bx/n/12 Coste
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 638--639
+\T1/cmr/bx/n/12 Amor-ti-
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 640--640
+[]|\T1/cmr/m/n/12 01/01/2018| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 642--642
+[]|\T1/cmr/m/n/12 31/12/2018| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 644--644
+[]|\T1/cmr/m/n/12 31/12/2019| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 646--646
+[]|\T1/cmr/m/n/12 31/12/2020| 
+ []
+
+LaTeX Info: Redefining \. on input line 670.
+LaTeX Info: Redefining \% on input line 670.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18]
+LaTeX Info: Redefining \. on input line 750.
+LaTeX Info: Redefining \% on input line 750.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19]
+LaTeX Info: Redefining \. on input line 807.
+LaTeX Info: Redefining \% on input line 807.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20]
+LaTeX Info: Redefining \. on input line 877.
+LaTeX Info: Redefining \% on input line 877.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
+Overfull \hbox (40.1846pt too wide) in paragraph at lines 881--882
+\T1/cmr/m/n/12 rio, se-rá []. 
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 915--915
+[]|\T1/cmr/bx/n/12 Compra de la ac-ción el
+ []
+
+
+Overfull \hbox (144.05646pt too wide) in paragraph at lines 926--927
+\T1/cmr/m/n/12 31/12/2020, ya que el pre-cio del tí-tu-lo es de 90 \TS1/cmr/m/n/12 ¿\T1/cmr/m/n/12 , [] 
+ []
+
+LaTeX Info: Redefining \. on input line 943.
+LaTeX Info: Redefining \% on input line 943.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22]
+Overfull \hbox (112.5586pt too wide) in paragraph at lines 991--992
+[][] 
+ []
+
+LaTeX Info: Redefining \. on input line 1008.
+LaTeX Info: Redefining \% on input line 1008.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23]
+LaTeX Info: Redefining \. on input line 1053.
+LaTeX Info: Redefining \% on input line 1053.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24]
+Underfull \hbox (badness 4217) in paragraph at lines 1095--1095
+[]|\T1/cmr/bx/n/12 Venta de las ac-cio-nes el
+ []
+
+LaTeX Info: Redefining \. on input line 1141.
+LaTeX Info: Redefining \% on input line 1141.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[25]
+Overfull \hbox (277.41956pt too wide) in paragraph at lines 1148--1149
+[]\T1/cmr/m/n/12 En cuan-to a la $[]$, se va-lo-ra-rán por su []. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1196
+[]|\T1/cmr/m/n/12 2.000.000 =
+ []
+
+LaTeX Info: Redefining \. on input line 1204.
+LaTeX Info: Redefining \% on input line 1204.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[26]
+Underfull \hbox (badness 1817) in paragraph at lines 1222--1222
+[]|\T1/cmr/bx/n/12 Valoración pos-te-rior (de-te-
+ []
+
+LaTeX Info: Redefining \. on input line 1233.
+LaTeX Info: Redefining \% on input line 1233.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[27]
+Underfull \hbox (badness 2671) in paragraph at lines 1252--1252
+[]|\T1/cmr/bx/n/12 Valoración Ini-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+[]|$[]$\T1/cmr/m/n/12 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 tran-sac-ción, que
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 ra-zo-na-ble de la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 con-tra-pres-ta-ción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+[]|$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 con cam-bios a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+[]|\T1/cmr/m/n/12 Activos a cos-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+[]|$[]$\T1/cmr/m/n/12 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 tran-sac-ción, que
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 ra-zo-na-ble de la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 con-tra-pres-ta-ción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+[]|$[]$\T1/cmr/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 Los in-tere-ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 de-ven-ga-dos se
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 con-ta-bi-li-za-rán en
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 co-rrec-cio-nes va-lo-
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 ra-ti-vas: Va-lor en
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 flu-jos de efec-ti-vo
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 de in-te-rés efec-ti-
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 co-no-ci-mien-to ini-
+ []
+
+
+Underfull \hbox (badness 6944) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 por-te acu-mu-la-do
+ []
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 co-rrec-cio-nes va-lo-
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 ra-ti-vas: Va-lor en
+ []
+
+
+Underfull \hbox (badness 3838) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 li-bros - Im-por-te
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 pa-tri-mo-nio de la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+[]|$[]$\T1/cmr/m/n/12 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 tran-sac-ción, que
+ []
+
+
+Underfull \hbox (badness 7522) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 ra-zo-na-ble de la
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 con-tra-pres-ta-ción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+[]|$[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 con cam-bios a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 jos de efec-ti-vo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 (ins-tru-men-to de
+ []
+
+
+Underfull \hbox (badness 5832) in paragraph at lines 1252--1252
+\T1/cmr/m/n/12 (ins-tru-men-tos de
+ []
+
+LaTeX Info: Redefining \. on input line 1256.
+LaTeX Info: Redefining \% on input line 1256.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28]
+Underfull \hbox (badness 1960) in paragraph at lines 1285--1285
+[]|\T1/cmr/m/n/12 (540) In-ver-sio-nes fi-nan-cie-ras a
+ []
+
+LaTeX Info: Redefining \. on input line 1300.
+LaTeX Info: Redefining \% on input line 1300.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29]
+Underfull \hbox (badness 2359) in paragraph at lines 1382--1382
+[]|\T1/cmr/bx/n/8 Coste amor-ti-za-
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 re-cla-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 No po-si-ble
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 pa-ra Ins-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 tru-men-tos
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 re-cla-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 pa-sa a ser
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 el cos-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 amor-ti-za-do
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 re-cla-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 re-cla-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 Los re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 sul-ta-dos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 acu-mu-la-dos
+ []
+
+
+Underfull \hbox (badness 4492) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 en PN se
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 re-cla-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El cos-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 amor-ti-za-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 de-ter-mi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 na-do al
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 ini-cio las
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 di-fe-ren-cias
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 re-cla-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 La di-fe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 ren-cia de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 va-lo-ra-ción
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR
+ []
+
+
+Underfull \hbox (badness 1248) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 pa-sa a ser
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 el cos-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 amor-ti-za-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 Las di-fe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 ren-cias se
+ []
+
+
+Underfull \hbox (badness 5119) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 impu-tan a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 di-fi-ca-ción
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 re-cla-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 La di-fe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 ren-cia de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 va-lo-ra-ción
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 El VR en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 re-cla-si-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+[]\T1/cmr/m/n/8 La di-fe-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 ren-cia de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1382--1382
+\T1/cmr/m/n/8 va-lo-ra-ción
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 1385.
+LaTeX Info: Redefining \% on input line 1385.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30]
+LaTeX Info: Redefining \. on input line 1392.
+LaTeX Info: Redefining \% on input line 1392.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 1402--1403
+
+ []
+
+
+Underfull \hbox (badness 4752) in paragraph at lines 1409--1409
+[]|\T1/cmr/bx/n/12 I. Ex-plí-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1409
+\T1/cmr/bx/n/12 ci-tos y
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1409
+\T1/cmr/bx/n/12 Re-em-bol-
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 1409--1409
+[]|\T1/cmr/bx/n/12 I. Im-plí-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1410
+[]|\T1/cmr/bx/n/12 Coste
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1410
+\T1/cmr/bx/n/12 Amor-ti-
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 1411--1411
+[]|\T1/cmr/m/n/12 01/01/2018| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 1413--1413
+[]|\T1/cmr/m/n/12 31/12/2018| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 1415--1415
+[]|\T1/cmr/m/n/12 31/12/2019| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 1417--1417
+[]|\T1/cmr/m/n/12 31/12/2020| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1431--1431
+[]|\T1/cmr/bx/n/12 Asiento con-ta-ble de la
+ []
+
+
+Underfull \hbox (badness 5022) in paragraph at lines 1431--1431
+\T1/cmr/bx/n/12 sus-crip-ción de los tí-tu-los
+ []
+
+LaTeX Info: Redefining \. on input line 1473.
+LaTeX Info: Redefining \% on input line 1473.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32]
+Underfull \vbox (badness 3219) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 1538.
+LaTeX Info: Redefining \% on input line 1538.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[33]
+Overfull \hbox (8.8798pt too wide) in paragraph at lines 1539--1540
+[][] \T1/cmr/m/n/12 así que ne-ce-si-ta-mos com-
+ []
+
+
+Overfull \hbox (136.74423pt too wide) in paragraph at lines 1563--1564
+[][] 
+ []
+
+
+Underfull \hbox (badness 2884) in paragraph at lines 1588--1588
+[]|\T1/cmr/bx/n/12 Regularización cuen-tas del
+ []
+
+LaTeX Info: Redefining \. on input line 1600.
+LaTeX Info: Redefining \% on input line 1600.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[34]
+LaTeX Info: Redefining \. on input line 1601.
+LaTeX Info: Redefining \% on input line 1601.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[35]
+LaTeX Info: Redefining \. on input line 1630.
+LaTeX Info: Redefining \% on input line 1630.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[36]
+LaTeX Info: Redefining \. on input line 1671.
+LaTeX Info: Redefining \% on input line 1671.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[37]
+Underfull \hbox (badness 3977) in paragraph at lines 1719--1719
+[]|\T1/cmr/m/n/12 (766) Be-ne-fi-cios en par-ti-ci-pa-
+ []
+
+
+Underfull \hbox (badness 5756) in paragraph at lines 1719--1719
+\T1/cmr/m/n/12 cio-nes y va-lo-res re-pre-sen-ta-ti-
+ []
+
+LaTeX Info: Redefining \. on input line 1725.
+LaTeX Info: Redefining \% on input line 1725.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1743
+[]|\T1/cmr/bx/n/12 Intereses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1743
+\T1/cmr/bx/n/12 de-ven-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1743
+\T1/cmr/bx/n/12 ga-dos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1743
+\T1/cmr/bx/n/12 (Gas-tos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1743
+\T1/cmr/bx/n/12 fi-nan-cie-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1743
+[]|\T1/cmr/bx/n/12 Saldo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1743
+\T1/cmr/bx/n/12 amor-ti-za-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1744
+[]|\T1/cmr/bx/n/12 Saldo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1744
+\T1/cmr/bx/n/12 pen-dien-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1744
+\T1/cmr/bx/n/12 te de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1744
+\T1/cmr/bx/n/12 amor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1744
+\T1/cmr/bx/n/12 ti-zar
+ []
+
+
+Overfull \hbox (17.89438pt too wide) in paragraph at lines 1741--1752
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1764
+[]|\T1/cmr/bx/n/12 Intereses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1764
+\T1/cmr/bx/n/12 de-ven-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1764
+\T1/cmr/bx/n/12 ga-dos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1764
+\T1/cmr/bx/n/12 (Gas-tos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1764
+\T1/cmr/bx/n/12 fi-nan-cie-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1764
+[]|\T1/cmr/bx/n/12 Saldo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1764
+\T1/cmr/bx/n/12 amor-ti-za-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1765
+[]|\T1/cmr/bx/n/12 Saldo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1765
+\T1/cmr/bx/n/12 pen-dien-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1765
+\T1/cmr/bx/n/12 te de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1765
+\T1/cmr/bx/n/12 amor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1765
+\T1/cmr/bx/n/12 ti-zar
+ []
+
+
+Overfull \hbox (17.89438pt too wide) in paragraph at lines 1762--1775
+ [][] 
+ []
+
+LaTeX Info: Redefining \. on input line 1776.
+LaTeX Info: Redefining \% on input line 1776.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[39]
+LaTeX Info: Redefining \. on input line 1791.
+LaTeX Info: Redefining \% on input line 1791.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[40])
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[41]
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[42
+
+]
+Cap\'{\i }tulo 2.
+(./Capitulos/tema3.tex [43]
+LaTeX Info: Redefining \. on input line 74.
+LaTeX Info: Redefining \% on input line 74.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[44]
+Overfull \hbox (193.29169pt too wide) in paragraph at lines 85--86
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
+[]|\T1/cmr/bx/n/12 Emisión del em-prés-ti-to
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--103
+[]|\T1/cmr/m/n/12 Valor de emi-sión = 4.000
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 99--103
+\T1/cmr/m/n/12 tí-tu-los x 1000 = 4.000.000 -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--103
+\T1/cmr/m/n/12 5$ $% [] =
+ []
+
+
+Overfull \hbox (205.03885pt too wide) in paragraph at lines 111--112
+[][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 136.
+LaTeX Info: Redefining \% on input line 136.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[45]
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[46]
+Overfull \hbox (103.55237pt too wide) in paragraph at lines 167--168
+\T1/cmr/m/n/12 pue-de ser [], si no que es un []. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+[]|\T1/cmr/bx/n/12 Capital
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/bx/n/12 Amor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/bx/n/12 ti-za-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--180
+\T1/cmr/bx/n/12 Acu-mu-la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+[]|\T1/cmr/bx/n/12 Capital
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
+\T1/cmr/bx/n/12 Pen-dien-
+ []
+
+LaTeX Info: Redefining \. on input line 198.
+LaTeX Info: Redefining \% on input line 198.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+[]|\T1/cmr/bx/n/12 Coste
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+\T1/cmr/bx/n/12 Amor-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+[]|\T1/cmr/bx/n/12 Capital
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+\T1/cmr/bx/n/12 Amor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+\T1/cmr/bx/n/12 ti-za-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--240
+\T1/cmr/bx/n/12 Acu-mu-la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+[]|\T1/cmr/bx/n/12 Capital
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--241
+\T1/cmr/bx/n/12 Pen-dien-
+ []
+
+
+Underfull \vbox (badness 1147) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+[]|\T1/cmr/bx/n/12 Capital
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+\T1/cmr/bx/n/12 Amor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+\T1/cmr/bx/n/12 ti-za-do
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
+\T1/cmr/bx/n/12 Acu-mu-la-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+[]|\T1/cmr/bx/n/12 Coste
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
+\T1/cmr/bx/n/12 Amor-ti-
+ []
+
+LaTeX Info: Redefining \. on input line 308.
+LaTeX Info: Redefining \% on input line 308.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[49]
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 318.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 318.
+
+Missing character: There is no ¿ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]|\T1/cmr/m/n/12 INTERÉS DE-VEN-GA-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+\T1/cmr/m/n/12 DO = $\OT1/cmr/m/n/12 [[] \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 (1 +
+ []
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 335.
+
+
+LaTeX Warning: Command \texteuro invalid in math mode on input line 335.
+
+Missing character: There is no ¿ in font cmr12!
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--335
+[]|\T1/cmr/m/n/12 INTERÉS DE-VEN-GA-DO =
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 335--335
+\OT1/cmr/m/n/12 [([] + []) \OMS/cmsy/m/n/12 ^^B \OT1/cmr/m/n/12 (1 +
+ []
+
+LaTeX Info: Redefining \. on input line 369.
+LaTeX Info: Redefining \% on input line 369.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[50]
+Overfull \hbox (21.16429pt too wide) in paragraph at lines 383--383
+[]|\T1/cmr/bx/n/12 Vencimientos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+[]|\T1/cmr/bx/n/12 Capital
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+\T1/cmr/bx/n/12 Pen-dien-
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 385--385
+[]|\T1/cmr/m/n/12 01/07/2021| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 387--387
+[]|\T1/cmr/m/n/12 01/07/2022| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 389--389
+[]|\T1/cmr/m/n/12 01/07/2023| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 391--391
+[]|\T1/cmr/m/n/12 01/07/2024| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 393--393
+[]|\T1/cmr/m/n/12 01/07/2025| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 395--395
+[]|\T1/cmr/m/n/12 01/07/2026| 
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 407--407
+[]|\T1/cmr/bx/n/12 Cambio de en-deu-da-mien-to
+ []
+
+)
+LaTeX Info: Redefining \. on input line 170.
+LaTeX Info: Redefining \% on input line 170.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[51]
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[52
+
+] [53] (build/Temario.aux
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `Temario.out' has not changed.
+(rerunfilecheck)             Checksum: 13444ACC95D54BF23588E9C1FDD59838;4944.
+ ) 
+Here is how much of TeX's memory you used:
+ 28872 strings out of 474222
+ 537875 string characters out of 5748734
+ 1951975 words of memory out of 5000000
+ 50418 multiletter control sequences out of 15000+600000
+ 582145 words of font info for 97 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 83i,17n,93p,1002b,892s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on build/Temario.pdf (53 pages, 5358513 bytes).
+PDF statistics:
+ 726 PDF objects out of 1000 (max. 8388607)
+ 593 compressed objects within 6 object streams
+ 215 named destinations out of 1000 (max. 500000)
+ 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,96 @@
+\documentclass[a4paper,12pt]{book}
+
+% Paquetes necesarios
+\usepackage[utf8]{inputenc}   % Codificación de caracteres
+\usepackage[spanish]{babel}   % Idioma español
+\usepackage[T1]{fontenc}      % Codificación de fuentes
+\usepackage{amsmath, amssymb} % Símbolos matemáticos
+\usepackage{graphicx}         % Inclusión de gráficos
+\usepackage{cite}             % Gestión de citas
+\usepackage{hyperref}         % Enlaces y referencias
+\usepackage{geometry}         % Configuración de márgenes
+\usepackage{fancyhdr}         % Encabezados y pies de página
+\usepackage{titlesec}         % Formato de títulos
+\usepackage{booktabs}         % Tablas profesionales
+\usepackage{caption}          % Personalización de leyendas
+\usepackage{enumitem}         % Personalización de listas
+\usepackage{float}
+
+% Configuración de márgenes
+\geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
+
+% Configuración de encabezados y pies de página
+\setlength{\headheight}{14.49998pt}
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[L]{Universidad de Granada}
+\fancyhead[L]{\nouppercase{\chaptername \thechapter. \leftmark}}
+\fancyhead[R]{Inteligencia Artificial}
+\fancyfoot[L]{\rule[0pt]{\textwidth}{0.2pt}\\Ismael Sallami Moreno}
+\fancyfoot[C]{\rule[0pt]{\textwidth}{0.2pt}\\\thepage}
+\fancyfoot[R]{\rule[0pt]{\textwidth}{0.2pt}\\\today}
+
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % Configura \leftmark para que solo muestre la sección
+
+
+% Formato de títulos
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+
+% Datos del documento
+\title{\textbf{Prácticas Inteligencia Artificial}}
+\author{
+    Ismael Sallami Moreno \\
+    \texttt{ism350zsallami@correo.ugr.es}
+}
+\date{
+    \vspace{1cm}
+    \begin{tabular}{rl}
+        \textbf{Asignatura:} & Inteligencia Artificial \\
+        \textbf{Tema:} & Prácticas \\
+        \textbf{Fecha:} & \today
+    \end{tabular}
+}
+
+\begin{document}
+
+% Portada
+\maketitle
+% \begin{center}
+%     \includegraphics[width=0.2\textwidth]{images/logo_ugr.png}
+% \end{center}
+\newpage
+
+% Resumen
+% \begin{abstract}
+% \noindent
+% \textbf{Resumen:} Este documento presenta los apuntes y/o resúmenes del tema que se expone que se han realizado a lo largo del curso de la asignatura de Inteligencia Artificial. En este caso, se trata de las prácticas de la asignatura.
+% \end{abstract}
+% \bigskip
+
+
+
+% Tabla de contenidos
+\tableofcontents
+\newpage
+
+\chapter{Práctica 1}
+
+\input{Capitulos/Practica1.tex}
+
+
+
+\newpage
+% Referencias
+\begin{thebibliography}{99}
+\bibitem{Referencia1}
+Autor(es), \emph{Título del artículo}, Nombre de la Revista, volumen(número), páginas, año.
+
+\bibitem{Referencia2}
+Autor(es), \emph{Título del libro}, Editorial, año.
+
+\bibitem{Referencia3}
+Autor(es), \emph{Título del documento}, Nombre de la Conferencia, páginas, año.
+\end{thebibliography}
+
+\end{document}
