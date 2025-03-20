@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.5)  20 MAR 2025 12:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.5)  20 MAR 2025 13:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -644,7 +644,7 @@ Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
 \TX@ftn=\toks51
 )
 
-LaTeX Warning: \include should only be used after \begin{document} on input line 102.
+LaTeX Warning: \include should only be used after \begin{document} on input line 103.
 
 (/home/ismael-sallami/Escritorio/GitHub/ElblogdeIsmael.github.io/ARCHIVOS_LATEX/Personalizacion/Indice/indice_personalizado.tex (/usr/share/texlive/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
@@ -714,26 +714,26 @@ LaTeX Warning: Label `tabla:reversion_deterioro' multiply defined.
 )
 \openout1 = `Temario.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 105.
+LaTeX Font Info:    ... okay on input line 105.
+LaTeX Info: Redefining \. on input line 105.
+LaTeX Info: Redefining \% on input line 105.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count338
@@ -753,7 +753,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 104.
+Package hyperref Info: Link coloring OFF on input line 105.
  (build/Temario.out) (build/Temario.out)
 \@outlinefile=\write4
 \openout4 = `Temario.out'.
@@ -805,55 +805,55 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-<portada.jpg, id=107, 4175.6pt x 6263.4pt>
+<portada.jpg, id=103, 4175.6pt x 6263.4pt>
 File: portada.jpg Graphic file (type jpg)
 <use portada.jpg>
-Package pdftex.def Info: portada.jpg  used on input line 130.
+Package pdftex.def Info: portada.jpg  used on input line 131.
 (pdftex.def)             Requested size: 597.45035pt x 845.04468pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 135.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 136.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 136.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 137.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 136.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 137.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./portada.jpg>]
-<../../../../licencia.pdf, id=119, 614.295pt x 794.97pt>
+<../../../../licencia.pdf, id=115, 614.295pt x 794.97pt>
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf>
-Package pdftex.def Info: ../../../../licencia.pdf  used on input line 154.
+Package pdftex.def Info: ../../../../licencia.pdf  used on input line 155.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf>
-Package pdftex.def Info: ../../../../licencia.pdf  used on input line 154.
+Package pdftex.def Info: ../../../../licencia.pdf  used on input line 155.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<../../../../licencia.pdf, id=122, page=1, 614.295pt x 794.97pt>
+<../../../../licencia.pdf, id=118, page=1, 614.295pt x 794.97pt>
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf, page 1>
-Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 155.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf, page 1>
-Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 155.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf, page 1>
-Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 155.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf, page 1>
-Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 155.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../../../../licencia.pdf Graphic file (type pdf)
 <use ../../../../licencia.pdf, page 1>
-Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 154.
+Package pdftex.def Info: ../../../../licencia.pdf , page1 used on input line 155.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [2
 
@@ -865,8 +865,8 @@ LaTeX Info: Redefining \% on input line 1.
 \openout5 = `Temario.toc'.
 
  [3]
-LaTeX Info: Redefining \. on input line 161.
-LaTeX Info: Redefining \% on input line 161.
+LaTeX Info: Redefining \. on input line 162.
+LaTeX Info: Redefining \% on input line 162.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -905,17 +905,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
-Overfull \hbox (295.79933pt too wide) in paragraph at lines 120--121
-[]\T1/cmr/m/n/12 Intención o no de ne-go-ciar. Si es-ta con-di-cio-nes se cum-ple, se va-lo-ra-rá a [],
- []
-
-
-Overfull \hbox (116.52026pt too wide) in paragraph at lines 120--121
-\T1/cmr/m/n/12 mien-tras que si no se cum-ple de-be-mos de va-lo-rar a []. 
- []
-
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -924,18 +916,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-<images/clasacc.png, id=234, 543.02875pt x 308.15125pt>
+<images/clasacc.png, id=228, 543.02875pt x 308.15125pt>
 File: images/clasacc.png Graphic file (type png)
 <use images/clasacc.png>
 Package pdftex.def Info: images/clasacc.png  used on input line 125.
 (pdftex.def)             Requested size: 341.43437pt x 193.76015pt.
-<images/deuda.png, id=236, 638.385pt x 338.26375pt>
+<images/deuda.png, id=230, 638.385pt x 338.26375pt>
 File: images/deuda.png Graphic file (type png)
 <use images/deuda.png>
 Package pdftex.def Info: images/deuda.png  used on input line 134.
 (pdftex.def)             Requested size: 341.43437pt x 180.91512pt.
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
+LaTeX Info: Redefining \. on input line 146.
+LaTeX Info: Redefining \% on input line 146.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1234,8 +1226,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--196
 \T1/cmr/m/n/12 la-ti-va
  []
 
-LaTeX Info: Redefining \. on input line 245.
-LaTeX Info: Redefining \% on input line 245.
+LaTeX Info: Redefining \. on input line 244.
+LaTeX Info: Redefining \% on input line 244.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1244,8 +1236,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-LaTeX Info: Redefining \. on input line 245.
-LaTeX Info: Redefining \% on input line 245.
+LaTeX Info: Redefining \. on input line 244.
+LaTeX Info: Redefining \% on input line 244.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1264,13 +1256,13 @@ Underfull \hbox (badness 1077) in paragraph at lines 291--291
 \T1/cmr/m/n/12 ne-fi-cios es-tán su-je-tos a
  []
 
-<images/cri_val.png, id=270, 671.50874pt x 454.69875pt>
+<images/cri_val.png, id=263, 671.50874pt x 454.69875pt>
 File: images/cri_val.png Graphic file (type png)
 <use images/cri_val.png>
 Package pdftex.def Info: images/cri_val.png  used on input line 302.
 (pdftex.def)             Requested size: 384.1096pt x 260.08987pt.
-LaTeX Info: Redefining \. on input line 306.
-LaTeX Info: Redefining \% on input line 306.
+LaTeX Info: Redefining \. on input line 305.
+LaTeX Info: Redefining \% on input line 305.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1279,12 +1271,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [12]
-Overfull \hbox (1392.21529pt too wide) in paragraph at lines 319--320
-[]\T1/cmr/m/n/12 La pri-me-ra par-te del Mar-co Con-cep-tual de-fi-ne el cos-te amor-ti-za-do co-mo [] 
- []
+LaTeX Info: Redefining \. on input line 326.
+LaTeX Info: Redefining \% on input line 326.
 
-LaTeX Info: Redefining \. on input line 336.
-LaTeX Info: Redefining \% on input line 336.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1293,22 +1282,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13 <./images/cri_val.png (PNG copy)>]
-Overfull \hbox (316.41162pt too wide) in paragraph at lines 343--344
-\T1/cmr/m/n/12 te en par-ti-cu-lar se cum-plen am-bos, [] 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 382--382
 []|\T1/cmr/bx/n/12 Concesión del cré-di-to el
  []
 
-
-Overfull \hbox (125.16257pt too wide) in paragraph at lines 394--395
-[][] 
- []
-
-LaTeX Info: Redefining \. on input line 414.
-LaTeX Info: Redefining \% on input line 414.
+LaTeX Info: Redefining \. on input line 394.
+LaTeX Info: Redefining \% on input line 394.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1317,12 +1296,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14]
-Overfull \hbox (100.45883pt too wide) in paragraph at lines 415--416
-[][] 
- []
 
-LaTeX Info: Redefining \. on input line 485.
-LaTeX Info: Redefining \% on input line 485.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 469.
+LaTeX Info: Redefining \% on input line 469.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1331,16 +1309,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [15]
-Overfull \hbox (178.5773pt too wide) in paragraph at lines 486--487
-[][] 
- []
-
-
 Overfull \hbox (48.23044pt too wide) detected at line 490
 []
  []
 
+LaTeX Info: Redefining \. on input line 531.
+LaTeX Info: Redefining \% on input line 531.
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 533--534
 
  []
@@ -1355,16 +1337,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
  []
 
-LaTeX Info: Redefining \. on input line 538.
-LaTeX Info: Redefining \% on input line 538.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16]
 
 LaTeX Warning: Command \texteuro invalid in math mode on input line 544.
 
@@ -1379,8 +1351,8 @@ LaTeX Warning: Command \texteuro invalid in math mode on input line 544.
 LaTeX Warning: Command \texteuro invalid in math mode on input line 544.
 
 Missing character: There is no ¿ in font cmr12!
-LaTeX Info: Redefining \. on input line 607.
-LaTeX Info: Redefining \% on input line 607.
+LaTeX Info: Redefining \. on input line 595.
+LaTeX Info: Redefining \% on input line 595.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1389,6 +1361,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [17]
+LaTeX Info: Redefining \. on input line 632.
+LaTeX Info: Redefining \% on input line 632.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18]
 Underfull \hbox (badness 4752) in paragraph at lines 638--638
 []|\T1/cmr/bx/n/12 I. Ex-plí-
  []
@@ -1438,19 +1421,8 @@ Overfull \hbox (1.83015pt too wide) in paragraph at lines 646--646
 []|\T1/cmr/m/n/12 31/12/2020| 
  []
 
-LaTeX Info: Redefining \. on input line 670.
-LaTeX Info: Redefining \% on input line 670.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[18]
-LaTeX Info: Redefining \. on input line 750.
-LaTeX Info: Redefining \% on input line 750.
-
+LaTeX Info: Redefining \. on input line 709.
+LaTeX Info: Redefining \% on input line 709.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1459,8 +1431,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
-LaTeX Info: Redefining \. on input line 807.
-LaTeX Info: Redefining \% on input line 807.
+LaTeX Info: Redefining \. on input line 784.
+LaTeX Info: Redefining \% on input line 784.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1470,6 +1442,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20]
+LaTeX Info: Redefining \. on input line 858.
+LaTeX Info: Redefining \% on input line 858.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
 LaTeX Info: Redefining \. on input line 877.
 LaTeX Info: Redefining \% on input line 877.
 
@@ -1480,19 +1463,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21]
-Overfull \hbox (40.1846pt too wide) in paragraph at lines 881--882
-\T1/cmr/m/n/12 rio, se-rá []. 
- []
-
-
+[22]
 Underfull \hbox (badness 5862) in paragraph at lines 915--915
 []|\T1/cmr/bx/n/12 Compra de la ac-ción el
- []
-
-
-Overfull \hbox (144.05646pt too wide) in paragraph at lines 926--927
-\T1/cmr/m/n/12 31/12/2020, ya que el pre-cio del tí-tu-lo es de 90 \TS1/cmr/m/n/12 ¿\T1/cmr/m/n/12 , [] 
  []
 
 LaTeX Info: Redefining \. on input line 943.
@@ -1504,13 +1477,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
-Overfull \hbox (112.5586pt too wide) in paragraph at lines 991--992
-[][] 
- []
-
+[23]
 LaTeX Info: Redefining \. on input line 1008.
 LaTeX Info: Redefining \% on input line 1008.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1518,7 +1488,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23]
+[24]
 LaTeX Info: Redefining \. on input line 1053.
 LaTeX Info: Redefining \% on input line 1053.
 
@@ -1529,7 +1499,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24]
+[25]
 Underfull \hbox (badness 4217) in paragraph at lines 1095--1095
 []|\T1/cmr/bx/n/12 Venta de las ac-cio-nes el
  []
@@ -1543,12 +1513,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]
-Overfull \hbox (277.41956pt too wide) in paragraph at lines 1148--1149
-[]\T1/cmr/m/n/12 En cuan-to a la $[]$, se va-lo-ra-rán por su []. 
- []
-
-
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 1196--1196
 []|\T1/cmr/m/n/12 2.000.000 =
  []
@@ -1562,7 +1527,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26]
+[27]
 Underfull \hbox (badness 1817) in paragraph at lines 1222--1222
 []|\T1/cmr/bx/n/12 Valoración pos-te-rior (de-te-
  []
@@ -1576,7 +1541,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27]
+[28]
 Underfull \hbox (badness 2671) in paragraph at lines 1252--1252
 []|\T1/cmr/bx/n/12 Valoración Ini-
  []
@@ -1760,7 +1725,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28]
+[29]
 Underfull \hbox (badness 1960) in paragraph at lines 1285--1285
 []|\T1/cmr/m/n/12 (540) In-ver-sio-nes fi-nan-cie-ras a
  []
@@ -1774,7 +1739,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29]
+[30]
 Underfull \hbox (badness 2359) in paragraph at lines 1382--1382
 []|\T1/cmr/bx/n/8 Coste amor-ti-za-
  []
@@ -2042,7 +2007,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30]
+[31]
 LaTeX Info: Redefining \. on input line 1392.
 LaTeX Info: Redefining \% on input line 1392.
 
@@ -2053,7 +2018,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 1402--1403
 
  []
@@ -2127,7 +2092,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32]
+[33]
 Underfull \vbox (badness 3219) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 1538.
@@ -2140,17 +2105,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33]
-Overfull \hbox (8.8798pt too wide) in paragraph at lines 1539--1540
-[][] \T1/cmr/m/n/12 así que ne-ce-si-ta-mos com-
- []
-
-
-Overfull \hbox (136.74423pt too wide) in paragraph at lines 1563--1564
-[][] 
- []
-
-
+[34]
 Underfull \hbox (badness 2884) in paragraph at lines 1588--1588
 []|\T1/cmr/bx/n/12 Regularización cuen-tas del
  []
@@ -2164,7 +2119,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34]
+[35]
 LaTeX Info: Redefining \. on input line 1601.
 LaTeX Info: Redefining \% on input line 1601.
 
@@ -2175,20 +2130,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35]
-LaTeX Info: Redefining \. on input line 1630.
-LaTeX Info: Redefining \% on input line 1630.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [36]
-LaTeX Info: Redefining \. on input line 1671.
-LaTeX Info: Redefining \% on input line 1671.
+LaTeX Info: Redefining \. on input line 1629.
+LaTeX Info: Redefining \% on input line 1629.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2198,6 +2142,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [37]
+LaTeX Info: Redefining \. on input line 1667.
+LaTeX Info: Redefining \% on input line 1667.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[38]
 Underfull \hbox (badness 3977) in paragraph at lines 1719--1719
 []|\T1/cmr/m/n/12 (766) Be-ne-fi-cios en par-ti-ci-pa-
  []
@@ -2216,7 +2171,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38]
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 1743--1743
 []|\T1/cmr/bx/n/12 Intereses
  []
@@ -2355,20 +2310,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39]
-LaTeX Info: Redefining \. on input line 1791.
-LaTeX Info: Redefining \% on input line 1791.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [40])
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2378,8 +2322,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [41]
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2458,11 +2402,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [46]
-Overfull \hbox (103.55237pt too wide) in paragraph at lines 167--168
-\T1/cmr/m/n/12 pue-de ser [], si no que es un []. 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 180--180
 []|\T1/cmr/bx/n/12 Capital
  []
@@ -2688,8 +2627,8 @@ Underfull \hbox (badness 2846) in paragraph at lines 407--407
  []
 
 )
-LaTeX Info: Redefining \. on input line 170.
-LaTeX Info: Redefining \% on input line 170.
+LaTeX Info: Redefining \. on input line 171.
+LaTeX Info: Redefining \% on input line 171.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2699,8 +2638,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [51]
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
+LaTeX Info: Redefining \. on input line 173.
+LaTeX Info: Redefining \% on input line 173.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2724,21 +2663,21 @@ L3 programming layer <2024-01-22>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Temario.out' has not changed.
-(rerunfilecheck)             Checksum: 13444ACC95D54BF23588E9C1FDD59838;4944.
+(rerunfilecheck)             Checksum: C74DB469F81A59CC7567A3D9E6CCC8DB;4806.
  ) 
 Here is how much of TeX's memory you used:
- 28872 strings out of 474222
- 537875 string characters out of 5748734
+ 28854 strings out of 474222
+ 537720 string characters out of 5748734
  1951975 words of memory out of 5000000
- 50418 multiletter control sequences out of 15000+600000
+ 50401 multiletter control sequences out of 15000+600000
  582145 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,17n,93p,1002b,892s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on build/Temario.pdf (53 pages, 5358513 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt2074.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on build/Temario.pdf (53 pages, 5348381 bytes).
 PDF statistics:
- 726 PDF objects out of 1000 (max. 8388607)
- 593 compressed objects within 6 object streams
- 215 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 715 PDF objects out of 1000 (max. 8388607)
+ 585 compressed objects within 6 object streams
+ 214 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 
