@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.5)  20 MAR 2025 13:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.5)  21 MAR 2025 17:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1131,7 +1131,287 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12])
+[12]
+Underfull \hbox (badness 2671) in paragraph at lines 571--571
+[]|\T1/cmr/bx/n/12 Reclasificación del de-re-cho
+ []
+
+LaTeX Info: Redefining \. on input line 597.
+LaTeX Info: Redefining \% on input line 597.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[13]
+Underfull \hbox (badness 2302) in paragraph at lines 623--623
+[]|\T1/cmr/bx/n/12 A 01/06/2020, con-ta-bi-li-za-
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 625--625
+[]|\T1/cmr/m/n/12 (250) In-ver-sio-nes fi-nan-cie-ras a
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 643--643
+[]|\T1/cmr/bx/n/12 A 01/06/2020, con-ta-bi-li-za-
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 645--645
+[]|\T1/cmr/m/n/12 (540) In-ver-sio-nes fi-nan-cie-ras a
+ []
+
+LaTeX Info: Redefining \. on input line 655.
+LaTeX Info: Redefining \% on input line 655.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+Underfull \hbox (badness 2302) in paragraph at lines 665--665
+[]|\T1/cmr/bx/n/12 A 01/06/2020, con-ta-bi-li-za-
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 689--689
+[]|\T1/cmr/bx/n/12 A 31/12/2020, con-ta-bi-li-za-
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 691--691
+[]|\T1/cmr/m/n/12 (250) In-ver-sio-nes fi-nan-cie-ras a
+ []
+
+LaTeX Info: Redefining \. on input line 707.
+LaTeX Info: Redefining \% on input line 707.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15]
+Underfull \hbox (badness 2302) in paragraph at lines 718--718
+[]|\T1/cmr/bx/n/12 A 31/12/2020, con-ta-bi-li-za-
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 720--720
+[]|\T1/cmr/m/n/12 (540) In-ver-sio-nes fi-nan-cie-ras a
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 738--738
+[]|\T1/cmr/bx/n/12 A 31/12/2020, con-ta-bi-li-za-
+ []
+
+LaTeX Info: Redefining \. on input line 770.
+LaTeX Info: Redefining \% on input line 770.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
+Underfull \hbox (badness 2302) in paragraph at lines 777--777
+[]|\T1/cmr/bx/n/12 A 01/02/2021, con-ta-bi-li-za-
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 777--777
+\T1/cmr/bx/n/12 ven-ta de las ac-cio-nes de
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 781--781
+[]|\T1/cmr/m/n/12 (250) In-ver-sio-nes fi-nan-cie-ras a
+ []
+
+
+Underfull \hbox (badness 2302) in paragraph at lines 821--821
+[]|\T1/cmr/bx/n/12 A 01/02/2021, con-ta-bi-li-za-
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 827--827
+[]|\T1/cmr/m/n/12 (540) In-ver-sio-nes fi-nan-cie-ras a
+ []
+
+LaTeX Info: Redefining \. on input line 831.
+LaTeX Info: Redefining \% on input line 831.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17]
+Underfull \hbox (badness 2302) in paragraph at lines 846--846
+[]|\T1/cmr/bx/n/12 A 01/02/2021, con-ta-bi-li-za-
+ []
+
+LaTeX Info: Redefining \. on input line 878.
+LaTeX Info: Redefining \% on input line 878.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+[]|\T1/cmr/m/n/12 Intereses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+\T1/cmr/m/n/12 de-ven-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+\T1/cmr/m/n/12 ga-dos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+\T1/cmr/m/n/12 (In-gre-sos
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+\T1/cmr/m/n/12 fi-nan-cie-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+[]|\T1/cmr/m/n/12 Saldo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--888
+\T1/cmr/m/n/12 amor-ti-za-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--889
+\T1/cmr/m/n/12 dien-te de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 888--889
+\T1/cmr/m/n/12 amor-ti-zar
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 890--890
+[]|\T1/cmr/m/n/12 01/01/2020| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 892--892
+[]|\T1/cmr/m/n/12 31/12/2020| 
+ []
+
+
+Overfull \hbox (1.83015pt too wide) in paragraph at lines 894--894
+[]|\T1/cmr/m/n/12 31/12/2021| 
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 932--932
+\T1/cmr/bx/n/12 los in-tere-ses a 31/12/2020
+ []
+
+LaTeX Info: Redefining \. on input line 945.
+LaTeX Info: Redefining \% on input line 945.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19]
+Overfull \hbox (57.24857pt too wide) detected at line 953
+[]
+ []
+
+LaTeX Info: Redefining \. on input line 991.
+LaTeX Info: Redefining \% on input line 991.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20]
+Overfull \hbox (17.39606pt too wide) in paragraph at lines 1000--1001
+[]\T1/cmr/m/n/12 a) Asien-to re-la-ti-vo a la com-pra de las ac-cio-nes de TE-LE-MAR-KE-TING a 01/12/2020. 
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 1013--1013
+[]|\T1/cmr/m/n/12 (250) In-ver-sio-nes fi-nan-cie-ras a
+ []
+
+
+Underfull \hbox (badness 3396) in paragraph at lines 1037--1037
+[]|\T1/cmr/bx/n/12 Asiento/s re-la-ti-vo/s a las
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 1041--1041
+[]|\T1/cmr/m/n/12 (250) In-ver-sio-nes fi-nan-cie-ras a
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 1049.
+LaTeX Info: Redefining \% on input line 1049.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 1060--1060
+[]|\T1/cmr/bx/n/12 Clasificación, si pro-ce-de,
+ []
+
+
+Underfull \hbox (badness 1881) in paragraph at lines 1060--1060
+\T1/cmr/bx/n/12 en la em-pre-sa IN-VER-SO-
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 1060--1060
+\T1/cmr/bx/n/12 RA, S.A. de las ac-cio-nes
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 1060--1060
+\T1/cmr/bx/n/12 de TE-LE-MAR-KE-TING el
+ []
+
+)
 LaTeX Info: Redefining \. on input line 165.
 LaTeX Info: Redefining \% on input line 165.
 
@@ -1142,20 +1422,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13]
-LaTeX Info: Redefining \. on input line 167.
-LaTeX Info: Redefining \% on input line 167.
+[22] [23
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14
-
-] [15] (build/Temario.aux
+] (build/Temario.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1167,18 +1436,18 @@ Package rerunfilecheck Info: File `Temario.out' has not changed.
 (rerunfilecheck)             Checksum: 97F0CCE84A5D9716F01998509CBEF708;1123.
  ) 
 Here is how much of TeX's memory you used:
- 27994 strings out of 474222
- 522901 string characters out of 5748734
+ 28053 strings out of 474222
+ 523695 string characters out of 5748734
  1946975 words of memory out of 5000000
- 49728 multiletter control sequences out of 15000+600000
- 576746 words of font info for 84 fonts, out of 8000000 for 9000
+ 49740 multiletter control sequences out of 15000+600000
+ 577087 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,17n,93p,660b,892s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 83i,17n,93p,828b,892s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt2074.pfb>
-Output written on build/Temario.pdf (15 pages, 4403027 bytes).
+Output written on build/Temario.pdf (23 pages, 4438495 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 214 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
+ 360 PDF objects out of 1000 (max. 8388607)
+ 287 compressed objects within 3 object streams
+ 108 named destinations out of 1000 (max. 500000)
  94 words of extra memory for PDF output out of 10000 (max. 10000000)
 
