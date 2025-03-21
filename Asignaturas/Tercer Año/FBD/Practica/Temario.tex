@@ -48,49 +48,112 @@
 \fancyfoot[C]{\rule[0pt]{\textwidth}{0.2pt}\\\thepage}
 \fancyfoot[R]{\rule[0pt]{\textwidth}{0.2pt}\\\today}
 \renewcommand{\sectionmark}[1]{\markboth{#1}{}} % Configura \leftmark para que solo muestre la sección
+
+% \renewcommand{\ejercicio}[1]{%
+%     \ifnum#1=8
+%         Ejercicio 1. Primera forma.%%
+%     \else\ifnum#1=9
+%         Ejercicio 1. Segunda forma.%%
+%     \else\ifnum#1=10
+%         Ejercicio 2.%
+%     \else\ifnum#1=11
+%         Ejercicio 3.%
+%     \else\ifnum#1=12
+%         Ejercicio 4.%
+%     \else\ifnum#1=13
+%         Ejercicio 5. Primera forma.%
+%     \else\ifnum#1=14
+%         Ejercicio 5. Segunda forma.%
+%     \else\ifnum#1=15
+%         Ejercicio 6. Primera forma.%
+%     \else\ifnum#1=16
+%         Ejercicio 6. Segunda forma.%
+%     \else\ifnum#1=17
+%         Ejercicio 7.%
+%     \else\ifnum#1=18
+%         Ejercicio 8.%
+%     \else\ifnum#1=19
+%         Ejercicio 9.%
+%     \else\ifnum#1=20
+%         Ejercicio 10.%
+%     \else\ifnum#1=21
+%         Ejercicio 11.%
+%     \else\ifnum#1=22
+%         Ejercicio 12.%
+%     \else\ifnum#1=23
+%         Ejercicio 13.%
+%     \else\ifnum#1=24
+%         Ejercicio 14.%
+%     \else\ifnum#1=25
+%         Ejercicio 15.%
+%     \else\ifnum#1=26
+%         Ejercicio 16.%
+%     \else
+%         Ejercicio #1%
+%     \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+% }
+
 \newcommand{\ejercicio}[1]{%
-    \ifnum#1=8
-        Ejercicio 8%%
-    \else\ifnum#1=9
-        Ejercicio 9%
-    \else\ifnum#1=10
-        Ejercicio 10%
-    \else\ifnum#1=11
-        Ejercicio 11%
-    \else\ifnum#1=12
-        Ejercicio 12%
-    \else\ifnum#1=13
-        Ejercicio 13%
-    \else\ifnum#1=14
-        Ejercicio 14%
-    \else\ifnum#1=15
-        Ejercicio 15%
-    \else\ifnum#1=16
-        Ejercicio 16%
-    \else\ifnum#1=17
-        Ejercicio 17%
-    \else\ifnum#1=18
-        Ejercicio 18%
-    \else\ifnum#1=19
-        Ejercicio 19%
-    \else\ifnum#1=20
-        Ejercicio 20%
-    \else\ifnum#1=21
-        Ejercicio 21%
-    \else\ifnum#1=22
-        Ejercicio 22%
-    \else\ifnum#1=23
-        Ejercicio 23%
-    \else\ifnum#1=24
-        Ejercicio 24%
-    \else\ifnum#1=25
-        Ejercicio 25%
-    \else\ifnum#1=26
-        Ejercicio 26%
+    \ifcase#1
+        % No hay caso 0
+    \or % Caso 1
+        % No hay caso 1
+    \or % Caso 2
+        % No hay caso 2
+    \or % Caso 3
+        % No hay caso 3
+    \or % Caso 4
+        % No hay caso 4
+    \or % Caso 5
+        % No hay caso 5
+    \or % Caso 6
+        % No hay caso 6
+    \or % Caso 7
+        % No hay caso 7
+    \or % Caso 8
+        Ejercicio 1. Primera forma. Formato libreta.
+    \or % Caso 9
+        Ejercicio 1. Segunda forma. Formato libreta.
+    \or % Caso 10
+        Ejercicio 2. Formato libreta.
+    \or % Caso 11
+        Ejercicio 3. Formato libreta.
+    \or % Caso 12
+        Ejercicio 4. Formato libreta.
+    \or % Caso 13
+        Ejercicio 5. Primera forma. Formato libreta.
+    \or % Caso 14
+        Ejercicio 5. Segunda forma. Formato libreta.
+    \or % Caso 15
+        Ejercicio 6. Primera forma. Formato libreta.
+    \or % Caso 16
+        Ejercicio 6. Segunda forma. Formato libreta.
+    \or % Caso 17
+        Ejercicio 7. Formato libreta.
+    \or % Caso 18
+        Ejercicio 8. Formato libreta.
+    \or % Caso 19
+        Ejercicio 9. Formato libreta.
+    \or % Caso 20
+        Ejercicio 10. Formato libreta.
+    \or % Caso 21
+        Ejercicio 11. Formato libreta.
+    \or % Caso 22
+        Ejercicio 12. Formato libreta.
+    \or % Caso 23
+        Ejercicio 13. Formato libreta.
+    \or % Caso 24
+        Ejercicio 14. Formato libreta.
+    \or % Caso 25
+        Ejercicio 15. Formato libreta.
+    \or % Caso 26
+        Ejercicio 16. Formato libreta.
     \else
-        Ejercicio #1%
-    \fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi\fi
+        Ejercicio #1. Formato libreta.
+    \fi
 }
+
+
 
 
 % Formato de títulos
