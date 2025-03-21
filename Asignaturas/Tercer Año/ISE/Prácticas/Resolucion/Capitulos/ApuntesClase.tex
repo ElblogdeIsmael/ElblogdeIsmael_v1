@@ -351,3 +351,110 @@ En el ejercicio debemos de dar acceso mediante ssh usando la llave pública y pr
 \end{enumerate}
 
 Con el parámetro -p le especificamos el puerto al que nos queremos conectar, de esta manera nos conectamos al puerto que hemos especificado, ya que de manera predeterminada se conecta al puerto 22.
+
+\section{Automatización con Ansible}
+
+Por defecto Ansible ya viene instalado en la mayoría de las distribuciones de Linux. Además, por defecto al instalar Ansible se instala Python y SSH. Para instalarlo debemos de usar el comando \micode{sudo dnf install ansible}. Para comprobar que está instalado, usamos el comando \micode{ansible --version}, o bien mediante el comando \micode{sudo dnf list installed | grep -i ansible}. Además, podemos ver la documentación de Ansible en la página oficial de Ansible. Su configuración se encuentra en /etc/ansible, \textit{este solo se instala en el controlador ya que es desde donde se maneja.}
+
+En la configuración de /etc/ansible, podemos cambiar varios parámetro, como es el caso del númeo de hebras que usa o número de procesos que se ejecutan de manera pararela, en este caso suele estar por defecto en 5 hebras.
+
+En nuestro directorio base\footnote{Accedemos con el comando \micode{cd}.}, tenemos el archivo \micode{.ansible.cfg}, el cual podemos editar siendo los cambios aplicados de la misma manera que si lo hiciéramos en el archivo de configuración de /etc/ansible. Por defecto viene vacío, pero tiene un comando para generar la configuración por defecto, el cual es \micode{ansible-config dump}. Además, podemos ver la configuración de Ansible con el comando \micode{ansible-config list}.
+
+En cuanto al formato que se usa en Ansible, cabe destacar que se establecen etiquetas, como puede ser \micode{web server}, de manera que cuando ejecutemos Ansible, podemos elegir esta etiqueta para que lo lance con lo que esté definido debajo de dicha etiqueta en el archivo de configuración.
+
+Entramos en ansible con \micode{cd .ansible}, y debemos de definir etiquetas para entrar a los hosts que se definen en este archivo de configuración. En este archivo se definen los hosts. 
+
+Una de las referencias importante es la guía sobre AD-HOC y la lista de todos los módulos que podemos ejecutar\footnote{Referencias 42 y 43 del guión.}. LOs módulos que vienen po defecto son los \textit{ansible.builtin}. El pinf de Ansible, actúa de manera distinta, lo que hace es que comprueba si se tiene acceso al servidor al que se hace el ping y comprueba si este tiene pyhton instalado. Solo se le pasa un parámetro.
+
+Para ejecutar un comando AD-HOC\footnote{Solo disponible en la controladora y no en las manejadas.} es con \micode{ansible ansi_control -m ping},este comando debe de darnos correcto si efectivamente puede ejecutar el comando de manera correcta. Cabe destacar que ansible\_control debe de estar en la configuración de ansible.
+Otro de los comandos a destacar es: \micode{ansible ansible_control -m ping -a 'data = "Hola Mundo"'}, de nuevo \textbf{cabe destacar que el comando ansi\_control esta definido en la configuración de ansible}.
+
+En clase estamos ejecutando comando con lo anteriormente mencionada, podemos destacar que si intentamos ejecutar comandos de sudo da error, para ello debemos de añadir \micode{--become}, pero nos pide la contraseña, esto no nos interesa ya que no queremos que nos pida la contraseña todas las máquinas.
+
+Para ello nos vamos al fichero /etc/ y ejecutamos \micode{more sudo}. en .ansible las frases con \% delante es un grupo, vemos una línea que nos lo permite para todos (todos los wheels), pero esto es \textit{una mala práctica.}
+
+Así que en vez de eso, añadimos la línea \micode{david  ALL=(ALL)  NOPASSWD:ALL}, debo de salir y volver a entrar, porque puede recordar sesiones anteriores de sudo. En este punto si nos deja entrar usando \micode{--become} sin poner la contraseña.
+
+Con el comando \micode{ansible ansible-inventory --graph} vemos las máquinas que tenemoso bien podemos ejecutar \micode{ansible ansible-inventory -i <ruta fichero > --graph}.
+
+Para más información sobre Ansible, podemos visitar la documentación oficial en \url{https://docs.ansible.com}. Aquí encontraremos guías, referencias y ejemplos que nos ayudarán a entender y utilizar Ansible de manera efectiva.
+
+O bien acceder a esta url: \url{https://docs.ansible.com/ansible/latest/index.html} y sobretodo a esta \url{https://docs.ansible.com/ansible/latest/reference_appendices/YAMLSyntax.html}.
+
+Para ejecutar un archivo .yaml es \micode{ansible -playbook -i <ruta fichero> <archivos extra>}.
+
+El fichero basics.yaml que se usa en clase como ejemplo es:
+\begin{lstlisting}[style=yamlstyle]
+servers:
+  hosts:
+    ansi_control:
+      ansible_host: 192.168.56.101
+      ansible_user: david
+      ansible_port: 22232
+    ansi01:
+      ansible_host: 192.168.56.111
+      ansible_user: admin
+    ansi02:
+      ansible_host: 192.168.56.112
+      ansible_user: admin
+  vars:
+    ansible_port: 22
+
+unlagged:
+  hosts:
+    ansi01:
+    ansi02:
+\end{lstlisting}
+
+Debemos de consultar las claves especiales en la documentación. La forma de depurar es comentar todo e ir ejecutando líneas y descomentando.
+
+Cabe la posibilidad de hacer playbooks parametrizables.
+
+Uno parte de los playbooks que se usan en clase es:
+
+\begin{lstlisting}[style=yamlstyle]
+- name: Esta el usuario alguien ahí?
+  ansible.builtin.shell:
+    cmd: who
+  register: who_results (guarda el resultado del comando who en la variable who_results)
+
+- name: Print Connected
+  ansible.builtin.debug:
+    msg: "Connected list: {{ who_results.stdout }}"
+\end{lstlisting}
+
+Tenemos que entregar un directorio con los ficheros\footnote{Básicamente todos los que usemmos.}: \begin{itemize}
+    \item basics.yaml 
+    \item ejecutaPlaybook.sh
+    \item hosts.yaml
+    \item vars.yaml: variables.
+\end{itemize}
+
+
+\subsection{Ejercicio Obligatorio}
+
+En cuanto al ejercicio que debemos de \textbf{entregar}, el cambio que debemos de hacer es en /etc/sshd/.conf, hay cambiamos la línea de AccessRoot y lo ponemos con el atributo \textit{yes}.
+
+Los pasos son\footnote{Todo es dentro del playbook.}:
+\begin{enumerate}
+    \item Crear un nuevo usuario llamado “admin” que pueda ejecutar comandos privilegiados sin contraseña. \textit{Añadir usuario en las tasks de ansible y lo añadimos a sudoers}.
+    \item Dar acceso por SSH al usuario “admin” con llave pública. \textit{Debemos de enviar la llave pública, buscando un módulo de ansible que lo hace.}
+    \item Crear el grupo “wheel” (si no existe) y permitir a sus miembros ejecutar sudo. \textit{Existe, porque usamos Rocky, ausumimos que no sabemos que máquina es.} Si ejecutamos el mismo comando varias veces con los mismos parámetros el resultado final siempre es el mismo.
+    \item Añadir una lista variable de usuarios (se proporcionará un ejemplo con al menos dos), añadiéndolos al grupo “wheel” y concediéndoles acceso por SSH con llave pública. La sacamos en el directorio .ssh y en el fichero id\_pub.
+    \item Deshabilitar el acceso por contraseña sobre SSH para el usuario root.
+\end{enumerate}
+
+Estos quedan con un usuario admin que puede ejecutar comandos privilegiados sin contraseña.
+
+Con esto podemos pasar el 2º playbook.
+
+Debemos de realizar el ejercicio correspondiente a la creación de la web e instalación del servidor web
+
+Un ejercicio interesante para comenzar es con \micode{ansible ansi_control -a "poweroff" --become}, ya que solo se apaga si esta todo correcto.
+
+Para depurarlo si lo rechaza, debemos de:
+\begin{enumerate}
+    \item Me conecto con ssh.
+    \item Probamos haciendo \micode{poweroff} con ssh, entre otras opciones.
+\end{enumerate}
+
