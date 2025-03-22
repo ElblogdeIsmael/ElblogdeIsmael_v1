@@ -25,6 +25,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
+
+
 <body>
 
   <!--
@@ -199,11 +201,12 @@
 
         <ul class="navbar-list">
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>Degree</button>
           </li>
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+          
 
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>My way</button>
@@ -225,8 +228,7 @@
         - #ABOUT
       -->
 
-      <article class="about
-        active" data-page="about">
+      <article class="about" data-page="about">
 
         <header>
             <!-- añadir una linea vacia para que se vea bien el titulo -->
@@ -518,34 +520,38 @@
       <!-- el article es de About -->
       
       
-      <article class="Degree" data-page="degree">
+      <article class="Degree active" data-page="degree">
         <header>
-          <h2 class="h2 article-title">Doble Grado - Ingeniería Informática + ADE</h2>
+          <h2 class="h2 article-title">Ingeniería Informática + ADE</h2>
         </header>
         <section class="menu">
           <ul class="subject-list"></ul>
             <li class="subject-item">
               <a href="Asignaturas/Tercer Año/index.html" class="subject-link">
-                <div class="subject-card">
-                  <h3>3º Curso</h3>
-                </div>
+              <div class="subject-card">
+                <h3>📚 3º Curso</h3>
+              </div>
               </a>
             </li>
             <li class="subject-item">
               <a href="Otros/vacio_sineditar.html" class="subject-link">
-                <div class="subject-card">
-                  <h3>4º Curso</h3>
-                </div>
+              <div class="subject-card">
+                <h3>📚 4º Curso</h3>
+              </div>
               </a>
             </li>
             <li class="subject-item">
               <a href="Otros/vacio_sineditar.html" class="subject-link">
-                <div class="subject-card">
-                  <h3>5º Curso</h3>
-                </div>
+              <div class="subject-card">
+                <h3>📚 5º Curso</h3>
+              </div>
               </a>
             </li>
           </ul>
+
+          <p style="font-size: 1.2em; color: #ffecec; margin-top: 80px;">
+            Para más información sobre la licencia, descripción y otros detalles, accede a la sección "About" en la esquina superior derecha.
+          </p>
         </section>
         <style>
           .menu {
@@ -557,8 +563,8 @@
             flex-wrap: wrap;
             gap: 15px;
             justify-content: center;
-            padding: 0;
-            list-style: none;
+            padding: 5px;
+            list-style:none;
           }
 
           .subject-item {
@@ -588,7 +594,7 @@
 
           .subject-card {
             background-color: #3dbce2;
-            color: white;
+            color: rgb(17, 1, 1);
             padding: 15px;
             border-radius: 10px;
             text-align: center;

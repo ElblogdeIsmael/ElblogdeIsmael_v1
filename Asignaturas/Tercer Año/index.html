@@ -12,7 +12,7 @@
       --onyx: hsl(240, 1%, 17%);
       --eerie-black-1: hsl(240, 2%, 13%);
       --eerie-black-2: hsl(240, 2%, 12%);
-      --smoky-black: hsl(0, 0%, 7%);
+      --smoky-black: hsl(0, 24%, 96%);
       --white-1: hsl(0, 0%, 100%);
       --white-2: hsl(0, 0%, 98%);
       --orange-yellow-crayola: hsl(45, 100%, 72%);
@@ -47,7 +47,7 @@
     body {
       font-family: var(--ff-poppins);
       font-style: italic;
-      background: var(--smoky-black);
+      background: var(--white-1);
       color: var(--white-2);
       margin: 0;
       padding: 20px;
@@ -64,15 +64,14 @@
     }
 
     h1{
-      color: hsl(30, 100%, 50%);
+      color: hsl(226, 79%, 74%);
       font-size: var(--fs-1);
       margin-bottom: 20px;
       animation: slideIn 0.5s ease-in-out;
-      text-decoration: underline;
     }
 
     h2{
-      color: hsl(30, 89%, 56%);
+      color: hsl(214, 80%, 70%);
       font-size: var(--fs-2);
       margin-bottom: 20px;
       animation: slideIn 0.5s ease-in-out;
@@ -90,16 +89,37 @@
 
     ul#subjects li a {
       text-decoration: none;
-      color: var(--orange-yellow-crayola);
+      color: var(--eerie-black-1);
       font-weight: var(--fw-500);
       transition: color var(--transition-1), text-decoration var(--transition-1);
       display: flex;
       align-items: center;
-      background: var(--eerie-black-1);
       padding: 10px;
       border-radius: 5px;
       animation: fadeIn 0.5s ease-in-out;
     }
+
+    ul#subjects li a::before,
+    ul#subjects li ul li a::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url('images/aglutinante.png'); /* Replace with the path to your folder image */
+      background-size: contain;
+      margin-right: 8px;
+    }
+
+    ul#subjects li ul li ul li a::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url('images/aceptacion.png'); /* Replace with the path to your file image */
+      background-size: contain;
+      margin-right: 8px;
+    }
+
 
     ul#subjects li a:hover {
       text-decoration: underline;
@@ -124,15 +144,35 @@
 
     ul#subjects_2 li a {
       text-decoration: none;
-      color: var(--orange-yellow-crayola);
+      color: var(--eerie-black-1);
       font-weight: var(--fw-500);
       transition: color var(--transition-1), text-decoration var(--transition-1);
       display: flex;
       align-items: center;
-      background: var(--eerie-black-1);
       padding: 10px;
       border-radius: 5px;
       animation: fadeIn 0.5s ease-in-out;
+    }
+
+    ul#subjects_2 li a::before,
+    ul#subjects_2 li ul li a::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url('images/aglutinante.png'); /* Replace with the path to your folder image */
+      background-size: contain;
+      margin-right: 8px;
+    }
+
+    ul#subjects_2 li ul li ul li a::before {
+      content: '';
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url('images/aceptacion.png'); /* Replace with the path to your file image */
+      background-size: contain;
+      margin-right: 8px;
     }
 
     ul#subjects_2 li a:hover {
@@ -295,103 +335,53 @@
         name: 'Ingeniería de Servidores',
         subfolders: [
           { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: 'ISE/Prácticas/Resolucion/build/Temario.pdf' }] },
-          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: 'ISE/Teoria/build/Temario.pdf' }] },
-          { name: 'Exámenes', files: [] }
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: 'ISE/Teoria/build/Temario.pdf' }] }
         ]
       },
       {
         name: 'Fundamentos de Ingeniería del Software',
         subfolders: [
-          { name: 'Prácticas', files: [{ name: 'Práctica 0', path: 'FIS/Practicas/Practica-0/build/practica0_FIS.pdf' }] },
-          { name: 'Teoría', files: [{name: 'Apuntes Teoría', path: 'FIS/Teoria/build/Temario.pdf'}] },
-          { name: 'Exámenes', files: [] }
+          { name: 'Prácticas', files: [{ name: 'Práctica 0', path: 'FIS/Practicas/Practica-0/build/practica0_FIS.pdf' }] }
         ]
       },
       {
         name: 'Inteligencia Artificial',
         subfolders: [
-          { name: 'Prácticas', files: [{ name: 'Apuntes Prácticas', path: 'IA/Practicas/build/Temario.pdf' }] },
-          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: 'IA/Teoria/build/Temario.pdf' }] },
-          { name: 'Exámenes', files: [] }
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoría', path: 'IA/Teoria/build/Temario.pdf' }] }
         ]
       },
       {
         name: 'Fundamentos de Base de Datos',
         subfolders: [
-          { name: 'Prácticas', files: [{name:'Apuntes Prácticas', path:'FBD/Practica/build/Temario.pdf'}] },
-          { name: 'Teoría', files: [{name: 'Apuntes Teoría', path: 'FBD/Teoria/build/Temario.pdf'}] },
-          { name: 'Exámenes', files: [{name: 'Apuntes Práctica', path: 'FBD/Practica/build/Temario.pdf'}] }
+          { name: 'Prácticas', files: [{name:'Apuntes Prácticas', path:'FBD/Practica/build/Temario.pdf'}] }
         ]
       },
       {
         name: 'Contabilidad Financiera II',
         subfolders: [
           { name: 'Prácticas', files: [{name: 'Apuntes Prácticas', path: 'CF2/Practica/build/Temario.pdf'}] },
-          { name: 'Teoría', files: [{name: 'Apuntes Teoría', path: 'CF2/Teoria/build/Temario.pdf'}] },
-          { name: 'Exámenes', files: [] }
+          { name: 'Teoría', files: [{name: 'Apuntes Teoría', path: 'CF2/Teoria/build/Temario.pdf'}] }
         ]
       },
       {
         name: 'Análisis de Operaciones Financieras',
         subfolders: [
-          { name: 'Prácticas', files: [{ name: 'Formulario', path: 'AOF/Formulario/build/Fromulario.pdf' }] },
-          { name: 'Teoría', files: [{ name: 'Apuntes Teoria', path: 'AOF/Teoria/build/Teoria.pdf' }] },
-          { name: 'Exámenes', files: [] }
+          { name: 'Teoría', files: [{ name: 'Apuntes Teoria', path: 'AOF/Teoria/build/Teoria.pdf' }] }
         ]
       },
       {
         name: 'Métodos Cuantitativos',
         subfolders: [
-          { name: 'Prácticas', files: [] },
-          { name: 'Teoría', files: [{name: 'Apuntes Teoría', path:'MC/Teoria/build/Teoria.pdf'}] },
-          { name: 'Exámenes', files: [] }
+          { name: 'Teoría', files: [{name: 'Apuntes Teoría', path:'MC/Teoria/build/Teoria.pdf'}] }
         ]
       }
     ];
 
 
- 
 
-    function createFileList(files) {
-      var fileList = document.createElement('ul');
-      files.forEach(function(file) {
-        var fileLi = document.createElement('li');
-        var fileA = document.createElement('a');
-        fileA.textContent = file.name;
-        fileA.href = file.path;
-        fileLi.appendChild(fileA);
-        fileList.appendChild(fileLi);
-      });
-      return fileList;
-    }
-
-    function createSubfolderList(subfolders) {
-      var subfolderList = document.createElement('ul');
-      subfolders.forEach(function(subfolder) {
-        var subfolderLi = document.createElement('li');
-        var subfolderA = document.createElement('a');
-        subfolderA.textContent = subfolder.name;
-        subfolderA.href = '#';
-        subfolderA.addEventListener('click', function(e) {
-          e.preventDefault();
-          var nestedList = subfolderLi.querySelector('ul');
-          if (nestedList) {
-            nestedList.classList.toggle('hidden');
-          } else {
-            if (subfolder.files) {
-              nestedList = createFileList(subfolder.files);
-            } else if (subfolder.subfolders) {
-              nestedList = createSubfolderList(subfolder.subfolders);
-            }
-            subfolderLi.appendChild(nestedList);
-          }
-        });
-        subfolderLi.appendChild(subfolderA);
-        subfolderList.appendChild(subfolderLi);
-      });
-      return subfolderList;
-    }
-
+    
+    
+    
     var subjectsList = document.getElementById('subjects');
     subjects.forEach(function(subject) {
       var li = document.createElement('li');
@@ -399,19 +389,20 @@
       a.textContent = subject.name;
       a.href = '#';
       a.addEventListener('click', function(e) {
-        e.preventDefault();
-        var subfolderList = li.querySelector('ul');
-        if (subfolderList) {
-          subfolderList.classList.toggle('hidden');
-        } else {
-          subfolderList = createSubfolderList(subject.subfolders);
-          li.appendChild(subfolderList);
-        }
+      e.preventDefault();
+      var subfolderList = li.querySelector('ul');
+      if (subfolderList) {
+        subfolderList.classList.toggle('hidden');
+      } else {
+        subfolderList = createSubfolderList(subject.subfolders);
+        li.appendChild(subfolderList);
+      }
       });
-
+    
       li.appendChild(a);
       subjectsList.appendChild(li);
     });
+    
 
     <!-- subjects 2 -->
 
