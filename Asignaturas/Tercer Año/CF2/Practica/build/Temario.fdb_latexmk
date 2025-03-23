@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742744953.80523 "/home/ismael-sallami/Escritorio/GitHub/ElblogdeIsmael.github.io/Asignaturas/Tercer Año/CF2/Practica/Temario.tex" "build/Temario.pdf" "Temario" 1742744954.8596 0
+["pdflatex"] 1742756085.07507 "/home/ismael-sallami/Escritorio/GitHub/ElblogdeIsmael.github.io/Asignaturas/Tercer Año/CF2/Practica/Temario.tex" "build/Temario.pdf" "Temario" 1742756086.14543 0
   "../../../../licencia.pdf" 1742127717.3832 60041 b28a94751df425b9c4e221ff0e74b64b ""
   "/etc/texmf/web2c/texmf.cnf" 1741173006.40409 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/ismael-sallami/Escritorio/GitHub/ElblogdeIsmael.github.io/Asignaturas/Tercer Año/CF2/Practica/Temario.tex" 1742744951.97651 6107 aa2727bb1e7d60a894de519bddb086a8 ""
@@ -21,6 +21,8 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecti1200.tfm" 1136768653 3072 8b5a64dc91775463bc95e2d818524028 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt2074.tfm" 1136768653 1536 411771336f05e5c5b0d31e9131bbce51 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcbx1200.tfm" 1136768653 1536 c09172c8f235393e6235bb4758357c41 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0800.tfm" 1136768653 1536 05df9db6aeccc4eea94fec15c9024f79 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -219,12 +221,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1741173028.1546 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1741173118 8213591 e30eb999dcbff3985f222df008d83cdb ""
-  "Capitulos/tema2.tex" 1742652813.33699 59833 9e2e90ec828bab81934751a52ba9fdf2 ""
-  "Capitulos/tema3.tex" 1742744941.16538 28 3a195464a065331a3b780bec0cb21c58 ""
+  "Capitulos/tema2.tex" 1742752399.22556 59945 35e9d22a8cca3362c4c9961dc7a96d02 ""
+  "Capitulos/tema3.tex" 1742756084.87219 18869 9185b83110e9bfa9302e309853c43dea ""
   "Temario.tex" 1742744951.97651 6107 aa2727bb1e7d60a894de519bddb086a8 ""
-  "build/Temario.aux" 1742744954.70354 3247 4d49dbec4b946ca8d6921717f6d5b2d4 "pdflatex"
-  "build/Temario.out" 1742744954.70454 713 70cbb40ab4475d24a6590c55db6a4d56 "pdflatex"
-  "build/Temario.toc" 1742744954.70554 415 de7948c45222a6160acc5d23eb46c13b "pdflatex"
+  "build/Temario.aux" 1742756086.01823 5680 dd0824ab50c91f3d148eb7834182e34d "pdflatex"
+  "build/Temario.out" 1742756086.01923 713 70cbb40ab4475d24a6590c55db6a4d56 "pdflatex"
+  "build/Temario.toc" 1742756086.01923 415 218b9903dac698402b78129174e3e6a8 "pdflatex"
   "portada.jpg" 1742127717.05021 4106360 717bc43c618dea1fd2f6a289cf5607d3 ""
   (generated)
   "build/Temario.aux"
