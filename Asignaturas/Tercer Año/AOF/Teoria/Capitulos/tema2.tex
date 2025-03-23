@@ -153,6 +153,147 @@
 \end{enumerate}
 
 
+\subsection*{Ejercicio 3}
+
+El 1 de enero de 2011, cierta sociedad realizó una emisión de obligaciones con valor nominal unitario de 6.000€, cupón trimestral al 6\% nominal y vencimiento a 10 años. La emisión se realizó a la par e incluía una cláusula de rescate anticipado con un precio de rescate igual al 110\% del valor nominal de la obligación más el cupón corrido correspondiente. Hoy, 16 de abril de 2013, la rentabilidad que exige el mercado para estas obligaciones es del 4\% nominal.
+
+Podemos representar la casuísitca de la siguiente manera:
+
+\begin{tikzpicture}
+    % Línea de tiempo
+    \draw[-] (0,0) -- (12,0) node[right] {Tiempo};
+
+    % Fechas
+    \draw[-{Latex}] (0,0) -- (0,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {01/01/11\\Emisión};
+    \draw[-{Latex}] (1,0) -- (1,-1) node[below, yshift=0cm, align=center, text width=3cm] {/12};
+    \draw[-{Latex}] (2,0) -- (2,-1) node[below, yshift=0cm, align=center, text width=3cm] {/13};
+    \draw[-{Latex}] (4,0) -- (4,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {1/04/13};
+    \draw[-{Latex}] (6,0) -- (6,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {\textcolor{red}{16/04/13}};
+    \draw[-{Latex}] (9.3,0) -- (9.3,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {/14};
+    \draw[-{Latex}] (10,0) -- (10,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {...};
+    \draw[-{Latex}] (8,0) -- (8,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {21/06/13};
+    \draw[-{Latex}] (12,0) -- (12,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {30/04/21\\Vencimiento};
+\end{tikzpicture}
+
+
+
+\begin{enumerate}
+    \item[a)] Calcula el precio de cotización de estas obligaciones hoy.
+    
+    \begin{align*}
+        P_T = P_{\text{excupón}} + CC 
+    \end{align*}
+
+    \begin{center}
+        \begin{tikzpicture}
+            % Línea de tiempo
+            \draw[-] (0,0) -- (12,0) node[right] {Tiempo};
+    
+            % Fechas
+            \draw[-{Latex}] (0,0) -- (0,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {01/04/13};
+            \draw[-{Latex}] (6,0) -- (6,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {16/04/13};
+            \draw[-{Latex}] (12,0) -- (12,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {01/07/13};
+    
+            % Línea de días
+            \draw[|-|] (0,-2.7) -- (6,-2.7) node[midway, below] {15 días};
+            \draw[|-|] (0,-4) -- (12,-4) node[midway, below] {91 días};
+        \end{tikzpicture}
+    \end{center}
+
+    \begin{align*}
+        \text{Cupón} = \frac{6\%}{4} \times 6000 = 90 \\
+        \text{CC}_{16/04/13} = \frac{90}{91} \times 15 = 14,84 \\
+        n = 10 \times 4 - 9 (\text{ ya han pasado })= 31 \text{ trimestres } \\
+        P_T = \left[63,3 \times a_{31,0'01} + \frac{6000}{1,01^{31}}\right] \times 1,01^{16/91} = 6807,42\\
+        P_{\text{cotización = excupón}} = P_T - CC = 6807,42 - 14,84 = 6792,58
+    \end{align*}
+
+    Para saber la cotización $\rightarrow \frac{6792,58}{6000} \times 100 = 113,21\%$
+
+
+
+    \item[b)] ¿Es conveniente para la sociedad emisora rescatar las obligaciones hoy? Razona la respuesta.
+
+    Sí ya que cotiza a 6792,58 y si lo rescato es: $110\% \times 6000 + CC = 6600 + 14,84 = 6614,84$.
+
+    Como 6614,84 < 6807,42, es conveniente rescatarlas ya que puedo comprar más barato de lo que cotiza en el mercado.
+
+
+    \item[c)] ¿Qué rentabilidad efectiva obtendría un inversor que compró 10 obligaciones en la emisión si se las rescataran hoy?
+    
+    \begin{equation*}
+        6000 = 90 \times a_{9,TIR} + \frac{6614,84}{1+TIR}^{9+15/91}
+    \end{equation*}
+
+    \begin{equation*}
+        (1 + TIR_t)^4 = 1 + TIR_{\text{anual}} \Rightarrow TIR_a = 10,322\%
+    \end{equation*}
+
+\end{enumerate}
+
+\subsection*{Ejercicio 4}
+
+Un inversor compra 750 obligaciones convertibles de una sociedad, de nominal 10.000 u.m. y cupón al 12 \% nominal pagadero por semestres en las fechas de 31 de mayo y 30 de noviembre. La compra se efectúa el 30 de junio al precio del 95 \% más cupón corrido. El 30 de julio se convierten las obligaciones en acciones. Las obligaciones se valoran al nominal más el cupón corrido correspondiente. Las acciones, de valor nominal 10 u.m., se cotizan minorando el precio medio en Bolsa del trimestre anterior, 1.500 u.m. (30 \%), en un 15 \%. En la conversión se redondea por exceso el número de acciones, si fuese necesario, aportando el obligacionista la diferencia correspondiente en metálico. Las acciones se admiten a cotización el 1 octubre y se venden el 30 del mismo mes al 320 \%. SE PIDE:
+% \begin{enumerate}
+%     \item[a)] Importe desembolsado en la compra de los títulos el 30 de junio.
+%     \item[b)] Número de acciones obtenidas en la conversión de las obligaciones el 30 de julio.
+%     \item[c)] Rentabilidad obtenida en base anual con la venta de las acciones el 30 de octubre.
+% \end{enumerate}
+
+% \begin{enumerate}
+%     \item[a)] \textbf{Importe desembolsado en la compra de los títulos el 30 de junio.}
+    
+%     \begin{align*}
+%         VN &= 10.000 \\
+%         \text{Obligaciones} &= 750 \\
+%         C_s &= \frac{12 \%}{2} \times 10.000 = 600 \\
+%         \text{Precio de compra} &= 95\% \times 10.000 + 600 = 9.500 + 600 = 10.100 \\
+%         \text{Total desembolsado} &= 10.100 \times 750 = 7.198.770
+%     \end{align*}
+    
+%     \item[b)] \textbf{Número de acciones obtenidas en la conversión de las obligaciones el 30 de julio.}
+    
+%     \begin{align*}
+%         B &= 10.000 + \frac{}{} = 10.600 \\
+%         A &= 1500 - 15\% \times 1500 = 1275 \\
+%         \text{Tasa de conversión} &= \frac{B}{A} = \frac{10.600}{1275} \approx 8,31 \text{ acciones/obligación} \\
+%         \text{Total acciones} &= 8 \times 750 = 6.000 \text{ acciones}
+%     \end{align*}
+    
+%     \item[c)] \textbf{Rentabilidad obtenida en base anual con la venta de las acciones el 30 de octubre.}
+    
+%     \begin{align*}
+%         \text{Precio de venta} &= 320\% \times 500 = 1.600 \\
+%         \text{Total obtenido} &= 6.000 \times 1.600 = 9.600.000 \\
+%         i &= \frac{9.600.000}{7.198.770} - 1 \\
+%         &= \left(1 + i \times \frac{120}{360}\right) \\
+%         i &= 100 \% \\ 
+%         7\p198\p770 = \frac{9\p600\p000}{\left(1 + i \times \frac{120}{360}\right)} \\
+%     \end{align*}
+    
+% \end{enumerate}
+
+
+\subsection*{Ejercicio 5}
+
+El 27 de marzo de 2016 una empresa realizó una emisión de obligaciones convertibles a 3 años, de valor nominal 1.000 euros, emisión a la par y cupón anual del 5 \%. En el folleto de emisión se establece que estos títulos pueden ser convertidos voluntariamente (por parte de los inversores) en acciones de la compañía emisora el 27 de marzo de 2017, siendo el valor de la obligación a efectos de conversión el nominal y la tasa de conversión de las obligaciones (esto es, el número de acciones que corresponda a cada obligación) de 200. Además, las obligaciones incluyen una cláusula de rescate anticipado a favor del emisor al 110 \%. Un mes antes de la fecha de conversión, la empresa emisora anunció que ejercería su cláusula de rescate anticipado el 27/03/2017 si los obligacionistas no optan por la conversión. SE PIDE:
+\begin{enumerate}
+    \item[a)] Suponga que hoy, día 27 de marzo de 2017, las acciones de la empresa cotizan a 6€/acción. Indique si interesa o no a los obligacionistas acudir a la primera conversión, especificando el precio de las acciones para la conversión y el valor de la conversión. Comente los resultados obtenidos.
+    \item[b)] Teniendo en cuenta el escenario planteado en el apartado a) suponga que el inversor A adquirió las obligaciones en la emisión, las convirtió en acciones el 27 de marzo de 2017 y decide venderlas el 27 de mayo de 2017 cuando cotizan a 5,25 €/acción. Plantee la ecuación para calcular la rentabilidad efectiva de este inversor.
+    \item[c)] Suponga ahora que hoy, día 27 de marzo de 2017, las acciones de la empresa cotizan a 4€/acción y que la rentabilidad que exige el mercado para las obligaciones de la empresa es del 3 \%. Indique si los obligacionistas estarían interesados en acudir a la conversión y si a la empresa emisora le favorece realizar el rescate anticipado. Razone sus respuestas.
+    \item[d)] Teniendo en cuenta el escenario planteado en el apartado c) suponga que el inversor B adquirió las obligaciones 10 días después de la emisión cuando cotizaban al 100,25 \% y se las rescatan el 27 de marzo de 2017. Calcule la rentabilidad efectiva de este inversor.
+\end{enumerate}
+
+\subsection*{Ejercicio 6}
+
+Un inversor adquiere el 11 de abril de 2012 un bono del Estado a 3 años, tipo cupón del 4,4\% anual, vencimiento 31/01/2015. El precio ex-cupón fue del 103,992\% y la TIR del 2,89\%.
+
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item Determine el precio pagado por la obligación.
+    \item Plantee la ecuación que verifica la TIR con la que se está comprando este bono.
+    \item Calcule la duración del bono en el momento de la emisión (31/01/2012), suponiendo que la TIR a esa fecha coincide con el cupón pagado por el bono.
+    \item En esa misma fecha de emisión, si los tipos de interés bajasen 75 puntos básicos, aproxime a través de la duración modificada cuál sería el nuevo precio del bono.
+\end{enumerate}
 
 
 
@@ -176,22 +317,184 @@ Nominal (millones €) & Precio solicitado \\ \hline
 
 Estas obligaciones, que pagarán un cupón anual del 5,5\%, se emitieron el 30/03/2010 y se amortizarán el 30/03/2020.
 
-\begin{enumerate}[label=\alph*)]
+\begin{enumerate}[label=\textbf{\alph*)}]
     \item Resuelve la subasta sabiendo que el Tesoro adjudicó un total de 800 millones.\\
     Solución: Precio medio 111,848; Precio marginal 110.
 
-    % Adjudicación total: 800 millones = 100 + 200 + 250 + 450 + 400.\\
-    % Tipo medio ponderado: $ 100 \times \frac{113,975}{100} + 200 \times \frac{112,885}{100} + 250 \times \frac{111,275}{100} + 450 \times \frac{110,000}{100} + 400 \times \frac{109,375}{100} = 1,1075$\\
-    % Precio medio: $\frac{1000}{1}$.\\
-    % Precio marginal: 110.
+    Sabemos que el total adjudicado es de 800 millones, por lo que podemos plantear la siguiente ecuación:
+    \begin{align*}
+        \text{Total adjudicado} = 800 M \\
+        - PNC = 100 M \\
+        = 700 M \\
+    \end{align*}
+
+    \begin{table}[h]
+        \centering
+        \begin{tabular}{p{2cm}p{2cm}p{2cm}p{2cm}}
+            \toprule
+            \textbf{Precio} & \textbf{Volumen Adjudicado} & \textbf{Volumen Adjudicado Acumulado} & \textbf{Precio Adjudicado}  \\
+            \midrule
+            113,975&100&100&\\
+            112,885&200&300&\\
+            111,275&250&550&\\
+            110,000&450&700 (sobra)&\\
+            \bottomrule
+        \end{tabular}
+        \caption{Subasta}
+        \label{tab:subastaej7}
+    \end{table}
+    En la tabla \ref{tab:subastaej7} cortamos en 110,000 porque es el precio que nos sobra para llegar a los 800 millones, lo demás ya no entra en la subasta.
+
+    \begin{align*}
+        \text{Precio medio} = \\ = \frac{100 \times 113,975 + 200 \times 112,885 + 250 \times 111,275 + 450 \times 110,000}{800} = 111,848
+    \end{align*}
+
+    \begin{align*}
+        \text{Precio marginal} = 110
+    \end{align*}
+
+    El precio marginal es el precio que se ha adjudicado a los 450 millones restantes, es decir, en este caso corresponde al precio de ``corte'' de la subasta.
 
     \item Plantea la ecuación que verifica el tipo de interés marginal resultante de la subasta.\\
     Solución: 4,2516\%.
 
+    \begin{equation*}
+        1100 = 55 \times a_{10,TIR_{marginal}} + \frac{1000}{(1+TIR_{marginal})^{10}}
+    \end{equation*}
+
+    En base a la ecuación anterior, cabe destacar que la TIR es menor porque el valor actual es menor que el valor final (1100>1000), por ende, la TIR < 5,5\%.
+
+
+
     \item Si un inversor participó en la subasta solicitando obligaciones a 112,885 y decide venderlas hoy, 09/04/2013, cuando cotizan al 101,245\%, plantea la ecuación que verifica la rentabilidad efectiva obtenida con ellas sabiendo que el intermediario le cobra una comisión en la operación de venta del 0,3\% sobre el nominal.\\
     Solución: 1,7529\%.
 
+    El precio del excupón es 101,245\%, adjudicándose al 111,848\%.
+    El cupón es de 55 = $5,5\% \times 1000$.
+    La comisión es de 3\%.
+    \\\\\\\\
+    \begin{tikzpicture}
+        % Línea de tiempo
+        \draw[-] (0,0) -- (12,0) node[right] {Tiempo};
+
+        % Emisión inicial
+        \draw[-{Latex}] (0,0) -- (0,-1) node[below right, yshift=-0.5cm, xshift=-1.5cm, align=center, text width=3cm] {30/03/10\\Emisión\\1000};
+
+        % Pagos de cupones
+        \draw[-{Latex}] (2,0) -- (2,1) node[above, yshift=0.4cm, align=center, text width=3cm] {30/03/11\\Cupón\\55};
+        \draw[-{Latex}] (4,0) -- (4,1) node[above, yshift=0.4cm, align=center, text width=3cm] {30/03/12\\Cupón\\55};
+        \draw[-{Latex}] (6,0) -- (6,1) node[above, yshift=0.4cm, align=center, text width=3cm] {30/03/13\\Cupón\\55};
+        \draw[-{Latex}] (8,0) -- (8,1) node[above, yshift=0.4cm, align=center, text width=3cm] {30/03/14\\Cupón\\55};
+        \draw[-{Latex}] (10,0) -- (10,1) node[above, yshift=0.4cm, align=center, text width=3cm] {09/04/13\\Precio Venta};
+        % \draw[-{Latex}] (10,0) -- (10,1) node[above, yshift=0.4cm, align=center, text width=3cm] {30/03/15\\Cupón\\55};
+        % \draw[-{Latex}] (12,0) -- (12,1) node[above, yshift=0.4cm, align=center, text width=3cm] {30/03/20\\Amortización\\1000};
+
+    \end{tikzpicture}
+
+    \begin{align*}
+        \text{Precio de Venta} = 1012,45 + \frac{55}{365} \times 10 = 1013,96 \\
+        \text{Precio de Venta}_{\text{Neto}} = 1013,96 - 3 = 1010,96
+    \end{align*}
+
+    Sabemos que paga por el 1118,48, ya que coincide con la fecha, sino \textit{deberíamos de añadir el cupón corrido}.
+
+    \begin{equation*}
+        1118,48 = 55 \times a_{3,TIR} + \frac{1010,96}{(1+TIR)^{3}}
+    \end{equation*}
+
     \item Plantea la ecuación que verifica la rentabilidad que exige el mercado hoy a estas obligaciones.\\
     Solución: 5,2772\%.
+
+    Siendo hoy el 09/04/2013, nos queda:
+
+    \begin{equation*}
+        1013,96 = \left(55 \times a_{7,TIR}+\frac{1000}{(1+TIR)^7}\right) \times (1+TIR)^{7+\left[10/365\right]}
+    \end{equation*}
+
 \end{enumerate}
+
+\subsection*{Ejercicio 8}
+
+En la última subasta de Letras del Tesoro a 6 meses (182 días), el Banco de España recibió peticiones no competitivas por valor nominal de 423 millones de euros, y las peticiones competitivas que se indican en el cuadro siguiente:
+
+\begin{table}[h]
+    \centering
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|}
+        \hline
+        \textbf{Volumen (millones €)} & 27 & 175 & 216 & 110 & 70 & 20 & 821 & 1929 & 600 \\
+        \hline
+        \textbf{Precio (\%)} & 99,335 & 99,135 & 99,118 & 99,112 & 99,102 & 99,1 & 99,03 & 98,725 & 98,615 \\
+        \hline
+    \end{tabular}
+    \caption{Relación entre volumen y precio}
+    \label{tab:volumen_precio}
+\end{table}
+
+
+Ante estas peticiones, decidió adjudicar un volumen total de 1.021 millones. Y sabemos que cierta entidad financiera acudió a esta subasta, solicitando nominal por valor de 5 millones de euros al precio del 99,135\%.
+
+Se pide:
+
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item Calcula el tipo de interés marginal de la subasta. \textbf{Sol: 1,793\%}
+    
+    
+
+    
+
+    \item ¿Qué precio pagó la entidad financiera por las letras conseguidas en la subasta? \textbf{Sol: 99,130}
+    \item Si, 20 días después de comprarlas, la entidad vende las letras en el mercado secundario al interés del 1,5\%, ¿qué rentabilidad efectiva consiguió con estas letras, suponiendo base 360 días? \textbf{Sol: 3,689\%}
+\end{enumerate}
+
+\subsection*{Ejercicio 9}
+
+Cierta empresa decide financiarse a corto plazo, 20 días, mediante una operación simultánea sobre pagarés de empresa a un año (360 días) que tiene en su cartera. Estos pagarés, de nominal 6.000€ y que vencen dentro de 245 días, se compraron en la emisión al 96,975\%. La operación simultánea consiste en vender hoy pagarés al 97,125\% y comprarlos dentro de 20 días al 97,425\%.
+
+\begin{enumerate}[label=\textbf{\alph*)}]
+    \item Si las letras del tesoro a un año que se emitían en la misma fecha ofrecían un 1,5\% de rentabilidad, ¿con qué prima de riesgo se emitieron estos pagarés?
+    
+    Sabiendo que la tasa libre de riesgo es del 1,5\% y que se compraron en la emisión al 96,975 \%, podemos plantear la siguiente ecuación:
+
+    % \begin{align*}
+    %     VN = 6\p000 \\
+    %     i = 1,5\% = rf = \text{tasa libre de riesgo}\\
+    %     \text{riesgo pagarés} = rf + \text{Prima de riesgo} \\ 
+    %     96,975 = \frac{1000}{1 + i_{\text{pagarés}}} \\
+    % \end{align*}
+
+    \begin{equation*}
+        96,975 = \frac{100}{1 + i_{\text{pagarés}}} \Rightarrow i_{\text{pagarés}} = 3,12\%
+    \end{equation*}
+
+    \[\text{Prima de riesgo} = 3,12\% - 1,5\% = 1,62\%\]
+
+
+    \item ¿Sobre cuántos pagarés se deberá realizar la operación simultánea si la empresa necesita financiación por valor de 60.000€?
+    
+    \begin{align*}
+        \text{Fuente}_{\text{Hoy}} = 60\p000 \times 97,125\% = 5\p827,5 \\
+        \text{Necesitamos } \rightarrow \frac{60\p000}{5827,5} = 10,29 \text{ pagarés} \rightarrow 11 \text{ pagarés}
+    \end{align*}
+
+    \item ¿Qué rentabilidad exige el mercado en las operaciones de venta y de compra de la operación simultánea?
+    
+    \begin{align*}
+        5\p825,5 = \frac{6\p000}{1+i\times\times\frac{245}{360}} \Rightarrow i = 4,3495\% \text{(Venta)}\\
+    \end{align*}
+
+    \begin{align*}
+        \text{Fuente}_{\text{Dentro de 20 días}} = 60\p000 \times 97,425\% = 5\p845,5 \\
+        5\p845,5 = \frac{6000}{1+i\times \frac{225}{360}} \Rightarrow i = 4,2289\% \text{(Compra)}
+    \end{align*}
+
+    \item ¿Cuál ha sido el coste efectivo de la financiación (Base/365)?
+    
+    \begin{equation*}
+        5827,5 = \frac{5845,6}{(1+TIR)^{\frac{20}{365}}} \Rightarrow TIR = 5,79\%
+    \end{equation*}
+
+\end{enumerate}
+
+
 
