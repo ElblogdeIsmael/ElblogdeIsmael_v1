@@ -273,15 +273,102 @@ Un inversor compra 750 obligaciones convertibles de una sociedad, de nominal 10.
     
 % \end{enumerate}
 
+\begin{enumerate}
+    \item[a)] Importe desembolsado en la compra de los títulos el 30 de junio.
+    
+    \begin{align*}
+        C_s = 6\% \times 10\p000 = 600 \\
+        P_T = P_{\text{excupón}} + CC = \\
+        = 6\p000 \times 95\% + \frac{600}{183} \times 30 = 9598,36 \\
+        \text{Total desembolsado} = 9598,36 \times 750 = 7\p198\p770
+    \end{align*}
+
+    \item[b)] Número de acciones obtenidas en la conversión de las obligaciones el 30 de julio.
+    
+    \begin{align*}
+        \text{Tasa de conversión} = \frac{B}{A} \\
+        B = 10\p000 + \frac{600}{183} \times 60 = 10\p196,72 \\
+        A = 1500 - 15\% \times 1500 = 1275 \\
+        \text{Tasa de conversión} = \frac{10\p196,72}{1275} \approx 7,9974 \rightarrow \\ \rightarrow 8 \text{ acciones/obligación} \times 750 \text{ obligaciones}= 5998, 0706 \text{ acciones}
+\end{align*}
+
+    \item[c)] Rentabilidad obtenida en base anual con la venta de las acciones el 30 de octubre.
+    
+    \begin{itemize}
+        \item Cada acción se vende a 320\% $\rightarrow 320\% \times 500 \text{ €/acción } = 1600 \text{ €/acción}$
+    \end{itemize}
+
+    \begin{align*}
+        7\p198\p770 = \frac{9\p600\p000}{(1 + i \times \frac{120}{360}) \rightarrow i = 100\%}
+    \end{align*}
+
+    \textit{Se usa 120 en vez de 118 para coger los 4 meses completos, es decir,para conseguir calculos más exactos.}
+
+\end{enumerate}
+
 
 \subsection*{Ejercicio 5}
 
 El 27 de marzo de 2016 una empresa realizó una emisión de obligaciones convertibles a 3 años, de valor nominal 1.000 euros, emisión a la par y cupón anual del 5 \%. En el folleto de emisión se establece que estos títulos pueden ser convertidos voluntariamente (por parte de los inversores) en acciones de la compañía emisora el 27 de marzo de 2017, siendo el valor de la obligación a efectos de conversión el nominal y la tasa de conversión de las obligaciones (esto es, el número de acciones que corresponda a cada obligación) de 200. Además, las obligaciones incluyen una cláusula de rescate anticipado a favor del emisor al 110 \%. Un mes antes de la fecha de conversión, la empresa emisora anunció que ejercería su cláusula de rescate anticipado el 27/03/2017 si los obligacionistas no optan por la conversión. SE PIDE:
 \begin{enumerate}
     \item[a)] Suponga que hoy, día 27 de marzo de 2017, las acciones de la empresa cotizan a 6€/acción. Indique si interesa o no a los obligacionistas acudir a la primera conversión, especificando el precio de las acciones para la conversión y el valor de la conversión. Comente los resultados obtenidos.
+    
+    \begin{align*}
+        \text{Precio por acción }  =\frac{1000}{200} = 5 \\
+        \text{Valor de la conversión } = 200 \times 6 = 1200
+    \end{align*}
+
+    Vemos que si interesa, ya que el valor de la acción hoy es de 6€ y el valor de la conversión es de 1200€, por lo que se obtiene un beneficio de 200€.
+
     \item[b)] Teniendo en cuenta el escenario planteado en el apartado a) suponga que el inversor A adquirió las obligaciones en la emisión, las convirtió en acciones el 27 de marzo de 2017 y decide venderlas el 27 de mayo de 2017 cuando cotizan a 5,25 €/acción. Plantee la ecuación para calcular la rentabilidad efectiva de este inversor.
+    
+    \begin{tikzpicture}
+        % Línea de tiempo
+        \draw[-] (0,0) -- (10,0) node[right] {Tiempo};
+
+        % Fechas
+        \draw[-{Latex}] (0,0) -- (0,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {27/03/17};
+        \draw[-{Latex}] (10,0) -- (10,-1) node[below, yshift=-0.5cm, align=center, text width=3cm] {25/05/17\\Cotizan a 5,25};
+
+        % Línea de días
+        \draw[|-|] (0,-3) -- (10,-3) node[midway, below] {4 + 27 + 30 = 61 días};
+    \end{tikzpicture}
+    
+    Si las vendemos las acciones aquí obtenemos $200 \times 5,25 = 1050$.
+
+
+    La ecuación de la rentabilidad nos queda:
+    \begin{equation*}
+        1050 = \frac{50}{1+R} + \frac{50}{(1+R)^{61/365}}
+    \end{equation*}
+
+
     \item[c)] Suponga ahora que hoy, día 27 de marzo de 2017, las acciones de la empresa cotizan a 4€/acción y que la rentabilidad que exige el mercado para las obligaciones de la empresa es del 3 \%. Indique si los obligacionistas estarían interesados en acudir a la conversión y si a la empresa emisora le favorece realizar el rescate anticipado. Razone sus respuestas.
+    
+    No, debido a que 4€/acción < 5€/acción, siendo el valor de la conversión $4\times200 = 800$.
+
+    \begin{align*}
+        P_{t\text{ (27/03/17)}} = 50 \times a_{2,3\%} + \frac{1000}{(1+0,03)^2} = 1328,27 \\
+        \rightarrow \text{siendo }a_{2,3\%} = \frac{1-(1+i)^{-n}}{i} = 1,913
+    \end{align*}
+
+    El rescate anticipado nos queda: 
+    \begin{align*}
+        1000 \times 1,1 = 1100
+    \end{align*}
+
+    Podemos concluir recalcar que no interesa a los obligacionistas acudir a la conversión.
+
+
     \item[d)] Teniendo en cuenta el escenario planteado en el apartado c) suponga que el inversor B adquirió las obligaciones 10 días después de la emisión cuando cotizaban al 100,25 \% y se las rescatan el 27 de marzo de 2017. Calcule la rentabilidad efectiva de este inversor.
+    
+    \begin{align*}
+        P_{t\text{ excupón en t = 6/4/16}} = P_{\text{cotización}} \text{ ... } = 1000 \times 1,0025 = 1002,5 \\
+        P_{t\text{ (27/03/17) + 10 días}} = 1002,5 + \frac{50}{365} \times 10 = 1003,869 \\
+        1003,869 = \frac{1100 + 50}{(1+R)^{\frac{355}{365}}} \rightarrow \\
+        \rightarrow R = \left[\frac{1150}{1003,869}\right]^{365/355} - 1 = 14,99 \approx 15\%
+    \end{align*}
+
 \end{enumerate}
 
 \subsection*{Ejercicio 6}
