@@ -1,0 +1,207 @@
+\section{Breve introducción a Docker y contenedores}
+
+Lo que proporcionan los contenedores es un entorno seguro donde nuestra máquina puede correr prgramas.
+
+Podemos lanzar \textit{namespace} y este nos lanza un entorno en el que nos manda a nuestra raíz, de manera que tenemos un filesystem para nosotros. De esta forma tenemos un filesystem aislado. Si ejecutamos \micode{ps -ax} vemos que no vemos los procesos de la máquina anfitriona.   
+
+La idea principal de las redes en los contenedores es que s puedan comunicar entre sí.
+
+En resumen, los contenedores nos dan un espacio aislado y virtualizado. Hay un poco de pérdida de las prestaciones cuando se ejecuta el servicio de red virtualizado, pero es muy poco. Lo mas importante es que el acceso a memoria, CPU, ... son las mismas.
+
+La principal utilización de los contenedores es porque te ofrece un espacio de safe box, y un espacio importante que es el \textit{filesystem privado}. 
+
+Cuando se ejecuta en otros espacios se arrastran todas las dependencias.
+
+Se puede extraer tanto la arquitectura como el sistema operativo, dependencias y demás.
+
+Si necesito un analizador de red, puedo instalarlo sobre un docker y de esta manera no me ensucia mi espacio de trabajo y cuando necesito espacio puedo borrarlo.
+
+En el caso de linux, todos los dockers son sistemas más pequeños sobre linux, con lo básico para que arranque.
+
+Las aplicaciones que ejecutamos en el docker deben de ser ajustadas para que se ejcuten, debido a que la tecnología de docker es diferente a la de la máquina anfitriona.
+
+Debemos de adaptarlo para que pregunte al contenedor por el límtie de aplicaciones que pueden ejecutar, para que todo se ejecute de la manera correcta.
+
+\subsubsection*{Instalación de Docker}
+
+Estan desarrolladas para Linux, por lo que no se puede correr en tecnologías de Windows, si se puede con las extensiones de Linux para Windows.
+
+Usamos la guía de CentOs para instalarlo en Rocky, debemos de tener cuidado con la guía ya que en el último paso, aparecen pasos opcionales para que el docker sea ejecutado sin ser root (privilegios de superusuario).
+
+Podemos instalar el DockerDesktop para un uso más sencillo, pero no es recomendable para un uso profesional.
+
+Se puede ejecuatar sobre MacOs pero usando una máquina virtual, lo cual no tiene mucho sentido.
+
+Entramos en \micode{docker-hub.com}, y buscamos el contenedor de \micode{hello-world}, ya que es el inicial para ver que todo funciona correctamente. Para ello debemos de ejuctar el comando \micode{docker pull hello-world}. Si no indicamos el número de versión, se instala la latest(última versión).
+
+Lo ejecutamos con el comando \micode{docker run hello-world}. Una vez que ejecutamos el comando, se descarga la imagen y se ejecuta el contenedor, mostrando un mensaje para ver que todo ha funcionado correctamente.
+
+\textbf{Todos los ejercicios son opcionales}.
+
+A continuación debemos de centrarnos en el punto de OpenBenchMarking, que es un benchmarking de docker.
+
+El de \micode{blender} es muy utilizado por marcas más comerciales para la renderización de imágenes y vídeos.
+
+Debemos de tener en cuenta siempre las dependencias que necesitamos para ejecutar el contenedor.
+
+Hay una aplicicación que se llama \micode{Phoronix}, que es un benchmarking de docker, pero para el Departamento de ISE, estan pensando en que esta en desuso.
+
+Así que vamos a trabajar con Phoronix en un contenedor para que sea más sencillo de instalar y de ejecutar.
+
+En la guía si buscamos Phoronix, bajamos el de \micode{pts}. Para ello ejecutamos el comando \micode{docker pull phoronix/pts}.
+
+Con el comando \micode{docker images} vemos que se ha descargado la imagen.
+
+SI ejecutamos el comando \micode{docker run -it phoronix/pts} (usamos el comando -it para que se ejecute en el primer plano y os dé una shell interactiva). Con el comando \micode{system-info}, podemos ver las información de los cores, incluso de los que están el un contenedor.
+
+Con el comando \micode{system-sensors}, podemos ver los sensores que el ordenador tiene de manera nativa.
+
+El comando \micode{phoronix-test-suite}(no es que sea un comando es lo que se muestra en la shell cuando ejecutamos el comando anterior de run), y si de seguido añadimos list-available-tests, podemos ver los test que podemos ejecutar. Para más info podemos acceder a la web de docker y en el apartado de dcoumentación.
+
+
+
+
+
+\subsection*{Apache Benchmark}
+
+Sirve para servidores http. Usando el comando \micode{ab} nos sale la información sobre el mismo. Algunos de los parámetros pueden ser:
+\begin{itemize}
+    \item -n: Número de peticiones.
+    \item -c: Número de conexiones concurrentes.
+    \item ...
+\end{itemize}
+
+Si lo hacemos con la ugr, podemos ver que en las características que el docuemnto html de la web aparece con muy pocos bytes. Probamos a ejecutar \micode{curl -v http://www.ugr.es}. En específico, \micode{curl} se usa para hacer peticiones http y depurar las mismas. \textit{Debemos de aprender a usarla}.
+
+Vemos que la web de la ugr esta sobre https, por lo que apache-benchmark no se ha dado cuenta, por lo que debemos de usar el comando \micode{ab -n 20 -c 4 https://www.ugr.es/} (debemos de incluir la barra del final) y vemos que en este caso los bytes del html es mucho mayor y es más realista (previamente hemos ejecutado el comando \micode{curl -v http://www.ugr.es/}).
+
+
+
+\subsection*{Simulación de Carga con Jmeter}
+
+Se menciona como una tecnología a conocer en las entrevistas de trabajo, por lo que es importante conocerla. 
+
+Usa Java, por lo que podemos usarlo con la última versión de Java.
+
+La lanzamos en 2º plano para que no consuma la consola. Para ello ejecutamos el comando \micode{jmeter &}.
+
+\begin{enumerate}
+    \item Añadimos un elemento de thread, que corresponde con las hebras que se van a lanzar de manera concurrente. Para ello pulsamos add y seleccionamos thread group. Añadimos un nombre, hay parámetros que son importatantes. \textit{Se recomienda poner el Jmeter en Inglés para que no haya problemas con los nombres de los elementos y para que las guías de ayuda no tengan errores}. 
+    \item Dentro del grupo de hebras creamos un \textit{sample}. Una de las ventajas de Apache es la gran inmensidad de plugins que tiene.  Dentro de sample seleccionamos la \textit{carga de http}. Gracias a la opción de \textit{follow redirects} hace que se ejecute redirecciones de manera automática.
+    \item Configuramos los parámetros, como es el prorocolo que vamos a usar, puerto, ...
+    \item Añadimos un \textit{listener} para poder ver los resultados (View Results Tree).Para desactivar un elemento debemos de hacer clic derecho y seleccionar la ocpión ``disable''. Hay plugins para poder ver los resultados de manera más visual.
+\end{enumerate}
+
+Si queremos simular que se diriga a una página secundaria (ugr.es/centros), debemos de añadir el nombre de la página en el campo de \textit{path}.
+Podemos configurar el elmento común de\textit{ HTTP defaults}.
+
+Podemos usar variables de usuario.
+Podemos cargar el archivo que nos da bien con la extensión .jtl y usamos jmeter o con un excel (ya que es un archivo en formato csv). 
+
+En cuanto a la aplicación de jmeter, debemos de tener en cuenta que en el order que aparezcan los elementos es el orden en el que se van a ejecutar.
+
+Dentro de /var/logs, tenemos el archivo que muestra los logs y tiene una línea por cada usuario.
+
+El usar el \textit{not sampler} es la forma más habitual de hacerlo, ya que es la forma más sencilla de hacerlo.
+
+\subsection*{Instalación de la aplicación para el test con JMeter}
+
+La aplicación que utilizaremos para el ejercicio de prueba de carga se encuentra en el repositorio de GitHub: \url{https://github.com/davidPalomar-ugr/iseP4JMeter.git}. 
+
+Puede clonar el repositorio utilizando GIT o descargarlo como un archivo comprimido. Una vez descargado, obtendrá un nuevo directorio llamado \texttt{iseP4JMeter}, al cual podrá acceder y levantar la aplicación con los siguientes comandos:
+
+\begin{verbatim}
+cd iseP4JMeter
+docker compose up
+\end{verbatim}
+
+El servicio se lanza en primer plano mostrando los logs de ejecución de sus componentes (incluidas las llamadas HTTP), lo que puede ser muy útil para depurar incidencias. Si desea que el servicio continúe en segundo plano, puede ejecutar el comando con la opción \texttt{-d}:
+
+\begin{verbatim}
+docker compose up -d
+\end{verbatim}
+
+\subsection*{Detalles sobre el Dockerfile y Docker Compose}
+
+El \texttt{Dockerfile} es el archivo donde se especifican todos los comandos necesarios para crear una imagen de Docker y las acciones que debe realizar sobre esta (como copiar archivos, instalar paquetes o modificar configuraciones). Desde un punto de vista abstracto, podríamos decir que es el \textit{playbook} que Docker aplica al levantar el contenedor.
+
+En este caso, la aplicación sobre la que aplicaremos la carga consta de dos contenedores configurados con sus respectivos \texttt{Dockerfile}s:
+
+\subsubsection*{Dockerfile de la aplicación (Node.js):}
+
+\begin{verbatim}
+FROM node:16.13.0-stretch
+RUN mkdir -p /usr/src/app
+COPY . /usr/src/app
+EXPOSE 3000
+WORKDIR /usr/src/app
+RUN ["npm", "install"]
+ENV NODE_ENV=production
+CMD ["npm", "start"]
+\end{verbatim}
+
+En este archivo se especifica:
+\begin{itemize}
+    \item La imagen base (\texttt{node:16.13.0-stretch}), que incluye Node.js versión 16.13.0 y Debian Stretch como sistema operativo base.
+    \item La creación de un directorio y la copia de los archivos del repositorio en el contenedor.
+    \item La exposición del puerto 3000 para la aplicación.
+    \item La instalación de las dependencias con \texttt{npm install}.
+    \item La ejecución de la aplicación con \texttt{npm start}.
+\end{itemize}
+
+\subsubsection*{Dockerfile de la base de datos (MongoDB):}
+
+\begin{verbatim}
+FROM mongo:6
+COPY ./scripts/* /tmp/
+RUN chmod 755 /tmp/initializeMongoDB.sh
+WORKDIR /tmp
+CMD ./initializeMongoDB.sh
+\end{verbatim}
+
+En este archivo se especifica:
+\begin{itemize}
+    \item La imagen base (\texttt{mongo:6}).
+    \item La copia de scripts al contenedor y la asignación de permisos de ejecución.
+    \item La ejecución de un script para inicializar la base de datos.
+\end{itemize}
+
+\subsubsection*{Archivo \texttt{docker-compose.yml}:}
+
+El archivo \texttt{docker-compose.yml} permite configurar varios contenedores para que trabajen juntos como un único servicio. Su contenido es el siguiente:
+
+\begin{verbatim}
+version: '2.0'
+services:
+  mongodb:
+    image: mongo:6
+    ports:
+      - "27017:27017"
+  mongodbinit:
+    build: ./mongodb
+    links:
+      - mongodb
+  nodejs:
+    build: ./nodejs
+    ports:
+      - "3000:3000"
+    links:
+      - mongodb
+\end{verbatim}
+
+Este archivo define:
+\begin{itemize}
+    \item El servicio de MongoDB, exponiendo el puerto 27017.
+    \item La inicialización de MongoDB con datos mediante un contenedor adicional.
+    \item El servicio de la aplicación Node.js, exponiendo el puerto 3000 y enlazándolo con MongoDB.
+\end{itemize}
+
+Para más detalles, consulte la documentación oficial de Docker Compose.
+
+\subsection*{Ejercicio Obligatorio: Simulación de Carga HTTP con JMeter}
+
+El repositorio \url{https://github.com/davidPalomar-ugr/iseP4JMeter.git} contiene la aplicación objeto de la prueba de carga y una descripción de los requerimientos sobre la carga a simular. Siga las instrucciones del repositorio y elabore la prueba de carga con JMeter.
+
+El ejercicio debe realizarse en un directorio que contenga todos los artefactos necesarios para la ejecución de la prueba de carga. Los \textit{paths} a los archivos deben definirse de forma relativa para garantizar que la ejecución sea independiente de la ubicación del directorio. 
+
+Como validación final, debe ser capaz de ejecutar la prueba de carga desde la línea de comandos (sin interfaz gráfica) desde cualquier directorio de su equipo.
