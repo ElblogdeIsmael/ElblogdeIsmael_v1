@@ -1,34 +1,48 @@
-\section{Lenguajes de una BD}
+% \section{Lenguajes de una BD}
 
-Recomendación ANSI/SPARC. Se propone un lenguaje de base de datos. En este se debe de definir, controlar y manipular los datos. Se denomina sub-lenguaje de la base de datos al que esta implementado por el propio SGBD. Tenemos distintas partes:
-\begin{itemize}
-    \item DDL: definición de estructura de datos.
-    \item DML: modificación, borrado y consulta de datos, además, se permite consultar los esquemas definidos de la Base de Datos.
-    \item DCL: gestiona los requisitos de acceso a los datos y otro tipo de tareas de administración(creación de usuarios,...).
-\end{itemize}
+% Recomendación ANSI/SPARC. Se propone un lenguaje de base de datos. En este se debe de definir, controlar y manipular los datos. Se denomina sub-lenguaje de la base de datos al que esta implementado por el propio SGBD. Tenemos distintas partes:
+% \begin{itemize}
+%     \item DDL: definición de estructura de datos.
+%     \item DML: modificación, borrado y consulta de datos, además, se permite consultar los esquemas definidos de la Base de Datos.
+%     \item DCL: gestiona los requisitos de acceso a los datos y otro tipo de tareas de administración(creación de usuarios,...).
+% \end{itemize}
 
-Este grupo propone que haya cada uno de los anteriores en cada uno de los niveles de la arquitectura. Esto no tiene mucho sentido. Esto se debe a que no tiene sentido tener alguno de los anteriores en determinados niveles. Si meto el DDL en el nivel interno, estoy dependiendo del nivel interno de la máquina.
+% Este grupo propone que haya cada uno de los anteriores en cada uno de los niveles de la arquitectura. Esto no tiene mucho sentido. Esto se debe a que no tiene sentido tener alguno de los anteriores en determinados niveles. Si meto el DDL en el nivel interno, estoy dependiendo del nivel interno de la máquina.
 
-En la realidad ha surgido la idea de que todo sea un estándar, pero cada fabricant lleva sus propias estrategias. Hay diferentes versiones de SQL y los SGBD han ido proporcionando soporte.
+% En la realidad ha surgido la idea de que todo sea un estándar, pero cada fabricant lleva sus propias estrategias. Hay diferentes versiones de SQL y los SGBD han ido proporcionando soporte.
 
-Acto seguido, nos centramos en el desarrollo de aplicaciones. Son de propósito general, ya que usan lenguajes como C++, Java,... Se usan diversas herramientas como es Oracle APEX, Sysbase PowerBuilder,... Con esto se proporciona un procesamiento avanzado de datos y una gestión eficaz de la interfaz del usuario.
+% Acto seguido, nos centramos en el desarrollo de aplicaciones. Son de propósito general, ya que usan lenguajes como C++, Java,... Se usan diversas herramientas como es Oracle APEX, Sysbase PowerBuilder,... Con esto se proporciona un procesamiento avanzado de datos y una gestión eficaz de la interfaz del usuario.
 
-Debemos de establecer un mecanismo que nos permite establecer una comunicación entre el lenguaje anfitrión y el de datos. Esto se conoce como \textit{acoplamiento}. Distinguimos dos categorías.
-\begin{itemize}
-    \item Débilmente acoplados. Lenguajes de propósito general y en este caso el programador puede distinguir entre sentencias del lenguaje anfitrión y las dispuestas por la propia BD.
-    \item Fuertemente acoplados. Lenguajes y herramientas de propósito específico. Se parte del DSL como elemento central y se le van incorporando características para facilitar el desarrollo de apliaciones.
-\end{itemize}
+% Debemos de establecer un mecanismo que nos permite establecer una comunicación entre el lenguaje anfitrión y el de datos. Esto se conoce como \textit{acoplamiento}. Distinguimos dos categorías.
+% \begin{itemize}
+%     \item Débilmente acoplados. Lenguajes de propósito general y en este caso el programador puede distinguir entre sentencias del lenguaje anfitrión y las dispuestas por la propia BD.
+%     \item Fuertemente acoplados. Lenguajes y herramientas de propósito específico. Se parte del DSL como elemento central y se le van incorporando características para facilitar el desarrollo de apliaciones.
+% \end{itemize}
 
-Hay varias alternativas para implementar el acoplamiento débil:
+% Hay varias alternativas para implementar el acoplamiento débil:
 
-\begin{itemize}
-    \item \textbf{Usar APIs de acceso a la BD}. Acceder a la BD desde el código fuente del lenguaje anfitrión.
-    \item \textbf{DSL inmerso en el código fuente del lenguaje anfitrión.} Se escribe código híbrido.
-\end{itemize}
+% \begin{itemize}
+%     \item \textbf{Usar APIs de acceso a la BD}. Acceder a la BD desde el código fuente del lenguaje anfitrión.
+%     \item \textbf{DSL inmerso en el código fuente del lenguaje anfitrión.} Se escribe código híbrido.
+% \end{itemize}
 
-Pasa lo mismo con el acoplamiento fuerte:
+% Pasa lo mismo con el acoplamiento fuerte:
 
-Las propuestas son ya propietarias, o bien la ejecución de Java sobre una máquina virtual que esta en el propio SGBD.
+% Las propuestas son ya propietarias, o bien la ejecución de Java sobre una máquina virtual que esta en el propio SGBD.
 
-También han aparecido numerosos entornos de desarrollo que son específicos para las aplicaciones de gestión.
+% También han aparecido numerosos entornos de desarrollo que son específicos para las aplicaciones de gestión.
 
+
+\section{Relación de Ejercicios T2}
+
+\begin{enumerate}
+    \item Explicar la relación existente entre los niveles de una base de datos y el concepto de independencia.
+    \item Explicar la diferencia entre esquema externo y aplicaciones de usuario.
+    \item Explica el motivo por el que, a tu juicio, no se han desarrollado DDLs a nivel interno.
+    \item Explica el motivo por el que, a tu juicio, no se han desarrollado DMLs a nivel externo.
+    \item Buscar tres ejemplos de lenguajes de cuarta generación. Indicar sus objetivos o funciones.
+    \item ¿Cuál es el enfoque actual del concepto de lenguaje anfitrión? Dar ejemplos de lenguajes anfitrión.
+    \item ¿Qué elementos conciernen al nivel interno de una base de datos?
+    \item ¿Qué cuestiones debe cubrir a tu juicio una buena herramienta de gestión privilegios de usuarios?
+    \item Explicar las ventajas de la arquitectura cliente/servidor a tres niveles.
+\end{enumerate}
