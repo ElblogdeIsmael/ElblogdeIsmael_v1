@@ -532,6 +532,13 @@
         \item Entidades fuerte y débil donde esta última se conecte con otras entidades del diagrama.
     \end{enumerate}
 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{images/ej15Rel3A.jpeg}
+        \caption{Resolución del ejercicio 15 de la relación 3A. \textit{Nota: Se han obviado los atributos, ya que se supone que son triviales.}}
+        \label{fig:diagrama_1}
+    \end{figure}
+
     
 
     \item Decidir de forma razonada cuándo se debe incluir una entidad nueva junto con una relación, o un atributo en cada uno de los siguientes casos.
@@ -576,12 +583,25 @@
     \item Poner un ejemplo mediante el diagrama entidad/relación de cada una de las siguientes situaciones y pasar a tablas el resultado, indicando la clave primaria de la tabla resultante.
     \begin{enumerate}
         \item Una relación ternaria con algún atributo adicional.
+        Similar al ejercicio 15 c) de la relación 3A, pero con un atributo adicional \texttt{Fecha\_Inscripción}.
         \item Una relación ES-UN, donde las subclases tengan atributos adicionales.
+        Similar al ejercicio 15 d) de la relación 3A, pero con un atributo adicional.
+
         \item Entidades subordinante y subordinada.
         \item Tipo y subtipo con herencia de propiedades.
         \item Relación con atributos uno a muchos.
+        Similar al ejercicio 15 a) de la relación 3A, pero con un atributo adicional.
         \item Relación involutiva muchos a muchos.
+        Similar al ejercicio 15 b) de la relación 3A.
     \end{enumerate}
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=1\textwidth]{images/ej17Rel3A.jpeg}
+        \caption{Resolución del ejercicio 17 de la relación 3A. \textit{Nota: Se han obviado los atributos, ya que se supone que son triviales.}}
+        \label{fig:diagrama_2}
+    \end{figure}
+
 
     \textit{(Nota: Se requiere un diagrama E/R para representar gráficamente estas situaciones y su transformación en tablas relacionales.)}
 
@@ -610,3 +630,175 @@
 
 \subsection{Relación B}
 
+\begin{enumerate}
+    \item Indicar las claves externas y a qué referencian.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/1_3B.png}
+        \caption{Ejercicio 1 de la relación 3 B.}
+        \label{fig:ej1RelB}
+    \end{figure}
+    \begin{itemize}
+        \item En Camas, la clave Num-Hab es clave externa a Habitaciones.
+        \item En Ingresos, la clave Num-H es clave externa a H-Clínicas.
+        \item En Realiza, las claves Num-H y Num-Ing son claves externas a Ingresos, y la clave Colegiado es clave externa a Especialistas.
+        \item En Ocupa, las claves Num-H y Num-Ing son claves externas a Ingresos, y la clave Num-Hab es clave externa a Habitaciones.
+        \item En Tiene, la clave Num-H es clave externa a H-Clínicasy DNI es clave externa a Pacientes.
+        \item En Origina, las claves Num-H y Num-Ing son claves externas a Ingresos, y la clave Código es clave externa a Pruebas.
+    \end{itemize}
+    \item Atendiendo al siguiente diseño:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/ej2_1.png}
+    \end{figure}
+    El tipo de receta contempla: primero, segundo y postre, y el tipo de ingrediente es grano,
+    liquido, polvo, troceado y otro. Indica la línea de las tuplas incorrectas y la regla de integridad
+    que crees que viola.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/ej2_2.png}
+        \label{fig:ej2RelB}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/ej2_3.png}
+        \label{fig:ej2RelB2}
+    \end{figure}
+    \begin{itemize}
+        \item Tupla 5 el tipo no aparece en los valores posibles.
+        \item Tupla 3 y 4 se repite la CP (PEZ12).
+        \item Tupla 8 y 10 se repite la CP (PEZ11).
+        \item Tupla 11 el tipo no aparece en los valores posibles.
+        \item Tupla 24 la CP es nula.
+    \end{itemize}
+    \item Sea el siguiente esquema de una BD de animales de un zoo:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{images/ej3.png}
+        \label{fig:ej3RelB}
+    \end{figure}
+    El atributo tipo en ANIMALES y CUIDADORES deben coincidir (lista enumerada).
+    % \begin{itemize}
+    %     \item Indicar las claves externas y a qué referencian.
+    %     \item Muestra una instancia de cada relación con 4 tuplas en cada una.
+    %     \item Introduce nuevas muestras para que se cumpla que una jaula es compartida por varios tipos de animales y que varios cuidadores pueden actuar de suplentes.
+    %     \item Introduce una tupla en JCUIDADO tal que el cuidador no pueda atender a ningún animal de la jaula. ¿Está violando alguna regla de integridad?
+    %     \item Introduce una tupla en JCUIDADO que viole la restricción de integridad referencial.
+    % \end{itemize}
+    %--------------------------Answer--------------------------
+    \begin{itemize}
+        \item El atributo tipo en ANIMALES y CUIDADORES deben coincidir (lista enumerada).
+        \item Indicar las claves externas y a qué referencian:
+        \begin{itemize}
+            \item En JCUIDADO, \texttt{nombre}, \texttt{tipo} referencian \texttt{CUIDADORES}.
+            \item En JCUIDADO, \texttt{jaula\_id} referencia a \texttt{JAULAS}.
+        \end{itemize}
+        \item Muestra una instancia de cada relación con 4 tuplas en cada una:
+    \end{itemize}
+
+    \begin{table}[h!]
+    \centering
+    \caption{ANIMALES}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{anim\_id} & \textbf{tipo} & \textbf{jaula\_id} \\ \hline
+    Tig              & Mamífero      & 1                  \\ \hline
+    Leo              & Mamífero      & 2                  \\ \hline
+    Koa              & Mamífero      & 3                  \\ \hline
+    Jir              & Mamífero      & 3                  \\ \hline
+    \end{tabular}
+    \end{table}
+
+    \begin{table}[h!]
+    \centering
+    \caption{JAULAS}
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{jaula\_id} & \textbf{max\_anim} \\ \hline
+    1                  & 1                  \\ \hline
+    2                  & 1                  \\ \hline
+    3                  & 2                  \\ \hline
+    4                  & 3                  \\ \hline
+    \end{tabular}
+    \end{table}
+
+    \begin{table}[h!]
+    \centering
+    \caption{CUIDADORES}
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{nombre} & \textbf{tipo} \\ \hline
+    Jose           & Mamífero      \\ \hline
+    Pedro          & Pez           \\ \hline
+    María          & Mamífero      \\ \hline
+    Sara           & Mamífero      \\ \hline
+    \end{tabular}
+    \end{table}
+
+    \begin{table}[h!]
+    \centering
+    \caption{JCUIDADO}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{nombre} & \textbf{tipo} & \textbf{jaula\_id} \\ \hline
+    Jose           & Mamífero      & 1                  \\ \hline
+    María          & Mamífero      & 2                  \\ \hline
+    Sara           & Mamífero      & 3                  \\ \hline
+    Sara           & Mamífero      & 2                  \\ \hline
+    \end{tabular}
+    \end{table}
+    \begin{itemize}
+        \item Introduce nuevas muestras para que se cumpla que una jaula es compartida por varios tipos de animales y que varios cuidadores pueden actuar de suplentes:
+        \begin{table}[h!]
+        \centering
+        \caption{ANIMALES (actualizado)}
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{anim\_id} & \textbf{tipo} & \textbf{jaula\_id} \\ \hline
+        Tig              & Mamífero      & 1                  \\ \hline
+        Leo              & Mamífero      & 2                  \\ \hline
+        Koa              & Reptil        & 3                  \\ \hline
+        Jir              & Mamífero      & 3                  \\ \hline
+        \end{tabular}
+        \end{table}
+
+        \begin{table}[h!]
+        \centering
+        \caption{CUIDADORES (actualizado)}
+        \begin{tabular}{|c|c|}
+        \hline
+        \textbf{nombre} & \textbf{tipo} \\ \hline
+        Jose           & Mamífero      \\ \hline
+        Pedro          & Reptil        \\ \hline
+        María          & Mamífero      \\ \hline
+        Sara           & Mamífero      \\ \hline
+        \end{tabular}
+        \end{table}
+
+        \begin{table}[h!]
+        \centering
+        \caption{JCUIDADO (actualizado)}
+        \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{nombre} & \textbf{tipo} & \textbf{jaula\_id} \\ \hline
+        Jose           & Mamífero      & 1                  \\ \hline
+        María          & Mamífero      & 2                  \\ \hline
+        Sara           & Mamífero      & 3                  \\ \hline
+        Pedro          & Reptil        & 3                  \\ \hline
+        \end{tabular}
+        \end{table}
+
+        \item Introduce una tupla en JCUIDADO tal que el cuidador no pueda atender a ningún animal de la jaula. ¿Está violando alguna regla de integridad?  
+        Sí, viola la regla de integridad referencial porque el tipo del cuidador no coincide con el tipo de los animales en la jaula.
+
+        Ejemplo de tupla inválida:  
+        \texttt{(Pedro, Reptil, 1)}.  
+        Aquí, Pedro no puede atender a la jaula 1 porque contiene mamíferos.
+
+        \item Introduce una tupla en JCUIDADO que viole la restricción de integridad referencial:  
+        Ejemplo de tupla inválida:  
+        \texttt{(Ana, Ave, 5)}.  
+        Aquí, la jaula 5 no existe en la tabla JAULAS, lo que viola la integridad referencial.
+    \end{itemize}
+\end{enumerate}
