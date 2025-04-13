@@ -86,6 +86,38 @@
     morekeywords={true,false,null,y,n}
 }
 
+\lstdefinestyle{directorystructure}{
+    backgroundcolor=\color{gray!10},   
+    commentstyle=\color{green!50!black},
+    keywordstyle=\color{blue!70},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{red!70!black},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=none,                    
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstnewenvironment{directorylisting}[1][]{
+    \lstset{
+        style=directorystructure,
+        caption={#1},
+        frame=single,
+        framerule=0.5pt,
+        rulecolor=\color{black!50},
+        xleftmargin=0.5cm,
+        xrightmargin=0.5cm
+    }
+}{}
+
+
+
 \setlength{\headheight}{14.5pt}
 
 % Configuración de márgenes
@@ -184,7 +216,11 @@
 
 \chapter{Bloque 1}
 
-\input{Capitulos/ApuntesClase}
+\input{Capitulos/ApuntesClase_Bloque1}
+
+\chapter{Bloque 2}
+
+\input{Capitulos/ApuntesClase_Bloque2}
 
 
 \newpage
@@ -197,6 +233,10 @@
 \begin{thebibliography}{99}
 \bibitem{Referencia1}
 Ismael Sallami Moreno, \textbf{Estudiante del Doble Grado en Ingeniería Informática + ADE}, Universidad de Granada, 2025.
+
+\bibitem{turn0search0} Introduction to ad hoc commands - Ansible Documentation. \url{https://docs.ansible.com/ansible/latest/command_guide/intro_adhoc.html}
+\bibitem{turn0search4} Index of all Modules — Ansible Community Documentation. \url{https://docs.ansible.com/ansible/latest/collections/index_module.html}
+\bibitem{turn0search2} Ansible playbooks — Ansible Community Documentation. \url{https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_intro.html}
 % \bibitem{Referencia2}
 % Autor(es), \emph{Título del libro}, Editorial, año.
 

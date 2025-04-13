@@ -949,7 +949,237 @@ ssh -p 2222 usuario@IP_del_Servidor "ls -la ~"
 
 Si todo está configurado correctamente, el comando mostrará los archivos del directorio home sin requerir contraseña.
 
+\newpage
+\section{Automatización de la configuración con Ansible}
+
+\subsection{Introducción a Ansible}
+
+Ansible es una herramienta de automatización que permite gestionar configuraciones y despliegues en múltiples sistemas de manera sencilla y eficiente. Su funcionamiento se basa en la ejecución de comandos remotos a través de SSH y utiliza Python como lenguaje de scripting, lo que facilita su integración en la mayoría de las distribuciones Linux.
+
+\subsubsection{Comandos Ad-Hoc en Ansible}
+
+Los comandos ad-hoc en Ansible permiten ejecutar tareas únicas y rápidas en uno o varios nodos gestionados sin necesidad de crear un playbook. Se utilizan a través de la herramienta de línea de comandos \texttt{ansible} y son ideales para operaciones puntuales, como reiniciar servicios, copiar archivos o instalar paquetes. Aunque son fáciles de usar, no son reutilizables ni idempotentes, por lo que para tareas repetitivas o complejas se recomienda el uso de playbooks. \cite{turn0search0}
+
+\subsubsection{Módulos de Ansible}
+
+Ansible cuenta con una amplia variedad de módulos que encapsulan tareas específicas, como gestionar usuarios, instalar paquetes o manejar servicios. Estos módulos permiten abstraer la complejidad de las operaciones subyacentes y proporcionan una interfaz consistente para interactuar con diferentes sistemas y servicios. La documentación oficial de Ansible ofrece un índice completo de todos los módulos disponibles, organizados por categorías, facilitando la búsqueda y selección del módulo adecuado para cada tarea. \cite{turn0search4}
+
+\subsubsection{Playbooks en Ansible}
+
+Los playbooks son el núcleo de Ansible y permiten definir configuraciones, despliegues y orquestaciones de manera declarativa y reproducible. Están escritos en formato YAML y constan de una o más 'plays', cada una de las cuales especifica un conjunto de tareas a ejecutar en un grupo de hosts. Los playbooks pueden:
+
+\begin{itemize}
+    \item Declarar configuraciones de sistemas.
+    \item Orquestar procesos manuales en múltiples máquinas en un orden definido.
+    \item Ejecutar tareas de forma síncrona o asíncrona.
+\end{itemize}
+
+Al escribir playbooks, es esencial comprender su sintaxis y estructura para garantizar su correcta ejecución y mantenimiento. \cite{turn0search2}
+
+\subsubsection{Buenas Prácticas de Seguridad}
+
+Es una práctica recomendada en Ansible evitar el uso del usuario 'root' para acceder a los nodos gestionados. En su lugar, se aconseja crear un usuario con privilegios adecuados que se conecte mediante SSH utilizando autenticación con clave pública y que pueda ejecutar comandos privilegiados sin necesidad de ingresar una contraseña adicional. Para ello, es necesario configurar correctamente el comando \texttt{sudo} en el servidor, permitiendo que el usuario tenga los permisos necesarios para las operaciones requeridas.
+
+\subsubsection{Administración del Inventario}
+
+El inventario en Ansible es un archivo que define los hosts y grupos de hosts sobre los cuales se ejecutarán las tareas. Es fundamental para organizar y gestionar los nodos de manera eficiente. Ansible permite utilizar inventarios estáticos, definidos en archivos de texto, o dinámicos, generados por scripts que consultan fuentes externas. Una correcta administración del inventario facilita la segmentación de los hosts y la aplicación de configuraciones específicas a diferentes grupos de servidores.
+
+\subsubsection{Ejecución de Comandos Ad-Hoc por CLI}
+
+Además de los playbooks, Ansible permite la ejecución de comandos ad-hoc directamente desde la línea de comandos. Esta funcionalidad es útil para tareas rápidas y únicas, como verificar el estado de un servicio o copiar un archivo a múltiples servidores. Aunque los comandos ad-hoc son prácticos, para tareas más complejas o repetitivas se recomienda encapsular las operaciones en playbooks para asegurar la reproducibilidad y el mantenimiento del código.
+
+\subsubsection{Configuración de Servidores con Playbooks}
+
+Los playbooks permiten automatizar la configuración de servidores de manera declarativa. Al definir el estado deseado de los sistemas, Ansible se encarga de aplicar las tareas necesarias para alcanzar ese estado. Esto incluye la instalación y configuración de paquetes, la gestión de archivos y servicios, y la implementación de políticas de seguridad. La utilización de playbooks facilita la gestión coherente y reproducible de las configuraciones en múltiples servidores, reduciendo errores y mejorando la eficiencia operativa.
 
 
+\subsection{Ejercicio Obligatorio}
+
+El ejercicio versa sobre la configuración de servidores empleando Ansible playbooks. Se valorará la estructuración y claridad del código, el uso de parámetros para facilitar la reutilización de los playbooks, el uso de comentarios, el uso de variables, la organización de los artefactos, el uso de convenciones de nombrado de Ansible y de Yaml y, aunque escapa al objetivo de este ejercicio, el posible uso de recursos para reutilización de artefactos, como los Ansible Roles.
+
+Partiendo de dos servidores, configurados de acuerdo a los requerimientos del apartado 2, debe modificarlos para que sea posible el acceso remoto del usuario root empleando contraseña (el acceso con contraseña está desactivado por defecto en la instalación de Rocky).
+
+A continuación, realizará la siguiente configuración en los dos servidores empleando un playbook:
+\begin{enumerate}
+  \item Crear un nuevo usuario llamado “admin” que pueda ejecutar comandos privilegiados sin contraseña.
+  \item Dar acceso por SSH al usuario “admin” con llave pública.
+  \item Crear el grupo “wheel” (si no existe) y permitir a sus miembros ejecutar sudo.
+  \item Añadir una lista variable de usuarios (se proporcionará un ejemplo con al menos dos), añadiéndolos al grupo “wheel” y concediéndoles acceso por SSH con llave pública.
+  \item Deshabilitar el acceso por contraseña sobre SSH para el usuario root.
+\end{enumerate}
+
+Los servidores anteriormente configurados son ahora administrables mediante Ansible empleando el usuario “admin”. Ponga a prueba esta configuración con los siguientes cambios/playbooks:
+\begin{enumerate}
+  \item Modifique convenientemente el inventario para el uso del nuevo usuario “admin”.
+  \item Uno de los servidores se empleará para correr Apache Httpd y el otro Nginx. Modifique el inventario de forma conveniente para realizar correctamente su administración.
+  \item Desarrolle un playbook para implementar los requerimientos del ejercicio 4.1.1 en los dos servidores, instalando en cada caso Apache Httpd o Nginx según la configuración del inventario.
+\end{enumerate}
+
+Todos los archivos necesarios para la ejecución de los Playbooks (playbooks, inventario, variables, scripts, …) deben estar localizados en un directorio (con posibles subdirectorios). Junto a los archivos propios de Ansible, debe proporcionar dos scripts (por ejemplo, \texttt{iniciarNodosManejados.sh} y \texttt{configurarWebServers.sh}) para la ejecución de los playbooks con todos los parámetros necesarios.
+
+% \begin{verbatim}
+% # Estructura del directorio para los playbooks y scripts
+% project_directory/
+% |-- inventory.ini
+% |-- group_vars/
+% |   |-- all.yml
+% |   |-- apache.yml
+% |   `-- nginx.yml
+% |-- playbooks/
+% |   |-- initial_setup.yml
+% |   `-- webserver_setup.yml
+% |-- scripts/
+% |   |-- iniciarNodosManejados.sh
+% |   `-- configurarWebServers.sh
+% `-- files/
+%     |-- admin_ssh_key.pub
+%     `-- users_ssh_keys/
+%         |-- user1.pub
+%         `-- user2.pub
+% \end{verbatim}
+
+% Example usage
+\begin{directorylisting}[Estructura del directorio para los playbooks y scripts]
+  project_directory/
+  |-- inventory.ini
+  |-- group_vars/
+  |   |-- all.yml
+  |   |-- apache.yml
+  |   `-- nginx.yml
+  |-- playbooks/
+  |   |-- initial_setup.yml
+  |   `-- webserver_setup.yml
+  |-- scripts/
+  |   |-- iniciarNodosManejados.sh
+  |   `-- configurarWebServers.sh
+  `-- files/
+      |-- admin_ssh_key.pub
+      `-- users_ssh_keys/
+          |-- user1.pub
+          `-- user2.pub
+  \end{directorylisting}
+
+
+\begin{lstlisting}[style=yamlstyle, caption={Solución al ejercicio de Ansible}]
+# inventory.ini
+[all]
+server1 ansible_host=192.168.1.10
+server2 ansible_host=192.168.1.11
+
+[apache]
+server1
+
+[nginx]
+server2
+
+# group_vars/all.yml
+admin_user: admin
+admin_ssh_key: files/admin_ssh_key.pub
+wheel_group: wheel
+users:
+  - username: user1
+    ssh_key: files/users_ssh_keys/user1.pub
+  - username: user2
+    ssh_key: files/users_ssh_keys/user2.pub
+
+# group_vars/apache.yml
+webserver_package: httpd
+webserver_service: httpd
+
+# group_vars/nginx.yml
+webserver_package: nginx
+webserver_service: nginx
+
+# playbooks/initial_setup.yml
+---
+- name: Configuración inicial de servidores
+  hosts: all
+  become: yes
+  tasks:
+    - name: Permitir acceso SSH con contraseña para root
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^#?PermitRootLogin'
+        line: 'PermitRootLogin yes'
+      notify: Restart SSH
+
+    - name: Crear grupo wheel si no existe
+      group:
+        name: "{{ wheel_group }}"
+        state: present
+
+    - name: Crear usuario admin con privilegios de sudo sin contraseña
+      user:
+        name: "{{ admin_user }}"
+        groups: "{{ wheel_group }}"
+        append: yes
+        create_home: yes
+        shell: /bin/bash
+
+    - name: Permitir a miembros de wheel usar sudo sin contraseña
+      lineinfile:
+        path: /etc/sudoers
+        regexp: '^%{{ wheel_group }}'
+        line: '%{{ wheel_group }} ALL=(ALL) NOPASSWD: ALL'
+        validate: 'visudo -cf %s'
+
+    - name: Añadir clave SSH pública para admin
+      authorized_key:
+        user: "{{ admin_user }}"
+        state: present
+        key: "{{ lookup('file', admin_ssh_key) }}"
+
+    - name: Crear usuarios adicionales y configurar acceso SSH
+      loop: "{{ users }}"
+      user:
+        name: "{{ item.username }}"
+        groups: "{{ wheel_group }}"
+        append: yes
+        create_home: yes
+        shell: /bin/bash
+      authorized_key:
+        user: "{{ item.username }}"
+        state: present
+        key: "{{ lookup('file', item.ssh_key) }}"
+
+    - name: Deshabilitar acceso SSH con contraseña para root
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^#?PermitRootLogin'
+        line: 'PermitRootLogin prohibit-password'
+      notify: Restart SSH
+
+  handlers:
+    - name: Restart SSH
+      service:
+        name: sshd
+        state: restarted
+
+# playbooks/webserver_setup.yml
+---
+- name: Configuración de servidores web
+  hosts: all
+  become: yes
+  tasks:
+    - name: Instalar paquete del servidor web
+      package:
+        name: "{{ webserver_package }}"
+        state: present
+
+    - name: Iniciar y habilitar servicio del servidor web
+      service:
+        name: "{{ webserver_service }}"
+        state: started
+        enabled: yes
+
+# scripts/iniciarNodosManejados.sh
+#!/bin/bash
+ansible-playbook -i inventory.ini playbooks/initial_setup.yml
+
+# scripts/configurarWebServers.sh
+#!/bin/bash
+ansible-playbook -i inventory.ini playbooks/webserver_setup.yml
+
+\end{lstlisting}
 
 
