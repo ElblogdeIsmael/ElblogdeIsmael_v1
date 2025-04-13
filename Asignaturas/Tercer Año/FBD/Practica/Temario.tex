@@ -30,6 +30,11 @@
 \usepackage{pdfpages}
 \usepackage{subcaption}
 \usepackage{pgffor}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{inconsolata}
+\usepackage{fontspec}
 \usetikzlibrary{shapes, arrows, positioning}
 % Configuración de márgenes
 \geometry{left=3cm, right=3cm, top=2.5cm, bottom=2.5cm}
@@ -153,6 +158,88 @@
     \fi
 }
 
+% \newcommand{\micode}[1]{%
+%     \tcbinputlisting{%
+%         listing only,
+%         breakable,
+%         colback=black!5,
+%         colframe=black!75,
+%         fonttitle=\bfseries,
+%         title=#1,
+%         listing options={
+%             basicstyle=\ttfamily\itshape\small,
+%             breaklines=true,
+%             escapeinside=||,
+%             extendedchars=true,
+%             literate={á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1 {ñ}{{\~n}}1,
+%         },
+%         left=5pt,
+%         right=5pt,
+%         top=5pt,
+%         bottom=5pt,
+%         enhanced,
+%         sharp corners,
+%         boxrule=0.5mm,
+%         coltitle=black,
+%     }
+% }
+
+% \newcommand{\mycode}[1]{%
+%     \begin{lstlisting}[language=Python, 
+%         basicstyle=\ttfamily\small, 
+%         keywordstyle=\color{blue}\bfseries, 
+%         commentstyle=\color{green!50!black}, 
+%         stringstyle=\color{red}, 
+%         frame=single, 
+%         numbers=left, 
+%         numberstyle=\tiny\color{gray}, 
+%         breaklines=true, 
+%         backgroundcolor=\color{black!5}, 
+%         captionpos=b, 
+%         xleftmargin=5pt, 
+%         xrightmargin=5pt, 
+%         framexleftmargin=5pt]
+% #1
+%     \end{lstlisting}
+% }
+
+\definecolor{bgcolor}{RGB}{245,245,244}
+\definecolor{keywordcolor}{RGB}{0,102,204}
+\definecolor{stringcolor}{RGB}{0,153,0}
+\definecolor{commentcolor}{RGB}{150,150,150}
+
+% Configuración del entorno lstlisting
+\lstdefinelanguage{SQL}{
+  keywords={SELECT, FROM, WHERE, INSERT, INTO, VALUES, UPDATE, SET, DELETE, CREATE, TABLE, PRIMARY, KEY, NOT, NULL, AUTO_INCREMENT, DESCRIBE, DESC},
+  keywordstyle=\color{keywordcolor}\bfseries,
+  sensitive=false,
+  comment=[l]{--},
+  commentstyle=\color{commentcolor}\ttfamily,
+  stringstyle=\color{stringcolor},
+  morestring=[b]',
+  morestring=[b]",
+}
+
+\lstset{
+  language=SQL,
+  backgroundcolor=\color{bgcolor},
+  extendedchars=true,
+  inputencoding=utf8,
+  columns=flexible,
+  keepspaces=true,
+  basicstyle=\ttfamily\footnotesize,
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{gray},
+  tabsize=2,
+  breaklines=true,
+  breakatwhitespace=true,
+  captionpos=b,
+  numbers=left,
+  numberstyle=\tiny\color{gray}
+}
+
+
 
 
 
@@ -231,13 +318,15 @@
 % Tabla de contenidos
 \tableofcontents
 \newpage
-\chapter{Modelado Conceptual}
-\section{Relación de Ejercicios}
-\includepdf[pages=-]{Capitulos/RelacionS1S2-SinEditar}%\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_FBD_S1.pdf}
+%\chapter{Modelado Conceptual}
+%\section{Relación de Ejercicios}
+%\includepdf[pages=-]{Capitulos/RelacionS1S2-SinEditar}%\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_FBD_S1.pdf}
 
 
 
-\input{Capitulos/seminario1}
+%\input{Capitulos/seminario1}
+\input{Capitulos/Practica1-Oracle.tex}
+
 
 %\includepdf[pages=-,pagecommand={\thispagestyle{fancy}}]{Capitulos/Ejercicios_FBD_S1.pdf}
 
