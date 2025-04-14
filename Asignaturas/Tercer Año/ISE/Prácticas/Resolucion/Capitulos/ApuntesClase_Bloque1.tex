@@ -356,7 +356,7 @@ Con el parámetro -p le especificamos el puerto al que nos queremos conectar, de
 
 Por defecto Ansible ya viene instalado en la mayoría de las distribuciones de Linux. Además, por defecto al instalar Ansible se instala Python y SSH. Para instalarlo debemos de usar el comando \micode{sudo dnf install ansible}. Para comprobar que está instalado, usamos el comando \micode{ansible --version}, o bien mediante el comando \micode{sudo dnf list installed | grep -i ansible}. Además, podemos ver la documentación de Ansible en la página oficial de Ansible. Su configuración se encuentra en /etc/ansible, \textit{este solo se instala en el controlador ya que es desde donde se maneja.}
 
-En la configuración de /etc/ansible, podemos cambiar varios parámetro, como es el caso del númeo de hebras que usa o número de procesos que se ejecutan de manera pararela, en este caso suele estar por defecto en 5 hebras.
+En la configuración de /etc/ansible, podemos cambiar varios parámetro, como es el caso del número de hebras que usa o número de procesos que se ejecutan de manera pararela, en este caso suele estar por defecto en 5 hebras.
 
 En nuestro directorio base\footnote{Accedemos con el comando \micode{cd}.}, tenemos el archivo \micode{.ansible.cfg}, el cual podemos editar siendo los cambios aplicados de la misma manera que si lo hiciéramos en el archivo de configuración de /etc/ansible. Por defecto viene vacío, pero tiene un comando para generar la configuración por defecto, el cual es \micode{ansible-config dump}. Además, podemos ver la configuración de Ansible con el comando \micode{ansible-config list}.
 
@@ -433,7 +433,7 @@ Tenemos que entregar un directorio con los ficheros\footnote{Básicamente todos 
 
 \subsection{Ejercicio Obligatorio}
 
-En cuanto al ejercicio que debemos de \textbf{entregar}, el cambio que debemos de hacer es en /etc/sshd/.conf, hay cambiamos la línea de AccessRoot y lo ponemos con el atributo \textit{yes}.
+En cuanto al ejercicio que debemos de \textbf{entregar}, el cambio que debemos de hacer es en /etc/sshd/.conf, ahí cambiamos la línea de AccessRoot y lo ponemos con el atributo \textit{yes}.
 
 Los pasos son\footnote{Todo es dentro del playbook.}:
 \begin{enumerate}
