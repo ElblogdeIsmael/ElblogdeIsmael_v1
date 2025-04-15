@@ -361,6 +361,237 @@ Para ello debemos de ejecutar los siguientes comandos:
 
 \section{BenchMarks}
 
+\subsection{¿Qué es un Benchmark?}
+
+Un \textit{benchmark} es una prueba diseñada para medir el rendimiento de un sistema, componente o servicio informático. Estas pruebas pueden evaluar diversos aspectos, como velocidad, eficiencia, capacidad de respuesta o consumo de recursos. Existen múltiples tipos de \textit{benchmarks}, cada uno enfocado en un área específica del sistema.
+
+Por ejemplo, para evaluar el rendimiento de un servidor DNS (que traduce nombres de dominio a direcciones IP), se pueden utilizar herramientas como \texttt{NameBench} o \texttt{GRC’s DNS Benchmark}, las cuales están diseñadas con pruebas estándar para este tipo de servicio.
+
+\subsection{¿Por qué crear un Benchmark propio?}
+
+Aunque existen herramientas predefinidas para realizar \textit{benchmarks}, en ocasiones es necesario programar uno propio para analizar parámetros específicos que no estén cubiertos por las herramientas existentes. Para ello, es importante considerar los siguientes elementos:
+
+\begin{itemize}
+    \item \textbf{Objetivo del Benchmark:} Definir claramente qué se desea medir, como latencia, \textit{throughput}, uso de CPU, etc.
+    \item \textbf{Métricas:} Establecer las medidas que se utilizarán para evaluar el rendimiento. Esto incluye:
+    \begin{itemize}
+        \item Las unidades de medida (por ejemplo, milisegundos, MB/s).
+        \item Las variables a observar (por ejemplo, tiempo de respuesta, carga del sistema).
+        \item El método para calcular los resultados finales.
+    \end{itemize}
+    \item \textbf{Instrucciones de uso:} Especificar cómo ejecutar el \textit{benchmark}, el entorno requerido y los parámetros necesarios.
+    \item \textbf{Ejemplo de uso y análisis de resultados:} Incluir una prueba real, interpretar los datos obtenidos y extraer conclusiones relevantes.
+\end{itemize}
+
+\subsection{OpenBenchmarking y Phoronix Test Suite (PTS)}
+
+\subsubsection{OpenBenchmarking}
+
+\textit{OpenBenchmarking} es un repositorio de \textit{benchmarks} de código abierto que permite a los usuarios utilizar, modificar o crear nuevas pruebas basadas en las existentes. Es una excelente fuente de inspiración para desarrollar \textit{benchmarks} personalizados.
+
+\subsubsection{Phoronix Test Suite (PTS)}
+
+\textit{Phoronix Test Suite (PTS)} es una plataforma asociada a \textit{OpenBenchmarking} que facilita la ejecución de \textit{benchmarks}. Es una herramienta versátil y popular para realizar pruebas de rendimiento en sistemas Linux, Windows o incluso en máquinas virtuales (MVs). Entre sus características destacan:
+
+\begin{itemize}
+    \item Amplia variedad de pruebas disponibles que se pueden ejecutar directamente desde su entorno.
+    \item Integración con \textit{OpenBenchmarking}, lo que permite comparar resultados con otras máquinas.
+    \item Compatibilidad con múltiples entornos, incluyendo contenedores Docker.
+\end{itemize}
+
+\subsubsection{Instalación de Phoronix Test Suite (PTS)}
+
+La instalación de \textit{PTS} varía según el entorno utilizado:
+
+\begin{itemize}
+    \item En sistemas Debian/Ubuntu, se pueden usar paquetes precompilados.
+    \item En máquinas virtuales con Rocky Linux, se recomienda el instalador universal para Linux.
+    \item En Windows, también se ofrece soporte de instalación.
+    \item Para las prácticas, la opción más recomendada es utilizar contenedores Docker.
+\end{itemize}
+
+\subsubsection{Enlaces útiles}
+
+A continuación, se presentan enlaces relevantes para explorar más sobre \textit{benchmarks} y herramientas asociadas:
+
+\begin{itemize}
+    \item Software relacionado con \textit{benchmarks} en Linux: \\
+    \href{https://sourceforge.net/directory/linux/?q=benchmark}{sourceforge.net/directory/linux/?q=benchmark}
+    \item Repositorio de OpenBenchmarking: \href{https://openbenchmarking.org/}{openbenchmarking.org}
+    \item Sitio web de Phoronix Test Suite: \href{https://www.phoronix-test-suite.com/}{phoronix-test-suite.com}
+    \item Página de descargas de PTS: \href{https://www.phoronix-test-suite.com/?k=downloads}{phoronix-test-suite.com/?k=downloads}
+    \item Imagen Docker recomendada para las prácticas: \href{https://hub.docker.com/r/phoronix/pts/}{hub.docker.com/r/phoronix/pts/}
+\end{itemize}
+
+\subsection{Ejercicio Opcional. Ejecutar un Benchmark}
+
+El alumno/a debe ser capaz de utilizar \textit{Phoronix Test Suite} para:
+
+\begin{itemize}
+    \item Descargar, instalar y ejecutar un \textit{benchmark} de su elección.
+    \item Almacenar y recuperar los resultados de múltiples ejecuciones del \textit{benchmark}.
+    \item Explicar el objetivo del \textit{benchmark} y de los resultados obtenidos.
+\end{itemize}
+
+\subsubsection*{Solución con un benchmark distinto}
+
+En mi caso en el propio enlace que nos ofrece la guía\footnote{\url{https://sourceforge.net/directory/linux/?q=benchmark}} he optado por instalar el que benchmarck que tiene como nombre benchmark\footnote{\url{https://sourceforge.net/projects/benchmark.mirror/}} y estoy siguiendo los pasos que aparecen en el fichero \textit{Readme.md}\footnote{Lo estoy instalando en mi máquina anfitrión.}.
+
+Los pasos que he seguido se puede ver en la figura \ref{fig:benchmark}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Bloque2/installationBench.png}
+    \caption{Instalación de benchmark}
+    \label{fig:benchmark}
+\end{figure}
+
+Y el resultado del comando de ejecución de los tests lo puede ver en la figura \ref{fig:benchmarkResult}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Bloque2/resultsBench.png}
+    \caption{Resultado de la ejecución del benchmark}
+    \label{fig:benchmarkResult}
+\end{figure}
+
+A continuación, instalamos las librerias globales y probamos con el fichero básico que nos proporcioan, compilando y demás, nos da la salida que podemos ver en la figura \ref{fig:benchmarkResult2}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Bloque2/resultsMYBENCHMARK.png}
+    \caption{Resultado de la ejecución del benchmark}
+    \label{fig:benchmarkResult2}
+\end{figure}
+
+\subsection*{Solución usando el benchmark que se especifica}
+
+Para ello me he descargado el zip de la web y como estoy en Linux he ejecutado el comando \micode{sudo ./install.sh} y me ha instalado el programa en la ruta \micode{/usr/bin/phoronix-test-suite}.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/Bloque2/installPhoro.png}
+    \caption{Instalación de Phoronix Test Suite}
+    \label{fig:PTS}
+\end{figure}
+
+Debemos de leer el Readme para una prueba.
+
+En base a \textit{``phoronix-test-suite benchmark smallpt to run a simple CPU test
+profile''} introducimos el comando para un primer testeo. 
+
+% \includepdf[nup=2x2, pages=1-3, frame=true]{"../../Ficheros_Ejercicios/Ejercicios_Bloque2/resultsfirststatement.pdf"}
+
+Donde el resultado que nos da:
+
+\begin{lstlisting}[style=customstyle]
+    resultsFirstAttempt
+results
+
+
+results: 
+
+	Processor: AMD Ryzen 5 7535HS @ 4.60GHz (6 Cores / 12 Threads), Motherboard: ASUS TUF Gaming A15 FA506NC_FA506NC FA506NC v1.0 (FA506NC.308 BIOS), Chipset: AMD 17h-19h PCIe Root Complex, Memory: 2 x 8GB DDR5-4800MT/s Samsung M425R1GB4PB0-CWMOL, Disk: 512GB SAMSUNG MZVL8512HELU-00BTW + 1000GB KINGSTON SNV3S1000G, Graphics: ASUS NVIDIA GeForce RTX 3050 Mobile, Audio: NVIDIA Device 2291, Network: Realtek RTL8111/8168/8211/8411 + Realtek RTL8852BE PCIe 802.11ax
+
+	OS: Ubuntu 24.04, Kernel: 6.11.0-21-generic (x86_64), Display Server: X Server, Compiler: GCC 13.3.0, File-System: ext4, Screen Resolution: 1920x1080
+
+
+Smallpt 1.0
+Global Illumination Renderer; 128 Samples
+Seconds < Lower Is Better
+results . 15.48 |==============================================================
+
+\end{lstlisting}
+
+% Otro de los benchmarks que podemos ejecutar es ``unigine-heaven''. Para ello debemos de ejecutar los comandos \micode{./phoronix-test-suite install unigine-heaven; ./phoronix-test-suite run unigine-heaven}
+
+
+\subsection{Resumen: Phoronix Test Suite en Máquina Local vs Docker}
+
+El \textit{Phoronix Test Suite} puede presentar problemas de rendimiento o fallos en una máquina local debido a dependencias faltantes, configuraciones incorrectas o conflictos en el entorno del sistema operativo. En contraste, al ejecutarlo en un contenedor Docker, se utiliza un entorno limpio y preconfigurado, optimizado por los desarrolladores para funcionar de manera eficiente.
+
+\subsubsection{Comparativa entre Máquina Local y Docker}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{4cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Aspecto} & \textbf{Máquina Local} & \textbf{Contenedor Docker} \\ \hline
+PHP y extensiones & Puede faltar GD, bzip2, sqlite3, etc. & Todo preinstalado y configurado \\ \hline
+Permisos y acceso a GPU & Problemas con \texttt{/dev/dri} u otros permisos & Aislado, puede no usar GPU directamente \\ \hline
+Entorno gráfico & Falta de X11 puede romper tests gráficos & Usa \textit{fallback} o modo \textit{headless} \\ \hline
+Dependencias del sistema & Conflictos o paquetes rotos & Imagen oficial limpia y probada \\ \hline
+Compatibilidad de librerías & Incompatibilidades posibles & Versiones probadas y compatibles \\ \hline
+\end{tabular}
+\caption{Comparativa entre ejecución local y en Docker}
+\end{table}
+
+\subsubsection{Caso Específico: Benchmark \texttt{smallpt}}
+
+El \texttt{smallpt} es un \textit{benchmark} dependiente de la CPU. Problemas como \textit{throttling}, gestión térmica deficiente o extensiones PHP faltantes pueden ralentizar su ejecución en una máquina local. En Docker, estos problemas se mitigan gracias al entorno controlado.
+
+\subsubsection{Ventajas de Docker}
+
+\begin{itemize}
+    \item Entorno aislado y preconfigurado.
+    \item Independencia de configuraciones locales.
+    \item Fácil reinicio y limpieza del entorno.
+    \item Uso de versiones probadas por los desarrolladores.
+\end{itemize}
+
+En resumen, ejecutar \textit{Phoronix Test Suite} en Docker garantiza mayor estabilidad y rendimiento, eliminando problemas derivados del entorno local.
+
+
+
+Realizando diversas pruevas vemos que el comando tarda demasiado y con htop vemos que no se queda colgado pero tarda demasiado tiempo, por ende, he decidido ejecutarlo en contenedores que es como se recomienda en prácticas. 
+
+
+Para ello ejecutamos los siguientes comandos:
+
+\begin{enumerate}
+    \item \micode{docker pull phoronix/pts}: para descargar la imagen de Phoronix Test Suite\footnote{El comando es de la \url{https://www.phoronix-test-suite.com/?k=downloads}.}.
+    \item \micode{docker run -it --rm phoronix/pts}: para ejecutar el contenedor interactivo.
+    \item \micode{phoronix-test-suite benchmark smallpt}: para ejecutar el benchmark.
+\end{enumerate}
+
+De manera que una vez que estamos dentro de la shell interactiva del docker podemos ejecutar los comandos del docker.
+
+Los pasos a seguir para los tests son (dentro del docker de phoronix con la shell interactiva):
+\begin{enumerate}
+    \item Listamos los disponibles usando el comando \micode{list-avilable-test}
+    \item install <test>
+    \item run <test>
+\end{enumerate}
+
+En mi caso con he instalado el test \micode{php}. El resultado podemos verlo en la terminal (Ver figura \ref{fig:dockerPhoronix}). Además tenemos la opción de subirlo y poder consultarlo de manera online, en mi caso es \url{https://openbenchmarking.org/result/2504152-NE-RESULTSPH66}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{images/Bloque2/dockerPhoronix.png}
+    \caption{Resultado de la ejecución del benchmark en Docker}
+    \label{fig:dockerPhoronix}
+\end{figure}
+
+\subsection*{Objetivo del Benchmark y Resultados Obtenidos}
+
+El objetivo del benchmark realizado con \textbf{Phoronix Test Suite} fue evaluar el rendimiento del sistema, específicamente en la ejecución de pruebas micro de \textbf{PHP Zend}, bajo condiciones estándar. Este tipo de pruebas mide la eficiencia y tiempos de ejecución de componentes clave, como el procesador y la memoria, proporcionando una comparación con otros sistemas.
+
+\subsubsection{Resultados Obtenidos}
+
+\begin{itemize}
+    \item \textbf{Tiempo promedio de ejecución}: 0.764 segundos.
+    \item \textbf{Desviación estándar}: SE +/- 0.066, lo que indica una alta consistencia en los resultados.
+    \item \textbf{Percentil alcanzado}: No especificado, pero los resultados muestran un rendimiento competitivo en comparación con sistemas similares.
+\end{itemize}
+
+\subsubsection{Interpretación de los Resultados}
+
+El sistema probado, con un procesador AMD Ryzen 5 7535HS, mostró un rendimiento destacado en las pruebas de PHP Zend, con tiempos de ejecución significativamente bajos. Esto lo posiciona como una opción eficiente para entornos que requieren alta velocidad y confiabilidad en la ejecución de aplicaciones web o API basadas en PHP.
+
+\subsubsection{Conclusión}
+
+El benchmark confirma que el sistema es altamente eficiente en tareas relacionadas con PHP, siendo una opción ideal para desarrolladores y administradores de sistemas que buscan optimizar el rendimiento de sus servidores o aplicaciones en entornos de producción.
+
+
 
 
 
