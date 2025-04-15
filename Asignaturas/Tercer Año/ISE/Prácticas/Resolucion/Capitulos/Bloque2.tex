@@ -483,7 +483,7 @@ profile''} introducimos el comando para un primer testeo.
 
 Donde el resultado que nos da:
 
-\begin{lstlisting}[style=customstyle]
+\begin{lstlisting}
     resultsFirstAttempt
 results
 
@@ -592,8 +592,289 @@ El sistema probado, con un procesador AMD Ryzen 5 7535HS, mostró un rendimiento
 El benchmark confirma que el sistema es altamente eficiente en tareas relacionadas con PHP, siendo una opción ideal para desarrolladores y administradores de sistemas que buscan optimizar el rendimiento de sus servidores o aplicaciones en entornos de producción.
 
 
+\subsection{Ejercicio Opcional. Comparar benchmark en contenedor y en VM}
+
+El alumno/a ejecutará el mismo benchmark sobre: su ordenador personal, Docker en su ordenador personal y máquina virtual. Comente y justifique las posibles diferencias en los resultados obtenidos.
+
+\subsubsection{Solución}
+
+\begin{itemize}
+    \item En cuanto a ejecutarlo en el Docker de nuestro ordenador personal, el resultado es el que hemos visto en el anterior ejercicio. Podemos ver la figura \ref{fig:dockerPhoronix}.
+    \item En cuanto a la parte de ejecutarlo en nuestra máquina, vemos que anteriormente lo habíamos hecho pero tras el intento de mejorar el rendimiento instalando los drivers recomendados para ubuntu de nvidia no funcionaba, por lo que \textcolor{red}{debemos de destacar que se deben de usar los drivers de nouveau (código abierto)}, ya que si no en caso contrario se daban problemas de priorización de programas, kernel, se cuelga la detección del hardware y demás. Generando el comando básico nos quedan los resultados de nuestra máquina en la web: \url{https://openbenchmarking.org/result/2504153-NE-RESULTS0676}. De esta manera ejecutamos los comandos: 
+    \begin{enumerate}
+        \item \micode{phoronix-test-suite install pts/git}
+        \item \micode{phoronix-test-suite run pts/git}
+    \end{enumerate}
+
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/Bloque2/personal-phoronix-1.png}
+            \caption{Instalación del test git}
+            \label{fig:image1}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/Bloque2/personal-phoronix-2.png}
+            \caption{Run del test}
+            \label{fig:image2}
+        \end{minipage}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/Bloque2/per-pho-3.png}
+            \caption{Run del test en ejecución}
+            \label{fig:image5}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/Bloque2/fin-git-pho.png}
+            \caption{Run del test}
+            \label{fig:image6}
+        \end{minipage}
+    \end{figure}
+    Para acceder a los resultados podemos acceder al enlace: \url{https://openbenchmarking.org/result/2504156-NE-GITRESULT41}.
+    \item En el caso de la máquina virtual, en mi caso he clonado la última y he cambiado de nuevo la ip. Para la descarga de phoronix podemos usar curl, wget pero yo he usado scp desde mi máquina local: \micode{scp -r Descargas/phoronix-test-suite-master ismMV01@192.168.56.106:~} (Debemos pasarlo unzipeado debido a que no tenemos la herramienta unzip).
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/Bloque2/mv-pho-1.png}
+            \caption{Instalaciónd de phoronix en MV Rocky, a continuación instalamos lo que nos dice, ya que instalamos pts/php}
+            \label{fig:image7}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/Bloque2/mv-pho-2.png}
+            \caption{Install de pts/php}
+            \label{fig:image8}
+        \end{minipage}
+    \end{figure}
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/Bloque2/mv-pho-4.png}
+            \caption{Ejecutamos el test}
+            \label{fig:image9}
+        \end{minipage}
+        \hfill
+        \begin{minipage}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{images/Bloque2/mv-pho-5.png}
+            \caption{Resultado final (Vemos que no se generan resultados)}
+            \label{fig:image10}
+        \end{minipage}
+    \end{figure}
+    
+\end{itemize}
 
 
+
+\subsection{Apache Benchmarck}
+
+
+\texttt{Apache Benchmark (ab)} es una herramienta de línea de comandos incluida en el servidor web Apache, diseñada para medir el rendimiento de servidores HTTP. Es especialmente útil para realizar pruebas de carga y evaluar la capacidad de respuesta de un servidor bajo diferentes niveles de tráfico.
+
+\subsubsection{Instalación}
+
+En la mayoría de las distribuciones Linux, \texttt{ab} se incluye como parte del paquete \texttt{apache2-utils}. Para instalarlo, ejecute:
+
+\begin{lstlisting}[style=customstyle]
+sudo apt install apache2-utils -y
+\end{lstlisting}
+
+\subsubsection{Uso Básico}
+
+El comando básico para ejecutar \texttt{ab} es:
+
+\begin{lstlisting}[style=customstyle]
+ab -n <número_de_peticiones> -c <concurrencia> <URL>
+\end{lstlisting}
+
+\begin{itemize}
+    \item \texttt{-n}: Número total de peticiones a realizar.
+    \item \texttt{-c}: Número de peticiones concurrentes.
+    \item \texttt{<URL>}: \\
+    Dirección completa del recurso a probar (por ejemplo, \texttt{http://localhost/index.html}).
+\end{itemize}
+
+\subsubsection{Ejemplo de Uso}
+
+Para realizar 100 peticiones con una concurrencia de 10 al servidor local, ejecute:
+
+\begin{lstlisting}[style=customstyle]
+ab -n 100 -c 10 http://localhost/
+\end{lstlisting}
+
+\subsubsection{Resultados}
+
+El comando genera un informe detallado con métricas clave, como:
+
+\begin{itemize}
+    \item \textbf{Tiempo total de prueba:} Duración total de la prueba en segundos.
+    \item \textbf{Peticiones por segundo:} Número promedio de peticiones procesadas por segundo.
+    \item \textbf{Tiempo de respuesta promedio:} Tiempo promedio que tarda el servidor en responder a una petición.
+    \item \textbf{Transferencia por segundo:} Cantidad de datos transferidos por segundo.
+\end{itemize}
+
+\subsubsection{Consideraciones}
+
+\begin{itemize}
+    \item \texttt{ab} no soporta HTTPS de forma nativa en algunas versiones. Para pruebas HTTPS, considere herramientas alternativas como \texttt{wrk} o \texttt{siege}.
+    \item Asegúrese de que el servidor pueda manejar la carga generada por \texttt{ab} para evitar resultados poco representativos.
+\end{itemize}
+
+\subsubsection{Resumen}
+
+\texttt{Apache Benchmark} es una herramienta sencilla pero poderosa para realizar pruebas de rendimiento en servidores HTTP. Su facilidad de uso y disponibilidad la convierten en una opción ideal para desarrolladores y administradores de sistemas que buscan evaluar la capacidad de sus servidores.
+
+\subsection{Ejercicio Opcional. Carga Http con AB}
+
+Ejecute el benchmark sobre los servidores Http empleados en las prácticas del Bloque 1 (Apache y Nginx). Se deja a la decisión del alumno/a la definición de los parámetros del benchmark, pero se valorará que sea capaz de definir un entorno de ejecución que eleve significativamente la carga de los servidores. El alumno/a debe ser capaz de describir en detalle los resultados obtenidos así como razonar las posibles diferencias entre los servidores.
+
+
+\subsubsection{Solución}
+
+Para hacerlo más fácil he decidido hacerlo desde un contenedor de docker en mi máquina local, los pasos son:
+
+\begin{enumerate}
+    \item Creamos el directorio donde vamos a crear el fihero docker-compose.yml y donde vamos a trabajar.
+    \item Editamos el fichero \micode{docker-compose.yml} y le añadimos el siguiente contenido:
+    \begin{lstlisting}[style=customstyle]
+    version: '3'  # Versión del archivo docker-compose
+
+    services:
+        apache:  # Servicio para el servidor Apache
+            image: httpd:2.4  # Imagen de Docker para Apache HTTP Server versión 2.4
+            container_name: apache-server  # Nombre del contenedor para Apache
+            ports:
+                - "8080:80"  # Mapea el puerto 80 del contenedor al puerto 8080 del host
+
+        nginx:  # Servicio para el servidor Nginx
+            image: nginx:alpine  # Imagen de Docker para Nginx basada en Alpine Linux
+            container_name: nginx-server  # Nombre del contenedor para Nginx
+            ports:
+                - "8081:80"  # Mapea el puerto 80 del contenedor al puerto 8081 del host
+
+        ab:  # Servicio para Apache Benchmark (ab)
+            image: jordi/ab  # Imagen de Docker que contiene Apache Benchmark
+            container_name: ab-client  # Nombre del contenedor para Apache Benchmark
+            entrypoint: tail -f /dev/null  # Mantiene el contenedor en ejecución para usarlo con `docker exec`
+        \end{lstlisting}
+        \item Guardamos el fichero y ejecutamos el siguiente comando para levantar los contenedores: \micode{docker-compose up -d}.
+        \item Vemos que efectivamente están corriendo: \micode{docker ps}.
+        \item Accedemos al contenedor de ab: \micode{docker exec -it ab-client sh}.
+        \item Dentro de la shell interactiva ejecutamos los comandos:
+        \begin{enumerate}
+            \item \micode{ab -n 1000 -c 50 http://apache-server/ > apache.txt}: para ejecutar el benchmark en el servidor Apache y guardar los resultados en un archivo llamado \texttt{apache.txt}.
+            \item \micode{ab -n 1000 -c 50 http://nginx-server/ > nginx.txt}: para ejecutar el benchmark en el servidor Nginx y guardar los resultados en un archivo llamado \texttt{nginx.txt}.
+        \end{enumerate}
+        \item Copiamos el contenido del contedor (este comando se ejecuta desde nuestra máquina local, no dentro del contenedor): \micode{docker cp ab-client:/apache.txt ./apache.txt ; 
+        docker cp ab-client:/nginx.txt ./nginx.txt}
+\end{enumerate}
+
+En cuanto a interpretar los resultados, solo vamos a hacer el fichero \micode{apache.txt}: 
+
+\subsubsection*{Análisis en profundidad de los resultados}
+
+El objetivo principal del benchmark realizado con \textbf{ApacheBench (ab)} es medir el rendimiento del servidor HTTP Apache bajo condiciones de carga. Esto incluye evaluar:
+
+\begin{itemize}
+    \item \textbf{Capacidad de manejo de peticiones:} Cuántas solicitudes por segundo puede procesar el servidor.
+    \item \textbf{Latencia:} Tiempo promedio de respuesta por petición.
+    \item \textbf{Estabilidad:} Cómo se comporta el servidor con múltiples clientes concurrentes.
+\end{itemize}
+
+\paragraph{Información Básica del Servidor}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Campo} & \textbf{Valor} & \textbf{Explicación} \\ \hline
+\textbf{Server Software} & Apache/2.4.63 & Versión del servidor Apache \\ \hline
+\textbf{Hostname} & apache-server & Nombre del servidor bajo prueba \\ \hline
+\textbf{Port} & 80 & Puerto HTTP estándar \\ \hline
+\textbf{Document Path} & / & Página que se está solicitando (raíz) \\ \hline
+\textbf{Document Length} & 45 bytes & Tamaño del contenido HTML que responde el servidor \\ \hline
+\end{tabular}
+\caption{Información básica del servidor}
+\end{table}
+
+\paragraph{Parámetros de Prueba}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Campo} & \textbf{Valor} & \textbf{Explicación} \\ \hline
+\textbf{Concurrency Level} & 50 & Simulación de 50 clientes simultáneos \\ \hline
+\textbf{Complete Requests} & 1000 & Total de peticiones realizadas al servidor \\ \hline
+\textbf{Failed Requests} & 0 & Todas las solicitudes fueron exitosas \\ \hline
+\end{tabular}
+\caption{Parámetros de prueba}
+\end{table}
+
+\paragraph{Rendimiento del Servidor}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{5cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Campo} & \textbf{Valor} & \textbf{Explicación} \\ \hline
+\textbf{Time taken for tests} & 0.165 s & Tiempo total de la prueba \\ \hline
+\textbf{Requests per second} & 6057.60 req/s & Rendimiento: peticiones procesadas por segundo \\ \hline
+\textbf{Time per request (mean)} & 8.254 ms & Tiempo promedio por petición individual \\ \hline
+\textbf{Time per request (concurrent)} & 0.165 ms & Tiempo promedio por petición con concurrencia \\ \hline
+\textbf{Transfer rate} & 1709.61 KB/s & Velocidad de transferencia promedio \\ \hline
+\end{tabular}
+\caption{Rendimiento del servidor}
+\end{table}
+
+\paragraph{Tiempos de Conexión y Procesamiento}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
+\hline
+\textbf{Tipo} & \textbf{min} & \textbf{mean} & \textbf{sd} & \textbf{med} & \textbf{max} \\ \hline
+\textbf{Connect} & 0 ms & 4 ms & ±1.2 & 3 ms & 8 ms \\ \hline
+\textbf{Processing} & 1 ms & 4 ms & ±1.3 & 4 ms & 10 ms \\ \hline
+\textbf{Waiting} & 0 ms & 3 ms & ±1.2 & 3 ms & 8 ms \\ \hline
+\textbf{Total} & 4 ms & 8 ms & ±1.7 & 8 ms & 13 ms \\ \hline
+\end{tabular}
+\caption{Tiempos de conexión y procesamiento}
+\end{table}
+
+\paragraph{Distribución de Latencias}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Percentil} & \textbf{Tiempo} \\ \hline
+50\% (mediana) & 8 ms \\ \hline
+66\% & 9 ms \\ \hline
+75\% & 9 ms \\ \hline
+90\% & 11 ms \\ \hline
+100\% (máxima) & 13 ms \\ \hline
+\end{tabular}
+\caption{Distribución de latencias}
+\end{table}
+
+
+\begin{itemize}
+    \item El servidor Apache demostró un rendimiento excelente, procesando más de \textbf{6000 peticiones por segundo} sin errores.
+    \item La \textbf{latencia es baja y estable}, con tiempos de respuesta promedio de 8 ms y una variabilidad mínima.
+    \item La distribución de latencias muestra que el \textbf{99\% de las peticiones} se completaron en 12 ms o menos, lo que indica un comportamiento altamente eficiente.
+\end{itemize}
 
 
 
