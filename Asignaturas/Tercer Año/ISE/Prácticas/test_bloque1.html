@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test sobre Ping, RAID, LVM y Servicios</title>
     <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-family: sans-serif;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        caption {
+            caption-side: top;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
             margin: 20px;
@@ -1181,6 +1207,660 @@
             <script>var answer_q100 = 'c';</script>
         </div>
 
+        <!-- Extra -->
+         <h2> Preguntas Extra (Incluye algunas del Bloque 2)</h2>
+
+        <div class="question-block">
+            <h3>Pregunta 101: ¿Cuál es el comando correcto en un sistema basado en DNF (como Rocky Linux) para instalar tanto el servidor como el cliente SSH?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q101')"><input type="radio" name="q101" value="a"><label><code>sudo yum install openssh-all</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q101')"><input type="radio" name="q101" value="b"><label><code>sudo dnf install -y openssh-server openssh-clients</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q101')"><input type="radio" name="q101" value="c"><label><code>sudo apt-get install openssh</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q101')"><input type="radio" name="q101" value="d"><label><code>sudo dnf setup ssh --server --client</code></label></li>
+            </ul>
+            <script>var answer_q101 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 102: ¿Cuál de las siguientes configuraciones de la variable <code>PS1</code> en bash mostraría el nombre de usuario, el hostname, la hora actual (HH:MM:SS) y el directorio de trabajo actual, seguido de <code>$</code> o <code>#</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q102')"><input type="radio" name="q102" value="a"><label><code>PS1=’\U@\H:\t:\w\$ ’</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q102')"><input type="radio" name="q102" value="b"><label><code>PS1=’\u@\h:\t:\w\$ ’</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q102')"><input type="radio" name="q102" value="c"><label><code>PS1=’\user@\host:\time:\pwd\$ ’</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q102')"><input type="radio" name="q102" value="d"><label><code>PS1=’\h@\u:\T:\W\$ ’</code></label></li>
+            </ul>
+            <script>var answer_q102 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 103: En el contexto de la configuración de red de una máquina virtual, ¿cuál es uno de los propósitos principales de NAT (Network Address Translation)?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q103')"><input type="radio" name="q103" value="a"><label>Aislar completamente la máquina virtual de cualquier red externa.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q103')"><input type="radio" name="q103" value="b"><label>Permitir que la máquina virtual acceda a recursos en Internet utilizando la dirección IP de la máquina anfitriona.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q103')"><input type="radio" name="q103" value="c"><label>Asignar múltiples direcciones IP públicas a una única máquina virtual.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q103')"><input type="radio" name="q103" value="d"><label>Mejorar la velocidad de transferencia de archivos entre la máquina virtual y el anfitrión.</label></li>
+            </ul>
+            <script>var answer_q103 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 104: ¿Cuál es la característica principal de RAID 0 (Striping)?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q104')"><input type="radio" name="q104" value="a"><label>Duplica los datos en dos o más discos para redundancia.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q104')"><input type="radio" name="q104" value="b"><label>Distribuye los datos y la paridad entre tres o más discos.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q104')"><input type="radio" name="q104" value="c"><label>Divide los datos en bloques y los distribuye entre varios discos para mejorar el rendimiento, pero sin redundancia.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q104')"><input type="radio" name="q104" value="d"><label>Utiliza un disco dedicado para almacenar la información de paridad.</label></li>
+            </ul>
+            <script>var answer_q104 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 105: ¿Cuál es la principal ventaja de RAID 1 (Mirroring)?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q105')"><input type="radio" name="q105" value="a"><label>Maximiza el espacio de almacenamiento disponible utilizando la capacidad total de todos los discos.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q105')"><input type="radio" name="q105" value="b"><label>Ofrece el mejor rendimiento de escritura en comparación con otros niveles de RAID.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q105')"><input type="radio" name="q105" value="c"><label>Proporciona redundancia duplicando los datos en dos o más discos, de modo que si un disco falla, los datos no se pierden.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q105')"><input type="radio" name="q105" value="d"><label>Permite la recuperación de datos utilizando información de paridad distribuida.</label></li>
+            </ul>
+            <script>var answer_q105 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 106: ¿Cuál es el comando <code>mdadm</code> para crear un arreglo RAID 0 (striping) con el nombre <code>/dev/md0</code> utilizando dos discos, por ejemplo, <code>/dev/sdX</code> y <code>/dev/sdY</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q106')"><input type="radio" name="q106" value="a"><label><code>mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sdX /dev/sdY</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q106')"><input type="radio" name="q106" value="b"><label><code>mdadm --build /dev/md0 --level=0 --raid-devices=2 /dev/sdX /dev/sdY</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q106')"><input type="radio" name="q106" value="c"><label><code>mdadm --create --verbose /dev/md0 --level=0 --raid-devices=2 /dev/sdX /dev/sdY</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q106')"><input type="radio" name="q106" value="d"><label><code>mdadm --add /dev/md0 --raid-devices=2 /dev/sdX /dev/sdY --level=0</code></label></li>
+            </ul>
+            <script>var answer_q106 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 107: ¿Cuál es el comando <code>mdadm</code> correcto para crear un arreglo RAID 1 (mirroring) llamado <code>/dev/md0</code> con dos dispositivos, como <code>/dev/sdX</code> y <code>/dev/sdY</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q107')"><input type="radio" name="q107" value="a"><label><code>mdadm --create --verbose /dev/md0 --level=1 --raid-devices=2 /dev/sdX /dev/sdY</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q107')"><input type="radio" name="q107" value="b"><label><code>mdadm --assemble /dev/md0 --level=1 --raid-devices=2 /dev/sdX /dev/sdY</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q107')"><input type="radio" name="q107" value="c"><label><code>mdadm --create /dev/md0 --level=0 --mirror --raid-devices=2 /dev/sdX /dev/sdY</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q107')"><input type="radio" name="q107" value="d"><label><code>mdadm --new /dev/md0 --level=1 --devices=2 /dev/sdX /dev/sdY</code></label></li>
+            </ul>
+            <script>var answer_q107 = 'a';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 108: Para crear un arreglo RAID 5 llamado <code>/dev/md0</code> utilizando tres discos (<code>/dev/sdX</code>, <code>/dev/sdY</code>, <code>/dev/sdZ</code>), ¿cuál sería el comando <code>mdadm</code> apropiado?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q108')"><input type="radio" name="q108" value="a"><label><code>mdadm --create --verbose /dev/md0 --level=5 --raid-devices=3 /dev/sdX /dev/sdY /dev/sdZ</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q108')"><input type="radio" name="q108" value="b"><label><code>mdadm --build /dev/md0 --level=5 --raid-disks=3 /dev/sdX /dev/sdY /dev/sdZ</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q108')"><input type="radio" name="q108" value="c"><label><code>mdadm --create --verbose /dev/md0 --level=parity --raid-devices=3 /dev/sdX /dev/sdY /dev/sdZ</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q108')"><input type="radio" name="q108" value="d"><label><code>mdadm --init /dev/md0 --type=5 --devices=3 /dev/sdX /dev/sdY /dev/sdZ</code></label></li>
+            </ul>
+            <script>var answer_q108 = 'a';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 109: ¿Qué comando se utiliza comúnmente en Linux para verificar el estado actual de los arreglos RAID gestionados por software (mdadm)?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q109')"><input type="radio" name="q109" value="a"><label><code>mdadm --detail /proc/mdstat</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q109')"><input type="radio" name="q109" value="b"><label><code>cat /dev/mdstat</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q109')"><input type="radio" name="q109" value="c"><label><code>ls /proc/raid/status</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q109')"><input type="radio" name="q109" value="d"><label><code>cat /proc/mdstat</code></label></li>
+            </ul>
+            <script>var answer_q109 = 'd';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 110: Si necesitas detener un arreglo RAID activo, por ejemplo <code>/dev/md0</code>, ¿qué comando <code>mdadm</code> usarías?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q110')"><input type="radio" name="q110" value="a"><label><code>mdadm --remove /dev/md0</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q110')"><input type="radio" name="q110" value="b"><label><code>mdadm --fail /dev/md0 && mdadm --delete /dev/md0</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q110')"><input type="radio" name="q110" value="c"><label><code>mdadm --stop /dev/md0</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q110')"><input type="radio" name="q110" value="d"><label><code>mdadm --deactivate /dev/md0</code></label></li>
+            </ul>
+            <script>var answer_q110 = 'c';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 111: En el comando <code>mdadm --create --verbose /dev/md0 ...</code>, ¿cuál es el propósito de la opción <code>--verbose</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q111')"><input type="radio" name="q111" value="a"><label>Verificar la integridad de los discos antes de crear el RAID.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q111')"><input type="radio" name="q111" value="b"><label>Mostrar información más detallada sobre el proceso de creación del RAID.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q111')"><input type="radio" name="q111" value="c"><label>Establecer el nivel de RAID en modo "verbose" para mejor rendimiento.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q111')"><input type="radio" name="q111" value="d"><label>Crear un volumen virtual además del arreglo RAID.</label></li>
+            </ul>
+            <script>var answer_q111 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 112: ¿Para qué se utiliza el comando <code>sudo systemctl isolate rescue.target</code> en un sistema Linux que utiliza systemd?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q112')"><input type="radio" name="q112" value="a"><label>Para reiniciar el sistema en modo seguro.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q112')"><input type="radio" name="q112" value="b"><label>Para apagar el sistema inmediatamente.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q112')"><input type="radio" name="q112" value="c"><label>Para cambiar al modo de mantenimiento o recuperación del sistema.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q112')"><input type="radio" name="q112" value="d"><label>Para aislar los procesos de un usuario específico.</label></li>
+            </ul>
+            <script>var answer_q112 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 113: Si se desea volver al modo de operación normal multiusuario desde el modo de rescate en un sistema systemd, ¿qué comando se utilizaría?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q113')"><input type="radio" name="q113" value="a"><label><code>sudo systemctl isolate default.target</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q113')"><input type="radio" name="q113" value="b"><label><code>sudo systemctl isolate graphical.target</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q113')"><input type="radio" name="q113" value="c"><label><code>sudo systemctl isolate multi-user.target</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q113')"><input type="radio" name="q113" value="d"><label><code>sudo systemctl reboot --target=multi-user</code></label></li>
+            </ul>
+            <script>var answer_q113 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 114: En la jerarquía estándar del sistema de archivos de Linux, ¿cuál es la función principal del directorio <code>/etc</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q114')"><input type="radio" name="q114" value="a"><label>Contener los directorios personales de los usuarios.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q114')"><input type="radio" name="q114" value="b"><label>Almacenar ejecutables esenciales para todos los usuarios.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q114')"><input type="radio" name="q114" value="c"><label>Ser el directorio raíz que contiene todos los demás directorios.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q114')"><input type="radio" name="q114" value="d"><label>Almacenar los archivos de configuración del sistema.</label></li>
+            </ul>
+            <script>var answer_q114 = 'd';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 115: ¿Cuál de los siguientes directorios en Linux está destinado a almacenar datos variables como registros (logs) y colas de impresión, que pueden crecer con el tiempo?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q115')"><input type="radio" name="q115" value="a"><label><code>/bin</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q115')"><input type="radio" name="q115" value="b"><label><code>/home</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q115')"><input type="radio" name="q115" value="c"><label><code>/var</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q115')"><input type="radio" name="q115" value="d"><label><code>/root</code></label></li>
+            </ul>
+            <script>var answer_q115 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 116: ¿Cuál de los siguientes NO es un sistema de archivos comúnmente soportado y utilizado en Linux?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q116')"><input type="radio" name="q116" value="a"><label>ext4</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q116')"><input type="radio" name="q116" value="b"><label>XFS</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q116')"><input type="radio" name="q116" value="c"><label>Btrfs</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q116')"><input type="radio" name="q116" value="d"><label>NTFS (de forma nativa con todas las funcionalidades y rendimiento de Windows)</label></li>
+            </ul>
+            <script>var answer_q116 = 'd';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 117: Considerando la secuencia de comandos LVM: 1. <code>sudo pvcreate /dev/md0</code>, 2. <code>sudo vgcreate vg_datos /dev/md0</code>, 3. <code>sudo lvcreate -L 900M -n lv_datos vg_datos</code>. ¿Cuál es el propósito del segundo comando (<code>sudo vgcreate vg_datos /dev/md0</code>)?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q117')"><input type="radio" name="q117" value="a"><label>Inicializar el dispositivo <code>/dev/md0</code> como un volumen físico (Physical Volume).</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q117')"><input type="radio" name="q117" value="b"><label>Crear un volumen lógico llamado <code>lv_datos</code> de 900MB.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q117')"><input type="radio" name="q117" value="c"><label>Crear un grupo de volúmenes (Volume Group) llamado <code>vg_datos</code> utilizando el volumen físico <code>/dev/md0</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q117')"><input type="radio" name="q117" value="d"><label>Formatear el dispositivo <code>/dev/md0</code> para su uso con LVM.</label></li>
+            </ul>
+            <script>var answer_q117 = 'c';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 118: ¿Cuál es el propósito de la siguiente línea en el archivo <code>/etc/fstab</code>: <code>/dev/mapper/raid1-rvar /var ext4 defaults 0 0</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q118')"><input type="radio" name="q118" value="a"><label>Crear un nuevo sistema de archivos ext4 en <code>/dev/mapper/raid1-rvar</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q118')"><input type="radio" name="q118" value="b"><label>Montar automáticamente el dispositivo <code>/dev/mapper/raid1-rvar</code> (formateado con ext4) en el directorio <code>/var</code> durante el arranque del sistema.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q118')"><input type="radio" name="q118" value="c"><label>Realizar una copia de seguridad del directorio <code>/var</code> en <code>/dev/mapper/raid1-rvar</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q118')"><input type="radio" name="q118" value="d"><label>Establecer los permisos por defecto para el directorio <code>/var</code>.</label></li>
+            </ul>
+            <script>var answer_q118 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 119: En la gestión de <code>iptables</code>, ¿qué acción realiza el comando <code>iptables -L</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q119')"><input type="radio" name="q119" value="a"><label>Cargar un nuevo conjunto de reglas desde un archivo.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q119')"><input type="radio" name="q119" value="b"><label>Listar (mostrar) las reglas actuales del firewall.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q119')"><input type="radio" name="q119" value="c"><label>Eliminar todas las reglas actuales (flush).</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q119')"><input type="radio" name="q119" value="d"><label>Guardar las reglas actuales en un archivo de configuración.</label></li>
+            </ul>
+            <script>var answer_q119 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 120: Si se utiliza el comando <code>iptables -F</code>, ¿qué sucederá con la configuración del firewall?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q120')"><input type="radio" name="q120" value="a"><label>Se mostrarán todas las reglas de la cadena FORWARD.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q120')"><input type="radio" name="q120" value="b"><label>Se forzará la recarga de las reglas desde el archivo de configuración.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q120')"><input type="radio" name="q120" value="c"><label>Se eliminarán (flush) todas las reglas de todas las cadenas.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q120')"><input type="radio" name="q120" value="d"><label>Se filtrarán los paquetes basándose en una nueva política.</label></li>
+            </ul>
+            <script>var answer_q120 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 121: ¿Para qué se utiliza principalmente la herramienta <code>nmap</code> en la administración de servidores y redes?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q121')"><input type="radio" name="q121" value="a"><label>Para monitorizar el tráfico de red en tiempo real.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q121')"><input type="radio" name="q121" value="b"><label>Para configurar las reglas del firewall del sistema.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q121')"><input type="radio" name="q121" value="c"><label>Para escanear redes, descubrir hosts y verificar puertos abiertos y servicios.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q121')"><input type="radio" name="q121" value="d"><label>Para gestionar las actualizaciones de software del sistema.</label></li>
+            </ul>
+            <script>var answer_q121 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 122: Al configurar el servicio SSHD, ¿cuál es el efecto de establecer la directiva <code>PermitRootLogin no</code> en el archivo <code>sshd_config</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q122')"><input type="radio" name="q122" value="a"><label>Permite el acceso del usuario root solo mediante clave pública.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q122')"><input type="radio" name="q122" value="b"><label>Deshabilita completamente el servicio SSHD.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q122')"><input type="radio" name="q122" value="c"><label>Impide que el usuario root inicie sesión directamente a través de SSH.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q122')"><input type="radio" name="q122" value="d"><label>Requiere que el usuario root cambie su contraseña en el próximo inicio de sesión SSH.</label></li>
+            </ul>
+            <script>var answer_q122 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 123: ¿Por qué se podría cambiar el puerto predeterminado de SSH (22) a otro valor, como <code>Port 2222</code>, en la configuración del servidor SSHD?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q123')"><input type="radio" name="q123" value="a"><label>Para aumentar la velocidad de las conexiones SSH.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q123')"><input type="radio" name="q123" value="b"><label>Para reducir la exposición a ataques automatizados y escaneos dirigidos al puerto estándar.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q123')"><input type="radio" name="q123" value="c"><label>Para permitir múltiples conexiones SSH simultáneas en diferentes puertos.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q123')"><input type="radio" name="q123" value="d"><label>Porque el puerto 22 está obsoleto y es inseguro.</label></li>
+            </ul>
+            <script>var answer_q123 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 124: En el contexto de SSH, ¿cuál es la principal diferencia entre criptografía simétrica y asimétrica?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q124')"><input type="radio" name="q124" value="a"><label>La simétrica usa dos claves (pública y privada) y la asimétrica usa una sola clave compartida.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q124')"><input type="radio" name="q124" value="b"><label>La simétrica es más lenta pero más segura; la asimétrica es más rápida pero menos segura.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q124')"><input type="radio" name="q124" value="c"><label>La simétrica usa la misma clave para cifrar y descifrar, mientras que la asimétrica usa un par de claves (pública para cifrar o verificar firma, privada para descifrar o firmar).</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q124')"><input type="radio" name="q124" value="d"><label>SSH solo utiliza criptografía simétrica para toda la comunicación.</label></li>
+            </ul>
+            <script>var answer_q124 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 125: ¿Cuál es el propósito del comando <code>ssh-keygen -t rsa -b 4096</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q125')"><input type="radio" name="q125" value="a"><label>Generar un certificado SSL para un servidor web.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q125')"><input type="radio" name="q125" value="b"><label>Crear un par de claves SSH (pública y privada) utilizando el algoritmo RSA con una longitud de 4096 bits.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q125')"><input type="radio" name="q125" value="c"><label>Encriptar un archivo usando RSA con una clave de 4096 bits.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q125')"><input type="radio" name="q125" value="d"><label>Configurar el agente SSH para que use claves RSA de 4096 bits.</label></li>
+            </ul>
+            <script>var answer_q125 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 126: ¿Qué función principal realiza el comando <code>ssh-copy-id usuario@servidor</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q126')"><input type="radio" name="q126" value="a"><label>Copia la identidad (ID) de un servidor a otro para sincronización.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q126')"><input type="radio" name="q126" value="b"><label>Crea un nuevo usuario en el servidor remoto con el mismo ID que el usuario local.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q126')"><input type="radio" name="q126" value="c"><label>Copia la clave pública SSH del usuario local al archivo <code>authorized_keys</code> del usuario especificado en el servidor remoto, permitiendo el inicio de sesión sin contraseña.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q126')"><input type="radio" name="q126" value="d"><label>Verifica la identidad del servidor remoto y la añade al archivo <code>known_hosts</code> local.</label></li>
+            </ul>
+            <script>var answer_q126 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 127: Si se cambia el puerto de SSH a 2222 y SELinux está activo, ¿qué comando se utiliza para permitir este nuevo puerto para el servicio SSH en SELinux?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q127')"><input type="radio" name="q127" value="a"><label><code>sudo selinux port -a -t ssh_port_type -p tcp 2222</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q127')"><input type="radio" name="q127" value="b"><label><code>sudo semanage port -a -t ssh_port_t -p tcp 2222</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q127')"><input type="radio" name="q127" value="c"><label><code>sudo setsebool -P ssh_port_tcp 2222 on</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q127')"><input type="radio" name="q127" value="d"><label><code>sudo audit2allow -a -M ssh_port_2222</code></label></li>
+            </ul>
+            <script>var answer_q127 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 128: ¿Qué comando usarías para ver los logs del demonio SSHD (<code>sshd</code>) con el fin de diagnosticar problemas, mostrando información extendida?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q128')"><input type="radio" name="q128" value="a"><label><code>cat /var/log/sshd.log</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q128')"><input type="radio" name="q128" value="b"><label><code>dmesg | grep sshd</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q128')"><input type="radio" name="q128" value="c"><label><code>sudo journalctl -u sshd.service --all</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q128')"><input type="radio" name="q128" value="d"><label><code>sudo journalctl -xeu sshd</code></label></li>
+            </ul>
+            <script>var answer_q128 = 'd';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 129: Si el servidor SSH está escuchando en un puerto no estándar (ej. 2222), ¿cómo se especificaría este puerto al usar <code>ssh-copy-id</code> para copiar una clave pública?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q129')"><input type="radio" name="q129" value="a"><label><code>ssh-copy-id usuario@IP_del_Servidor:2222</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q129')"><input type="radio" name="q129" value="b"><label><code>ssh-copy-id --port 2222 usuario@IP_del_Servidor</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q129')"><input type="radio" name="q129" value="c"><label><code>ssh-copy-id -p 2222 usuario@IP_del_Servidor</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q129')"><input type="radio" name="q129" value="d"><label><code>ssh-copy-id usuario@IP_del_Servidor -P 2222</code></label></li>
+            </ul>
+            <script>var answer_q129 = 'c';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 130: Según el desarrollo del ejercicio de Ansible, ¿cuándo es más apropiado usar comandos Ad-Hoc de Ansible en lugar de playbooks?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q130')"><input type="radio" name="q130" value="a"><label>Para configuraciones complejas y reutilizables que deben aplicarse a muchos servidores.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q130')"><input type="radio" name="q130" value="b"><label>Para tareas rápidas y únicas, como verificar el estado de un servicio o copiar un archivo a múltiples servidores, donde la reproducibilidad no es la principal preocupación.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q130')"><input type="radio" name="q130" value="c"><label>Siempre que se necesite idempotencia en las operaciones.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q130')"><input type="radio" name="q130" value="d"><label>Para definir la orquestación de procesos manuales en un orden definido.</label></li>
+            </ul>
+            <script>var answer_q130 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 131: En las variables de Ansible <code>ssh_pub_key_admin: "{{ lookup('file', 'claves/id_rsa_admin.pub') }}"</code>, ¿qué función realiza <code>lookup('file', ...)</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q131')"><input type="radio" name="q131" value="a"><label>Crea un nuevo archivo llamado <code>id_rsa_admin.pub</code> en el directorio <code>claves/</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q131')"><input type="radio" name="q131" value="b"><label>Busca un archivo en un repositorio remoto y lo descarga.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q131')"><input type="radio" name="q131" value="c"><label>Lee el contenido del archivo especificado (<code>claves/id_rsa_admin.pub</code>) y lo asigna como valor a la variable.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q131')"><input type="radio" name="q131" value="d"><label>Verifica la existencia del archivo y devuelve <code>true</code> o <code>false</code>.</label></li>
+            </ul>
+            <script>var answer_q131 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 132: En la tarea de Ansible: <br><code>- name: Crear usuario {{ item.nombre }}<br>&nbsp;&nbsp;user:<br>&nbsp;&nbsp;&nbsp;&nbsp;name: "{{ item.nombre }}"<br>&nbsp;&nbsp;&nbsp;&nbsp;groups: wheel<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>loop: "{{ usuarios_extra }}"</code><br>¿Cómo funciona la directiva <code>loop</code> junto con <code>item</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q132')"><input type="radio" name="q132" value="a"><label><code>loop</code> define un contador y <code>item</code> es el valor actual del contador.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q132')"><input type="radio" name="q132" value="b"><label>La tarea se ejecuta una vez para cada elemento en la lista <code>usuarios_extra</code>, y <code>item</code> representa el elemento actual de la lista en cada iteración.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q132')"><input type="radio" name="q132" value="c"><label><code>item</code> es una variable global que debe definirse antes del bucle.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q132')"><input type="radio" name="q132" value="d"><label><code>loop</code> espera una condición y <code>item</code> almacena el resultado de la condición.</label></li>
+            </ul>
+            <script>var answer_q132 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 133: En un archivo de inventario de Ansible como <code>hosts.ini</code>, ¿qué significa la sección <code>[servidores:vars]</code> seguida de <code>ansible_user=ismMV01</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q133')"><input type="radio" name="q133" value="a"><label>Define un nuevo grupo llamado <code>vars</code> dentro del grupo <code>servidores</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q133')"><input type="radio" name="q133" value="b"><label>Establece variables específicas para todos los hosts que pertenecen al grupo <code>servidores</code>, indicando que el usuario para la conexión SSH será <code>ismMV01</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q133')"><input type="radio" name="q133" value="c"><label>Es un comentario que Ansible ignora.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q133')"><input type="radio" name="q133" value="d"><label>Indica que las variables para el grupo <code>servidores</code> se cargarán desde un archivo llamado <code>ansible_user_ismMV01.yml</code>.</label></li>
+            </ul>
+            <script>var answer_q133 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 134: ¿Cuál es el propósito de <code>--ask-become-pass</code> en el comando <code>ansible-playbook -i hosts.ini playbook.yml --ask-pass --ask-become-pass</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q134')"><input type="radio" name="q134" value="a"><label>Solicitar la contraseña para la conexión SSH (equivalente a <code>--ask-pass</code>).</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q134')"><input type="radio" name="q134" value="b"><label>Solicitar la contraseña para la escalada de privilegios (por ejemplo, para <code>sudo</code>).</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q134')"><input type="radio" name="q134" value="c"><label>Preguntar si se desea convertirse en el usuario root.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q134')"><input type="radio" name="q134" value="d"><label>Omitir la solicitud de contraseña para la escalada de privilegios si ya se proporcionó una para SSH.</label></li>
+            </ul>
+            <script>var answer_q134 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 135: En un playbook de Ansible, ¿qué efecto tiene la directiva <code>become: true</code> a nivel de play o tarea?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q135')"><input type="radio" name="q135" value="a"><label>Hace que el playbook se ejecute más rápidamente.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q135')"><input type="radio" name="q135" value="b"><label>Indica que las tareas se ejecutarán con privilegios elevados (por ejemplo, como root usando <code>sudo</code>).</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q135')"><input type="radio" name="q135" value="c"><label>Activa el modo de depuración detallada para el playbook.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q135')"><input type="radio" name="q135" value="d"><label>Confirma que el usuario que ejecuta el playbook es el propietario del sistema.</label></li>
+            </ul>
+            <script>var answer_q135 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 136: ¿Cuál es el propósito general del módulo <code>lineinfile</code> de Ansible, como se usa en la tarea "Permitir acceso root por contraseña temporalmente"?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q136')"><input type="radio" name="q136" value="a"><label>Añadir múltiples líneas al final de un archivo.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q136')"><input type="radio" name="q136" value="b"><label>Asegurar que una línea específica exista en un archivo, o reemplazar una línea existente que coincida con una expresión regular, o añadirla si no existe.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q136')"><input type="radio" name="q136" value="c"><label>Leer una línea específica de un archivo y guardarla en una variable.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q136')"><input type="radio" name="q136" value="d"><label>Eliminar todas las líneas que coincidan con una expresión regular de un archivo.</label></li>
+            </ul>
+            <script>var answer_q136 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 137: En Ansible, ¿cómo interactúan <code>notify</code> y <code>handlers</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q137')"><input type="radio" name="q137" value="a"><label><code>notify</code> envía una notificación por correo electrónico y <code>handlers</code> procesa la respuesta.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q137')"><input type="radio" name="q137" value="b"><label>Si una tarea con una directiva <code>notify</code> resulta en un cambio, se le indica al <code>handler</code> con el mismo nombre que se ejecute al final del play.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q137')"><input type="radio" name="q137" value="c"><label><code>handlers</code> son tareas que se ejecutan siempre, y <code>notify</code> puede usarse para detener su ejecución.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q137')"><input type="radio" name="q137" value="d"><label><code>notify</code> es un módulo para enviar mensajes entre hosts, y <code>handlers</code> los recibe.</label></li>
+            </ul>
+            <script>var answer_q137 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 138: ¿Cuál es el propósito principal de la tarea de Ansible que utiliza el módulo <code>user</code> con los parámetros <code>name: "{{ admin_user }}"</code>, <code>groups: wheel</code>, <code>append: yes</code>, <code>shell: /bin/bash</code>, <code>state: present</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q138')"><input type="radio" name="q138" value="a"><label>Modificar la contraseña del usuario "admin".</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q138')"><input type="radio" name="q138" value="b"><label>Asegurar que el usuario especificado por <code>admin_user</code> exista, pertenezca (adicionalmente) al grupo <code>wheel</code>, tenga <code>/bin/bash</code> como shell, y se cree su directorio home si no existe.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q138')"><input type="radio" name="q138" value="a"><label>Eliminar al usuario "admin" del grupo <code>wheel</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q138')"><input type="radio" name="q138" value="d"><label>Comprobar si el usuario "admin" está presente y tiene <code>/bin/bash</code> como shell.</label></li>
+            </ul>
+            <script>var answer_q138 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 139: ¿Para qué se utiliza el módulo <code>authorized_key</code> de Ansible en la tarea "Añadir clave pública SSH para admin"?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q139')"><input type="radio" name="q139" value="a"><label>Para generar un nuevo par de claves SSH para el usuario.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q139')"><input type="radio" name="q139" value="b"><label>Para gestionar (añadir o eliminar) las claves públicas SSH autorizadas para un usuario específico en el archivo <code>~/.ssh/authorized_keys</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q139')"><input type="radio" name="q139" value="c"><label>Para verificar la validez de una clave SSH pública.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q139')"><input type="radio" name="q139" value="d"><label>Para definir la clave privada que Ansible usará para conectarse como ese usuario.</label></li>
+            </ul>
+            <script>var answer_q139 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 140: En una estructura de directorios de Ansible como la mostrada (<code>Primera_parte/</code> con subdirectorios <code>group_vars/</code>, <code>tasks/</code>, <code>claves/</code>), ¿cuál es el rol típico de <code>group_vars/all.yml</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q140')"><input type="radio" name="q140" value="a"><label>Contener el playbook principal que se va a ejecutar.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q140')"><input type="radio" name="q140" value="b"><label>Almacenar tareas reutilizables que pueden ser incluidas en playbooks.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q140')"><input type="radio" name="q140" value="c"><label>Definir variables que se aplicarán a todos los hosts en el inventario.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q140')"><input type="radio" name="q140" value="d"><label>Guardar las claves SSH privadas necesarias para la conexión.</label></li>
+            </ul>
+            <script>var answer_q140 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 141: Si Ansible configura la línea <code>PermitRootLogin prohibit-password</code> en <code>/etc/ssh/sshd_config</code>, ¿qué implicación tiene para el acceso SSH del usuario root?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q141')"><input type="radio" name="q141" value="a"><label>El usuario root puede iniciar sesión usando contraseña, pero no con clave pública.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q141')"><input type="radio" name="q141" value="b"><label>El inicio de sesión como root está completamente deshabilitado, sin importar el método.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q141')"><input type="radio" name="q141" value="c"><label>El usuario root solo puede iniciar sesión utilizando autenticación basada en claves públicas; el inicio de sesión con contraseña está deshabilitado.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q141')"><input type="radio" name="q141" value="d"><label>Se le pedirá al usuario root que cambie su contraseña al primer intento de inicio de sesión.</label></li>
+            </ul>
+            <script>var answer_q141 = 'c';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 142: En el playbook de Ansible, la línea <code>vars_files: - "../vars/{{ group_names[0] }}.yml"</code> intenta cargar variables. ¿Cuál podría ser una consideración importante o posible limitación al usar <code>{{ group_names[0] }}</code> para cargar archivos de variables destinados a ser específicos del host o de un grupo particular?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q142')"><input type="radio" name="q142" value="a"><label>Asegura que siempre se carguen las variables más específicas del host.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q142')"><input type="radio" name="q142" value="b"><label>Si un host pertenece a múltiples grupos, <code>group_names[0]</code> podría no referirse consistentemente al grupo deseado para la especificidad de variables, dependiendo del orden interno de Ansible.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q142')"><input type="radio" name="q142" value="c"><label>Este método es obsoleto y se prefiere <code>host_vars</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q142')"><input type="radio" name="q142" value="d"><label><code>group_names[0]</code> siempre se refiere al grupo 'all'.</label></li>
+            </ul>
+            <script>var answer_q142 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 143: En la tarea de Ansible "Asegurar que Apache (httpd) está detenido...", ¿cuál es el propósito de la cláusula <code>when: web_package == "nginx"</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q143')"><input type="radio" name="q143" value="a"><label>Instalar Nginx si la variable <code>web_package</code> es "nginx".</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q143')"><input type="radio" name="q143" value="b"><label>Ejecutar la tarea de detener Apache (httpd) únicamente en los hosts donde la variable <code>web_package</code> esté definida como "nginx".</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q143')"><input type="radio" name="q143" value="c"><label>Detener Nginx si la variable <code>web_package</code> es "nginx".</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q143')"><input type="radio" name="q143" value="d"><label>Establecer la variable <code>web_package</code> a "nginx" antes de ejecutar la tarea.</label></li>
+            </ul>
+            <script>var answer_q143 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 144: ¿Qué efecto tiene <code>ignore_errors: true</code> en una tarea de Ansible, como la utilizada al intentar detener un servicio que podría no estar instalado?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q144')"><input type="radio" name="q144" value="a"><label>La tarea se omite por completo si se anticipa un error.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q144')"><input type="radio" name="q144" value="c"><label>Corrige automáticamente cualquier error que ocurra durante la ejecución de la tarea.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q144')"><input type="radio" name="q144" value="b"><label>Permite que el playbook continúe su ejecución incluso si la tarea falla, tratando el fallo como una advertencia en lugar de un error fatal.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q144')"><input type="radio" name="q144" value="d"><label>Muestra información de error más detallada.</label></li>
+            </ul>
+            <script>var answer_q144 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 145: La tarea de Ansible "Asegurar que el servicio {{ web_service }} está iniciado y habilitado" utiliza el módulo <code>service</code> con <code>state: started</code> y <code>enabled: true</code>. ¿Qué garantiza esta configuración?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q145')"><input type="radio" name="q145" value="a"><label>Que el servicio solo se inicie si estaba previamente detenido.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q145')"><input type="radio" name="q145" value="b"><label>Que el servicio esté actualmente en ejecución y que también se inicie automáticamente en los futuros arranques del sistema.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q145')"><input type="radio" name="q145" value="c"><label>Que el servicio se reinicie cada vez que se ejecuta el playbook.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q145')"><input type="radio" name="q145" value="d"><label>Que el servicio esté habilitado para iniciar en el arranque, pero no necesariamente iniciado en el momento.</label></li>
+            </ul>
+            <script>var answer_q145 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 146: Al usar el módulo <code>firewalld</code> de Ansible con <code>state: enabled</code> y <code>immediate: yes</code> para abrir un puerto, ¿qué significa <code>immediate: yes</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q146')"><input type="radio" name="q146" value="a"><label>Que la regla de firewall se aplica solo temporalmente hasta el próximo reinicio.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q146')"><input type="radio" name="q146" value="b"><label>Que los cambios en la configuración del firewall se aplican al instante a la configuración activa sin necesidad de recargar todo el servicio firewalld.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q146')"><input type="radio" name="q146" value="c"><label>Que la tarea se ejecutará inmediatamente al inicio del playbook, ignorando su orden.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q146')"><input type="radio" name="q146" value="d"><label>Que se debe reiniciar firewalld inmediatamente después de aplicar la regla.</label></li>
+            </ul>
+            <script>var answer_q146 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 147: En la tarea "Crear una página de prueba para Apache", se utiliza el módulo <code>copy</code> con el parámetro <code>content</code> y se incluye <code>notify: Reiniciar Apache</code>. ¿Cuál es la función combinada de estos elementos?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q147')"><input type="radio" name="q147" value="a"><label>Copia un archivo existente y luego notifica al administrador para que reinicie Apache.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q147')"><input type="radio" name="q147" value="b"><label>Crea un nuevo archivo en el destino con el texto especificado en <code>content</code>, y si este archivo cambia o se crea, se notifica al handler "Reiniciar Apache" para que se ejecute.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q147')"><input type="radio" name="q147" value="c"><label>Verifica el contenido del archivo y, si coincide, reinicia Apache.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q147')"><input type="radio" name="q147" value="d"><label>Notifica al handler "Reiniciar Apache" solo si el módulo <code>copy</code> falla.</label></li>
+            </ul>
+            <script>var answer_q147 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 148: En la sección de <code>handlers</code>, el handler "Reiniciar Apache" tiene una cláusula <code>when: web_package == "httpd"</code>. ¿Cuál es el propósito de esta condición dentro del handler?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q148')"><input type="radio" name="q148" value="a"><label>El handler solo se definirá si <code>web_package</code> es "httpd".</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q148')"><input type="radio" name="q148" value="b"><label>El handler, una vez notificado, solo ejecutará la acción de reinicio si la condición <code>web_package == "httpd"</code> es verdadera en el host donde se está ejecutando.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q148')"><input type="radio" name="q148" value="c"><label>Solo se puede notificar a este handler desde tareas que también cumplan la condición <code>web_package == "httpd"</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q148')"><input type="radio" name="q148" value="d"><label>Establece <code>web_package</code> a "httpd" antes de reiniciar.</label></li>
+            </ul>
+            <script>var answer_q148 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 149: Un script de shell contiene la línea: <code>ansible-playbook -i inventory/hosts.ini playbooks/configurar_web.yml</code>. ¿Qué acción principal realiza este script?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q149')"><input type="radio" name="q149" value="a"><label>Comprueba la sintaxis del playbook <code>configurar_web.yml</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q149')"><input type="radio" name="q149" value="b"><label>Edita el archivo de inventario <code>inventory/hosts.ini</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q149')"><input type="radio" name="q149" value="c"><label>Ejecuta el playbook de Ansible llamado <code>configurar_web.yml</code> utilizando el archivo de inventario <code>inventory/hosts.ini</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q149')"><input type="radio" name="q149" value="d"><label>Crea un nuevo playbook llamado <code>configurar_web.yml</code>.</label></li>
+            </ul>
+            <script>var answer_q149 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 150: El comando <code>VBoxManage startvm srv1 --type headless</code> se utiliza en un script. ¿Cuál es su función?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q150')"><input type="radio" name="q150" value="a"><label>Crear una nueva máquina virtual VirtualBox llamada "srv1" en modo sin interfaz gráfica.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q150')"><input type="radio" name="q150" value="b"><label>Conectarse a la consola de la máquina virtual "srv1".</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q150')"><input type="radio" name="q150" value="c"><label>Iniciar una máquina virtual VirtualBox existente llamada "srv1" sin mostrar una ventana de interfaz gráfica.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q150')"><input type="radio" name="q150" value="d"><label>Mostrar el estado de la máquina virtual "srv1", indicando si tiene cabecera o no.</label></li>
+            </ul>
+            <script>var answer_q150 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 151: Después de iniciar máquinas virtuales, un script ejecuta <code>ansible all -i inventory/hosts.ini -m ping</code>. ¿Cuál es el objetivo principal de este comando en ese contexto?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q151')"><input type="radio" name="q151" value="a"><label>Enviar paquetes ICMP para verificar la conectividad de red básica con los hosts.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q151')"><input type="radio" name="q151" value="b"><label>Verificar que Ansible pueda conectarse a todos los hosts definidos en el inventario, autenticarse y ejecutar un módulo simple (como el módulo ping, que prueba la capacidad de ejecución de Python).</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q151')"><input type="radio" name="q151" value="c"><label>Instalar el módulo ping de Ansible en todos los hosts.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q151')"><input type="radio" name="q151" value="d"><label>Mostrar la latencia de red hacia cada uno de los hosts.</label></li>
+            </ul>
+            <script>var answer_q151 = 'b';</script>
+        </div>
+
+
+        <table>
+            <caption>Diferencias entre Docker, Docker Compose y Podman</caption>
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Docker</th>
+                    <th>Docker Compose</th>
+                    <th>Podman</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Motor de contenedores</td>
+                    <td>Sí</td>
+                    <td>Usa Docker</td>
+                    <td>Sí</td>
+                </tr>
+                <tr>
+                    <td>Ejecuta múltiples contenedores</td>
+                    <td>No directamente</td>
+                    <td>Sí, orquestación básica</td>
+                    <td>Sí, con podman-compose</td>
+                </tr>
+                <tr>
+                    <td>Requiere daemon</td>
+                    <td>Sí</td>
+                    <td>Sí (usa Docker)</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>Rootless</td>
+                    <td>Limitado</td>
+                    <td>No</td>
+                    <td>Sí, por diseño</td>
+                </tr>
+                <tr>
+                    <td>Compatible con Dockerfiles</td>
+                    <td>Sí</td>
+                    <td>Sí</td>
+                    <td>Sí</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="question-block">
+            <h3>Pregunta 152: Analizando la tabla comparativa, si un equipo de desarrollo prioriza la ejecución de contenedores sin privilegios de root por defecto y busca minimizar la superficie de ataque eliminando procesos daemon en segundo plano, ¿cuál de las siguientes afirmaciones refleja con mayor precisión la elección de herramienta más adecuada según las características listadas?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q152')"><input type="radio" name="q152" value="a"><label>Docker, debido a su madurez como motor de contenedores y su compatibilidad con Dockerfiles.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q152')"><input type="radio" name="q152" value="b"><label>Podman, ya que está diseñado para rootless y no requiere un daemon, alineándose con los requisitos.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q152')"><input type="radio" name="q152" value="c"><label>Docker Compose, porque facilita la orquestación de múltiples contenedores, lo cual es esencial para la seguridad.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q152')"><input type="radio" name="q152" value="d"><label>Cualquiera de las tres, ya que todas son compatibles con Dockerfiles y pueden ejecutar contenedores.</label></li>
+            </ul>
+            <script>var answer_q152 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 153: La tabla indica que Docker Compose "Usa Docker" como motor de contenedores y "Sí (usa Docker)" para el requisito de daemon, mientras que Docker tiene "Limitado" soporte rootless y Docker Compose "No". ¿Qué implicación funcional o de dependencia se deriva directamente de estas características para Docker Compose en relación con la ejecución rootless?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q153')"><input type="radio" name="q153" value="a"><label>Docker Compose puede habilitar un modo rootless avanzado que Docker por sí solo no posee.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q153')"><input type="radio" name="q153" value="b"><label>Las capacidades rootless de Docker Compose están intrínsecamente limitadas o condicionadas por las del daemon de Docker subyacente del cual depende.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q153')"><input type="radio" name="q153" value="c"><label>Docker Compose no necesita un daemon si se utiliza con Podman en lugar de Docker.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q153')"><input type="radio" name="q153" value="d"><label>Docker Compose puede ejecutar contenedores rootless de forma nativa e independiente del motor Docker.</label></li>
+            </ul>
+            <script>var answer_q153 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 154: Considerando la característica "Ejecuta múltiples contenedores", Docker se describe como "No directamente", Docker Compose como "Sí, orquestación básica" y Podman como "Sí, con podman-compose". ¿Cuál es la inferencia más precisa sobre la capacidad de Docker (sin Compose) para gestionar aplicaciones multicontenedor complejas?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q154')"><input type="radio" name="q154" value="a"><label>Docker no puede ejecutar más de un contenedor simultáneamente en un mismo host.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q154')"><input type="radio" name="q154" value="b"><label>Aunque Docker puede lanzar múltiples contenedores, carece de las herramientas declarativas integradas para definir, enlazar y gestionar el ciclo de vida de aplicaciones compuestas por varios servicios de forma simplificada, tarea para la cual se usa Docker Compose.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q154')"><input type="radio" name="q154" value="c"><label>Podman es la única herramienta que permite la ejecución de múltiples contenedores a través de un archivo de composición.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q154')"><input type="radio" name="q154" value="d"><label>Docker gestiona múltiples contenedores de forma más eficiente que Docker Compose pero requiere configuración manual avanzada.</label></li>
+            </ul>
+            <script>var answer_q154 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 155: Si un administrador de sistemas necesita desplegar una aplicación multicontenedor definida en un Dockerfile y un archivo `docker-compose.yml`, pero en un entorno que estrictamente prohíbe procesos daemon con privilegios elevados y prioriza el soporte nativo para contenedores rootless, ¿qué combinación de herramientas o ajustes sería la MENOS viable o implicaría mayores desafíos según la tabla?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q155')"><input type="radio" name="q155" value="a"><label>Utilizar Podman junto con `podman-compose` para interpretar el archivo `docker-compose.yml`, aprovechando el diseño sin daemon y rootless de Podman.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q155')"><input type="radio" name="q155" value="b"><label>Intentar ejecutar Docker en modo rootless (con sus limitaciones) y luego usar Docker Compose sobre esta instancia.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q155')"><input type="radio" name="q155" value="c"><label>Utilizar directamente Docker y Docker Compose en su configuración estándar, ya que el "No" en rootless para Docker Compose y la dependencia de un daemon de Docker son directamente incompatibles con los requisitos estrictos.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q155')"><input type="radio" name="q155" value="d"><label>Reescribir la lógica de orquestación para Podman sin usar `podman-compose`, gestionando los contenedores individualmente con Podman.</label></li>
+            </ul>
+            <script>var answer_q155 = 'c';</script>
+        </div>
+
+        
 
         </div>
 

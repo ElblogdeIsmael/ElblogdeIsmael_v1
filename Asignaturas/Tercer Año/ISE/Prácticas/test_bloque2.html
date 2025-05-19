@@ -1185,6 +1185,141 @@
             <script>var answer_q100 = 'd';</script>
         </div>
 
+        <!-- Extra -->
+        <h2>Preguntas Extra</h2>
+        <div class="question-block">
+            <h3>Pregunta 101: El comando <code>sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</code> instala Docker Engine y varios componentes. ¿Cuál es la implicación principal de incluir paquetes como <code>docker-buildx-plugin</code> y <code>docker-compose-plugin</code> en esta instalación?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q101')"><input type="radio" name="q101" value="a"><label>Asegura la compatibilidad con versiones anteriores de Docker únicamente.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q101')"><input type="radio" name="q101" value="b"><label>Proporciona funcionalidades extendidas directamente integradas con la CLI de Docker, como la capacidad de construir imágenes para múltiples arquitecturas y gestionar aplicaciones multicontenedor sin instalar `docker-compose` como un binario separado.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q101')"><input type="radio" name="q101" value="c"><label>Son dependencias mínimas necesarias solo para que `containerd.io` funcione correctamente.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q101')"><input type="radio" name="q101" value="d"><label>Habilita un modo de alta seguridad para el Docker Engine (`docker-ce`).</label></li>
+            </ul>
+            <script>var answer_q101 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 102: La arquitectura de microservicios permite que cada servicio utilice su propio stack tecnológico. Si bien esto ofrece gran flexibilidad, ¿cuál de los siguientes escenarios describe mejor una consecuencia directa y a menudo desafiante de esta característica en un entorno de producción complejo?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q102')"><input type="radio" name="q102" value="a"><label>Una reducción significativa en la necesidad de herramientas de monitorización centralizadas.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q102')"><input type="radio" name="q102" value="b"><label>La estandarización forzada de los protocolos de comunicación entre servicios.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q102')"><input type="radio" name="q102" value="c"><label>Un incremento en la complejidad operativa para la gestión, el versionado y el mantenimiento de la compatibilidad entre múltiples stacks tecnológicos heterogéneos.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q102')"><input type="radio" name="q102" value="d"><label>Una simplificación automática del proceso de despliegue continuo (CI/CD).</label></li>
+            </ul>
+            <script>var answer_q102 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 103: Respecto a la escalabilidad en microservicios, ¿cuál de las siguientes afirmaciones distingue más sutilmente la escalabilidad horizontal de la vertical, más allá de la simple definición?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q103')"><input type="radio" name="q103" value="a"><label>La escalabilidad vertical siempre es más costosa que la horizontal.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q103')"><input type="radio" name="q103" value="b"><label>La escalabilidad horizontal (añadir instancias) puede introducir mayor complejidad en la gestión del estado y la consistencia de datos entre instancias, a diferencia de la vertical (mejorar recursos de una instancia) que no la introduce en la misma medida.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q103')"><input type="radio" name="q103" value="c"><label>La escalabilidad horizontal se limita al número de núcleos físicos del servidor.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q103')"><input type="radio" name="q103" value="d"><label>Solo la escalabilidad vertical se beneficia del uso de contenedores.</label></li>
+            </ul>
+            <script>var answer_q103 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 104: Un benchmark, como NameBench para DNS, está diseñado para medir el rendimiento. ¿Cuál es el valor fundamental de ejecutar un benchmark específico para un componente (DNS) en lugar de un benchmark general del sistema?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q104')"><input type="radio" name="q104" value="a"><label>Los benchmarks específicos son siempre más rápidos de ejecutar.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q104')"><input type="radio" name="q104" value="b"><label>Permite aislar y evaluar métricas de rendimiento directamente relevantes para la función de ese componente particular, ofreciendo resultados más accionables para su optimización.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q104')"><input type="radio" name="q104" value="c"><label>Garantiza que el componente no afectará el rendimiento de otros servicios.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q104')"><input type="radio" name="q104" value="d"><label>Elimina la necesidad de monitorizar el consumo de recursos del sistema.</label></li>
+            </ul>
+            <script>var answer_q104 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 105: Phoronix Test Suite (PTS) se integra con OpenBenchmarking para comparar resultados. ¿Qué ventaja estratégica principal ofrece esta integración a un usuario que evalúa el rendimiento de un nuevo hardware o configuración?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q105')"><input type="radio" name="q105" value="a"><label>Asegura que los tests de PTS se ejecuten más rápido en el sistema local.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q105')"><input type="radio" name="q105" value="b"><label>Permite contextualizar los resultados propios comparándolos con una amplia base de datos de resultados de otros sistemas y configuraciones, facilitando una evaluación relativa del rendimiento.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q105')"><input type="radio" name="q105" value="c"><label>Garantiza la validez de los resultados de PTS para cualquier tipo de carga de trabajo.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q105')"><input type="radio" name="q105" value="d"><label>Simplifica la instalación de PTS en contenedores Docker.</label></li>
+            </ul>
+            <script>var answer_q105 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 106: El comando Apache Benchmark (ab) <code>ab -n 100 -c 10 http://localhost/</code> realiza 100 peticiones con una concurrencia de 10. Si se incrementara significativamente solo el valor de <code>-c</code> (concurrencia) manteniendo <code>-n</code> constante, ¿qué aspecto del rendimiento del servidor se estaría poniendo a prueba de forma más intensiva?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q106')"><input type="radio" name="q106" value="a"><label>La velocidad máxima de procesamiento de una única petición secuencial.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q106')"><input type="radio" name="q106" value="b"><label>La capacidad del servidor para manejar múltiples conexiones y peticiones simultáneas y la gestión de sus recursos bajo dicha carga (ej. hilos, memoria).</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q106')"><input type="radio" name="q106" value="c"><label>La eficiencia de la caché del navegador del cliente.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q106')"><input type="radio" name="q106" value="d"><label>El ancho de banda de la red entre el cliente y el servidor para transferir grandes volúmenes de datos.</label></li>
+            </ul>
+            <script>var answer_q106 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 107: La instalación de Apache Benchmark (ab) en sistemas basados en Debian/Ubuntu se realiza comúnmente con <code>sudo apt install apache2-utils -y</code>. ¿Qué indica el uso de <code>apache2-utils</code> en lugar de un paquete llamado, por ejemplo, <code>ab-standalone</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q107')"><input type="radio" name="q107" value="a"><label><code>ab</code> solo funciona si el servidor web Apache completo está instalado en la misma máquina.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q107')"><input type="radio" name="q107" value="a"><label><code>apache2-utils</code> es un metapaquete que también instala otros servidores web como Nginx.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q107')"><input type="radio" name="q107" value="c"><label><code>ab</code> se distribuye como parte de un conjunto de herramientas y utilidades asociadas con el servidor Apache, aunque <code>ab</code> pueda usarse para probar cualquier servidor HTTP.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q107')"><input type="radio" name="q107" value="d"><label>Es la única forma de obtener la versión más reciente de <code>ab</code>.</label></li>
+            </ul>
+            <script>var answer_q107 = 'c';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 108: Al realizar un benchmark comparativo entre Apache y Nginx usando Apache Benchmark (<code>ab</code>) con el objetivo de "elevar significativamente la carga", ¿cuál de las siguientes estrategias de parametrización de <code>ab</code> sería MENOS efectiva para revelar diferencias fundamentales en cómo ambos servidores manejan la concurrencia y el consumo de recursos bajo estrés?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q108')"><input type="radio" name="q108" value="a"><label>Un número muy bajo de peticiones totales (<code>-n</code>) con una concurrencia también muy baja (<code>-c</code>).</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q108')"><input type="radio" name="q108" value="b"><label>Incrementar progresivamente la concurrencia (<code>-c</code>) mientras se mantiene un número alto de peticiones (<code>-n</code>) y se observa el punto de degradación del rendimiento.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q108')"><input type="radio" name="q108" value="c"><label>Utilizar la opción <code>-k</code> (KeepAlive) para simular un comportamiento de cliente más realista y evaluar el manejo de conexiones persistentes.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q108')"><input type="radio" name="q108" value="d"><label>Realizar pruebas con diferentes tamaños de documentos solicitados para observar el impacto en el throughput y el uso de memoria.</label></li>
+            </ul>
+            <script>var answer_q108 = 'a';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 109: Al interpretar los resultados de Apache Benchmark (<code>ab</code>) al comparar dos servidores HTTP, si el "Time per request (mean, across all concurrent requests)" es significativamente menor para el Servidor A que para el Servidor B con alta concurrencia, ¿qué indicaría esto primordialmente?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q109')"><input type="radio" name="q109" value="a"><label>El Servidor A tiene una conexión de red más rápida, independientemente de su capacidad de procesamiento.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q109')"><input type="radio" name="q109" value="b"><label>El Servidor A es más eficiente gestionando un gran número de solicitudes simultáneas, resultando en menor tiempo de espera promedio por petición bajo carga.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q109')"><input type="radio" name="q109" value="c"><label>El Servidor B está sirviendo contenido dinámico mientras que el Servidor A sirve contenido estático.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q109')"><input type="radio" name="q109" value="d"><label>El Servidor A tiene un límite de "keep-alive timeout" más corto.</label></li>
+            </ul>
+            <script>var answer_q109 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 110: El comando <code>./jmeter -n -t /ruta/archivo.jmx -l /ruta/archivo_resultados.jtl</code> ejecuta JMeter en modo no-GUI. ¿Cuál es una ventaja CRUCIAL de este modo de ejecución para pruebas de carga de alto volumen en comparación con el modo GUI?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q110')"><input type="radio" name="q110" value="a"><label>Permite la modificación interactiva del plan de pruebas mientras se ejecuta la carga.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q110')"><input type="radio" name="q110" value="b"><label>El modo no-GUI consume significativamente menos recursos (CPU y memoria) en la máquina que genera la carga, permitiendo simular un mayor número de usuarios virtuales y obtener resultados más precisos al no interferir la GUI con la prueba.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q110')"><input type="radio" name="q110" value="c"><label>Genera informes gráficos más detallados directamente en el archivo JTL.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q110')"><input type="radio" name="q110" value="d"><label>Es el único modo que soporta la ejecución de scripts Groovy en JMeter.</label></li>
+            </ul>
+            <script>var answer_q110 = 'b';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 111: El sistema de archivos <code>/proc</code> en Linux es una fuente crítica de información dinámica del sistema. Si un script necesita obtener el tiempo exacto que el sistema lleva encendido desde el último arranque, ¿qué característica de <code>/proc/uptime</code> es más relevante para esta tarea?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q111')"><input type="radio" name="q111" value="a"><label>Su contenido se actualiza solo durante el proceso de arranque.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q111')"><input type="radio" name="q111" value="b"><label>Proporciona una marca de tiempo del último apagado del sistema.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q111')"><input type="radio" name="q111" value="c"><label>Contiene dos valores numéricos: el tiempo total que el sistema ha estado encendido y el tiempo que ha estado inactivo, ambos en segundos y actualizados en tiempo real por el kernel.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q111')"><input type="radio" name="q111" value="d"><label>Es un archivo de registro que acumula los tiempos de actividad de cada sesión de usuario.</label></li>
+            </ul>
+            <script>var answer_q111 = 'c';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 112: ¿Cuál de los siguientes ficheros dentro del sistema de archivos <code>/proc</code> sería el más directo y apropiado para analizar la distribución y el uso actual de la memoria RAM y swap del sistema, incluyendo detalles como memoria total, libre, buffers y caché?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q112')"><input type="radio" name="q112" value="a"><label><code>/proc/stat</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q112')"><input type="radio" name="q112" value="b"><label><code>/proc/cpuinfo</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q112')"><input type="radio" name="q112" value="c"><label><code>/proc/loadavg</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q112')"><input type="radio" name="q112" value="d"><label><code>/proc/meminfo</code></label></li>
+            </ul>
+            <script>var answer_q112 = 'd';</script>
+        </div>
+
+
     </div>
 
     <script>
