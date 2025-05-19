@@ -1,4 +1,0 @@
-web_package: nginx
-web_service: nginx
-web_port: 80
-
