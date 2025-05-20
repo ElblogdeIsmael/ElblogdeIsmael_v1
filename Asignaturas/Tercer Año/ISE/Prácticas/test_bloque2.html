@@ -1319,6 +1319,941 @@
             <script>var answer_q112 = 'd';</script>
         </div>
 
+        <div class="question-block">
+            <h3>Pregunta 113: Un administrador configura una tarea cron con la entrada <code>1 * * * * * /opt/scripts/monitor.sh</code>. Si la intención es registrar la carga del sistema, ¿cuál sería el efecto más notable de esta configuración específica en los logs generados por <code>monitor.sh</code> usando <code>logger -t ISE</code>, asumiendo que el script se ejecuta instantáneamente?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q113')"><input type="radio" name="q113" value="a"><label>Un log cada hora, al primer segundo.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q113')"><input type="radio" name="q113" value="b"><label>Un log cada minuto, al segundo 1.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q113')"><input type="radio" name="q113" value="c"><label>El script no se ejecutaría por sintaxis errónea en cron.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q113')"><input type="radio" name="q113" value="d"><label>Múltiples logs por minuto, uno por segundo, pudiendo saturar los logs.</label></li>
+            </ul>
+            <script>var answer_q113 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 114: Al intentar depurar un problema ocurrido durante el penúltimo arranque (no el actual, sino el anterior a ese), un técnico necesita ver únicamente los mensajes con nivel de prioridad <code>crit</code> o superior. ¿Cuál de los siguientes comandos <code>journalctl</code> es el más preciso y eficiente para esta tarea específica?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q114')"><input type="radio" name="q114" value="a"><label><code>journalctl -b -2 -p crit</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q114')"><input type="radio" name="q114" value="b"><label><code>journalctl -p crit --since "2 days ago"</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q114')"><input type="radio" name="q114" value="c"><label><code>journalctl -b -1 -p err | grep 'crit\|alert\|emerg'</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q114')"><input type="radio" name="q114" value="d"><label><code>journalctl -b --list-boots | tail -n 3 | head -n 1 | xargs journalctl -b ID -p crit</code> (asumiendo ID es el identificador)</label></li>
+            </ul>
+            <script>var answer_q114 = 'a';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 115: El script programado con cron debe generar un mensaje con el formato "&lt;SusIniciales&gt;: &lt;Fecha y hora actual&gt;– &lt;Carga actual del Sistema&gt;". Si, tras configurar el cronjob, no aparecen logs con la etiqueta "ISE" mediante <code>journalctl -t ISE</code>, pero el administrador confirma que el script tiene permisos de ejecución y la ruta en crontab es correcta, ¿cuál podría ser una causa plausible relacionada directamente con la interacción entre el script y <code>logger</code> o el entorno de cron?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q115')"><input type="radio" name="q115" value="a"><label>El servicio <code>systemd-journald</code> está inactivo.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q115')"><input type="radio" name="q115" value="b"><label>La utilidad <code>logger</code> no está en el PATH del entorno de ejecución de cron.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q115')"><input type="radio" name="q115" value="c"><label>El script no puede obtener la carga del sistema y termina prematuramente sin llamar a logger.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q115')"><input type="radio" name="q115" value="d"><label>El directorio <code>/var/log</code> no tiene espacio disponible, impidiendo la escritura de nuevos logs.</label></li>
+            </ul>
+            <script>var answer_q115 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 116: Si se ejecuta el comando <code>journalctl -b -p warning</code> y, entre los resultados, se observa un mensaje con nivel de prioridad <code>emerg</code>, ¿qué implicación directa se deriva de la funcionalidad de <code>journalctl</code> según la información proporcionada?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q116')"><input type="radio" name="q116" value="a"><label><code>journalctl</code> ha filtrado incorrectamente, mostrando más de lo pedido.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q116')"><input type="radio" name="q116" value="b"><label>El sistema está inestable y solo muestra mensajes <code>emerg</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q116')"><input type="radio" name="q116" value="c"><label>La opción <code>-p warning</code> incluye niveles de mayor gravedad que warning.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q116')"><input type="radio" name="q116" value="d"><label>Es necesario usar <code>journalctl -b -p emerg</code> para ver solo emergencias.</label></li>
+            </ul>
+            <script>var answer_q116 = 'c';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 117: Un script programado en el crontab del usuario para ejecutarse cada minuto (<code>* * * * * /home/user/script.sh</code>) tiene como objetivo registrar la carga del sistema usando <code>logger -t ISE "Carga: $(uptime)"</code>. El script tiene permisos de ejecución. Si no aparecen logs con la etiqueta "ISE" en <code>journalctl -t ISE</code>, pero otros logs del sistema sí se registran correctamente, ¿cuál de las siguientes es una causa raíz probable y específica del problema con este cron job?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q117')"><input type="radio" name="q117" value="a"><label>El comando <code>uptime</code> no está disponible en el PATH mínimo que usa cron para ejecutar los scripts.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q117')"><input type="radio" name="q117" value="b"><label>La partición <code>/var/log</code> está completamente llena, impidiendo nuevos registros en el journal.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q117')"><input type="radio" name="q117" value="c"><label>El servicio <code>crond</code> no está activo o no se ha reiniciado tras añadir la tarea.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q117')"><input type="radio" name="q117" value="d"><label><code>systemd-journald</code> está filtrando los mensajes de <code>logger</code> con la etiqueta ISE por una regla específica.</label></li>
+            </ul>
+            <script>var answer_q117 = 'a';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 118: Sabiendo que <code>journalctl -p warning</code> muestra mensajes de prioridad <code>warning, err, crit, alert, emerg</code>, ¿cómo se consultarian los logs del arranque actual para ver mensajes que sean <code>err</code> o <code>crit</code>, pero excluyendo explícitamente los de nivel <code>warning</code> y también los más graves como <code>alert</code> o <code>emerg</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q118')"><input type="radio" name="q118" value="a"><label><code>journalctl -b -p err..crit</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q118')"><input type="radio" name="q118" value="b"><label><code>journalctl -b -p warning | grep -E 'err|crit'</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q118')"><input type="radio" name="q118" value="c"><label><code>journalctl -b -p crit -p err --grep-invert-level=warning --grep-invert-level=alert --grep-invert-level=emerg</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q118')"><input type="radio" name="q118" value="d"><label>No es posible con una sola invocación de <code>journalctl</code> sin post-procesamiento.</label></li>
+            </ul>
+            <script>var answer_q118 = 'a';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 119: El script para cron debe generar un log con el formato "&lt;SusIniciales&gt;: &lt;Fecha y hora actual&gt;– &lt;Carga actual del Sistema&gt;". Si el log generado solo muestra "&lt;SusIniciales&gt;: &lt;Fecha y hora actual&gt;– " y la parte de la carga del sistema está ausente, asumiendo que <code>logger</code> se invoca correctamente con todas las partes concatenadas, ¿cuál es el fallo más probable dentro del script?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q119')"><input type="radio" name="q119" value="a"><label>La variable de entorno para las iniciales no está definida en el entorno de cron.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q119')"><input type="radio" name="q119" value="b"><label>El comando para obtener la carga del sistema (e.g., <code>uptime</code> o similar) está fallando o devolviendo una cadena vacía.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q119')"><input type="radio" name="q119" value="c"><label>La utilidad <code>logger</code> tiene un límite en la longitud del mensaje que se está excediendo.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q119')"><input type="radio" name="q119" value="d"><label>El comando para obtener la fecha y hora actual está configurado en un formato incorrecto.</label></li>
+            </ul>
+            <script>var answer_q119 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 120: Un administrador necesita revisar los logs de todos los arranques registrados, excepto el actual, para buscar mensajes con prioridad <code>alert</code>. Antes de ejecutar cualquier comando <code>journalctl</code>, verifica el estado de <code>systemd-journald</code> y lo encuentra "active (running)". ¿Cuál sería la aproximación más directa y adecuada con <code>journalctl</code> para esta tarea, considerando que podrían existir múltiples arranques anteriores?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q120')"><input type="radio" name="q120" value="a"><label><code>journalctl --list-boots | grep -v " 0 " | awk '{print $1}' | xargs -I{} journalctl -b {} -p alert</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q120')"><input type="radio" name="q120" value="b"><label><code>journalctl -b -1 -p alert && journalctl -b -2 -p alert && ...</code> (repitiendo para cada arranque)</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q120')"><input type="radio" name="q120" value="c"><label>Iterar con un script sobre <code>journalctl -b -k -p alert</code> donde k va desde 1 hasta el número de arranques.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q120')"><input type="radio" name="q120" value="d"><label><code>journalctl -p alert --boot=-1 --boot=-2 --boot=-3</code> (y así sucesivamente para los arranques necesarios).</label></li>
+            </ul>
+            <script>var answer_q120 = 'a';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 121: Durante la configuración manual de <code>node_exporter</code> en un servidor Rocky Linux, tras mover el binario a <code>/usr/local/bin/</code> y crear un servicio systemd, este falla al iniciar. Un análisis posterior revela que SELinux está denegando la ejecución. Según la problemática descrita en la documentación, ¿cuál es la solución específica mencionada para resolver este conflicto con SELinux?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q121')"><input type="radio" name="q121" value="a"><label>Desactivar SELinux temporalmente usando <code>setenforce 0</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q121')"><input type="radio" name="q121" value="b"><label>Corregir el contexto de seguridad SELinux del binario <code>node_exporter</code> al tipo <code>bin_t</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q121')"><input type="radio" name="q121" value="c"><label>Añadir una regla a SELinux para permitir la ejecución de cualquier binario en <code>/usr/local/bin/</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q121')"><input type="radio" name="q121" value="d"><label>Recompilar <code>node_exporter</code> con soporte para políticas SELinux personalizadas.</label></li>
+            </ul>
+            <script>var answer_q121 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 122: En la configuración de <code>docker-compose.yml</code> proporcionada para desplegar Prometheus y Grafana, el servicio de Grafana expone un puerto al host y depende de Prometheus. ¿Qué par de puertos (<code>HOST:CONTAINER</code>) se utiliza para Grafana y cuál es la implicación principal de la directiva <code>depends_on: - prometheus</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q122')"><input type="radio" name="q122" value="a"><label>Grafana usa <code>3000:4000</code>, y <code>depends_on</code> asegura que Grafana siempre tenga más recursos asignados.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q122')"><input type="radio" name="q122" value="b"><label>Grafana usa <code>9090:9090</code>, y <code>depends_on</code> configura Prometheus para que envíe datos a Grafana.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q122')"><input type="radio" name="q122" value="c"><label>Grafana usa <code>4000:3000</code>, y <code>depends_on</code> indica que el contenedor de Grafana se iniciará después de que el de Prometheus haya comenzado.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q122')"><input type="radio" name="q122" value="d"><label>Grafana usa <code>4000:3000</code>, y <code>depends_on</code> establece un enlace de red directo para la comunicación exclusiva entre ellos.</label></li>
+            </ul>
+            <script>var answer_q122 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 123: El archivo <code>prometheus.yml</code> define una configuración global y un trabajo de scraping. Si el <code>scrape_interval</code> global es de <code>5s</code> y el único <code>job_name</code> es <code>"prometheus_service"</code> que apunta a <code>"prometheus:9090"</code>, ¿qué significa esto para la recolección de métricas del propio Prometheus?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q123')"><input type="radio" name="q123" value="a"><label>Prometheus intentará recolectar sus propias métricas cada 5 segundos desde el puerto 9090 del contenedor llamado "prometheus".</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q123')"><input type="radio" name="q123" value="b"><label>Prometheus solo recolectará métricas de otros servicios, no de sí mismo, a menos que se añada un job específico.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q123')"><input type="radio" name="q123" value="c"><label>El intervalo de <code>5s</code> se aplica a todos los jobs excepto a <code>"prometheus_service"</code>, que usará un valor por defecto.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q123')"><input type="radio" name="q123" value="d"><label>Las métricas de <code>"prometheus_service"</code> se recolectarán, pero no se almacenarán debido a que es un target interno.</label></li>
+            </ul>
+            <script>var answer_q123 = 'a';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 124: Para la monitorización de una API WEB, se requiere crear un panel que muestre la relación entre la memoria heap total de NodeJS y la memoria heap usada. ¿Cuáles son las dos métricas específicas de <code>prom-client</code> mencionadas en la documentación que se utilizarían para construir este panel?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q124')"><input type="radio" name="q124" value="a"><label><code>process_resident_memory_bytes</code> y <code>nodejs_external_memory_bytes</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q124')"><input type="radio" name="q124" value="b"><label><code>nodejs_heap_space_size_available_bytes</code> y <code>nodejs_heap_size_used_bytes</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q124')"><input type="radio" name="q124" value="c"><label><code>nodejs_heap_size_total_bytes</code> y <code>nodejs_heap_size_used_bytes</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q124')"><input type="radio" name="q124" value="d"><label><code>http_request_duration_seconds_bucket</code> y <code>process_cpu_seconds_total</code>.</label></li>
+            </ul>
+            <script>var answer_q124 = 'c';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 125: Al configurar volúmenes persistentes para Prometheus y Grafana en Docker, la documentación menciona la necesidad de ejecutar comandos para evitar problemas de permisos. Para el directorio de datos de Grafana (<code>./grafana_data</code>), ¿qué UID/GID específico se utiliza en el comando <code>sudo chown -R</code> y qué permisos se establecen con <code>sudo chmod -R</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q125')"><input type="radio" name="q125" value="a"><label><code>chown</code> a <code>root:root</code> y <code>chmod</code> a <code>777</code> para máxima compatibilidad.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q125')"><input type="radio" name="q125" value="b"><label><code>chown</code> a <code>472:472</code> y <code>chmod</code> a <code>755</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q125')"><input type="radio" name="q125" value="c"><label><code>chown</code> a <code>65534:65534</code> (nobody:nogroup) y <code>chmod</code> a <code>700</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q125')"><input type="radio" name="q125" value="d"><label><code>chown</code> al usuario actual y <code>chmod</code> a <code>644</code> para mayor seguridad.</label></li>
+            </ul>
+            <script>var answer_q125 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 126: Al configurar Grafana por primera vez, se indica que se accede con credenciales por defecto y luego se cambian. Posteriormente, para que Grafana pueda obtener datos de Prometheus (asumiendo que ambos corren en contenedores Docker en la misma red), ¿cuál es la URL HTTP que típicamente se configura en Grafana para el Data Source de Prometheus, según lo ilustrado en la documentación?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q126')"><input type="radio" name="q126" value="a"><label><code>http://localhost:9090</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q126')"><input type="radio" name="q126" value="b"><label><code>http://prometheus_service:9090</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q126')"><input type="radio" name="q126" value="c"><label><code>http://prometheus:9090</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q126')"><input type="radio" name="q126" value="d"><label>La IP del contenedor de Prometheus seguida del puerto 9090.</label></li>
+            </ul>
+            <script>var answer_q126 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 127: Un estudiante intenta monitorizar el estado del servicio SSH (<code>sshd.service</code>) usando <code>node_exporter</code> y Grafana, pero el panel no muestra los datos correctos. La documentación sugiere una solución específica que implica modificar la configuración de <code>node_exporter</code>. ¿Cuál es esta modificación clave para que <code>node_exporter</code> exponga correctamente las métricas de los servicios de systemd?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q127')"><input type="radio" name="q127" value="a"><label>Añadir <code>--collector.systemd</code> a la línea de ejecución de <code>node_exporter.service</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q127')"><input type="radio" name="q127" value="b"><label>Crear un nuevo scraper en <code>prometheus.yml</code> para el puerto específico del colector systemd.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q127')"><input type="radio" name="q127" value="c"><label>Instalar un plugin adicional en Grafana para interpretar las métricas de systemd.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q127')"><input type="radio" name="q127" value="d"><label>Modificar los permisos del socket de systemd para permitir el acceso a <code>node_exporter</code>.</label></li>
+            </ul>
+            <script>var answer_q127 = 'a';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 128: Para crear una alerta en Grafana que se dispare cuando el uso promedio de CPU supere el 75% durante 5 minutos, se utiliza una consulta PromQL y se configura una regla de alerta. Basándose en la configuración de alerta descrita (Query A, Condition B, y Alert evaluation behavior), ¿cuál es la combinación correcta de la condición y el comportamiento de evaluación de la alerta?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q128')"><input type="radio" name="q128" value="a"><label>Condición: <code>WHEN last() OF A IS ABOVE 75</code>. Evaluación: <code>Evaluate every 5m for 1m</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q128')"><input type="radio" name="q128" value="b"><label>Condición: <code>WHEN avg() OF A IS ABOVE 0.75</code>. Evaluación: <code>Evaluate every 1m for 5m</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q128')"><input type="radio" name="q128" value="c"><label>Condición: <code>WHEN last() OF A IS ABOVE 75</code>. Evaluación: <code>Evaluate every 1m for 5m</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q128')"><input type="radio" name="q128" value="d"><label>Condición: <code>WHEN count() OF A > 75 FOR 5m</code>. Evaluación: <code>Evaluate every minute</code>.</label></li>
+            </ul>
+            <script>var answer_q128 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 129: La consulta PromQL proporcionada para calcular el "Uso Total CPU (%)" en un panel de Grafana es <code>(1 - avg by (instance) (rate(node_cpu_seconds_total{job="rocky_linux_server",mode="idle"}[5m]))) * 100</code>. ¿Qué representa específicamente la parte <code>rate(node_cpu_seconds_total{...mode="idle"}[5m])</code> en este contexto?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q129')"><input type="radio" name="q129" value="a"><label>El número total de segundos que la CPU ha estado inactiva desde el último reinicio del servidor.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q129')"><input type="radio" name="q129" value="b"><label>La fracción promedio de tiempo por segundo, durante los últimos 5 minutos, que la CPU estuvo en modo inactivo.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q129')"><input type="radio" name="q129" value="c"><label>El porcentaje de uso de CPU en modo "idle" acumulado en los últimos 5 minutos.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q129')"><input type="radio" name="q129" value="d"><label>La cantidad de ciclos de CPU consumidos por procesos inactivos en un intervalo de 5 minutos.</label></li>
+            </ul>
+            <script>var answer_q129 = 'b';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 130: La documentación indica que para los volúmenes de datos de Docker, como <code>./prometheus_data</code>, se ejecuta <code>sudo chown -R 65534:65534 ./prometheus_data</code>. ¿Cuál es la razón técnica más probable para utilizar el UID/GID <code>65534:65534</code> en este contexto específico?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q130')"><input type="radio" name="q130" value="a"><label>Es el UID/GID estándar para todos los servicios que se ejecutan en contenedores Docker.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q130')"><input type="radio" name="q130" value="b"><label>Corresponde al usuario y grupo 'nobody' o al usuario interno con el que el proceso de Prometheus se ejecuta dentro del contenedor, para asegurar permisos de escritura.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q130')"><input type="radio" name="q130" value="c"><label>Este UID/GID otorga permisos de solo lectura, mejorando la seguridad del volumen de datos.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q130')"><input type="radio" name="q130" value="d"><label>Facilita la compartición de este volumen entre múltiples contenedores sin conflictos de permisos.</label></li>
+            </ul>
+            <script>var answer_q130 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 131: Si el colector <code>systemd</code> de <code>node_exporter</code> no se habilita explícitamente (es decir, no se añade <code>--collector.systemd</code> a sus argumentos de inicio), ¿cuál sería el resultado más probable al intentar ejecutar la consulta PromQL <code>node_systemd_unit_state{name="sshd.service"}</code> en Prometheus?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q131')"><input type="radio" name="q131" value="a"><label>La consulta devolvería un valor de '0' o 'unknown' por defecto para el estado del servicio.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q131')"><input type="radio" name="q131" value="b"><label>Prometheus generaría un error de sintaxis en la consulta porque la métrica es opcional.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q131')"><input type="radio" name="q131" value="c"><label>No se encontrarían series temporales para la métrica <code>node_systemd_unit_state</code>, resultando en una respuesta vacía o un error de "no data".</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q131')"><input type="radio" name="q131" value="d"><label><code>node_exporter</code> expondría la métrica, pero con valores predeterminados indicando que el colector no está configurado.</label></li>
+            </ul>
+            <script>var answer_q131 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 132: En la configuración de una regla de alerta en Grafana para el uso de CPU, se establece "Evaluate every <code>1m</code>" y "for <code>5m</code>". ¿Cuál es la diferencia fundamental en el comportamiento de la alerta si el parámetro "for <code>5m</code>" se omitiera o se estableciera en "for <code>0m</code>"?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q132')"><input type="radio" name="q132" value="a"><label>Sin "for <code>5m</code>", la alerta se dispararía cada minuto si la condición es verdadera, en lugar de una vez cada cinco minutos.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q132')"><input type="radio" name="q132" value="b"><label>La alerta se dispararía inmediatamente en la primera evaluación donde la condición sea verdadera, sin requerir que la condición persista durante 5 minutos.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q132')"><input type="radio" name="q132" value="c"><label>Omitir "for <code>5m</code>" haría que la alerta solo se compruebe una vez cada 5 minutos, en lugar de cada minuto.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q132')"><input type="radio" name="q132" value="d"><label>La severidad de la alerta cambiaría de crítica a advertencia si "for <code>5m</code>" no está presente.</label></li>
+            </ul>
+            <script>var answer_q132 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 133: La métrica <code>node_cpu_seconds_total</code> de <code>node_exporter</code> es un contador que registra el tiempo de CPU acumulado en diferentes modos (idle, user, system, etc.). En la consulta PromQL para el uso de CPU: <code>(1 - avg by (instance) (rate(node_cpu_seconds_total{job="rocky_linux_server",mode="idle"}[5m]))) * 100</code>, ¿cuál es el propósito principal de la función <code>avg by (instance)</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q133')"><input type="radio" name="q133" value="a"><label>Calcular el promedio de uso de CPU entre todas las instancias monitorizadas por Prometheus.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q133')"><input type="radio" name="q133" value="b"><label>Asegurar que el resultado se muestre como un promedio si hay múltiples cores de CPU en la misma instancia, preservando la etiqueta 'instance'.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q133')"><input type="radio" name="q133" value="c"><label>Convertir la tasa de segundos a un valor promediado en el tiempo para suavizar picos instantáneos.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q133')"><input type="radio" name="q133" value="d"><label>Seleccionar solo la instancia con la carga de CPU promedio más alta para la visualización.</label></li>
+            </ul>
+            <script>var answer_q133 = 'b';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 134: En el archivo <code>docker-compose.yml</code>, el servicio de Prometheus tiene una sección <code>command</code> con el argumento <code>--config.file=/etc/prometheus/prometheus.yml</code>. ¿Cuál es la implicación principal de este comando para el contenedor de Prometheus?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q134')"><input type="radio" name="q134" value="a"><label>Permite que Prometheus genere un archivo de configuración por defecto en <code>/etc/prometheus/prometheus.yml</code> si no existe.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q134')"><input type="radio" name="q134" value="b"><label>Indica al proceso de Prometheus dentro del contenedor que utilice el archivo mapeado desde el host (<code>./prometheus.yml</code>) como su fichero de configuración principal.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q134')"><input type="radio" name="q134" value="c"><label>Valida la sintaxis del archivo <code>/etc/prometheus/prometheus.yml</code> antes de iniciar el servicio completo.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q134')"><input type="radio" name="q134" value="d"><label>Establece un modo de solo lectura para el archivo de configuración para prevenir cambios accidentales desde el contenedor.</label></li>
+            </ul>
+            <script>var answer_q134 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 135: La configuración de Grafana en <code>docker-compose.yml</code> incluye <code>ports: - "4000:3000"</code>. ¿Cuál es el propósito y efecto de este mapeo de puertos específico?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q135')"><input type="radio" name="q135" value="a"><label>Permite que Grafana dentro del contenedor escuche en el puerto 4000 y se comunique con Prometheus en el puerto 3000 del host.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q135')"><input type="radio" name="q135" value="b"><label>Redirige el tráfico del puerto 3000 del host al puerto 4000 del contenedor de Grafana para la interfaz web.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q135')"><input type="radio" name="q135" value="c"><label>Hace que la interfaz web de Grafana, que escucha en el puerto 3000 dentro del contenedor, sea accesible en el puerto 4000 del host.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q135')"><input type="radio" name="q135" value="d"><label>Limita el acceso a Grafana únicamente a través del puerto 4000, mientras que el 3000 se reserva para la API interna.</label></li>
+            </ul>
+            <script>var answer_q135 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 136: Si se desea que Prometheus monitoree una instancia de <code>node_exporter</code> que se ejecuta en el host de Docker (o en otro contenedor accesible en la red Docker como 'node-exporter-host:9100'), ¿cómo se modificaría principalmente el archivo <code>prometheus.yml</code> para añadir este nuevo objetivo de scraping?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q136')"><input type="radio" name="q136" value="a"><label>Añadiendo una nueva entrada <code>global.scrape_targets</code> con la dirección del <code>node_exporter</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q136')"><input type="radio" name="q136" value="b"><label>Creando un nuevo job dentro de <code>scrape_configs</code> con un <code>static_configs</code> que apunte a <code>targets: ["node-exporter-host:9100"]</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q136')"><input type="radio" name="q136" value="c"><label>Modificando el job existente <code>"prometheus_service"</code> para incluir también <code>"node-exporter-host:9100"</code> en sus targets.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q136')"><input type="radio" name="q136" value="d"><label>Configurando una regla de reetiquetado (relabel_configs) para descubrir automáticamente todos los exporters.</label></li>
+            </ul>
+            <script>var answer_q136 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 137: La métrica <code>http_request_duration_seconds_bucket</code> se menciona para la monitorización de tiempos de respuesta de una API WEB. ¿Qué tipo de información fundamental proporciona esta métrica de tipo histograma para el análisis del rendimiento?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q137')"><input type="radio" name="q137" value="a"><label>El número total de solicitudes HTTP que han excedido un umbral de tiempo específico.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q137')"><input type="radio" name="q137" value="b"><label>La duración exacta de la última solicitud HTTP procesada por la API.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q137')"><input type="radio" name="q137" value="c"><label>La distribución de las duraciones de las solicitudes en cubos (buckets) predefinidos, permitiendo calcular percentiles (e.g., p95, p99).</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q137')"><input type="radio" name="q137" value="d"><label>Un promedio móvil de los tiempos de respuesta de todos los endpoints de la API durante el último intervalo de scrape.</label></li>
+            </ul>
+            <script>var answer_q137 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 138: En el contexto del ejercicio de monitorización del servidor Linux, se menciona el uso de la herramienta <code>stress</code> para "poner de manifiesto el funcionamiento de la alarma" asociada al uso de CPU. ¿Cuál es el propósito general de utilizar <code>stress</code> en este escenario?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q138')"><input type="radio" name="q138" value="a"><label>Verificar la correcta instalación y configuración de Prometheus y Grafana.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q138')"><input type="radio" name="q138" value="b"><label>Generar una carga artificial y controlada en el sistema (CPU, memoria, I/O) para simular condiciones de alta demanda.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q138')"><input type="radio" name="q138" value="c"><label>Optimizar automáticamente la configuración de la alarma de CPU en Grafana.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q138')"><input type="radio" name="q138" value="d"><label>Probar la conectividad de red entre el servidor monitorizado y el sistema de monitorización.</label></li>
+            </ul>
+            <script>var answer_q138 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 139: En el archivo <code>docker-compose.yml</code>, el servicio <code>grafana</code> tiene la directiva <code>depends_on: - prometheus</code>. Además de influir en el orden de inicio de los contenedores, ¿qué otra facilidad importante proporciona esta directiva en el contexto de una red Docker Compose por defecto?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q139')"><input type="radio" name="q139" value="a"><label>Garantiza que el contenedor de Grafana siempre tenga mayor prioridad de CPU que el de Prometheus.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q139')"><input type="radio" name="q139" value="b"><label>Permite que el contenedor de Grafana resuelva el nombre de host 'prometheus' a la dirección IP interna del contenedor de Prometheus.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q139')"><input type="radio" name="q139" value="c"><label>Crea automáticamente un volumen compartido entre Grafana y Prometheus para el intercambio de datos de configuración.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q139')"><input type="radio" name="q139" value="d"><label>Sincroniza automáticamente los relojes de los contenedores de Grafana y Prometheus para la consistencia de las series temporales.</label></li>
+            </ul>
+            <script>var answer_q139 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 140: La consulta PromQL para el uso de CPU es <code>(1 - avg by (instance) (rate(node_cpu_seconds_total{job="rocky_linux_server",mode="idle"}[5m]))) * 100</code>. Si se eliminara el filtro <code>mode="idle"</code>, resultando en <code>rate(node_cpu_seconds_total{job="rocky_linux_server"}[5m])</code>, ¿qué representaría esta parte modificada de la consulta?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q140')"><input type="radio" name="q140" value="a"><label>La tasa de incremento de todos los modos de CPU combinados, lo que podría equivaler al número de cores si el sistema está completamente ocupado.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q140')"><input type="radio" name="q140" value="b"><label>Un error de consulta, ya que <code>node_cpu_seconds_total</code> siempre requiere un filtro de <code>mode</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q140')"><input type="radio" name="q140" value="c"><label>El porcentaje de tiempo de CPU total no utilizado, ya que el modo "idle" es el predominante.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q140')"><input type="radio" name="q140" value="d"><label>La tasa de uso de CPU exclusivamente por procesos de usuario, excluyendo system e idle.</label></li>
+            </ul>
+            <script>var answer_q140 = 'a';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 141: Si después de instalar <code>node_exporter</code> en <code>/usr/local/bin/</code> y configurar su servicio systemd, este falla consistentemente al iniciar y los logs del sistema (journal) indican errores de "permission denied" relacionados con la ejecución del binario, a pesar de que el archivo tiene permisos de ejecución (e.g. 755), ¿cuál de las siguientes problemáticas, discutida en la documentación, sería la causa más directa y probable en un sistema como Rocky Linux?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q141')"><input type="radio" name="q141" value="a"><label>El firewall del sistema está bloqueando la ejecución de nuevos servicios.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q141')"><input type="radio" name="q141" value="b"><label>Una política de SELinux está impidiendo que el proceso <code>node_exporter</code> se ejecute debido a un contexto de seguridad incorrecto en el archivo binario.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q141')"><input type="radio" name="q141" value="c"><label>El usuario bajo el cual systemd intenta ejecutar el servicio <code>node_exporter</code> no tiene permisos de lectura en <code>/usr/local/bin/</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q141')"><input type="radio" name="q141" value="d"><label>Falta de dependencias o librerías requeridas por el binario de <code>node_exporter</code> en el sistema.</label></li>
+            </ul>
+            <script>var answer_q141 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 142: Al definir una alerta en Grafana, como la "Alerta CPU Alta (ISM)", se incluye un campo "Summary". ¿Cuál es la función principal de este campo en el ciclo de vida de una alerta?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q142')"><input type="radio" name="q142" value="a"><label>Contiene la consulta PromQL exacta que Grafana evalúa para la condición de alerta.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q142')"><input type="radio" name="q142" value="b"><label>Es un texto descriptivo corto que se utiliza en las notificaciones y en la interfaz de usuario de Grafana para identificar y resumir rápidamente el propósito de la alerta.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q142')"><input type="radio" name="q142" value="c"><label>Define las etiquetas (labels) que se adjuntarán a la alerta para su enrutamiento hacia diferentes canales de notificación.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q142')"><input type="radio" name="q142" value="d"><label>Especifica el umbral numérico y la duración que deben cumplirse para que la alerta cambie a estado "Firing".</label></li>
+            </ul>
+            <script>var answer_q142 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 143: La métrica <code>node_cpu_seconds_total</code> es fundamental para calcular el uso de CPU. Dado que es un contador (counter) que solo aumenta, ¿por qué es esencial aplicar la función <code>rate()</code> (o similar como <code>irate()</code>) a esta métrica en PromQL antes de intentar calcular un porcentaje de uso?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q143')"><input type="radio" name="q143" value="a"><label><code>rate()</code> convierte los segundos acumulados en un valor porcentual directamente.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q143')"><input type="radio" name="q143" value="a"><label>Calcula la tasa de incremento por segundo de los segundos de CPU durante un intervalo de tiempo, lo que refleja la actividad actual en lugar del valor acumulado total.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q143')"><input type="radio" name="q143" value="c"><label><code>rate()</code> normaliza los valores de diferentes CPUs o cores para que puedan ser comparados equitativamente.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q143')"><input type="radio" name="q143" value="d"><label>La función <code>rate()</code> es necesaria para filtrar los modos de CPU no deseados antes de la agregación.</label></li>
+            </ul>
+            <script>var answer_q143 = 'b';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 144: En un sistema Linux que interpreta estrictamente la sintaxis cron tradicional de 5 campos (minuto, hora, día del mes, mes, día de la semana), ¿cuál sería el comportamiento de una entrada crontab como <code>1 * * * * * /ruta/script.sh</code> que, según la documentación inicial, pretendía una ejecución específica?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q144')"><input type="radio" name="q144" value="a"><label>El script se ejecutaría cada segundo del primer minuto de cada hora.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q144')"><input type="radio" name="q144" value="b"><label>La línea sería rechazada como inválida por el demonio cron debido al exceso de campos.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q144')"><input type="radio" name="q144" value="c"><label>Se ejecutaría una vez al día, al primer minuto de la medianoche.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q144')"><input type="radio" name="q144" value="d"><label>Se ejecutaría cada minuto de cada hora, ignorando el primer campo '1'.</label></li>
+            </ul>
+            <script>var answer_q144 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 145: Para investigar problemas con un servicio específico (por ejemplo, <code>nginx.service</code>) durante el arranque actual, utilizando <code>journalctl</code>, ¿qué comando filtraría los mensajes de log para esta unidad específica, mostrando solo aquellos con una prioridad de 'error' o más grave?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q145')"><input type="radio" name="q145" value="a"><label><code>journalctl -b -u nginx.service -p err</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q145')"><input type="radio" name="q145" value="b"><label><code>journalctl --system-unit nginx.service --priority=error</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q145')"><input type="radio" name="q145" value="c"><label><code>journalctl -b _SYSTEMD_UNIT=nginx.service PRIORITY=3</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q145')"><input type="radio" name="q145" value="d"><label><code>cat /var/log/syslog | grep nginx | grep error</code></label></li>
+            </ul>
+            <script>var answer_q145 = 'a';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 146: El script de cron debe generar un mensaje de log incluyendo la "&lt;Carga actual del Sistema&gt;". ¿Cuál de los siguientes ficheros del sistema de archivos <code>/proc</code> proporcionaría directamente los valores de la media de carga (load average) que comúnmente se usan para este propósito?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q146')"><input type="radio" name="q146" value="a"><label><code>/proc/stat</code></label></li>
+                <li onclick="checkAnswer(this, 'b', 'q146')"><input type="radio" name="q146" value="b"><label><code>/proc/cpuinfo</code></label></li>
+                <li onclick="checkAnswer(this, 'c', 'q146')"><input type="radio" name="q146" value="c"><label><code>/proc/loadavg</code></label></li>
+                <li onclick="checkAnswer(this, 'd', 'q146')"><input type="radio" name="q146" value="d"><label><code>/proc/meminfo</code></label></li>
+            </ul>
+            <script>var answer_q146 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 147: Al instalar <code>node_exporter</code>, se descarga un archivo <code>.tar.gz</code>. Si un usuario intenta descomprimir este archivo directamente en <code>/usr/local/src</code> usando <code>tar -xvzf node_exporter.tar.gz -C /usr/local/src</code> sin <code>sudo</code>, ¿cuál es el resultado más probable si el usuario no tiene permisos de escritura en <code>/usr/local/src</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q147')"><input type="radio" name="q147" value="a"><label><code>tar</code> creará el directorio en el home del usuario y extraerá los archivos allí.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q147')"><input type="radio" name="q147" value="b"><label>Se producirá un error de "Permiso denegado" y la extracción fallará.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q147')"><input type="radio" name="q147" value="c"><label>Los archivos se extraerán, pero con propietario <code>nobody</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q147')"><input type="radio" name="q147" value="d"><label><code>tar</code> solicitará interactivamente la contraseña de superusuario.</label></li>
+            </ul>
+            <script>var answer_q147 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 148: Si un servicio como <code>node_exporter</code> falla al iniciar debido a una denegación de SELinux, y cambiar el contexto del binario a <code>bin_t</code> no resuelve el problema, ¿cuál de las siguientes acciones sería un paso lógico de diagnóstico adicional para entender la causa raíz según las prácticas comunes de SELinux?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q148')"><input type="radio" name="q148" value="a"><label>Reinstalar el servicio desde un repositorio oficial que maneje SELinux.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q148')"><input type="radio" name="q148" value="b"><label>Desactivar SELinux permanentemente editando <code>/etc/selinux/config</code>.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q148')"><input type="radio" name="q148" value="c"><label>Consultar el log de auditoría de SELinux (<code>/var/log/audit/audit.log</code> o usando <code>ausearch</code>) para mensajes de denegación detallados (AVC).</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q148')"><input type="radio" name="q148" value="d"><label>Ejecutar el servicio con <code>setenforce Permissive</code> y verificar si funciona para confirmar el problema.</label></li>
+            </ul>
+            <script>var answer_q148 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 149: En el archivo <code>docker-compose.yml</code> se especifica la imagen <code>prom/prometheus:v2.50.0</code>. Si se descubre una vulnerabilidad crítica en la versión <code>v2.50.0</code> de Prometheus, ¿cuál sería la acción más recomendable y segura a seguir, asumiendo que existe una versión parcheada como <code>v2.50.1</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q149')"><input type="radio" name="q149" value="a"><label>Continuar usando <code>v2.50.0</code> pero restringir el acceso a la red de Prometheus.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q149')"><input type="radio" name="q149" value="b"><label>Actualizar la etiqueta de la imagen a <code>prom/prometheus:latest</code> para obtener siempre la última versión.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q149')"><input type="radio" name="q149" value="c"><label>Modificar la etiqueta de la imagen a la versión parcheada específica (<code>prom/prometheus:v2.50.1</code>), probar y redesplegar.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q149')"><input type="radio" name="q149" value="d"><label>Deshabilitar temporalmente el servicio de Prometheus hasta que se publique una guía oficial.</label></li>
+            </ul>
+            <script>var answer_q149 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 150: En Docker Compose, la línea <code>./prometheus_data:/prometheus</code> en la sección de volúmenes de Prometheus establece un montaje. ¿Cuál es la diferencia principal si en lugar de <code>./prometheus_data</code> (un bind mount a una ruta del host), se utilizara un volumen nombrado gestionado por Docker, como <code>prometheus_volume:/prometheus</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q150')"><input type="radio" name="q150" value="a"><label>Los volúmenes nombrados no son persistentes entre reinicios del contenedor.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q150')"><input type="radio" name="q150" value="b"><label>Los bind mounts son gestionados completamente por Docker y son más portables entre sistemas.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q150')"><input type="radio" name="q150" value="c"><label>Los volúmenes nombrados son gestionados por Docker, su ubicación en el host es controlada por Docker, y son más fáciles de respaldar y migrar usando comandos de Docker.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q150')"><input type="radio" name="q150" value="d"><label>Los bind mounts ofrecen mejor rendimiento de I/O que los volúmenes nombrados.</label></li>
+            </ul>
+            <script>var answer_q150 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 151: El archivo <code>prometheus.yml</code> tiene una configuración <code>global: scrape_interval: 5s</code>. Si se quisiera que un job específico para <code>node_exporter</code> tuviera un intervalo de recolección de 15 segundos en lugar de 5, ¿cómo se configuraría esto para ese job en particular?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q151')"><input type="radio" name="q151" value="a"><label>No es posible anular el <code>scrape_interval</code> global para jobs individuales.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q151')"><input type="radio" name="q151" value="b"><label>Añadiendo <code>scrape_interval_override: 15s</code> en la sección global.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q151')"><input type="radio" name="q151" value="c"><label>Definiendo <code>scrape_interval: 15s</code> directamente dentro de la configuración de ese job específico en <code>scrape_configs</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q151')"><input type="radio" name="q151" value="d"><label>Creando un archivo <code>prometheus_node_exporter.yml</code> separado con el intervalo deseado.</label></li>
+            </ul>
+            <script>var answer_q151 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 152: El ejercicio de monitorización de servidor Linux pide extender el dashboard para incorporar indicadores sobre el nivel de activación ("Activo"/"Inactivo", 1/0) de los servicios SSHD y Apache Httpd. Desde una perspectiva operativa, ¿cuál es el principal beneficio de tener estos indicadores visuales en un dashboard?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q152')"><input type="radio" name="q152" value="a"><label>Permite medir el rendimiento exacto y el uso de recursos de cada servicio.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q152')"><input type="radio" name="q152" value="b"><label>Facilita la depuración de errores de configuración en los archivos de los servicios.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q152')"><input type="radio" name="q152" value="c"><label>Proporciona una visión rápida y de alto nivel sobre la disponibilidad y estado operativo de servicios críticos.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q152')"><input type="radio" name="q152" value="d"><label>Ayuda a predecir futuras fallas en los servicios basados en su tiempo de actividad.</label></li>
+            </ul>
+            <script>var answer_q152 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 153: Para monitorizar la memoria de una aplicación NodeJS, se usan las métricas <code>nodejs_heap_size_total_bytes</code> y <code>nodejs_heap_size_used_bytes</code>. ¿Qué tipo de visualización en Grafana sería más efectiva para mostrar la relación entre estas dos métricas y el porcentaje de uso del heap?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q153')"><input type="radio" name="q153" value="a"><label>Un panel de tipo "Stat" mostrando solo el valor de <code>nodejs_heap_size_used_bytes</code>.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q153')"><input type="radio" name="q153" value="b"><label>Un gráfico de barras apiladas o un medidor (gauge) que represente el usado como un porcentaje del total.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q153')"><input type="radio" name="q153" value="c"><label>Un histograma de la distribución de <code>nodejs_heap_size_total_bytes</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q153')"><input type="radio" name="q153" value="d"><label>Un panel de tipo "Table" listando los valores crudos de ambas métricas a lo largo del tiempo.</label></li>
+            </ul>
+            <script>var answer_q153 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 154: Al configurar permisos para el volumen <code>./grafana_data</code>, la documentación especifica <code>sudo chmod -R 755 ./grafana_data</code>. ¿Cuál sería el principal riesgo de seguridad si, en lugar de <code>755</code>, se utilizara despreocupadamente <code>chmod -R 777 ./grafana_data</code> en un sistema multiusuario?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q154')"><input type="radio" name="q154" value="a"><label>El contenedor de Grafana podría no tener suficientes permisos para escribir sus datos.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q154')"><input type="radio" name="q154" value="b"><label>Solo el usuario root podría acceder a los datos de Grafana en el host.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q154')"><input type="radio" name="q154" value="c"><label>Cualquier usuario en el sistema host tendría permisos de lectura, escritura y ejecución sobre los archivos de datos de Grafana, lo que podría exponer información sensible o permitir modificaciones no autorizadas.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q154')"><input type="radio" name="q154" value="d"><label>Los permisos <code>777</code> harían que el sistema de archivos se vuelva inestable.</label></li>
+            </ul>
+            <script>var answer_q154 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 155: Al añadir Prometheus como fuente de datos en Grafana (ambos en contenedores Docker), la configuración de la URL HTTP es <code>http://prometheus:9090</code> y el modo de Acceso (Access) suele ser "Server". ¿Por qué es preferible el modo "Server" en este escenario en lugar de "Browser"?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q155')"><input type="radio" name="q155" value="a"><label>El modo "Browser" es más seguro ya que las peticiones se originan desde el cliente.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q155')"><input type="radio" name="q155" value="a"><label>Con "Server", el backend de Grafana realiza las peticiones a Prometheus, lo cual es necesario si Prometheus no es directamente accesible desde el navegador del usuario (e.g., está en una red Docker interna).</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q155')"><input type="radio" name="q155" value="c"><label>El modo "Server" permite el uso de WebSockets, mejorando el rendimiento de las consultas.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q155')"><input type="radio" name="q155" value="d"><label>El modo "Browser" no soporta la autenticación con Prometheus.</label></li>
+            </ul>
+            <script>var answer_q155 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 156: Si se inicia <code>node_exporter</code> con los colectores <code>--collector.systemd</code> y <code>--collector.filesystem</code> habilitados, además de sus colectores por defecto, ¿qué tipo de información adicional específica del sistema se podría esperar que exponga para Prometheus?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q156')"><input type="radio" name="q156" value="a"><label>Métricas detalladas sobre el rendimiento de la red y estadísticas de TCP/IP.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q156')"><input type="radio" name="q156" value="a"><label>Información sobre el estado de unidades systemd (servicios, timers, etc.) y estadísticas de uso de los sistemas de archivos montados (espacio total, libre, etc.).</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q156')"><input type="radio" name="q156" value="c"><label>Datos sobre la temperatura de la CPU, velocidad de los ventiladores y otros sensores de hardware.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q156')"><input type="radio" name="q156" value="d"><label>Logs de aplicaciones y del kernel del sistema en tiempo real.</label></li>
+            </ul>
+            <script>var answer_q156 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 157: En la consulta PromQL <code>rate(node_cpu_seconds_total{...}[5m])</code>, el selector de rango <code>[5m]</code> especifica el intervalo de tiempo sobre el cual se calcula la tasa. ¿Cómo influye este intervalo en los puntos de datos utilizados por la función <code>rate</code>?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q157')"><input type="radio" name="q157" value="a"><label><code>rate</code> solo considera el primer y último punto de datos dentro de los últimos 5 minutos.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q157')"><input type="radio" name="q157" value="a"><label>Prometheus debe tener al menos dos puntos de datos dentro del rango de 5 minutos para calcular la tasa; extrapola si solo hay uno.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q157')"><input type="radio" name="q157" value="c"><label>El rango de 5 minutos define cuántos puntos de datos futuros se utilizarán para predecir la tasa.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q157')"><input type="radio" name="q157" value="d"><label>La función <code>rate</code> promedia todos los valores de la métrica dentro de los últimos 5 minutos.</label></li>
+            </ul>
+            <script>var answer_q157 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 158: La configuración de una alerta en Grafana incluye la condición principal y el parámetro "for" (ej. <code>for 5m</code>). ¿Cuál es el propósito fundamental de este parámetro "for" para mejorar la calidad de las alertas?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q158')"><input type="radio" name="q158" value="a"><label>Define durante cuánto tiempo la alerta permanecerá en estado "Firing" antes de resolverse automáticamente.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q158')"><input type="radio" name="q158" value="b"><label>Especifica que la condición de alerta debe ser verdadera continuamente durante ese período antes de que la alerta cambie a estado "Firing", ayudando a evitar alertas por fluctuaciones breves.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q158')"><input type="radio" name="q158" value="c"><label>Indica la frecuencia con la que se reenviará la notificación de alerta si no se acusa recibo.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q158')"><input type="radio" name="q158" value="d"><label>Establece un retardo antes de que la regla de alerta comience a evaluarse después de guardarla.</label></li>
+            </ul>
+            <script>var answer_q158 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 159: ¿Cuál es la distinción clave entre "monitorización" y "alerting" en el contexto de sistemas como Prometheus y Grafana?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q159')"><input type="radio" name="q159" value="a"><label>Monitorización es la visualización de datos históricos, mientras que alerting es la visualización de datos en tiempo real.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q159')"><input type="radio" name="q159" value="a"><label>Monitorización implica la recolección, almacenamiento y visualización de métricas del sistema, mientras que alerting es el proceso de notificar automáticamente a los responsables cuando ciertas condiciones predefinidas (basadas en esas métricas) se cumplen.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q159')"><input type="radio" name="q159" value="c"><label>Alerting se refiere a la creación de dashboards, y monitorización a la configuración de los data sources.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q159')"><input type="radio" name="q159" value="d"><label>Monitorización es pasiva (solo observar datos), mientras que alerting es activa (permite modificar la configuración del sistema remotamente).</label></li>
+            </ul>
+            <script>var answer_q159 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 160: Si un objetivo de scraping (target) configurado en <code>prometheus.yml</code>, como una instancia de <code>node_exporter</code> en <code>host-servidor:9100</code>, está inaccesible (por ejemplo, el host está apagado o el servicio <code>node_exporter</code> no se está ejecutando), ¿qué estado mostrará Prometheus para este target en su interfaz web (sección Targets)?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q160')"><input type="radio" name="q160" value="a"><label>UNKNOWN - Prometheus no puede determinar el estado y esperará indefinidamente.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q160')"><input type="radio" name="q160" value="b"><label>UP - Pero con un error indicando que no se pudieron recolectar métricas.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q160')"><input type="radio" name="q160" value="c"><label>DOWN - Junto con un mensaje de error que indica la razón del fallo (e.g., connection refused, context deadline exceeded).</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q160')"><input type="radio" name="q160" value="d"><label>DISABLED - Prometheus deshabilitará automáticamente el target después de varios intentos fallidos.</label></li>
+            </ul>
+            <script>var answer_q160 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 161: La documentación menciona que el exporter de Prometheus para la API Web se generó empleando <code>prom-client</code> y <code>express-prom-bundle</code> para NodeJS. ¿Cuál es el rol general de estas librerías en una aplicación NodeJS que necesita exponer métricas a Prometheus?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q161')"><input type="radio" name="q161" value="a"><label>Analizar las métricas recolectadas por Prometheus y generar dashboards automáticamente.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q161')"><input type="radio" name="q161" value="b"><label>Proporcionar un servidor Prometheus embebido dentro de la aplicación NodeJS.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q161')"><input type="radio" name="q161" value="c"><label>Facilitar la instrumentación del código de la aplicación para definir, registrar y exponer métricas personalizadas y estándar (como tiempos de respuesta HTTP) en el formato que Prometheus espera, típicamente a través de un endpoint <code>/metrics</code>.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q161')"><input type="radio" name="q161" value="d"><label>Conectarse directamente a la base de datos de series temporales de Prometheus para escribir métricas.</label></li>
+            </ul>
+            <script>var answer_q161 = 'c';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 162: Para la entrega de los dashboards de Grafana, se indica usar la opción "Share Dashboard or Panel" y exportar con "Export for sharing externally". ¿En qué formato se exporta típicamente la definición del dashboard mediante esta opción y cuál es su principal ventaja?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q162')"><input type="radio" name="q162" value="a"><label>Formato PDF, para una fácil visualización estática y documentación.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q162')"><input type="radio" name="q162" value="b"><label>Formato JSON, que contiene la estructura completa del dashboard y permite su importación en otras instancias de Grafana para reproducibilidad.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q162')"><input type="radio" name="q162" value="c"><label>Formato CSV, exportando los datos crudos de los paneles para análisis externo.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q162')"><input type="radio" name="q162" value="d"><label>Como una imagen PNG del dashboard, para compartir una instantánea visual.</label></li>
+            </ul>
+            <script>var answer_q162 = 'b';</script>
+        </div>
+
+<div class="question-block">
+            <h3>Pregunta 163: La utilidad <code>logger</code>, usada en el ejercicio de la tarea periódica con cron, genera mensajes de log. Si no se realiza una configuración específica para que <code>logger</code> envíe sus mensajes a <code>systemd-journald</code>, y el sistema utiliza una configuración de syslog tradicional (como rsyslog), ¿dónde se esperaría encontrar típicamente los mensajes generados por <code>logger</code> por defecto?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q163')"><input type="radio" name="q163" value="a"><label>Únicamente en la salida estándar del script de cron, que se envía por correo al usuario.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q163')"><input type="radio" name="q163" value="b"><label>En un archivo específico creado por <code>logger</code> en el directorio home del usuario.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q163')"><input type="radio" name="q163" value="c"><label>En archivos de log del sistema centralizados en <code>/var/log</code>, como <code>/var/log/syslog</code> o <code>/var/log/messages</code>, dependiendo de la configuración de syslog y la facilidad/prioridad del mensaje.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q163')"><input type="radio" name="q163" value="d"><label>Directamente en el journal de systemd, ya que <code>logger</code> se integra automáticamente sin configuración.</label></li>
+            </ul>
+            <script>var answer_q163 = 'c';</script>
+        </div>
+
+        <div class="question-block">
+            <h3>Pregunta 164: En la configuración del "Regular Expression Extractor" denominado "Obtener JWT token", si el campo "Field to check" se cambia a "Response Headers" y el token JWT se encuentra en un encabezado como "Authorization: Bearer [JWT_TOKEN]", ¿cuál sería la expresión regular más precisa para capturar únicamente el JWT_TOKEN?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q164')"><input type="radio" name="q164" value="a"><label>Authorization: Bearer (.+)</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q164')"><input type="radio" name="q164" value="b"><label>(?i)Authorization: Bearer\s+([A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*)</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q164')"><input type="radio" name="q164" value="c"><label>Bearer\s(.+?)\s</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q164')"><input type="radio" name="q164" value="d"><label>.+</label></li>
+            </ul>
+            <script>var answer_q164 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 165: Observando el "Test Plan" donde se definen las variables HOST (172.17.0.1) y PORT (3000), si un "Thread Group" específico dentro de este plan define una "User Defined Variables" con la variable HOST con valor "localhost", ¿qué valor de HOST utilizará un "HTTP Request" sampler dentro de ese "Thread Group" que referencia `${HOST}`?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q165')"><input type="radio" name="q165" value="a"><label>172.17.0.1, ya que las variables del Test Plan tienen precedencia global.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q165')"><input type="radio" name="q165" value="b"><label>localhost, debido a la regla de alcance (scope) donde las definiciones más cercanas al elemento tienen mayor precedencia.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q165')"><input type="radio" name="q165" value="c"><label>JMeter generará un error por definición duplicada de variables.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q165')"><input type="radio" name="q165" value="d"><label>Se utilizará una concatenación de ambos valores: "172.17.0.1localhost".</label></li>
+            </ul>
+            <script>var answer_q165 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 166: En el "Gaussian Random Timer" configurado con una "Deviation" de 100.0 ms y un "Constant Delay Offset" de 300 ms, ¿cuál es la implicación principal de usar este temporizador en comparación con un "Uniform Random Timer" con un rango equivalente?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q166')"><input type="radio" name="q166" value="a"><label>El Gaussian Random Timer generará pausas que siempre serán mayores que la suma del offset y la desviación.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q166')"><input type="radio" name="q166" value="b"><label>Las pausas generadas se agruparán más cercanamente alrededor del valor del "Constant Delay Offset", siguiendo una distribución normal (gaussiana), lo que puede simular de forma más realista el comportamiento humano.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q166')"><input type="radio" name="q166" value="c"><label>Garantiza que cada pausa sea exactamente de 300ms más o menos 100ms, sin aleatoriedad.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q166')"><input type="radio" name="q166" value="d"><label>El Gaussian Random Timer solo es útil para pruebas de estrés y no para pruebas de carga funcionales.</label></li>
+            </ul>
+            <script>var answer_q166 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 167: El "Access Log Sampler" está configurado para usar `org.apache.jmeter.protocol.http.util.accesslog.TCLogParser` y un archivo de log `datos/apiAlumnos.log`. Si el archivo de log no sigue estrictamente el formato esperado por `TCLogParser` (por ejemplo, Tomcat Combined Log Format), ¿cuál es el resultado más probable?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q167')"><input type="radio" name="q167" value="a"><label>JMeter intentará adivinar el formato y podría generar algunas solicitudes correctas.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q167')"><input type="radio" name="q167" value="b"><label>El sampler fallará en parsear las líneas del log, no generando ninguna solicitud HTTP o generando solicitudes incorrectas, y probablemente mostrando errores en el log de JMeter.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q167')"><input type="radio" name="q167" value="c"><label>JMeter convertirá automáticamente el formato del log al formato `TCLogParser`.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q167')"><input type="radio" name="q167" value="d"><label>El sampler utilizará un parser por defecto si `TCLogParser` falla.</label></li>
+            </ul>
+            <script>var answer_q167 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 168: En la petición HTTP "Login Administradores", se envían los parámetros `login` y `password` con "Content-Type" `text/plain`. Si el servidor espera estos parámetros en el cuerpo de una solicitud POST pero con un "Content-Type" de `application/x-www-form-urlencoded` o `application/json`, ¿qué problema podría surgir?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q168')"><input type="radio" name="q168" value="a"><label>Ninguno, el servidor interpretará `text/plain` como `application/x-www-form-urlencoded` por defecto.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q168')"><input type="radio" name="q168" value="b"><label>El servidor podría no ser capaz de parsear correctamente los parámetros, resultando en un fallo de autenticación o un error de tipo "Unsupported Media Type" (415).</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q168')"><input type="radio" name="q168" value="c"><label>JMeter convertirá automáticamente el Content-Type al más apropiado antes de enviar la solicitud.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q168')"><input type="radio" name="q168" value="d"><label>La petición se enviará como GET en lugar de POST debido al Content-Type especificado.</label></li>
+            </ul>
+            <script>var answer_q168 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 169: En la configuración "CSV Data Set Config" para "Credenciales Administradores", si el archivo `datos/administradores.csv` contiene 10 líneas de datos (excluyendo la cabecera), "Recycle on EOF" es "True", y un Thread Group ejecuta 25 iteraciones usando estas credenciales, ¿qué sucederá con los valores de `login` y `password` a partir de la undécima iteración?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q169')"><input type="radio" name="q169" value="a"><label>Las variables `login` y `password` quedarán vacías.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q169')"><input type="radio" name="q169" value="b"><label>El hilo se detendrá ya que "Stop thread on EOF" está implícitamente activado si no se selecciona.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q169')"><input type="radio" name="q169" value="c"><label>JMeter comenzará a leer nuevamente desde la primera línea de datos del archivo CSV.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q169')"><input type="radio" name="q169" value="d"><label>Se utilizarán los valores de la décima línea para todas las iteraciones restantes.</label></li>
+            </ul>
+            <script>var answer_q169 = 'c';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 170: El "HTTP Authorization Manager" llamado "Autorización Básica API" está configurado con una "Base URL". Si una petición HTTP dentro de su ámbito se dirige a un subdominio o a un path diferente pero dentro del mismo HOST y PORT especificados en la "Base URL", ¿aplicará el Authorization Manager las credenciales?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q170')"><input type="radio" name="q170" value="a"><label>No, la URL de la petición debe coincidir exactamente con la "Base URL".</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q170')"><input type="radio" name="q170" value="b"><label>Sí, el Authorization Manager aplica las credenciales a cualquier URL que comience con la "Base URL" especificada, incluyendo diferentes paths o subdominios si la base lo permite.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q170')"><input type="radio" name="q170" value="c"><label>Solo si la petición HTTP no define sus propias cabeceras de autorización.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q170')"><input type="radio" name="q170" value="d"><label>Aplicará las credenciales, pero cambiará el mecanismo de "BASIC" a "DIGEST" automáticamente.</label></li>
+            </ul>
+            <script>var answer_q170 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 171: En "HTTP Request Defaults" ("Acceso API"), se especifican `${HOST}` y `${PORT}`. Si un "HTTP Request" individual dentro del mismo ámbito omite el "Server Name or IP" pero especifica un "Path" diferente al de "HTTP Request Defaults" (que está vacío), ¿cómo se construye la URL final de la petición?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q171')"><input type="radio" name="q171" value="a"><label>Se usará el HOST y PORT de Defaults, pero el Path del HTTP Request individual.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q171')"><input type="radio" name="q171" value="b"><label>Se ignorarán los Defaults y solo se usará el Path del HTTP Request, resultando en una URL incompleta.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q171')"><input type="radio" name="q171" value="c"><label>Se concatenarán los Paths de Defaults y del HTTP Request individual.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q171')"><input type="radio" name="q171" value="d"><label>El HTTP Request individual debe redefinir HOST y PORT si define un Path.</label></li>
+            </ul>
+            <script>var answer_q171 = 'a';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 172: Considerando el "Regular Expression Extractor" para "Obtener JWT token" que usa la expresión `.+` y "Match No." en 0 (Random), si el cuerpo de la respuesta contiene múltiples líneas y el token JWT aparece en una línea específica, ¿qué comportamiento es más probable para la variable "token"?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q172')"><input type="radio" name="q172" value="a"><label>Capturará todo el cuerpo de la respuesta como una sola cadena, ya que `.` por defecto no incluye saltos de línea y `.+` es greedy.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q172')"><input type="radio" name="q172" value="b"><label>Capturará aleatoriamente una de las líneas del cuerpo de la respuesta.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q172')"><input type="radio" name="q172" value="c"><label>No capturará nada si no se usa el modo multilínea en la expresión regular.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q172')"><input type="radio" name="q172" value="d"><label>Dependerá de la configuración de "Template", que si es `$1$` y la regex `.+` no define grupos de captura, resultará en un error o valor vacío.</label></li>
+            </ul>
+            <script>var answer_q172 = 'a';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 173: En el "CSV Data Set Config" ("Credenciales Administradores"), el "Sharing mode" está configurado como "Current thread group". Si este CSV Data Set Config está bajo un Test Plan (y no directamente bajo un Thread Group específico) y es referenciado por dos Thread Groups diferentes, ¿cómo se compartirán los datos del CSV?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q173')"><input type="radio" name="q173" value="a"><label>Cada Thread Group tendrá su propia copia independiente del cursor del archivo CSV, y dentro de cada grupo, todos los hilos compartirán ese cursor.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q173')"><input type="radio" name="q173" value="b"><label>Todos los hilos de todos los Thread Groups compartirán un único cursor global para el archivo CSV.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q173')"><input type="radio" name="q173" value="c"><label>El "Sharing mode" "Current thread group" no es válido a nivel de Test Plan y causará un error. Debe ser "All threads".</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q173')"><input type="radio" name="q173" value="d"><label>Solo el primer Thread Group que acceda al CSV podrá leer los datos; el segundo encontrará el archivo bloqueado o vacío.</label></li>
+            </ul>
+            <script>var answer_q173 = 'a';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 174: Si el "Gaussian Random Timer" (Desviación 100ms, Offset 300ms) se coloca como hijo directo de una petición HTTP Sampler en lugar de a nivel de Thread Group o Controlador, ¿cuándo se ejecutará la pausa introducida por este temporizador?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q174')"><input type="radio" name="q174" value="a"><label>Antes de que se ejecute cada petición HTTP Sampler de la que es hijo.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q174')"><input type="radio" name="q174" value="b"><label>Después de que se ejecute cada petición HTTP Sampler de la que es hijo.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q174')"><input type="radio" name="q174" value="c"><label>No tendrá efecto, ya que los temporizadores solo funcionan a nivel de Thread Group o Controlador.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q174')"><input type="radio" name="q174" value="d"><label>La pausa se aplicará globalmente a todos los samplers del Thread Group, ignorando su posición específica.</label></li>
+            </ul>
+            <script>var answer_q174 = 'a';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 175: En la configuración del "Access Log Sampler", el campo "Parser" está definido como `org.apache.jmeter.protocol.http.util.accesslog.TCLogParser`. Si se quisiera utilizar un formato de log de acceso personalizado que no es compatible con los parsers predeterminados de JMeter, ¿cuál sería el enfoque principal para procesar dicho log?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q175')"><input type="radio" name="q175" value="a"><label>Modificar el archivo de log para que se ajuste al formato de `TCLogParser`.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q175')"><input type="radio" name="q175" value="b"><label>Intentar con todos los parsers disponibles en JMeter hasta que uno funcione.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q175')"><input type="radio" name="q175" value="c"><label>Implementar una clase Java que extienda `org.apache.jmeter.protocol.http.util.accesslog.LogParser` o implemente la interfaz `Generator`, y luego especificar el nombre completo de esta clase en el campo "Parser".</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q175')"><input type="radio" name="q175" value="d"><label>Utilizar un script JSR223 PreProcessor para leer y parsear el log manualmente antes de que el Access Log Sampler se ejecute.</label></li>
+            </ul>
+            <script>var answer_q175 = 'c';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 176: En la petición HTTP "Login Administradores", si el servidor responde con un código 302 (Redirección) y la opción "Follow Redirects" está marcada, pero el "HTTP Authorization Manager" solo está configurado para la URL original (`/api/v1/auth/login`), ¿qué ocurrirá con las credenciales de autorización en la petición redirigida si esta va a un dominio o path no cubierto por la "Base URL" del Authorization Manager?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q176')"><input type="radio" name="q176" value="a"><label>JMeter automáticamente aplicará las mismas credenciales a la URL redirigida.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q176')"><input type="radio" name="q176" value="b"><label>La petición redirigida se enviará sin las cabeceras de autorización gestionadas por este Authorization Manager, a menos que otro Authorization Manager aplicable la cubra.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q176')"><input type="radio" name="q176" value="c"><label>JMeter reintentará la petición original hasta 5 veces antes de seguir la redirección.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q176')"><input type="radio" name="q176" value="d"><label>Se producirá un error en JMeter indicando una falta de coincidencia de autorización.</label></li>
+            </ul>
+            <script>var answer_q176 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 177: Si en el "HTTP Authorization Manager" se activa la opción "Clear auth on each iteration?", ¿cuál sería el impacto en un escenario donde un hilo realiza múltiples peticiones HTTP dentro de una misma iteración del bucle del Thread Group, todas ellas requiriendo la misma autorización básica?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q177')"><input type="radio" name="q177" value="a"><label>Las credenciales se borrarán después de la primera petición HTTP de la iteración, y las subsiguientes fallarán por falta de autorización.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q177')"><input type="radio" name="q177" value="b"><label>Las credenciales se mantendrán para todas las peticiones dentro de la misma iteración; la limpieza ocurre solo al final de la iteración completa del Thread Group.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q177')"><input type="radio" name="q177" value="c"><label>Esta opción solo afecta a la autorización de tipo Kerberos, no a la Básica.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q177')"><input type="radio" name="q177" value="d"><label>JMeter solicitará interactivamente las credenciales al inicio de cada iteración.</label></li>
+            </ul>
+            <script>var answer_q177 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 178: El "Regular Expression Extractor" está configurado para extraer un "token" del "Body" de la respuesta. Si la petición falla (ej. error 500) y el cuerpo de la respuesta es una página de error HTML que no contiene el patrón esperado, ¿qué valor tomará la variable "token" si no se especifica un "Default Value" y no hay coincidencia?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q178')"><input type="radio" name="q178" value="a"><label>La variable "token" contendrá la cadena "NULL".</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q178')"><input type="radio" name="q178" value="b"><label>La variable "token" no se creará o mantendrá su valor previo si ya existía (comportamiento puede variar ligeramente por versión, pero generalmente no se actualiza).</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q178')"><input type="radio" name="q178" value="c"><label>JMeter lanzará una excepción y detendrá el hilo.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q178')"><input type="radio" name="q178" value="d"><label>La variable "token" contendrá el cuerpo completo de la respuesta de error.</label></li>
+            </ul>
+            <script>var answer_q178 = 'b';</script>
+        </div>
+
+        <h1>Preguntas Adicionales (incluye del bloque 1)</h1>
+
+        <div class="question-block">
+            <h3>Pregunta 179: En un sistema Linux que utiliza LVM sobre un RAID 1 por software (mdadm) para el directorio `/var`, si uno de los discos físicos del RAID 1 comienza a experimentar fallos de escritura intermitentes que no son inmediatamente detectados como un fallo total por `mdadm`, ¿cuál es el riesgo más significativo?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q179')"><input type="radio" name="q179" value="a"><label>LVM se volverá de solo lectura.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q179')"><input type="radio" name="q179" value="b"><label>Podría ocurrir una "escritura corrupta silenciosa" en el disco defectuoso, y si este disco se usa para reconstruir el mirror posteriormente, la corrupción podría propagarse al disco sano, comprometiendo la integridad de los datos en el Logical Volume.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q179')"><input type="radio" name="q179" value="c"><label>mdadm entra en modo degradado sin pérdida de datos inmediata, usando solo el disco sano.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q179')"><input type="radio" name="q179" value="d"><label>El sistema de archivos (ej. ext4) sobre el LV reparará los bloques afectados en tiempo real.</label></li>
+            </ul>
+            <script>var answer_q179 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 180: Al configurar `firewalld` en Rocky Linux, si se añade una regla para permitir el puerto 8080/tcp usando `firewall-cmd --add-port=8080/tcp` y posteriormente se ejecuta `firewall-cmd --runtime-to-permanent`, pero no se recarga explícitamente `firewalld` con `firewall-cmd --reload`. Si el sistema se reinicia, ¿cuál será el estado de la regla para el puerto 8080/tcp?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q180')"><input type="radio" name="q180" value="a"><label>Persiste; `runtime-to-permanent` la guarda para el inicio.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q180')"><input type="radio" name="q180" value="b"><label>No activa; falta `reload` para cargarla en la configuración en ejecución aunque esté guardada.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q180')"><input type="radio" name="q180" value="c"><label>La regla estará activa solo en la sesión actual, pero se perderá al reiniciar porque `firewall-cmd --reload` es indispensable para hacerla persistente en el arranque del sistema.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q180')"><input type="radio" name="q180" value="d"><label>La regla se aplicará únicamente a la zona `public` por defecto y no a otras zonas configuradas, independientemente del reinicio o la recarga.</label></li>
+            </ul>
+            <script>var answer_q180 = 'a';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 181: En Ansible, un playbook tiene un handler notificado por una tarea que ejecuta un script con `ansible.builtin.command`. Si este script devuelve un código de salida erróneo, pero la tarea tiene `ignore_errors: true`, ¿se ejecutará el handler?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q181')"><input type="radio" name="q181" value="a"><label>Handler no se ejecuta.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q181')"><input type="radio" name="q181" value="b"><label>Handler se ejecuta; `ignore_errors` implica éxito para la notificación.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q181')"><input type="radio" name="q181" value="c"><label>Se ejecutará, pero solo si el playbook se invoca con la opción `--force-handlers` para anular el estado de error.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q181')"><input type="radio" name="q181" value="d"><label>La ejecución del handler dependerá únicamente del estado "changed" de la tarea; `ignore_errors` solo suprime el fallo, no afecta la lógica de notificación por cambio.</label></li>
+            </ul>
+            <script>var answer_q181 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 182: ¿Cuál es la diferencia fundamental en cómo Docker utiliza los `namespaces` del kernel de Linux en comparación con los `cgroups` para el aislamiento de contenedores?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q182')"><input type="radio" name="q182" value="a"><label>Namespaces controlan el acceso a recursos (CPU, memoria); cgroups aíslan la vista del proceso (PID, red).</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q182')"><input type="radio" name="q182" value="b"><label>Namespaces aíslan vista; cgroups limitan recursos.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q182')"><input type="radio" name="q182" value="c"><label>Ambos se utilizan para limitar recursos, pero los `namespaces` son primordialmente para el aislamiento de la pila de red y los `cgroups` para la gestión de CPU y memoria exclusivamente.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q182')"><input type="radio" name="q182" value="d"><label>Los `namespaces` definen la imagen base del contenedor y su sistema de archivos, mientras que los `cgroups` se encargan de gestionar los volúmenes persistentes y el almacenamiento efímero.</label></li>
+            </ul>
+            <script>var answer_q182 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 183: Al monitorizar un sistema con `top`, si se observa un valor consistentemente alto en `%wa` (I/O wait) y valores bajos en `%us` (user) y `%sy` (system), pero la memoria RAM y swap no están saturadas, ¿cuál es el cuello de botella más probable?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q183')"><input type="radio" name="q183" value="a"><label>CPU sobrecargada por usuario.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q183')"><input type="radio" name="q183" value="b"><label>El subsistema de almacenamiento (disco duro/SSD o almacenamiento de red) es lento o está sobrecargado, causando que la CPU permanezca inactiva esperando a que se completen las operaciones de entrada/salida pendientes, lo que se refleja en un alto `%wa`.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q183')"><input type="radio" name="q183" value="c"><label>Un problema de latencia de red, donde la CPU está esperando la llegada de paquetes de red para continuar el procesamiento.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q183')"><input type="radio" name="q183" value="d"><label>La memoria RAM es insuficiente, lo que fuerza al sistema a realizar un uso excesivo del espacio de swap, y aunque `top` no lo refleje directamente en `%wa` como causa primaria, es el origen del problema.</label></li>
+            </ul>
+            <script>var answer_q183 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 184: En `prometheus.yml`, el `scrape_interval` global es 15s. Un job para `node_exporter` no define su propio `scrape_interval`. Un panel en Grafana usa `rate(node_cpu_seconds_total[1m])`. ¿Cómo afecta esto la precisión?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q184')"><input type="radio" name="q184" value="a"><label>`rate` anula `scrape_interval`.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q184')"><input type="radio" name="q184" value="b"><label>`rate(1m)` con scrape de 15s usa 4 puntos de datos; puede sesgar la tasa por pocas muestras.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q184')"><input type="radio" name="q184" value="c"><label>Prometheus ajustará automáticamente el `scrape_interval` del job a 1 minuto para que coincida con la consulta de `rate`.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q184')"><input type="radio" name="q184" value="d"><label>La métrica resultante será altamente imprecisa porque la ventana de `rate` (1m) siempre debe ser estrictamente menor que el `scrape_interval` (15s).</label></li>
+            </ul>
+            <script>var answer_q184 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 185: Al migrar el directorio `/var` a un nuevo Logical Volume (LV) formateado con `ext4` sobre un RAID 1, ¿por qué es crucial `cp -a /var/* /mnt/` en lugar de `cp -r` en modo de mantenimiento?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q185')"><input type="radio" name="q185" value="a"><label>`cp -a` es significativamente más rápido para grandes cantidades de datos que `cp -r`.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q185')"><input type="radio" name="q185" value="b"><label>`cp -a` preserva todos los atributos; `cp -r` no.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q185')"><input type="radio" name="q185" value="c"><label>`cp -a` realiza una copia a nivel de bloque físico, mientras que `cp -r` copia a nivel de archivo lógico.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q185')"><input type="radio" name="q185" value="d"><label>Solo `cp -a` puede manejar correctamente los archivos especiales como sockets y pipes que pueden existir dentro de `/var`.</label></li>
+            </ul>
+            <script>var answer_q185 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 186: Si `PermitRootLogin prohibit-password` está en `sshd_config`, y `/root/.ssh/authorized_keys` es correcto, ¿por qué podría fallar un login root con clave?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q186')"><input type="radio" name="q186" value="a"><label>El servicio `sshd` no fue reiniciado tras el cambio en `sshd_config`.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q186')"><input type="radio" name="q186" value="b"><label>La opción `PubkeyAuthentication` está establecida en `no` en el archivo `sshd_config`.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q186')"><input type="radio" name="q186" value="c"><label>El directorio `/root` o `/root/.ssh` tienen permisos demasiado abiertos (ej. `777` o escribibles por grupo/otros).</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q186')"><input type="radio" name="q186" value="d"><label>Todas las anteriores.</label></li>
+            </ul>
+            <script>var answer_q186 = 'd';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 187: En un Dockerfile: `COPY ./myapp /usr/src/app`, `WORKDIR /usr/src/app`, `RUN ["npm", "install"]`. Si `myapp/node_modules` se copia, ¿qué comportamiento tendrá `npm install`?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q187')"><input type="radio" name="q187" value="a"><label>`npm install` fallará.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q187')"><input type="radio" name="q187" value="b"><label>`npm install` reinstalará todas las dependencias de `package.json` en el `node_modules` copiado, sobrescribiendo o actualizando módulos.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q187')"><input type="radio" name="q187" value="c"><label>`npm install` no hará nada si `node_modules` copiado satisface `package.json` para la plataforma del host.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q187')"><input type="radio" name="q187" value="d"><label>Es mejor práctica añadir `node_modules` a `.dockerignore` para evitar copiarlo y siempre ejecutar `npm install` en un entorno limpio dentro del contenedor. `npm install`, si se ejecuta sobre un `node_modules` existente, verificará las dependencias y solo instalará/reconstruirá las faltantes o las que no coincidan con la arquitectura/plataforma del contenedor.</label></li>
+            </ul>
+            <script>var answer_q187 = 'd';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 188: Un script cron usa `logger -t MYSCRIPT "Mensaje"`. El sistema usa `rsyslog`. Sin configuración específica para "MYSCRIPT", ¿dónde irán los mensajes y cuál es el problema si `/var/log/syslog` está muy concurrido?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q188')"><input type="radio" name="q188" value="a"><label>A `/dev/null`.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q188')"><input type="radio" name="q188" value="b"><label>A `/var/log/syslog` o `messages`; filtrar "MYSCRIPT" en un log general muy activo es necesario y puede ser menos eficiente.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q188')"><input type="radio" name="q188" value="c"><label>`logger` creará `/var/log/MYSCRIPT.log` automáticamente por la etiqueta proporcionada.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q188')"><input type="radio" name="q188" value="d"><label>Los mensajes solo se enviarán por correo electrónico al propietario del trabajo cron definido en el sistema.</label></li>
+            </ul>
+            <script>var answer_q188 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 189: En JMeter, un "Regular Expression Extractor" captura un token de un encabezado de respuesta que puede aparecer varias veces. Con "Match No." en 0 (random), ¿cuál es el desafío para obtener consistentemente el token de la *última* aparición?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q189')"><input type="radio" name="q189" value="a"><label>"Match No." 0 siempre tomará el primer token encontrado en el ámbito de la búsqueda.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q189')"><input type="radio" name="q189" value="b"><label>Se debe usar "Match No." con valor -1 para obtener todas las coincidencias posibles y luego procesarlas con un JSR223 PostProcessor.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q189')"><input type="radio" name="q189" value="c"><label>"Match No." 0 es aleatorio; no garantiza la última.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q189')"><input type="radio" name="q189" value="d"><label>El "Regular Expression Extractor" no puede manejar múltiples encabezados con el mismo nombre dentro de una única respuesta.</label></li>
+            </ul>
+            <script>var answer_q189 = 'c';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 190: En JMeter, "CSV Data Set Config" con "Recycle on EOF:True", "Stop thread on EOF:False", CSV de 100 líneas, 5 hilos, Loop 30. ¿Qué impacto tiene "Sharing mode: Current thread group" vs "All threads" en la unicidad de datos por hilo?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q190')"><input type="radio" name="q190" value="a"><label>"Current": cada hilo recicla 1.5x; "All": globalmente más.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q190')"><input type="radio" name="q190" value="b"><label>En "Current thread group", cada uno de los 5 hilos tendrá su propio cursor independiente sobre las 100 líneas; cada hilo leerá las líneas 1-30 del CSV para sus 30 iteraciones (asumiendo que 30 <= 100, si no, reciclará para completar 30). En "All threads", los 5 hilos comparten un único cursor global sobre el archivo CSV; consumirán las 100 líneas de forma colaborativa y luego, como grupo, comenzarán a reciclar. Esto significa que es más probable que los hilos utilicen datos diferentes entre sí en las primeras iteraciones hasta agotar el CSV, pero luego todos reciclarán sobre el mismo conjunto de datos de forma compartida.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q190')"><input type="radio" name="q190" value="c"><label>"Sharing mode" no afecta la unicidad de los datos asignados a cada hilo, solo la concurrencia de acceso al archivo físico.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q190')"><input type="radio" name="q190" value="d"><label>Con "All threads", cada hilo obtiene una copia completa en memoria de las 100 líneas del CSV y las utiliza de forma totalmente independiente del resto de los hilos.</label></li>
+            </ul>
+            <script>var answer_q190 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 191: Un Volume Group (VG) de LVM contiene un PV en SSD y otro en HDD. Se crea un LV sin política de asignación y luego se extiende. ¿Cuál es la implicación crítica para el rendimiento?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q191')"><input type="radio" name="q191" value="a"><label>LVM asignará los datos más accedidos al SSD.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q191')"><input type="radio" name="q191" value="b"><label>El rendimiento será consistentemente el del HDD más lento en todas las operaciones del LV.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q191')"><input type="radio" name="q191" value="c"><label>Rendimiento impredecible; LVM asigna secuencialmente.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q191')"><input type="radio" name="q191" value="d"><label>LVM creará automáticamente un mirror implícito entre el SSD y el HDD para asegurar la consistencia de los datos.</label></li>
+            </ul>
+            <script>var answer_q191 = 'c';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 192: Con `ssh-copy-id`, si el home del usuario remoto o `.ssh` tienen permisos excesivos (ej. `777`), ¿por qué podría el servidor SSH rechazar la autenticación por clave aunque `authorized_keys` sea correcta?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q192')"><input type="radio" name="q192" value="a"><label>Permisos no afectan clave.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q192')"><input type="radio" name="q192" value="b"><label>El servidor SSH (OpenSSH) es estricto con los permisos de los directorios home, `.ssh` y el archivo `authorized_keys` del usuario. Si estos son escribibles por otros usuarios que no sean el propietario o root, SSH considerará esto un riesgo de seguridad (alguien podría modificar `authorized_keys`) y, por lo tanto, rechazará la autenticación basada en claves para proteger al usuario, incluso si la clave pública en sí es válida.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q192')"><input type="radio" name="q192" value="c"><label>Este problema de permisos solo es relevante si SELinux está en modo `enforcing` en el servidor.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q192')"><input type="radio" name="q192" value="d"><label>El comando `ssh-copy-id` está diseñado para corregir automáticamente estos problemas de permisos en el servidor remoto.</label></li>
+            </ul>
+            <script>var answer_q192 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 193: En Ansible, `my_package: httpd` está en `group_vars/all.yml` y `my_package: nginx` en `host_vars/server1.yml`. La tarea `ansible.builtin.package: name={{ my_package }}` ¿qué instalará en `server1`?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q193')"><input type="radio" name="q193" value="a"><label>`httpd`; `group_vars/all.yml` es más general y se aplica a todos los hosts primero.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q193')"><input type="radio" name="q193" value="b"><label>`nginx`; `host_vars` tiene mayor precedencia.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q193')"><input type="radio" name="q193" value="c"><label>Ansible generará un error por la definición conflictiva de la variable `my_package`.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q193')"><input type="radio" name="q193" value="d"><label>Se intentarán instalar ambos paquetes, primero `httpd` y luego `nginx`, sobreescribiendo la configuración.</label></li>
+            </ul>
+            <script>var answer_q193 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 194: ¿Cuál es la diferencia crítica entre `EXPOSE 3000` en Dockerfile y `-p 8080:3000` en `docker run` para la accesibilidad de red del contenedor?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q194')"><input type="radio" name="q194" value="a"><label>`EXPOSE` publica a host:3000; `-p` a host:8080.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q194')"><input type="radio" name="q194" value="b"><label>`EXPOSE 3000` en un Dockerfile es principalmente una forma de documentación para el usuario de la imagen y para otras herramientas (como Docker Compose al usar `ports` sin especificar el puerto del host), indicando que la aplicación dentro del contenedor está escuchando en el puerto 3000. No publica el puerto al host por sí mismo ni lo hace accesible desde fuera. La opción `-p 8080:3000` al ejecutar `docker run` es la que efectivamente crea una regla de NAT en el host, mapeando el puerto 3000 del contenedor al puerto 8080 del host, permitiendo así el acceso externo.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q194')"><input type="radio" name="q194" value="c"><label>Ambos logran exactamente lo mismo en términos de publicación de puertos; `-p` es solo una forma abreviada de `EXPOSE` que se puede usar en tiempo de ejecución.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q194')"><input type="radio" name="q194" value="d"><label>`EXPOSE` solo funciona si se utiliza Docker Compose para orquestar los contenedores, mientras que la opción `-p` es exclusiva del comando `docker run`.</label></li>
+            </ul>
+            <script>var answer_q194 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 195: Al configurar una alerta en Grafana basada en `avg_over_time(process_cpu_seconds_total[5m]) > 0.75`, ¿qué impacto tiene la elección del "For" (duración) en la alerta si la métrica fluctúa cerca del umbral?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q195')"><input type="radio" name="q195" value="a"><label>"For" es espera post-resolución.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q195')"><input type="radio" name="q195" value="b"><label>"For": la condición (CPU > 75%) debe persistir continuamente ese tiempo para "Firing"; evita alertas por picos, pero retrasa notificación.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q195')"><input type="radio" name="q195" value="c"><label>El "For" define el intervalo con el que Grafana consulta a Prometheus para obtener los datos actualizados de la métrica especificada.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q195')"><input type="radio" name="q195" value="d"><label>El parámetro "For" solo se utiliza para configurar alertas de tipo "No Data", no para alertas basadas en umbrales de métricas.</label></li>
+            </ul>
+            <script>var answer_q195 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 196: En el Dockerfile de una aplicación Node.js, se usa `ENV NODE_ENV=production`. ¿Cuál es una consecuencia común de esto para frameworks como Express?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q196')"><input type="radio" name="q196" value="a"><label>Habilita el logging detallado para depuración avanzada en producción y reduce el rendimiento general de la aplicación.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q196')"><input type="radio" name="q196" value="b"><label>Desactiva la instalación de todas las dependencias listadas en `devDependencies` durante la ejecución de `npm install`.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q196')"><input type="radio" name="q196" value="c"><label>Activa optimizaciones, deshabilita depuración.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q196')"><input type="radio" name="q196" value="d"><label>Fuerza a la aplicación Node.js a ejecutarse en un único hilo de proceso para garantizar una mayor estabilidad en el entorno de producción.</label></li>
+            </ul>
+            <script>var answer_q196 = 'c';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 197: `logrotate` se ejecuta diariamente vía cron. Config en `/etc/logrotate.d/myservice`: `size 10M`, `rotate 4`, `daily`. Si el log de `myservice` crece a 50MB en 12 horas. ¿Cuándo y cómo se rotarán?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q197')"><input type="radio" name="q197" value="a"><label>Rotará al alcanzar 10MB.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q197')"><input type="radio" name="q197" value="b"><label>Solo se rotará una vez al día cuando `logrotate` se ejecute desde cron, independientemente de que haya superado los 10MB mucho antes. En ese momento, `logrotate` evaluará las condiciones. Si el archivo actual excede 10MB, lo rotará (renombrándolo, por ejemplo, a `myservice.log.1`) y creará un nuevo archivo `myservice.log` vacío. Se conservarán hasta 4 archivos rotados. Las directivas `daily` y `size` pueden interactuar; `daily` asegura una rotación si ha pasado un día, `size` fuerza una rotación si el tamaño se excede *en el momento de la ejecución de logrotate*.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q197')"><input type="radio" name="q197" value="c"><label>La opción `daily` anulará completamente la opción `size 10M`, y el log solo rotará estrictamente cada 24 horas.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q197')"><input type="radio" name="q197" value="d"><label>El servicio `myservice` debe estar configurado para llamar explícitamente a `logrotate` cada vez que su archivo de log exceda el umbral de 10MB.</label></li>
+            </ul>
+            <script>var answer_q197 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 198: Al usar `semanage port -a -t ssh_port_t -p tcp 2222` para un puerto SSH no estándar con SELinux en `enforcing`, ¿qué sucede si este comando no se ejecuta tras cambiar el puerto en `sshd_config` y reiniciar `sshd` (asumiendo que `firewalld` permite el puerto)?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q198')"><input type="radio" name="q198" value="a"><label>SELinux no interfiere.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q198')"><input type="radio" name="q198" value="b"><label>`sshd` no iniciará; SELinux deniega enlace a puerto sin etiqueta `ssh_port_t`.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q198')"><input type="radio" name="q198" value="c"><label>Las conexiones al nuevo puerto serán permitidas por `firewalld`, pero SELinux registrará múltiples alertas AVC sin bloquear el acceso.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q198')"><input type="radio" name="q198" value="d"><label>El comando `semanage` solo es necesario si `firewalld` no está instalado o está deshabilitado en el sistema.</label></li>
+            </ul>
+            <script>var answer_q198 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 199: En Docker Compose, si el servicio `webapp` tiene `depends_on: [db]`, ¿qué garantiza Compose sobre el servicio `db` antes de iniciar `webapp`?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q199')"><input type="radio" name="q199" value="a"><label>Garantiza que el contenedor `db` se ha iniciado y que la aplicación dentro de `db` (ej. PostgreSQL) está completamente lista y operativa para aceptar conexiones.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q199')"><input type="radio" name="q199" value="b"><label>Solo garantiza inicio de contenedor `db`, no que app esté lista.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q199')"><input type="radio" name="q199" value="c"><label>Garantiza que la imagen del contenedor `db` ha sido descargada o construida, pero no necesariamente que el contenedor haya sido creado o iniciado.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q199')"><input type="radio" name="q199" value="d"><label>`depends_on` únicamente controla el orden en que los contenedores son detenidos durante un `docker-compose down`, no el orden de inicio.</label></li>
+            </ul>
+            <script>var answer_q199 = 'b';</script>
+        </div>
+<div class="question-block">
+            <h3>Pregunta 200: Un script de Ansible usa `ansible.builtin.lineinfile` con `state: present` para asegurar una línea en `/etc/security/limits.conf`. Si se ejecuta repetidamente y la línea ya existe y coincide, ¿cuál es el comportamiento y cómo afecta al estado "changed"?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q200')"><input type="radio" name="q200" value="a"><label>Siempre reescribe; changed: true.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q200')"><input type="radio" name="q200" value="b"><label>La tarea verificará la presencia de la línea. Si ya existe y coincide exactamente con la línea especificada, no realizará ninguna modificación en el archivo y, por lo tanto, reportará "changed: false". Este es el comportamiento idempotente fundamental de Ansible. Si la línea no existe, o si se utiliza un `regexp` para buscar una línea a reemplazar y esta no coincide con la línea deseada, entonces `lineinfile` añadirá o modificará la línea según sea necesario y reportará "changed: true".</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q200')"><input type="radio" name="q200" value="c"><label>La tarea fallará con un error si la línea ya existe, a menos que se utilice explícitamente `state: absent` primero para eliminarla.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q200')"><input type="radio" name="q200" value="d"><label>La tarea añadirá una línea duplicada en cada ejecución si no se usa un `regexp` para buscarla, y siempre reportará "changed: true".</label></li>
+            </ul>
+            <script>var answer_q200 = 'b';</script>
+        </div>
+
 
     </div>
 
