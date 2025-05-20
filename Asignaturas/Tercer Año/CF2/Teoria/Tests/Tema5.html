@@ -4,69 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cuestionario Provisiones y Contingencias</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
     body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Poppins', sans-serif;
         line-height: 1.6;
         margin: 0;
         padding: 20px;
-        background-color: #f4f4f4;
+        background: linear-gradient(to right, #fceabb, #f8b500);
         color: #333;
     }
+
     .quiz-container {
         max-width: 800px;
         margin: auto;
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        background: #ffffff;
+        padding: 30px 25px;
+        border-radius: 16px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
+
     h1 {
         text-align: center;
-        color: #333;
-        margin-bottom: 25px;
+        color: #2c3e50;
+        margin-bottom: 30px;
+        font-size: 2.4em;
+        font-weight: 700;
     }
+
     .question-block {
         margin-bottom: 30px;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: #f9f9f9;
+        padding: 20px;
+        border-left: 6px solid #f39c12;
+        border-radius: 12px;
+        background-color: #fef9f3;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease;
     }
+
+    .question-block:hover {
+        transform: translateY(-2px);
+    }
+
     .question-block p {
-        font-size: 1.1em;
-        font-weight: bold;
+        font-size: 1.25em;
+        font-weight: 600;
+        color: #34495e;
         margin-bottom: 15px;
     }
+
     .options div {
-        background: #e7e7e7;
-        padding: 10px 15px;
-        margin-bottom: 8px;
-        border-radius: 5px;
+        background: #ecf0f1;
+        padding: 12px 18px;
+        margin-bottom: 10px;
+        border-radius: 8px;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: background 0.3s ease, transform 0.2s ease;
+        font-size: 1em;
     }
+
     .options div:hover {
-        background: #dcdcdc;
+        background: #d0d7de;
+        transform: scale(1.02);
     }
+
     .options div.correct {
-        background-color: #4CAF50 !important;
-        color: white;
+        background-color: #27ae60 !important;
+        color: #fff;
+        font-weight: 600;
     }
+
     .options div.incorrect {
-        background-color: #f44336 !important;
-        color: white;
+        background-color: #e74c3c !important;
+        color: #fff;
+        font-weight: 600;
     }
+
     .question-number {
         font-weight: bold;
-        margin-right: 5px;
+        margin-right: 8px;
+        color: #e67e22;
     }
 </style>
+
 </head>
 <body>
 
 <div class="quiz-container">
     <h1>Cuestionario sobre Provisiones y Contingencias (Capítulo 5)</h1>
+
+    <div class="author" style="text-align: center; margin-bottom: 30px; font-size: 1.1em; color: #555;">
+        <p style="margin: 5px 0; font-weight: 600;">Autor: <span style="color: #e67e22;">Ismael Sallami Moreno</span></p>
+        <p style="margin: 5px 0;">Asignatura: <span style="color: #3498db;">Contabilidad Financiera II</span></p>
+        <p style="margin: 5px 0;">Titulación: <span style="color: #9b59b6;">Ingeniería Informática + ADE</span></p>
+    </div>
 
     <div class="question-block" id="q1">
         <p><span class="question-number">1.</span> Una obligación presente de la empresa, surgida como consecuencia de sucesos pasados, para cuya extinción espera desprenderse de recursos que puedan producir beneficios o rendimientos económicos en el futuro y resulten indeterminados respecto a su importe o a la fecha de cancelación, responde al concepto de:</p>
