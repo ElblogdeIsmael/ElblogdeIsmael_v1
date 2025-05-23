@@ -88,6 +88,7 @@ Podemos ejemplificar dos casos en los que se contabiliza el impuesto corriente:
 2.  Cuando las retenciones y pagos a cuenta son superiores a la cuota del impuesto, resultando en una cantidad a devolver por Hacienda.
 
 Finalmente, **si el resultado del ejercicio es de pérdida, surge una problemática que da lugar a un impuesto diferido**.
+* Por impuesto diferido entendemos el efecto contable que surge de las diferencias temporarias entre el resultado contable y la base imponible fiscal. Estas diferencias generan activos o pasivos por impuestos diferidos, que reflejan el impacto fiscal futuro derivado de dichas discrepancias. El impuesto diferido se registra para garantizar que los impuestos se imputen al ejercicio en el que realmente se devengan, independientemente de cuándo se paguen o recuperen.
 
 
 ## Diferencias Permanentes y Temporarias
@@ -121,12 +122,11 @@ Las diferencias temporarias son la clave para entender el impuesto diferido.
 
 * Se originan por la **diferente valoración contable y fiscal** (diferencia entre la base fiscal y el valor contable) de activos, pasivos e instrumentos de patrimonio, siempre que tengan incidencia en la carga fiscal futura.
     * La **base fiscal** es el importe atribuido a un elemento según la legislación fiscal.
-* Por impuesto diferido entendemos el efecto contable que surge de las diferencias temporarias entre el resultado contable y la base imponible fiscal. Estas diferencias generan activos o pasivos por impuestos diferidos, que reflejan el impacto fiscal futuro derivado de dichas discrepancias. El impuesto diferido se registra para garantizar que los impuestos se imputen al ejercicio en el que realmente se devengan, independientemente de cuándo se paguen o recuperen.
 * Normalmente, surgen de **diferencias temporales** en la imputación de ingresos y gastos entre el resultado contable y la base imponible, las cuales revierten en periodos siguientes.
 * Estas diferencias (imponibles o deducibles) se reflejan contablemente mediante cuentas específicas, principalmente:
     * **(6301) Impuesto diferido**
     * **(4740) Activos por diferencias temporarias deducibles**
-    * **(479) Pasivos por diferencias temporarias imponibles** (referida como 479 en Figura 5 y ejemplos, aunque Figura 4 mencione 476)
+    * **(479) Pasivos por diferencias temporarias imponibles**
 
 * **Registro de Diferencias Temporarias Imponibles (originan un pasivo por impuesto diferido)**:
     * **Origen**: Se carga la cuenta (6301) Impuesto diferido y se abona la (479) Pasivos por diferencias temporarias imponibles.
@@ -151,6 +151,72 @@ Las diferencias temporarias son la clave para entender el impuesto diferido.
         XXX (6301) Impuesto diferido
                 a (4740) Activos por diferencias temporarias deducibles XXX
         ```
+
+## Explicación Extra
+Ahora vamos a añadir una serie de ejemplos para que se entienda mejor en cuanto a las casuísticas que pueden surgir en la vida real, ya que puede ser un poco lioso, por ejemplo, el caso de que una multa de tráfico sea una diferencia permanente positiva:
+Cuando analizamos el Impuesto sobre Sociedades, uno de los conceptos que más dudas genera son las **diferencias permanentes**. En concreto, vamos a entender por qué una **multa de tráfico** se considera una **diferencia permanente positiva**.
+
+---
+
+### La Multa de Tráfico: Un Gasto Contable que No es Deducible Fiscalmente
+
+Para entenderlo, debemos diferenciar dos perspectivas:
+
+1.  **Perspectiva Contable:**
+    * Desde el punto de vista contable, una multa de tráfico es un **gasto** para la empresa.
+    * Se registra en la contabilidad como tal (por ejemplo, en una cuenta de gastos excepcionales o servicios exteriores).
+    * Al ser un gasto, **resta** al resultado contable de la empresa. Es decir, reduce el beneficio que la empresa ha obtenido según sus libros contables.
+
+2.  **Perspectiva Fiscal:**
+    * La Ley del Impuesto sobre Sociedades establece claramente que las **sanciones y multas (incluidas las de tráfico) no son gastos fiscalmente deducibles**.
+    * Esto significa que, a ojos de Hacienda, la multa no puede ser utilizada para reducir la base imponible sobre la que se calculará el impuesto.
+
+---
+
+### ¿Por qué se produce un "Ajuste Positivo"?
+
+Aquí es donde entra en juego la necesidad de realizar un **ajuste**. Imagina el proceso de cálculo del impuesto:
+
+* Se parte del **Resultado Contable Antes de Impuestos**. Este resultado ya tiene la multa restada como gasto.
+* Sin embargo, la ley fiscal nos dice que esa multa no debe haber restado. Para "deshacer" el efecto de esa resta contable, tenemos que **sumar de nuevo** el importe de la multa al resultado contable.
+
+**Ejemplo numérico:**
+
+Imagina que tu empresa tiene:
+* Un **Resultado Contable Antes de Impuestos de 50.000 €**.
+* Dentro de esos 50.000 €, ya se ha restado una **multa de 1.000 €**. (Es decir, si no hubiera habido multa, el resultado contable habría sido 51.000 €).
+
+Cuando calculas la **Base Imponible Fiscal**:
+
+* **Partes de:** 50.000 € (Resultado Contable)
+* **Ajuste por multa:** Como fiscalmente esos 1.000 € no son deducibles, los **sumas** para revertir la resta que se hizo contablemente.
+* **Base Imponible Fiscal:** 50.000 € + 1.000 € = **51.000 €**
+
+En este caso, la multa provoca que tu **base imponible fiscal (51.000 €) sea mayor que tu resultado contable (50.000 €)**. Por eso se le denomina **"positiva"**, porque incrementa la cantidad sobre la que pagarás impuestos.
+
+---
+
+### ¿Por qué es "Permanente"?
+
+Se le llama **permanente** porque esta diferencia **nunca se va a revertir o compensar** en el futuro. La multa nunca será un gasto deducible fiscalmente, ni en el ejercicio actual ni en los siguientes.
+
+Esto la distingue de las "diferencias temporarias", que sí se compensan con el tiempo (por ejemplo, un gasto que es deducible ahora contablemente pero fiscalmente lo será en el futuro, o viceversa).
+
+---
+
+### En Resumen:
+
+Una multa de tráfico es una **diferencia permanente positiva** porque:
+
+* Es un **gasto** que reduce tu resultado contable.
+* **Nunca será deducible fiscalmente**, lo que la convierte en **permanente**.
+* Para calcular la base imponible fiscal, debes **sumarla de nuevo** al resultado contable, lo que **incrementa** dicha base imponible y, por lo tanto, es un ajuste **positivo**.
+
+Esto asegura que, a efectos fiscales, la empresa no se beneficie de una reducción de su base imponible por un gasto que la ley no considera deducible.
+
+Creo que este ejemplo es bastante global y abarca todas las posibles dudas que el lector pueda tener.
+
+---
 
 ### Diferencias Temporarias por Pérdidas a Compensar
 
