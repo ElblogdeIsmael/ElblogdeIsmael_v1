@@ -1,7 +1,7 @@
 # Ejercicios Propuestos Tema 5
 
 ## Ejercicio Propuesto 1
-*Algunos asientos contables pueden ser omitidos o descritos de forma breve y resumida, ya que son similares a los realizados previamente.*
+*Algunos asientos contables pueden ser omitidos o descritos de forma breve y resumida, ya que son similares a los realizados previamente. Para ver las fórmulas correctamente se aconseja usar un compilador de MarkDown*
 
 ---
 
