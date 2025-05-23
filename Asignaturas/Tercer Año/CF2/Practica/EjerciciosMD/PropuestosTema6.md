@@ -1,3 +1,7 @@
+* Autor: Ismael Sallami Moreno
+* Titulación: Ingeniería Informática + ADE
+* Asignatura: Contabilidad Financiera II
+
 # Ejercicios Propuestos Tema 6: Impuesto sobre beneficios
 
 
@@ -165,6 +169,93 @@ z (6301) Impuesto diferido
 
 ```
 
+## Ejercicio Propuesto 3
+
+La empresa MOORE, SA, adquiere el 1 de julio de 2018 un vehículo para el transporte de su personal por importe de 20.000 €. Según la contabilidad, la vida útil se estima en 5 años y su valor residual es nulo. A efectos fiscales, el límite máximo de amortización son 4 años.
+
+Se conocen los siguiente datos a efectos de la liquidación del impuesto sobre beneficios relativos al ejercicio 2019:  
+a) el tipo de gravamen de este ejercicio y de los anteriores es del 30%;  
+b) la empresa obtuvo un beneficio antes de impuestos de 85.000 €;  
+c) la empresa contabilizó como gasto una sanción tributaria de 900 € que no es deducible fiscalmente;  
+d) además, debido a pérdidas en ejercicios anteriores, tiene acumuladas unas bases imponibles negativas de 5.625 €;  
+e) las retenciones fiscales ascienden a 2.000 €;  
+f) ha sido beneficiaria de unas bonificaciones fiscales por valor de 3.000 €.
+
+**Se pide:** Liquidar el impuesto de sociedades y contabilizar las siguientes operaciones:
+
+### Liquidación del Impuesto de Sociedades 2019
+
+| Año  | Contable | Fiscal | Diferencia (Contable - Fiscal) | Signo/Tipo |
+|------|----------|--------|-------------------------------|------------|
+| 2018 | 2.000,00 | 5.000,00 | -3.000,00                   | (-)        |
+| 2019 | 4.000,00 | 5.000,00 | -1.000,00                   | (-)        |
+| 2020 | 4.000,00 | 5.000,00 | -1.000,00                   | (-)        |
+| 2021 | 4.000,00 | 5.000,00 | -1.000,00                   | (-)        |
+| 2022 | 4.000,00 | 0,00     | 4.000,00                    | Ajuste (-) |
+| 2023 | 2.000,00 | 0,00     | 2.000,00                    | Ajuste (-) |
+
+| Año  | Contable | Fiscal | Diferencia (Contable - Fiscal) | Signo/Tipo |
+|------|----------|--------|-------------------------------|------------|
+| 2019 | 900,00   | 0,00   | 900,00                        | (+)        |
+
+| Concepto                                | 2019       |
+|-----------------------------------------|------------|
+| Rdo. Ejercicio                          | 85.000,00  |
+| (+/-) Diferencias Permanentes           | 900,00     |
+| (+/-) Diferencias Temporarias           | -1.000,00  |
+| (=) BI Previa                           | 84.900,00  |
+| (-) Rdos. Negativos años anteriores     | -5.625,00  |
+| (=) Bimponible                          | 79.275,00  |
+| (x) Tipo Gravamen (30%)                 | 0,30       |
+| (=) Cuota Íntegra                       | 23.782,50  |
+| (-) Deducciones/Bonificaciones          | -3.000,00  |
+| (=) Cuota Líquida                       | 20.782,50  |
+| (-) Retenciones y P/Cta                 | -2.000,00  |
+| (=) Cuota Diferencial                   | 18.782,50  |
+
+* Asiento del impuesto diferido en 2018 
+
+```
+3.000 de la amortización del elemento de transporte: 3.000 x 30% = 900 = j
+
+j (6301) Impuesto diferido
+    a
+    479 Pasivo por diferencia temporaria imponible (Es pasivo debido a que la fiscal > contable) j
+```
+* Impuesto corriente de 2019
+
+```
+De manera análoga a los casos anteriores: cargamos la cuenta 6300 por la cantidad de 20.783,50 ...
+
+```
+
+* Impuesto diferido de 2019, relativo a la compensación de pérdidas
+
+```
+Según el enunciado: 5.625 x 30% = 1.687,5 = i
+
+i (6301) ...
+    a 
+    (4745) Crédito por pérdidas a compensar del ejercicio i
+```
+
+**NO LO PIDE**: de manera análoga en este mismo momento se debería de realizar las operaciones pertinentes con la amortización del elemento de transporte, siendo 1000 x 30%
+
+* Imputación a resultados del impuesto sobre sociedades del ejercicio 2019
+
+```
+Cuando nos pide imputación a rdo en base al impuesto sobre sociedades
+    - Impuesto diferido
+    - Impuesto corriente
+
+Corriente: j (notado más arriba)
+Diferido: i + la parte de la amortización: i + 1000 x 30% = 1.987,5 = r
+
+r + j (129) Rdo del ejercicio
+    a
+    (6301)... r
+    (6300)... j
+```
 
 
 
