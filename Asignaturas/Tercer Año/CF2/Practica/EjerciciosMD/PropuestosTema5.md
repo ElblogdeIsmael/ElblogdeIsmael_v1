@@ -1,3 +1,7 @@
+* Autor: Ismael Sallami Moreno
+* Titulación: Ingeniería Informática + ADE
+* Asignatura: Contabilidad Financiera II
+
 # Ejercicios Propuestos Tema 5: Provisiones y contingencias
 
 ## Ejercicio Propuesto 1

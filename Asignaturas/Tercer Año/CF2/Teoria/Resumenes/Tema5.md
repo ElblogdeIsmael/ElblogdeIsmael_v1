@@ -1,3 +1,7 @@
+* Autor: Ismael Sallami Moreno
+* Titulación: Ingeniería Informática + ADE
+* Asignatura: Contabilidad Financiera II
+
 # Tema 5: Provisiones y Contingencias
 
 ## Definiciones y características
@@ -80,7 +84,7 @@ Esto implica que:
 * **Provisión por desmantelamiento, retiro y rehabilitación (cuenta 143)**:
     * Está relacionada con inmovilizados materiales y su valoración inicial (NRV 2).
     * Los cambios de valor derivados de la mejora en la estimación de esta provisión repercuten sobre el valor del inmovilizado correspondiente, incluso si ya está en funcionamiento.
-* **Provisiones a corto plazo (vencimiento ≤ 1 año)**:
+* **Provisiones a corto plazo (vencimiento`leq` 1 año)**:
     * Si el efecto financiero no es significativo, **no será necesario llevar a cabo ningún tipo de descuento** (actualización financiera). Se contabilizarán directamente en la cuenta 529.
 
 ### Compensaciones de Terceros

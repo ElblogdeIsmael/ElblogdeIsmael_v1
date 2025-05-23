@@ -1,3 +1,7 @@
+* Autor: Ismael Sallami Moreno
+* Titulación: Ingeniería Informática + ADE
+* Asignatura: Contabilidad Financiera II
+
 # Impuesto sobre beneficios
 
 ## Definición y características
