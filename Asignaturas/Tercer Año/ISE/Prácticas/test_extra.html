@@ -6,64 +6,64 @@
     <title>Test Exámenes</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente más moderna */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             margin: 20px;
-            background-color: #eef1f5; /* Un gris azulado claro para el fondo */
-            color: #333; /* Color de texto principal */
+            background-color: #eef1f5; 
+            color: #333; 
         }
         .container {
             background-color: #ffffff;
             padding: 25px;
-            border-radius: 12px; /* Bordes más redondeados */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra más pronunciada */
-            max-width: 800px; /* Limitar el ancho para mejor legibilidad */
-            margin: 30px auto; /* Centrar el contenedor */
+            border-radius: 12px; 
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
+            max-width: 800px; 
+            margin: 30px auto; 
         }
         .question-block {
-            margin-bottom: 30px; /* Más espacio entre preguntas */
+            margin-bottom: 30px; 
             padding: 20px;
-            border: 1px solid #d1d9e6; /* Borde sutil para el bloque */
-            border-radius: 8px; /* Bordes redondeados para el bloque */
-            background-color: #f8f9fa; /* Fondo ligeramente diferente para el bloque de pregunta */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Sombra interna sutil */
+            border: 1px solid #d1d9e6; 
+            border-radius: 8px; 
+            background-color: #f8f9fa; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05); 
         }
         .question-block h3 {
             margin-top: 0;
-            margin-bottom: 15px; /* Más espacio debajo del título de la pregunta */
-            color: #0056b3; /* Un azul oscuro para el título de la pregunta */
-            font-size: 1.25em; /* Un poco más grande */
+            margin-bottom: 15px; 
+            color: #0056b3; 
+            font-size: 1.25em; 
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
         li {
-            margin-bottom: 12px; /* Más espacio entre opciones */
-            padding: 12px 15px; /* Más padding interno */
-            border: 1px solid #ced4da; /* Borde estándar para opciones */
-            border-radius: 6px; /* Bordes redondeados para opciones */
+            margin-bottom: 12px; 
+            padding: 12px 15px; 
+            border: 1px solid #ced4da; 
+            border-radius: 6px; 
             cursor: pointer;
             transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
-            background-color: #fff; /* Fondo blanco para las opciones */
+            background-color: #fff; 
         }
         li:hover {
-            background-color: #e9ecef; /* Un gris más claro al pasar el ratón */
+            background-color: #e9ecef; 
             border-color: #adb5bd;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.07); /* Sombra sutil al pasar el ratón */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.07); 
         }
         li:active {
-            transform: translateY(1px); /* Efecto de presionar */
+            transform: translateY(1px); 
         }
         li.correct {
-            background-color: #28a745; /* Un verde más vibrante y moderno (Bootstrap success green) */
-            color: #ffffff; /* Texto blanco para mejor contraste con el verde */
-            border-color: #1e7e34; /* Un verde más oscuro para el borde */
-            font-weight: bold; /* Resaltar el texto de la opción correcta */
+            background-color: #28a745; 
+            color: #ffffff; 
+            border-color: #1e7e34; 
+            font-weight: bold; 
         }
         li.incorrect {
-            background-color: #dc3545; /* Un rojo estándar (Bootstrap danger red) */
-            color: #ffffff; /* Texto blanco para mejor contraste */
-            border-color: #c82333; /* Un rojo más oscuro para el borde */
+            background-color: #dc3545; 
+            color: #ffffff; 
+            border-color: #c82333; 
         }
         input[type="radio"] {
             margin-right: 10px;
@@ -82,6 +82,7 @@
                 <p>Autor: Ismael Sallami Moreno</p>
                 <p></p>
                 <p>Asignatura: Ingeniería de Servidores</p>
+                <p>Temario: Ambos bloques, incluye preguntas de examen.</p>
             </div>
         </header>
         <h1>Test Exámenes</h1>
@@ -540,7 +541,7 @@
         <div class="question-block">
             <h3>Pregunta 42: ¿Por qué no hemos usado Im-sensors en las prácticas?</h3>
             <ul>
-                <li onclick="checkAnswer(this, 'a', 'q42')"><input type="radio" name="q42" value="a"><label>Porque "emosido engañado por un virus informático malicioso.</label></li>
+                <li onclick="checkAnswer(this, 'a', 'q42')"><input type="radio" name="q42" value="a"><label>Porque hemosido engañado por un virus informático malicioso.</label></li>
                 <li onclick="checkAnswer(this, 'b', 'q42')"><input type="radio" name="q42" value="b"><label>Porque Im-sensors es incompatible con los sistemas raid que hemos usado.</label></li>
                 <li onclick="checkAnswer(this, 'c', 'q42')"><input type="radio" name="q42" value="c"><label>Porque Im-sensors no detectaría sensores en la máquina virtual.</label></li>
                 <li onclick="checkAnswer(this, 'd', 'q42')"><input type="radio" name="q42" value="d"><label>Porque necesitamos privilegios root y no siempre están disponibles.</label></li>
@@ -1298,6 +1299,53 @@
             </ul>
             <script>var answer_q109 = 'a';</script>
         </div>
+
+        <div class="question-block">
+            <h3>Pregunta 110: ¿Cuál es la ruta principal del archivo de configuración de logrotate en la mayoría de los sistemas Linux?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q110')"><input type="radio" name="q110" value="a"><label>/etc/logrotate.conf</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q110')"><input type="radio" name="q110" value="b"><label>/var/log/logrotate.conf</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q110')"><input type="radio" name="q110" value="c"><label>/usr/local/etc/logrotate.conf</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q110')"><input type="radio" name="q110" value="d"><label>/etc/logrotate.d/</label></li>
+            </ul>
+            <script>var answer_q110 = 'a';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 111: ¿Cuál es la ruta del archivo de configuración principal y global de <code>cron</code> (system-wide crontab) en la mayoría de los sistemas Linux?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q111')"><input type="radio" name="q111" value="a"><label>/etc/crontab</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q111')"><input type="radio" name="q111" value="b"><label>/var/spool/cron/crontabs/</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q111')"><input type="radio" name="q111" value="c"><label>/etc/cron.allow</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q111')"><input type="radio" name="q111" value="d"><label>/usr/bin/crontab</label></li>
+            </ul>
+            <script>var answer_q111 = 'a';</script>
+        </div>
+        
+        <div class="question-block">
+            <h3>Pregunta 112: Al configurar un RAID por software en Linux, ¿cuál es un paso crucial que generalmente precede al montaje del dispositivo RAID (por ejemplo, /dev/md0) en el sistema de archivos?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q112')"><input type="radio" name="q112" value="a"><label>Crear un sistema de archivos en el dispositivo RAID.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q112')"><input type="radio" name="q112" value="b"><label>Añadir el dispositivo RAID directamente a /etc/fstab sin formatear.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q112')"><input type="radio" name="q112" value="c"><label>Reiniciar el servidor inmediatamente después de crear el array.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q112')"><input type="radio" name="q112" value="d"><label>Ejecutar fsck en los discos físicos individuales.</label></li>
+            </ul>
+            <script>var answer_q112 = 'a';</script>
+        </div>
+        
+
+        <div class="question-block">
+            <h3>Pregunta 113: Considerando el entorno completo (nodo de control y nodos gestionados), ¿qué se necesita fundamentalmente para ejecutar playbooks de Ansible y que estos operen sobre los nodos gestionados?</h3>
+            <ul>
+                <li onclick="checkAnswer(this, 'a', 'q113')"><input type="radio" name="q113" value="a"><label>Solo SSH.</label></li>
+                <li onclick="checkAnswer(this, 'b', 'q113')"><input type="radio" name="q113" value="b"><label>SSH y Python.</label></li>
+                <li onclick="checkAnswer(this, 'c', 'q113')"><input type="radio" name="q113" value="c"><label>SSH, Python y Ansible.</label></li>
+                <li onclick="checkAnswer(this, 'd', 'q113')"><input type="radio" name="q113" value="d"><label>Ninguna es correcta.</label></li>
+            </ul>
+            <script>var answer_q113 = 'c';</script>
+        </div>
+
+
 
 
     </div>
