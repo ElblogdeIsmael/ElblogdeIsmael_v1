@@ -1,6 +1,25 @@
-* Autor: Ismael Sallami Moreno
-* Titulación: Ingeniería Informática + ADE
-* Asignatura: Contabilidad Financiera II
+---
+title: "Contabilidad Financiera II"
+subtitle: "Temario Impuesto sobre Beneficios"
+author: "Ismael Sallami Moreno"
+date: "Mayo de 2025"
+lang: es
+mainfont: "Latin Modern Roman"
+geometry: margin=2.5cm
+colorlinks: true
+linkcolor: "008080"
+toc: true
+toc-own-page: true
+numbersections: true
+titlepage: true
+header-left: "Contabilidad"
+header-right: "Temario Impuesto sobre Beneficios"
+# footer-center: "\\thepage"
+titlepage-color: "87CEEB"
+titlepage-rule-color: "4682B4"
+# titlepage-background: "images/img2.jpg"
+titlepage-background-opacity: 0.5
+---
 
 # Impuesto sobre beneficios
 
@@ -20,6 +39,7 @@ Por otro lado, debemos de mencionar el `impuesto sobre sociedades`, cuya base im
 Este apartado detalla el proceso para determinar la base imponible del Impuesto sobre Sociedades a partir del resultado contable de una empresa, así como los pasos subsecuentes para calcular la cuota final del impuesto.
 
 **Normativa y Punto de Partida:**
+
 * Los contribuyentes están obligados a presentar la declaración del Impuesto sobre Sociedades conforme a la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades, y el Real Decreto 634/2015, de 10 de julio, que aprueba el Reglamento del Impuesto sobre Sociedades.
 * El cálculo para determinar la cuota a pagar se inicia con el **resultado contable** de la entidad. 
 
@@ -67,10 +87,12 @@ Este apartado detalla el proceso para determinar la base imponible del Impuesto 
 Este apartado se enfoca en el concepto y registro contable del impuesto corriente.
 
 **Definición y Cálculo:**
+
 * El **impuesto corriente** es la cantidad que una empresa debe pagar (o puede recuperar) por el impuesto sobre beneficios devengado en el ejercicio actual. Este monto se calcula aplicando las normas fiscales correspondientes tras realizar los ajustes pertinentes al resultado contable.
 * En esencia, el impuesto corriente como gasto se corresponde con la **cuota líquida** que se obtiene después de aplicar el tipo impositivo a la base imponible y restar las deducciones y bonificaciones fiscales.
 
 **Factores que Afectan el Cálculo:**
+
 * El impuesto corriente (entendido como la cuota líquida o gasto por impuesto) puede verse reducido por:
     * **Deducciones y ventajas fiscales** aplicables sobre la cuota íntegra.
 * Es importante distinguir que la **compensación de pérdidas de ejercicios anteriores** reduce la base imponible sobre la cual se calcula el impuesto, afectando así la cuota íntegra y, por ende, la cuota líquida (impuesto corriente).
@@ -79,6 +101,7 @@ Este apartado se enfoca en el concepto y registro contable del impuesto corrient
     * **Pagos a cuenta** realizados durante el ejercicio.
 
 **Cuentas Contables Involucradas:**
+
 El registro contable del impuesto corriente utiliza principalmente las siguientes cuentas:
 
 * **(6300) Impuesto corriente**: Refleja el gasto por el impuesto sobre beneficios devengado en el ejercicio. Corresponde a la cuota líquida.
@@ -87,11 +110,13 @@ El registro contable del impuesto corriente utiliza principalmente las siguiente
 * **(4709) Hacienda Pública deudora por devoluciones de impuestos**: Cuenta de activo que surge cuando las retenciones y pagos a cuenta superan la cuota líquida, reflejando el derecho de la empresa a recibir una devolución.
 
 **Ejemplificación:**
+
 Podemos ejemplificar dos casos en los que se contabiliza el impuesto corriente:
 1.  Cuando las retenciones y pagos a cuenta son inferiores a la cuota del impuesto, resultando en una cantidad a pagar.
 2.  Cuando las retenciones y pagos a cuenta son superiores a la cuota del impuesto, resultando en una cantidad a devolver por Hacienda.
 
 Finalmente, **si el resultado del ejercicio es de pérdida, surge una problemática que da lugar a un impuesto diferido**.
+
 * Por impuesto diferido entendemos el efecto contable que surge de las diferencias temporarias entre el resultado contable y la base imponible fiscal. Estas diferencias generan activos o pasivos por impuestos diferidos, que reflejan el impacto fiscal futuro derivado de dichas discrepancias. El impuesto diferido se registra para garantizar que los impuestos se imputen al ejercicio en el que realmente se devengan, independientemente de cuándo se paguen o recuperen.
 
 
@@ -107,8 +132,11 @@ Se retoma el concepto de los ajustes que surgen por la discrepancia entre los cr
     * Son aquellas que se derivan de la diferente valoración contable y fiscal atribuida a los activos, pasivos y determinados instrumentos de patrimonio propio de la empresa.
     * Estas diferencias tienen incidencia en la carga fiscal futura.
     * Pueden originar dos situaciones:
-        * **Diferencias Imponibles**: Darán lugar a mayores cantidades a pagar o menores cantidades a devolver por impuestos en ejercicios futuros, normalmente a medida que se recuperen los activos o se liquiden los pasivos de los que se derivan.
-        * **Diferencias Deducibles**: Darán lugar a menores cantidades a pagar o a mayores cantidades a devolver por impuestos en ejercicios futuros, a medida que se recuperen los activos o se liquiden los pasivos de los que se derivan.
+        * **Diferencias Imponibles**: Darán lugar a mayores cantidades a pagar (**en las prácticas se restan**) o menores cantidades a devolver por impuestos en ejercicios futuros, normalmente a medida que se recuperen los activos o se liquiden los pasivos de los que se derivan.
+        * **Diferencias Deducibles**: Darán lugar a menores cantidades a pagar (**en la práctica se suman**) o a mayores cantidades a devolver por impuestos en ejercicios futuros, a medida que se recuperen los activos o se liquiden los pasivos de los que se derivan.
+        * "Imponible" se refiere a aquello que está sujeto a impuesto, es decir, la cantidad o valor sobre el cual se va a aplicar una tasa impositiva para calcular el impuesto a pagar. Constituye la materia prima del tributo. Podemos pensar que es toda renta, bien, servicio o transacción, susceptible de ser gravada.
+        * Deducible" se refiere a aquellos gastos, costes o minoraciones que la ley permite restar de los ingresos brutos o de la base imponible para determinar la base imponible neta o la cuota tributaria. El objetivo de las deducciones es ajustar la capacidad económica real del contribuyente.
+        * En relación: Primero se determinan los ingresos o valores imponibles para obtener una base bruta. Luego, se restan los gastos y otros conceptos deducibles permitidos por la ley para llegar a una base neta o liquidable, sobre la cual se aplica el porcentaje de impuesto correspondiente.
 
 * **Diferencias Permanentes**:
     * Son aquellas diferencias entre las magnitudes contables y fiscales que no se identifican como temporarias.

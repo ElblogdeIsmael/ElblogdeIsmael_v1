@@ -1,6 +1,25 @@
-* Autor: Ismael Sallami Moreno
-* Titulación: Ingeniería Informática + ADE
-* Asignatura: Contabilidad Financiera II
+---
+title: "Contabilidad Financiera II"
+subtitle: "Temario Provisiones y Contingencias"
+author: "Ismael Sallami Moreno"
+date: "Mayo de 2025"
+lang: es
+mainfont: "Latin Modern Roman"
+geometry: margin=2.5cm
+colorlinks: true
+linkcolor: "008080"
+toc: true
+toc-own-page: true
+numbersections: true
+titlepage: true
+header-left: "Contabilidad"
+header-right: "Temario Provisiones y Contingencias"
+# footer-center: "\\thepage"
+titlepage-color: "87CEEB"
+titlepage-rule-color: "4682B4"
+# titlepage-background: "images/img2.jpg"
+titlepage-background-opacity: 0.5
+---
 
 # Tema 5: Provisiones y Contingencias
 
@@ -95,7 +114,6 @@ Cuando se espere recibir una compensación de un tercero al liquidar la obligaci
 * Se reconocerá un **derecho de cobro en el activo** (por un importe que no exceda el de la obligación) siempre que no existan dudas de que dicho reembolso será percibido.
 * **Excepción**: Si existe un vínculo legal o contractual por el que se haya exteriorizado parte del riesgo y la empresa no esté obligada a responder por esa parte, la provisión se estimará por el importe neto que asume la empresa.
 
-Claro, aquí tienes el resumen de la sección "Provisiones por operaciones comerciales":
 
 ## Provisiones por Operaciones Comerciales
 
