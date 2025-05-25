@@ -1,6 +1,25 @@
-* Autor: Ismael Sallami Moreno
-* Titulación: Ingeniería Informática + ADE
-* Asignatura: Contabilidad Financiera II
+---
+title: "Contabilidad Financiera II"
+subtitle: "Temario Fondos Propios"
+author: "Ismael Sallami Moreno"
+date: "Mayo de 2025"
+lang: es
+mainfont: "Latin Modern Roman"
+geometry: margin=2.5cm
+colorlinks: true
+linkcolor: "008080"
+toc: true
+toc-own-page: true
+numbersections: true
+titlepage: true
+header-left: "Contabilidad"
+header-right: "Temario Fondos Propios"
+# footer-center: "\\thepage"
+titlepage-color: "87CEEB"
+titlepage-rule-color: "4682B4"
+# titlepage-background: "images/img2.jpg"
+titlepage-background-opacity: 0.5
+---
 
 # Fondos Propios
 

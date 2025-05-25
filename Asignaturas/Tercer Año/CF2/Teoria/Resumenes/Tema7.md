@@ -1,7 +1,25 @@
-
-* Autor: Ismael Sallami Moreno
-* Titulación: Ingeniería Informática + ADE
-* Asignatura: Contabilidad Financiera II
+---
+title: "Contabilidad Financiera II"
+subtitle: "Temario Estados Financieros"
+author: "Ismael Sallami Moreno"
+date: "Mayo de 2025"
+lang: es
+mainfont: "Latin Modern Roman"
+geometry: margin=2.5cm
+colorlinks: true
+linkcolor: "008080"
+toc: true
+toc-own-page: true
+numbersections: true
+titlepage: true
+header-left: "Contabilidad"
+header-right: "Temario Estados Financieros"
+# footer-center: "\\thepage"
+titlepage-color: "87CEEB"
+titlepage-rule-color: "4682B4"
+# titlepage-background: "images/img2.jpg"
+titlepage-background-opacity: 0.5
+---
 
 # Estados Financieros
 
@@ -70,20 +88,25 @@ Cada documento que conformas las cuentas anuales se ha de redactar de conformida
   * Periodicidad: las cuentas anuales, por norma general, se han de elaborar con una periodicidad de doce meses, salvo en determinados casos.
   * Responsabilidad: éstas deben de ser formuladas por el *empresario o administradores*, quienes **responderán de su veracidad**.
   * Fecha y firma: deben de ser firmadas por el empresario y en ellas debe de aparecer la fecha.
-    ![imagen](https://www.glasof.es/ficheros/imagenes/blog/1.jpg?v=1627295714880)
+    * **Plazos para la formulación, aprobación y depósito de las cuentas anuales**:
+        * **Formulación**: Las cuentas anuales deben ser formuladas por los administradores de la empresa en un plazo máximo de tres meses desde el cierre del ejercicio social.
+        * **Aprobación**: Una vez formuladas, las cuentas anuales deben ser aprobadas por la junta general de socios o accionistas en un plazo máximo de seis meses desde el cierre del ejercicio social.
+        * **Depósito**: Tras su aprobación, las cuentas anuales deben ser depositadas en el Registro Mercantil correspondiente en el plazo de un mes desde la fecha de su aprobación.
+
+    Estos plazos son esenciales para garantizar el cumplimiento de las obligaciones legales y la transparencia en la información financiera de las empresas.
   * Identificabilidad: todas las cuentas deben de estar identificadas de forma *clara* aportando la información necesaria en cada una.
   * Valores: Se elaborarán siguiendo sus valores expresados en euros.
 * Plazos para la formulación, aprobación y depósito de las cuentas anuales.
-  ![Imagen](https://www.supercontable.com/boletin/F/img/IMG_plazos_cuentas_anuales.jpg)
+  <!-- https://www.supercontable.com/boletin/F/img/IMG_plazos_cuentas_anuales.jpg -->
 * Obligación de auditar las cuentas anuales y excepción por razón de tamaño.
   Las cuentas han de ser revisadas por un **auditor de cuentas**.
   * Excepción por tamaño a la obligación de auditar las cuentas anuales
 
     | **Criterios para la excepción**                | **Límite**          |
     |-----------------------------------------------|---------------------|
-    | Total Activos                                  | ≤ 2.850.000 €       |
-    | Cifra de Negocios                              | ≤ 5.700.000 €       |
-    | Número medio de trabajadores                   | ≤ 50                |
+    | Total Activos                                  | $\leq$ 2.850.000 €       |
+    | Cifra de Negocios                              | $\leq$ 5.700.000 €       |
+    | Número medio de trabajadores                   | $\leq$ 50                |
 
 
 ### Estructura de las cuentas anuales y formatos para su presentación
