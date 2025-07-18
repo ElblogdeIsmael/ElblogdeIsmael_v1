@@ -5,7 +5,6 @@ Welcome to my digital space. I am a student pursuing a Double Degree in Computer
 ## Contact Information
 
 - **Email**: ism350zsallami@gmail.com
-- **Phone**: +34 661 10 08 90
 - **Date of Birth**: November 7, 2004
 - **Location**: Granada, Spain
 
